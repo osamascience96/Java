@@ -22,3 +22,18 @@ All the tags will be converted to the Servlet which is the container in TOMCAT a
 	4) The expression tag can be placed inside any of the page tags that will translate the value of the variable to the design params.
 
 
+
+
+The Directive tag has some of the attributes
+ page: what you want to specify for this jsp page.
+ language: which language, by default it's java, not mandatory to add this attribute.
+ extends: which class you want to inherit to your servlet.
+ import: to import any package to the servlet, we can also add the multiple.
+ session: true|false [Do you want any session in your JSP]
+ autoFlush: if you have set the buffersize and when outputing the response, the buffer may sometimes overflow, so for that you can specify 2 values true|false.
+ contenttype: The content type specifies the content of the page that is being send the client.
+ errorpage: The error page specifies the exception handling that you want to handle on the page
+ isErrorpage: is this the JSP where the page is expected to be handled
+ 
+The servlet object can be used explicitly with the JSP object thus if you want to perform any operation that contains server side processing to fetching 
+the data from the database or perform fetching anyting from the API etc.
