@@ -1,0 +1,24 @@
+JSP and its tags
+
+1: Directive Tag
+	<%@page import = "java.util.Date, java.util.animation" %>
+
+2: Declaration Tag
+	<%! int value = 1; %>
+
+3: scriptlet Tag
+	<% 
+		// All logic goes here
+	%>
+4: expression tag
+	<%= result %>
+
+All the tags will be converted to the Servlet which is the container in TOMCAT and the tags above will be placed inside the servlet in the following ways:
+
+	1) importing all the utils or libraries inside the servlet outside the class
+	2) init the variables outside all the methods, but inside the main class
+	3) The scriptable tag enters all the logic inside main servlet method "service" that executes the main logic when data is send thorugh any method 
+	   type.
+	4) The expression tag can be placed inside any of the page tags that will translate the value of the variable to the design params.
+
+
