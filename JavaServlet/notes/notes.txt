@@ -33,7 +33,9 @@ The Directive tag has some of the attributes
  autoFlush: if you have set the buffersize and when outputing the response, the buffer may sometimes overflow, so for that you can specify 2 values true|false.
  contenttype: The content type specifies the content of the page that is being send the client.
  errorpage: The error page specifies the exception handling that you want to handle on the page
- isErrorpage: is this the JSP where the page is expected to be handled
+ isErrorpage: is this the JSP where the page is expected to be handled or is this the error page
  
 The servlet object can be used explicitly with the JSP object thus if you want to perform any operation that contains server side processing to fetching 
 the data from the database or perform fetching anyting from the API etc.
+
+
