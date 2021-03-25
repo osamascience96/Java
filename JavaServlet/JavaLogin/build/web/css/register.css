@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 20, 2021, 1:00:43 PM
+    Author     : osama
+*/
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+form{
+    width: 50%;
+    padding: 50px;
+    margin: 40px auto 40px auto;
+    background-color: #0E1111;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+input[type="submit"]{
+    border: 2px solid white!important;
+}
+
+#redir_login{
+    padding: 10px;
+    text-align: center;
+}
+
+#redir_login > a:hover{
+    text-decoration: none;
+    transition: 0.25s ease-out;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+.alert{
+    width: 50%;
+    margin: 10px auto 10px auto;
+}

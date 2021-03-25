@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 31, 2021, 11:49:03 PM
+    Author     : osama
+*/
+
+.active-payed{
+    background-color: palevioletred;
+    color: white;
+    padding: 15px;
+    position: relative;
+    bottom: 50px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.checkout-booking{
+    background-color: #003580;
+    padding: 15px;
+    color: white;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.accepted-btn{
+    background-color: yellowgreen;
+    color: white;
+    padding: 15px;
+    position: relative;
+    bottom: 50px;
+    left: 40px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.cancell-btn{
+    background-color: red;
+    color: white;
+    padding: 15px;
+    position: relative;
+    bottom: 50px;
+    left: 60px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.completed-btn{
+    background-color: green;
+    color: white;
+    padding: 15px;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.active-payed:hover, .checkout-booking:hover, .accepted-btn:hover, .cancell-btn:hover, .completed-btn:hover{
+    opacity: 0.3;
+    color: white;
+    cursor: pointer;
+    transition: 0.20s ease;
+    text-decoration: none;
+}

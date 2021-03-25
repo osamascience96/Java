@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 28, 2021, 7:22:18 PM
+    Author     : osama
+*/
+
+html, body{
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.header{
+    background-color: #003580;
+    padding: 15px;
+    text-align: center;
+}
+
+.header > h2{
+    float: left;
+    position: relative;
+    top: 10px;
+    color: white;
+}
+
+.icon-header{
+    float: right;
+    margin-top: 8px; 
+    color: silver;
+}
+
+.icon-header:hover{
+    cursor: pointer;
+    color: white;
+    transition: 0.25s ease-out;
+}
+
+.header > img{
+    margin-right: 220px;
+}
+
+.navigation{
+    background-color: #003580; 
+}
+
+.navigation > ul{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.navigation > ul > li{
+    width: 10%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navigation > ul > li > a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #003580;
+    padding: 10px;
+}
+
+.navigation > ul > li > a:hover{
+    border-color: white;
+    transition: 0.25s ease-out;
+}
+
