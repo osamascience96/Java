@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+<title> Help Page</title>
+<link rel="stylesheet" type="text/css" href="help-style.css">
+<script src="help-app.js"></script>
+
+</head>
+
+<body>
+
+    <form method="POST" action="HelpServlet" onSubmit="return validateForm();">
+
+        <div style="max-width: 400px;">
+        </div>
+        <div style="padding-bottom: 18px;font-size : 24px;">Report An Issue</div>
+        <div style="padding-bottom: 18px;">Reported by<span style="color: red;"> *</span><br/>
+        <input type="text" id="data_2" name="data_2" style="max-width : 450px;" class="form-control"/>
+        </div>
+        
+        <div style="padding-bottom: 18px;">Summary<span style="color: red;"> *</span><br/>
+        <input type="text" id="data_6" name="data_6" style="max-width : 450px;" class="form-control"/>
+        </div>
+        <div style="padding-bottom: 18px;">Description<br/>
+        <textarea id="data_7" false name="data_7" style="max-width : 450px;" rows="6" class="form-control"></textarea>
+        </div>
+        <div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+        </form>
+        <div style="padding-bottom: 18px;"><input name="Close" value="Close" type="submit" onclick="closeWin()"/></div>
+
+
+
+</body>
+
+</html>

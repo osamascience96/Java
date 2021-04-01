@@ -1,0 +1,51 @@
+body {
+    background: #9200ff no-repeat;
+    background-image: -webkit-gradient(radial, 50% 0, 150, 50% 0, 300, from(rgb(37, 13, 92)), to(rgb(136, 72, 196)));
+}
+
+h1 {
+    text-align: center;
+    color: #FFF;
+}
+
+        h1:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+.container {
+    width: 1000px;
+    margin: auto;
+    color: #FFF;
+    font-size: 18px;
+}
+
+#content {
+    border: dashed 2px #CCC;
+    padding: 10px;
+}
+
+#treeview, #treeview ul {
+    list-style: none;
+}
+
+    #treeview .parent {
+        position: relative;
+        cursor: pointer;
+    }
+
+        #treeview .parent:before {
+            padding-left: 25px;
+            background: url(plus-minus.png) no-repeat;
+            background-position: -25px top;
+            content: "";
+            height: 25px;
+        }
+
+    #treeview .close:before {
+        background-position: 0 top;
+    }
+
+    #treeview .parent > ul {
+        display: none;
+    }

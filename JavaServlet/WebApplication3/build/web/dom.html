@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Tree </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="dom-style.css">
+
+
+   
+</head>
+<body>
+    <h1>DOM Tree of Terms </h1>
+
+
+    <div class="container">
+        <div id="content">
+            <ul id="treeview">
+                <li class="parent">
+                    HTML
+                    <ul>
+                        <li class="parent">
+                            HEAD
+                            <ul>
+                                
+                                <li class="parent">
+                                    TITLE
+                                    <ul>
+                                        <li>#text:Terms and Conditions</li>
+                                    </ul>
+                                </li>
+                                <li>link rel="stylesheet" href="terms-style.css"</li>
+                                <li>script src="terms-app.js"</li>
+
+                                <li class="parent">
+                                    BODY
+                                    <ul>
+                                        <li class="parent">
+                                            DIV CLASS=app-container
+
+                                                <ul>
+                                                    <li class="parent">
+                                                        DIV CLASS=top
+                                                        <ul>
+                                                            <li>#text:Standard Terms and Conditions</li>
+                                                        </ul>
+                                                        </li>
+                                                </ul>
+
+                                                <ul>
+                                                    <li class="parent">
+                                                        DIV CLASS=box1
+                                                        <ul>
+                                                            <li class="parent">
+                                                                h1
+                                                                <ul>
+                                                                    <li>#text: 1.Terms and Conditions of Use</li>
+                                                                </ul>
+                                                            </li>
+
+                                                            <li class="parent">
+                                                                p
+                                                                <ul>
+                                                                    <li>#text:Your access to this website...</li>
+                                                                </ul>
+                                                            </li>
+                                                        
+                                                        </ul>
+                                                     </li>
+                                                </ul>
+
+                                                <ul>
+                                                    <li class="parent">
+                                                        DIV CLASS=box2
+                                                        <ul>
+                                                            <li class="parent">
+                                                                h1
+                                                                <ul>
+                                                                    <li>#text: 2.Governing Law</li>
+                                                                </ul>
+                                                            </li>
+
+                                                            <li class="parent">
+                                                                p
+                                                                <ul>
+                                                                    <li>#text:The Horizon Ireland Website plc...</li>
+                                                                </ul>
+                                                            </li>
+                                                        
+                                                        </ul>
+                                                     </li>
+                                                </ul>
+
+                                                <ul>
+                                                    <li class="parent">
+                                                        DIV CLASS=sign
+                                                        <ul>
+                                                            <li class="parent">
+                                                                p
+                                                                <ul>
+                                                                    <li>#text: Sign with your first initial below...</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>input type="text" size="40" onkeydown="myFunction(event)"</li>
+                                                        </ul>
+                                                     </li>
+                                                </ul>
+
+                                                <ul>
+                                                    <li class="parent">
+                                                        DIV CLASS=box4
+                                                        <ul>
+                                                            <li class="parent">
+                                                                form action="/action_page.php"
+                                                                <ul>
+                                                                    <li>input type="checkbox" id="tc" name="tc" value="term" onclick="checkFunction()"</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                     </li>
+                                                </ul>
+
+                                                <ul>
+                                                    <li class="parent">
+                                                        DIV CLASS=foot
+                                                        <ul>
+                                                            <li class="parent">
+                                                                h1
+                                                                <ul>
+                                                                    <li>#text:Regulated by the Central Bank Of Ireland....</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                     </li>
+                                                </ul>
+                                                
+
+                                        </li>
+
+                                        
+
+                                    </ul>
+
+                                 </li>   
+                            </ul>
+                        </li>
+                       
+                    </ul>
+                </li>
+ 
+            </ul>
+        </div>
+    </div>
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#reset").click(function (e) {
+                location.reload();
+            });
+
+            $("#treeview .parent").click(function (e) {
+                e.stopPropagation();
+                $(this).find(">ul").toggle("slow");
+                if ($(this).hasClass("close"))
+                    $(this).removeClass("close");
+                else
+                    $(this).addClass("close");
+            });
+        });
+    </script>
+</body>
+</html>
