@@ -1,0 +1,8 @@
+1) When you use component in any bean class, the main class will automatically autowired. The object created is the singleton object. 
+   But when you add the scope in bean class, with the value "prototype" then when the main class will call the getbean function from the context object, then it will then provide
+   the bean object. So, that will not be singleton pattern.
+2) Now the autowired concept in the spring boot can be explained by an example, lets say that i have declared a bean1 object inside bean2 class, and the bean1 class do exists.
+   So, bean2 class cannot find the object of the bean1 class that is created inside the spring container. The bean1 object declared inside the bean2 class must be autowired 
+   and that bean1 class must be contained inside the spring container, so the class bean2 object will find it as an object in the container. Then if you want to find the bean1
+   using by names, then use qualifier to find that object by name and give that bean1 class component a name.
+3) 
