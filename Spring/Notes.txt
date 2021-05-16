@@ -5,4 +5,17 @@
    So, bean2 class cannot find the object of the bean1 class that is created inside the spring container. The bean1 object declared inside the bean2 class must be autowired 
    and that bean1 class must be contained inside the spring container, so the class bean2 object will find it as an object in the container. Then if you want to find the bean1
    using by names, then use qualifier to find that object by name and give that bean1 class component a name.
-3) 
+3) To create the web app you need to add the dependencies of the web while creating the project in sts. When the project is created, do remember this that now its much easier in
+   spring boot to create an mvc controlled framework web application. Many frameworks were build that had this design pattern of mvc to show the web applications. But when the 
+   spring boot came into picture, they wanted to give the best support for the rest api in this mvc design pattern in this very spring boot framework. So, you have to remember
+   this that springboot by default has this tomcat server embedded in its dependencies and also it does not support jsp by default.
+4) To create the view you must make a webapp folder inside the main/src, that it will recognize the view as per the default configuration.
+5) Make a controller in the src/main/java folder, you can include the controller in other package or in the default demo package. Then the request name like "home" must be the 
+   function name that returns the string of the webpage created. The Java file must use the annotation of Controller and the function must use the annotation, RequestMapping.
+   When you run the page in the resulting port shown in the console, you'll realize that it'll show the error page but it would run that function when generate request on that
+   link. The problem is that it would rather download that jsp page, becuase in default it doesn't support the jsp.
+
+Note: On a deeper note, when you use the ResponseBody annotation, it would return that string as a data to the response.
+6) To make sure that it returns the page, rather than downloading the page, you must add the tomcat jasper dependency in the pom.xml.
+   You can get the dependencies in the maven repository site on google.
+
