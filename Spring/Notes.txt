@@ -19,3 +19,21 @@ Note: On a deeper note, when you use the ResponseBody annotation, it would retur
 6) To make sure that it returns the page, rather than downloading the page, you must add the tomcat jasper dependency in the pom.xml.
    You can get the dependencies in the maven repository site on google.
 
+7) The configuration of the Springboot pages are done inside the application.properties file that you can find under the src/main/resources directory, this page is defined
+   so that we can override the default configurations to out project and make new configurations as well. We can understand this as en example. For instance, in the views instead
+   of webabb folder under the src/main/webapp that is the default configuration of the spring framework, i make another folder pages inside the the webapp folder so to tell the
+   framework about it, you have to configure this view path in the application.properties file.
+   To do this, you need to remember 2 things: prefix and suffix.
+   Before the controller request the views for the page, it should know the path of the file that it is requesting to display. so we define the new configuration to the prefix 
+   property that is spring.mvc.view.prefix=/pages/ and for the extention that the controller should know that which type of file that i must respond to the client, so that
+   is defined in the suffix property of the view in regard to the mvc pattern that is spring.mvc.view.suffix=.jsp
+8) Now, if you want to show the request data of get or post or any method to the view, you can use the HttpServletRequest object, you can use the request dispatcher, but one 
+   think that how will you pass it to the view, becuase it is looking to the view dynamically, using application.properties. So, one way that you can use the session to show the
+   value on the screen but the session always has the timeout, it will be null after n millisecons, and most probably the page will crash.
+9) So, first as i want to mention in this point that we can change the variable name in the parameters as in get type request or post or anyother method, so if we do that
+   we have to change that variable name in every place in the controller where we have used it, rather than talking about tool efficiency we have many other things, to work on 
+   if we have not that great tools like sts, so that better approach is to use the annotation of RequestParam("[varname]") and then after that the type of the var and any var
+   name of your choice, then in this way the variables in the request method and the variable in the controller will be sperated and then you will be saved.
+10) Coming back to my original point on the problem discussed on point number 8, how do we solve the problem on using the another best alternative over the sessions?
+    So we can use the ModelAndView object provided by the Springboot framework, where we place the model fetched object and set the view name so that the data is passed to the 
+    jsp page, and then using jstl or request servlet object  you can get that value there using the getAttribute method of the HttpServletRequest object.
