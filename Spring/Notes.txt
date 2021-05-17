@@ -37,3 +37,7 @@ Note: On a deeper note, when you use the ResponseBody annotation, it would retur
 10) Coming back to my original point on the problem discussed on point number 8, how do we solve the problem on using the another best alternative over the sessions?
     So we can use the ModelAndView object provided by the Springboot framework, where we place the model fetched object and set the view name so that the data is passed to the 
     jsp page, and then using jstl or request servlet object  you can get that value there using the getAttribute method of the HttpServletRequest object.
+11) So, now if you want to add a bean object to the modelandview object and set its data from the request than in controller, you just need to give the data on to the params
+    and then set the variable name as its in the bean and in the request paramters, the spring boot will automatically populate the data in its arsenal to that bean object and
+    then you can display the data in the jsp page.
+12) 
