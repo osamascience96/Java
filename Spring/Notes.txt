@@ -40,4 +40,21 @@ Note: On a deeper note, when you use the ResponseBody annotation, it would retur
 11) So, now if you want to add a bean object to the modelandview object and set its data from the request than in controller, you just need to give the data on to the params
     and then set the variable name as its in the bean and in the request paramters, the spring boot will automatically populate the data in its arsenal to that bean object and
     then you can display the data in the jsp page.
-12) 
+=================================================================================================================================================================================
+12) In Spring boot, for data storage it provides you with embedded database h2 and jpa which is Java Persistance API that is the java specification for accessing and managing 
+    relational database with java objects. And now how would spring know that which database to connect either you configure it for external database client or the h2 one that
+    is embedded for that what we have included. So, to tell it we shall do the configuration at application.properties. 
+    spring.h2.console.enabled=true which tells to enable the h2 console so that we can access it later on to see the database
+    spring.dataresource.platform=h2 which tells that what platform you might be using to access the console of the RDBMS embedded in your project.
+    spring.dataresource.url=jdbc:h2:mem:osama is the url of the database that we initlize to the driver of the jdbc which tells indicates the url of our database.
+    Note: The port is same, becuase the h2 is the internal database in our project.
+13) Now, you can also use the findbyid function of the CrudRepository interface where it has all the functions of the crud operations in where you have defined the Alien object
+    that is as the JPA of the alien table being managed in the h2 database. So findById will return the object of JPA to you. And many other functions like delete etc are there.
+14) Performed almost all the curd operations using CrudRepository interface of JPA specification and that you can find in the github folder JPA Part 2
+15) I have perfomed the query for the custom query in the CrudRepository interface and you can make custom function in the interface that JPA will automatically override
+    that keyword in function findBy with the property of the object that is accessed with relational dependency to the h2 database, like findByTech or findByaidGreaterThan
+    But these are given choices to the developer, what if want to addup more complicated queries, then make function of any name and then like all of them you should know
+    that the selection statement will always return you the data so stick with the lists return type, however with the function you make use the annotation
+    @Query(your query) with the paramters if you want to give, add in the parameter.
+    Note: Kindly look up to the project JPA part 3
+ 
