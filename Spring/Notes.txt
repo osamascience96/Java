@@ -57,4 +57,11 @@ Note: On a deeper note, when you use the ResponseBody annotation, it would retur
     that the selection statement will always return you the data so stick with the lists return type, however with the function you make use the annotation
     @Query(your query) with the paramters if you want to give, add in the parameter.
     Note: Kindly look up to the project JPA part 3
+16) In the controller, we made 2 functions that returns the data in respose, we want the data in response, so by adding the annotation ResponseBody we are instructing spring
+    that we want to return the response do not look for the view in that name. so, by normally we would simply use the crud operations and return the iterable java object
+    convert to the string and then returned as the response to handle on the other side.
+17) Now, in these functions, we dont want to pass like 'alien?id=[number]', instead we want to follow the proper url, we need to add the annotation to the parameters
+    @PathVariable("[var]") [datatype][var] above in the RequestMapping annotation, we want to tell the spring about that there is a place holder like, alien/{aid}, which
+    indicates us about the alien id placeholder that any value can pass on.
+Note: You can review the changes in JPA Project part 4, the points covered in 16 and 17.
  
