@@ -15,7 +15,7 @@
    When you run the page in the resulting port shown in the console, you'll realize that it'll show the error page but it would run that function when generate request on that
    link. The problem is that it would rather download that jsp page, becuase in default it doesn't support the jsp.
 
-Note: On a deeper note, when you use the ResponseBody annotation, it would return that string as a data to the response.
+   Note: On a deeper note, when you use the ResponseBody annotation, it would return that string as a data to the response.
 6) To make sure that it returns the page, rather than downloading the page, you must add the tomcat jasper dependency in the pom.xml.
    You can get the dependencies in the maven repository site on google.
 
@@ -63,5 +63,13 @@ Note: On a deeper note, when you use the ResponseBody annotation, it would retur
 17) Now, in these functions, we dont want to pass like 'alien?id=[number]', instead we want to follow the proper url, we need to add the annotation to the parameters
     @PathVariable("[var]") [datatype][var] above in the RequestMapping annotation, we want to tell the spring about that there is a place holder like, alien/{aid}, which
     indicates us about the alien id placeholder that any value can pass on.
-Note: You can review the changes in JPA Project part 4, the points covered in 16 and 17.
- 
+    
+    Note: You can review the changes in JPA Project part 4, the points covered in 16 and 17.
+
+18) Our next goal is that the functions that we made thus far in point 16 and 17 must return the data in json format, so for that we need to the following things.
+    In the alien repository class extend the class with JPARepository instead of CrudRepository, in this way you'll get all the addional functionaly with the CRUD.
+    Because JPARepository extends PagingSortingRepository which extends CrudRepository.
+    Now the functions that we made in the points 16 and 17 change their return type, the one with the that returns all the aliens, its return type should be List<Aliens>
+    And the function that returns the aliens wrt the return type, its return type must be Optional<Alien>.
+    You can check the project in part 5.
+    
