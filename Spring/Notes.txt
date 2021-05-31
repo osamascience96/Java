@@ -72,4 +72,19 @@
     Now the functions that we made in the points 16 and 17 change their return type, the one with the that returns all the aliens, its return type should be List<Aliens>
     And the function that returns the aliens wrt the return type, its return type must be Optional<Alien>.
     You can check the project in part 5.
-    
+19) So, lets say i want to get the data response in xml format, now what would i do about that?
+    I would go to the postman and in the headers, i would try to change the Accept property, that is by default application/json to application/xml. Now, what would happen?
+    Generally, when the request is send, there will be an error 406 Not Acceptable. Becuase springboot by default supports only json. Now to let spring boot support xml we need
+    to add the dependency of Jackson Dataformat XML in to our dependency. After addding the dependency, when the project is restarted and the request is send again using postman
+    or any other client, the response with the header of Accept in application/xml will be in xml format. And now generally any controller function you want should support only
+    xml or json, you need to configure it in the annotation of the RequestMapping.
+    Now by default the annotation of the RequestMapping has this parameter of path="[pathname]" by default and now you can do that.
+    i-e RequestMapping(path="aliens", produces={"application/xml"}). Now, that specific API will support xml only.    
+        And if you would send the request with the header application/json, there will be an error 406 Not Acceptable as a response from the server.
+    Note: The discussion covered in point 19 will be in part 6 of JPA Available in this same directory.
+20) Now, i have made several changes to the project. The Controller is made that returns in response only of the json or xml, depends on what type it does produces.
+    If we want the function controller to accept the raw json data, then in the parameter you will give the annotation @RequestBody.
+    For the new controller class i maode, instead of @Controller annotation, i'll made the @RestController annotation that will upbring the function to return only the json
+    or xml data depends on the nature of the data that it produces. just like the function produces the type of the data when it returns the response, in the same way the 
+    functon also consumes the data when in order to take the client input.
+    Notes: The discussion in line 20 is covered in JPA Project Part 7.    
