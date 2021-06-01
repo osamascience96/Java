@@ -1,21 +1,26 @@
 1) When you use component in any bean class, the main class will automatically autowired. The object created is the singleton object. 
    But when you add the scope in bean class, with the value "prototype" then when the main class will call the getbean function from the context object, then it will then provide
    the bean object. So, that will not be singleton pattern.
+
 2) Now the autowired concept in the spring boot can be explained by an example, lets say that i have declared a bean1 object inside bean2 class, and the bean1 class do exists.
    So, bean2 class cannot find the object of the bean1 class that is created inside the spring container. The bean1 object declared inside the bean2 class must be autowired 
    and that bean1 class must be contained inside the spring container, so the class bean2 object will find it as an object in the container. Then if you want to find the bean1
    using by names, then use qualifier to find that object by name and give that bean1 class component a name.
+
 3) To create the web app you need to add the dependencies of the web while creating the project in sts. When the project is created, do remember this that now its much easier in
    spring boot to create an mvc controlled framework web application. Many frameworks were build that had this design pattern of mvc to show the web applications. But when the 
    spring boot came into picture, they wanted to give the best support for the rest api in this mvc design pattern in this very spring boot framework. So, you have to remember
    this that springboot by default has this tomcat server embedded in its dependencies and also it does not support jsp by default.
+
 4) To create the view you must make a webapp folder inside the main/src, that it will recognize the view as per the default configuration.
+
 5) Make a controller in the src/main/java folder, you can include the controller in other package or in the default demo package. Then the request name like "home" must be the 
    function name that returns the string of the webpage created. The Java file must use the annotation of Controller and the function must use the annotation, RequestMapping.
    When you run the page in the resulting port shown in the console, you'll realize that it'll show the error page but it would run that function when generate request on that
    link. The problem is that it would rather download that jsp page, becuase in default it doesn't support the jsp.
 
    Note: On a deeper note, when you use the ResponseBody annotation, it would return that string as a data to the response.
+
 6) To make sure that it returns the page, rather than downloading the page, you must add the tomcat jasper dependency in the pom.xml.
    You can get the dependencies in the maven repository site on google.
 
@@ -27,20 +32,26 @@
    Before the controller request the views for the page, it should know the path of the file that it is requesting to display. so we define the new configuration to the prefix 
    property that is spring.mvc.view.prefix=/pages/ and for the extention that the controller should know that which type of file that i must respond to the client, so that
    is defined in the suffix property of the view in regard to the mvc pattern that is spring.mvc.view.suffix=.jsp
+
 8) Now, if you want to show the request data of get or post or any method to the view, you can use the HttpServletRequest object, you can use the request dispatcher, but one 
    think that how will you pass it to the view, becuase it is looking to the view dynamically, using application.properties. So, one way that you can use the session to show the
    value on the screen but the session always has the timeout, it will be null after n millisecons, and most probably the page will crash.
+
 9) So, first as i want to mention in this point that we can change the variable name in the parameters as in get type request or post or anyother method, so if we do that
    we have to change that variable name in every place in the controller where we have used it, rather than talking about tool efficiency we have many other things, to work on 
    if we have not that great tools like sts, so that better approach is to use the annotation of RequestParam("[varname]") and then after that the type of the var and any var
    name of your choice, then in this way the variables in the request method and the variable in the controller will be sperated and then you will be saved.
+
 10) Coming back to my original point on the problem discussed on point number 8, how do we solve the problem on using the another best alternative over the sessions?
     So we can use the ModelAndView object provided by the Springboot framework, where we place the model fetched object and set the view name so that the data is passed to the 
     jsp page, and then using jstl or request servlet object  you can get that value there using the getAttribute method of the HttpServletRequest object.
+
 11) So, now if you want to add a bean object to the modelandview object and set its data from the request than in controller, you just need to give the data on to the params
     and then set the variable name as its in the bean and in the request paramters, the spring boot will automatically populate the data in its arsenal to that bean object and
     then you can display the data in the jsp page.
+
 =================================================================================================================================================================================
+
 12) In Spring boot, for data storage it provides you with embedded database h2 and jpa which is Java Persistance API that is the java specification for accessing and managing 
     relational database with java objects. And now how would spring know that which database to connect either you configure it for external database client or the h2 one that
     is embedded for that what we have included. So, to tell it we shall do the configuration at application.properties. 
@@ -48,18 +59,23 @@
     spring.dataresource.platform=h2 which tells that what platform you might be using to access the console of the RDBMS embedded in your project.
     spring.dataresource.url=jdbc:h2:mem:osama is the url of the database that we initlize to the driver of the jdbc which tells indicates the url of our database.
     Note: The port is same, becuase the h2 is the internal database in our project.
+
 13) Now, you can also use the findbyid function of the CrudRepository interface where it has all the functions of the crud operations in where you have defined the Alien object
     that is as the JPA of the alien table being managed in the h2 database. So findById will return the object of JPA to you. And many other functions like delete etc are there.
+
 14) Performed almost all the curd operations using CrudRepository interface of JPA specification and that you can find in the github folder JPA Part 2
+
 15) I have perfomed the query for the custom query in the CrudRepository interface and you can make custom function in the interface that JPA will automatically override
     that keyword in function findBy with the property of the object that is accessed with relational dependency to the h2 database, like findByTech or findByaidGreaterThan
     But these are given choices to the developer, what if want to addup more complicated queries, then make function of any name and then like all of them you should know
     that the selection statement will always return you the data so stick with the lists return type, however with the function you make use the annotation
     @Query(your query) with the paramters if you want to give, add in the parameter.
     Note: Kindly look up to the project JPA part 3
+
 16) In the controller, we made 2 functions that returns the data in respose, we want the data in response, so by adding the annotation ResponseBody we are instructing spring
     that we want to return the response do not look for the view in that name. so, by normally we would simply use the crud operations and return the iterable java object
     convert to the string and then returned as the response to handle on the other side.
+
 17) Now, in these functions, we dont want to pass like 'alien?id=[number]', instead we want to follow the proper url, we need to add the annotation to the parameters
     @PathVariable("[var]") [datatype][var] above in the RequestMapping annotation, we want to tell the spring about that there is a place holder like, alien/{aid}, which
     indicates us about the alien id placeholder that any value can pass on.
@@ -72,6 +88,7 @@
     Now the functions that we made in the points 16 and 17 change their return type, the one with the that returns all the aliens, its return type should be List<Aliens>
     And the function that returns the aliens wrt the return type, its return type must be Optional<Alien>.
     You can check the project in part 5.
+
 19) So, lets say i want to get the data response in xml format, now what would i do about that?
     I would go to the postman and in the headers, i would try to change the Accept property, that is by default application/json to application/xml. Now, what would happen?
     Generally, when the request is send, there will be an error 406 Not Acceptable. Becuase springboot by default supports only json. Now to let spring boot support xml we need
@@ -82,9 +99,23 @@
     i-e RequestMapping(path="aliens", produces={"application/xml"}). Now, that specific API will support xml only.    
         And if you would send the request with the header application/json, there will be an error 406 Not Acceptable as a response from the server.
     Note: The discussion covered in point 19 will be in part 6 of JPA Available in this same directory.
+
 20) Now, i have made several changes to the project. The Controller is made that returns in response only of the json or xml, depends on what type it does produces.
     If we want the function controller to accept the raw json data, then in the parameter you will give the annotation @RequestBody.
     For the new controller class i maode, instead of @Controller annotation, i'll made the @RestController annotation that will upbring the function to return only the json
     or xml data depends on the nature of the data that it produces. just like the function produces the type of the data when it returns the response, in the same way the 
     functon also consumes the data when in order to take the client input.
     Notes: The discussion in line 20 is covered in JPA Project Part 7.    
+    Note: One thing that i want to mention is that the PathVariable is different than the RequestParameter annotation, becuase the as you analyze the RequestParam annotation
+          gives the variable reference from the GET parameter and the PathVariable is get from the part of the path type url where that variable is being initlized from to 
+          to our set parameter in the method parameters.
+	  One thing to consider, when we mention the annotation @RequestBody, we need to keep in mind that when we pass the json body to the controller function, in that method
+          we also need to mention that This Object is to be initlized by the RequestBody send by the client as a application/json, in the parameter of the controller function.
+21) In this point i have covered one of the most important points of the PUT AND DELETE Request, the firstone was the delete request and added the method for the delete alien in 
+    the rest controller. The second one is for the put function, that is used to update if exists or add the record if the user does not exists.
+    Note: You can check in the Part8 of the JPA Project in the current directory.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Note: It is to remember that all this can be done without controller, by adding some single annotation to the JPARepository Java Interface extended, and then you can perform
+        all the crud operations, but as per my expertise this method is not a very good approach, but in simple project or small scale that method could be followed.
+
