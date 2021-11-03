@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="8dp"
+        android:src="@drawable/parroticon"
+        android:background="#7D97AD"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:src="@drawable/androidparrot"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Parrot Shop"
+            android:textSize="32sp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Krishan Nagar, Lahore"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="www.parrotshop.com"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We sell Parrots of all type from all around the world."
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operate 24 Hours."
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>
