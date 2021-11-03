@@ -1,2 +1,3 @@
-#Status of the Progarm
-![alt text](status.png)
+#Status
+
+![Status Image](status.PNG)
