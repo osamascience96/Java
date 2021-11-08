@@ -133,9 +133,15 @@ public class BinaryTree {
 	 */
 	protected void walkTree(Node n, StringBuffer sb) {
 		sb.append(n.getNodeObjectName() + ",");
-		/*
-		 * TODO
-		 */
+		
+		// check for each of the right and left node individually		
+		if(n.hasLeft()) {
+			walkTree(n.left(), sb);
+		}
+		
+		if(n.hasRight()) {
+			walkTree(n.right(), sb);
+		}
 	}
 	
 	/**
