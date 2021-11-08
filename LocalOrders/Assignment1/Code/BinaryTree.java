@@ -166,10 +166,24 @@ public class BinaryTree {
 	 */
 	protected Student find(String name, Node n) {
 		int order = name.compareTo(n.getNodeObjectName());
-		/*
-		 * TODO
-		 */
-		return null;
+
+		Student studentObj = null;
+		
+		if(order == 0) {
+			studentObj = n.getNodeObject();
+		}else {
+			// traverse to the left node
+			if(n.hasLeft()) {
+				studentObj = find(name, n.left());
+			}
+			
+			// traverse to the right node
+			if(n.hasRight()) {
+				studentObj = find(name, n.right());
+			}
+		}
+		
+		return studentObj;
 	}
 
 	public void printTree() {

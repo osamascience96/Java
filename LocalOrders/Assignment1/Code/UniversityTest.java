@@ -160,6 +160,12 @@ public class UniversityTest {
 			System.out.println("Found: " + aw);
 		else
 			System.out.println("Could not find Jack J");
+		
+		Student cs = stirling.find(3, "Hugh J");
+		if(cs != null) {
+			System.out.println("Found: " + cs);
+		}else
+			System.out.println("Could not find Hugh J");
 
 		
     	System.out.println("\n--Sort asceding name--");

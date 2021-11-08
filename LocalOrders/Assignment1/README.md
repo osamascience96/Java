@@ -1,3 +1,3 @@
 #Status
 
-![Status Image](status08112021.PNG)
+![Status Image](status08112021_updated.PNG)
