@@ -153,10 +153,66 @@ public class University
 	 */
     protected ArrayList<Cohort> quickSort(ArrayList<Cohort> list, int low, int high, boolean ascending, String attr)
     {   	
-        /*
-         * TODO
-         */
+        if(low < high) {
+        	int pivot = this.partition(list, low, high, attr, ascending);
+        	
+        	// recursive call on the left of the pivot
+        	quickSort(list, low, pivot - 1, ascending, attr);
+        	// recursive call on the right of the pivot
+        	quickSort(list, pivot + 1, high, ascending, attr);
+        }
     	return list;
+    }
+    
+    private int partition(ArrayList<Cohort> list, int low, int high, String attr, boolean ascending) {
+    	Cohort pivot = list.get(high);
+    	int i = (low - 1);
+    	
+    	for(int j = low; j < high; j++) {
+    		if(attr.compareTo("code") == 0) {
+    			if(ascending) {
+    				if(list.get(j).getModule().getCode() <= pivot.getModule().getCode()) {
+        				i++;
+        				
+        				Cohort temp = list.get(i);
+        				list.set(i, list.get(j));
+        				list.set(j, temp);
+        			}
+    			}else {
+    				if(list.get(j).getModule().getCode() >= pivot.getModule().getCode()) {
+        				i++;
+        				
+        				Cohort temp = list.get(i);
+        				list.set(i, list.get(j));
+        				list.set(j, temp);
+        			}
+    			}
+    		}else {
+    			if(ascending) {
+    				if(list.get(j).getModule().getName().compareTo(pivot.getModule().getName()) <= 0) {
+        				i++;
+        				
+        				Cohort temp = list.get(i);
+        				list.set(i, list.get(j));
+        				list.set(j, temp);
+        			}
+    			}else {
+    				if(list.get(j).getModule().getName().compareTo(pivot.getModule().getName()) >= 0) {
+        				i++;
+        				
+        				Cohort temp = list.get(i);
+        				list.set(i, list.get(j));
+        				list.set(j, temp);
+        			}
+    			}
+    		}
+    	}
+    	
+    	Cohort temp = list.get(i + 1);
+    	list.set(i+1, list.get(high));
+    	list.set(high, temp);
+    	
+    	return (i + 1);
     }
 
 }
