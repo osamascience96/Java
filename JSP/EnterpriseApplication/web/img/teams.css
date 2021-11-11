@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 27, 2021, 5:34:25 PM
+    Author     : osama
+*/
+
+.alert{
+    margin-top: 20px;
+}
+
+.row > button{
+    width: 50%;
+    margin: 10px auto 10px auto;
+}
+
+#employee_set{
+    margin: 5px;
+}
+
+.table{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.table-container{
+    height: 500px!important;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+.table-container::-webkit-scrollbar{
+    display: none;
+}
