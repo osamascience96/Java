@@ -1,0 +1,152 @@
+/*Importing font family*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* selecting all the elements*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+body {
+	height: 100vh;
+	width: 100vw;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;*/
+
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(43deg, #93f9b9, #1d976c);
+	overflow: hidden;
+}
+.container {
+	position: absolute; /* center placing technique*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	max-width: 700px;
+	width: 100%;
+	background: #fff;
+
+	border-radius: 5px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.container h1 {
+	background: -webkit-linear-gradient(43deg, #1d976c, #93f9b9);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 1px solid silver;
+}
+
+.container form {
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+
+form .user-details {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 20px 0 12px 0;
+}
+form .user-details .input-box {
+	margin-bottom: 15px;
+	width: calc(100% / 2 - 20px);
+}
+form .input-box span.details {
+	display: block;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.user-details .input-box input {
+	height: 45px;
+	width: 100%;
+	outline: none;
+	font-size: 16px;
+	border-radius: 5px;
+	padding-left: 15px;
+	border: 1px solid #ccc;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+	border-color: #1d976c;
+}
+form .gender-details .gender-title {
+	font-size: 20px;
+	font-weight: 500;
+}
+form .category {
+	display: flex;
+	width: 80%;
+	margin: 14px 0;
+	justify-content: space-between;
+}
+form .category label {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+form .category label .dot {
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	margin-right: 10px;
+	background: #d9d9d9;
+	border: 5px solid transparent;
+	transition: all 0.3s ease;
+}
+/* styling the radio inputs*/
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+	background: #1d976c;
+	border-color: #d9d9d9;
+}
+form input[type="radio"] {
+	display: none;
+}
+/*styling the register button*/
+form .button {
+	height: 45px;
+	margin: 35px 0;
+}
+form .button input {
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	cursor: pointer;
+	/*transition: all 0.3s ease;*/
+
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+	/*background: linear-gradient(135deg, #1d976c, #93f9b9);*/
+
+	background-image: linear-gradient(
+		to right,
+		#1d976c 0%,
+		#93f9b9 51%,
+		#1d976c 100%
+	);
+	background-size: 200% auto;
+}
+
+form .button input:hover {
+	/*transform: scale(0.99);*/
+	/*background: linear-gradient(-135deg, #1d976c, #93f9b9);*/
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+	background-position: right center;
+}

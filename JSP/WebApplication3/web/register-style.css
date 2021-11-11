@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section
+{
+    position: relative;
+    min-height: 100vh;
+    background-image: url(grey4.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section .container
+{
+    position: relative;
+    width: 900px;
+    height: 760px;
+    background-color: black;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+section .container .user
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+section .container .user .imgBx
+{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: springgreen;
+    transition: 0.5s;
+}
+
+section .container .user .imgBx img
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+section .container .user .formBx
+{
+    position: relative;
+    top:0;
+    width: 70%;
+    height: 100%;
+    background-image: linear-gradient(#580e8f,#9200ff);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    transition: 0.5s;
+}
+
+section .container .user .formBx form h2
+{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color:white;
+     
+}
+
+section .container .user .formBx form h3
+{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+    color:white;
+     
+}
+
+section .container .user .formBx form input
+{
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    background: thistle;
+    color:black;
+    border:none;
+    outline:none;
+    box-shadow: none;
+    margin:8px 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+section .container .user .formBx form li
+{
+    list-style: none;
+}
+
+section .container .user .formBx form li input, select, span
+{
+    position: relative;
+    width: 100%;
+    padding: 8px;
+    background: thistle;
+    color:black;
+    border:none;
+    outline:none;
+    box-shadow: none;
+    margin:8px 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+section .container .user .formBx form input[type="submit"]
+{
+    max-width: 100px;
+    background-image: linear-gradient(lightblue,darkviolet);
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin: 10px 140px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+section .container .user .formBx form .signup
+{
+    position:relative;
+    margin-top: 15px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color:white;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 15px 50px;
+}
+
+section .container .user .formBx form .signup a
+{
+    font-weight: 600;
+    text-decoration: none;
+    color:wheat;
+}
+
+
+/* Pop up */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .popup p
+  {
+      font-size: 12px;
+      cursor: pointer;    
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      color:rgb(48, 44, 44);
+  }
+
+  table, tr, td 
+  {
+      font-size: 12px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  section .container .user .formBx form input[type="reset"]
+  {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 9px;
+  }
+
+
+
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 570px;
+    background-image: linear-gradient(lightblue,rgb(104, 53, 128));
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: -100%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+
+  section .container .user .formBx form input[type="button"]
+{
+    max-width: 220px;
+    background-image: linear-gradient(lightblue,darkviolet);
+    color: black;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    margin: 10px 90px;
+    font-family: "Times New Roman", Times, serif;
+}

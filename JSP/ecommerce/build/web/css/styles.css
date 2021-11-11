@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  /* box-sizing: border-box; */
+  height: 50px;
+  background: red;
+}
+
+label {
+  color: white;
+  font-size: 32px;
+  line-height: 50px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  float: right;
+  padding: 0px 20px 0px 0px;
+}
+
+li {
+  display: inline;
+  line-height: 50px;
+  margin: 10px;
+}
+
+li a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+}
+
+a.active,
+a:hover {
+  background: white;
+  color: red;
+}
+
+.container {
+  display: grid;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.box > a {
+  text-align: center;
+}
+
+.productImg {
+  max-width: 60%;
+  height: auto;
+}
+
+.about-us {
+  box-shadow: 0 5px 10px 0;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.about {
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.container-product-detail {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 50px;
+}
+
+.product-detail-img {
+  max-width: 100%;
+}
+
+.productImg:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 768px) {
+  .products {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .container-product-detail {
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 50px;
+  }
+}
+
+input[type='text'],
+select {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submitbutton {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.brand {
+  color: gray;
+  font-size: 12px;
+}
+
+.model {
+  font-weight: bold;
+}
+
+.price {
+  border-bottom: 3px solid red;
+  padding: 2px;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+}

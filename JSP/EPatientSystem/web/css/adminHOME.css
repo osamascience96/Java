@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header.logo {
+	position: relative;
+	max-width: 80px;
+}
+header a {
+	cursor: pointer;
+}
+header ul {
+	position: relative;
+	display: flex;
+}
+header ul li {
+	list-style: none;
+}
+header ul li a {
+	display: inline-block;
+	font-weight: 700;
+	margin-left: 40px;
+	text-decoration: none;
+	color: #333;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+header ul li a:hover {
+	/*background: -webkit-linear-gradient(43deg, #93f9b9, #1d976c);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
+	color: #1d976c;
+}
+/*header ul li a::after {
+	content: "";
+	display: block;
+	height: 5px;
+	width: 0;
+	background: -webkit-linear-gradient(43deg, #93f9b9, #1d976c);
+	background-clip: text;
+	position: absolute;
+	transition: all ease-in-out 250ms;
+}
+header ul li a:hover::after {
+	width: 100%;
+}*/
+.content {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content .textBox {
+	position: relative;
+	max-width: 600px;
+}
+.content .textBox h2 {
+	color: #333;
+	font-size: 4em;
+	line-height: 1.4em;
+	font-weight: 500;
+}
+.content .textBox h2 span {
+	/*color: #016143;*/
+
+	font-size: 1.2em;
+	font-weight: 900;
+	background: -webkit-linear-gradient(43deg, #93f9b9, #1d976c);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.content .textBox p {
+	color: #333;
+}
+.content .imgBox {
+	width: 600px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+	margin-top: 50px;
+}
+.content .imgBox img {
+	max-width: 400px;
+}
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #1d976c;
+	clip-path: circle(600px at right 800px);
+}

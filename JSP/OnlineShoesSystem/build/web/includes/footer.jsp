@@ -1,0 +1,1 @@
+<div class="footer text-center text-white bg-dark">Emily Online Shopping System.Inc</div>

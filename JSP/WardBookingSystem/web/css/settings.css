@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 30, 2021, 10:26:18 AM
+    Author     : osama
+*/
+
+.container{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.container > .row > .col > a > img{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.container > .row > .col > a > img:hover{
+    border-color: lightskyblue;
+    transition: 0.35s ease-in;
+}
+

@@ -1,0 +1,87 @@
+<html>
+<head>
+    
+    
+    <title>
+    Log-in Page
+    </title>
+    
+    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="navigation-style.css">
+
+    <script src="login-validation.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <body>
+
+        <div class="nav-container">
+            <nav class="navbar">
+                <h1 id="navbar-logo"> Navigation Menu</h1>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-links">Home  <i class="fa fa-arrow-right"></i></a></li>
+                    <li><a href="about.html" class="nav-links">About Us  <i class="fa fa-arrow-right"></i></a></li>
+                    <li><a href="contact.html" class="nav-links">Contact  <i class="fa fa-arrow-right"></i></a></li>
+                    <li><a href="#" class="nav-links" onclick="openWin()">Report a Problem  <i class="fa fa-arrow-right"></i></a></li>
+                    <li><a href="register.html" class="nav-links nav-links-btn">Sign up</a></li>
+    
+                </ul>
+                </nav>
+                 
+            </div>
+            <script src="app.js"></script>
+    
+    
+        
+        <div class="app-container">
+            
+        <div class="top">
+                <p> Log-in to Account </p>
+            </div> 
+            
+        <div class="container">
+        <form action="LoginServlet" method="POST" name="login-form">
+        <div class="row">
+        <h2 style="text-align:center">Log-in with Username and Password</h2>
+            <div class="col">
+                <input type="text" name="username" id="userid" placeholder="Username" required>
+                <input type="password" name="password" id="passid" placeholder="Password" required>
+                
+                <div class="submit">
+                    <input type="submit" class="button" value="Login">
+                    
+                    </a>
+                </div>
+                    
+      </div>
+
+      <p class="signup"> Don't have an account? <a href="register.html">Sign Up.</a></p>
+            
+            </div>
+  </form>
+</div>
+            
+            <div class="foot">
+        <h1>
+             Regulated by the Central Bank Of Ireland. Registration No.543678. Copyright Allied Irish Banks, p.l.c 2021
+        </h1>
+       </div>
+
+            
+            
+        </div>
+    </body>
+
+
+
+
+</html>

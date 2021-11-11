@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- default css page -->
+    <link rel="stylesheet" type="text/css" href="css/includes/default.css">
+    <!-- login css page -->
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <title>WBS| Register</title>
+    <!-- icon for the page -->
+    <link rel="icon" href="images/Majestic_Hotel_hd.png">
+  </head>
+  <body>
+      <div class="container">
+          <!-- Header Image  -->
+          <div class="header_img">
+              <img width="50px" src="images/Majestic_Hotel_hd.png" alt="main_logo" >
+          </div>
+          <div class="register">
+                <h4>Create an Account</h4>
+                <hr>
+                <form action="register_controller_servlet" method="POST">
+                    <input type="text" name="username" placeholder="Name" required> <br>
+                    <input type="email" name="useremail" placeholder="Email" required> <br>
+                    <input type="password" name="password" placeholder="Password" required> <br>
+                    <input type="submit" value="Create Account">
+                </form>
+          </div>
+          <div class="login">
+              <a href="login.html">Already a Member? Click to Login.</a>
+          </div>
+      </div>
+      
+      <div id="error_message" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 id="title" class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p id="message">Modal body text goes here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- JavaScript -->  
+    <script src="javascript/response_manager.js"></script>
+  </body>
+</html>

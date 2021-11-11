@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 14, 2021, 2:14:34 PM
+    Author     : osama
+*/
+
+#add_tweet{
+    margin-top: 10px;
+}
+
+#media_tweet_section{
+    padding: 10px;
+    margin: 10px auto 10px auto;
+}
+
+#media_tweet_section > .media{
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.row{
+    margin-left: 10px;
+}
+
+#like_btn{
+    margin: 5px;
+}
+
+#dislike_btn{
+    margin: 5px;
+}
+
+.media{
+    border-radius: 10px;
+    width: 600px;
+    margin: 10px auto 10px auto!important;
+}
+
+@media only screen and (max-width: 600px){
+    .media{
+       width: 100%;
+       border-radius: 10px;
+       margin: 10px auto 10px auto!important;
+    }
+}

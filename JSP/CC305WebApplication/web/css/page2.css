@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 23, 2021, 10:15:42 AM
+    Author     : osama
+*/
+
+form > h2{
+    font-family: Roboto;
+}
+
+form > a{
+    font-family: Roboto;
+}
+
+label{
+    font-family: Poppins;
+}
+
+form{
+    background-color: white;
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    padding: 10px;
+    border-right: 2px solid gray; 
+    border-bottom: 2px solid gray; 
+    border-left: 2px solid silver; 
+    border-top: 2px solid silver; 
+}
+
+input{
+    line-height: 1.2;
+    margin: 8px;
+}

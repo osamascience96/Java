@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 26, 2021, 7:47:58 PM
+    Author     : osama
+*/
+
+.header_img{
+    width: 100%;
+    background-color: #003580;
+    padding: 15px;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.login{
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+.login > form > input{
+    width: 100%;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.login > form > input[type="text"]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+
+.login > form > input[type="text"]:hover, .register > form > input[type="text"]:focus{
+    border-color: crimson;
+    transition: 0.25s ease-out;
+}
+
+.login > form > input[type="email"]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+
+.login > form > input[type="email"]:hover, .register > form > input[type="email"]:focus{
+    border-color: crimson;
+    transition: 0.25s ease-out;
+}
+
+.login > form > input[type="password"]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+}
+
+.login > form > input[type="password"]:hover, .register > form > input[type="password"]:focus{
+    border-color: crimson;
+    transition: 0.25s ease-out;
+}
+
+.login > form > input[type="submit"]{
+    border: none;
+    padding: 10px;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+}
+
+.login > form > input[type="submit"]:hover{
+    cursor: pointer;
+    color: crimson;
+    border-color: black;
+    background-color: white;
+    transition: 0.25s ease-in-out;
+}
+
+.login > hr{
+    width: 35%;
+    border: 1px solid black;
+}
+
+.register{
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+.register > a{
+   font-weight: bold; 
+   text-decoration: none;
+}
+.register > a:hover{
+    transition: 0.25s ease-in;
+}

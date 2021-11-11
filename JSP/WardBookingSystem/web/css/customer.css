@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 30, 2021, 4:40:21 PM
+    Author     : osama
+*/
+
+.modal-body > div > img{
+    border-radius: 10px;
+}
+
+.table > tbody > tr > td > img{
+    border-radius: 10px;
+}
+
+.ward-item{
+    height: 350px;
+    background-color: #7196A6;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ward-item > img{
+    border-radius: 10px;
+}
+
+.book-btn{
+    background-color: #003580;
+    padding: 15px;
+    width: 90%;
+    text-align: center;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 25px;
+    margin: auto;
+    position: relative;
+    bottom: 100px;
+    color: white;
+    border-radius: 5px;
+}
+
+.book-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.25s ease-out;
+}
+
+.book-btn:hover + .ward-specs{
+    color: rgba(255, 255, 255, 1);
+    transition: 0.25s ease-in-out;
+}
+
+.img{
+    opacity: 0.6;
+}
+
+.ward-specs{
+    padding: 0;
+    position: relative;
+    bottom: 350px;
+    color: rgba(0, 0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.alert{
+    width: 80%!important;
+    margin: 30px auto 30px auto;
+    
+}

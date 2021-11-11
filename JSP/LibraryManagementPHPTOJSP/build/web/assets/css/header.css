@@ -1,0 +1,24 @@
+.header {
+    margin-bottom: 3rem;
+}
+
+.navbar-expand {
+    margin-bottom: 50px;
+}
+
+.btn {
+    color: #FFFFFF;
+}
+
+.navbar-text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-bottom: 1px solid #607D8B;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

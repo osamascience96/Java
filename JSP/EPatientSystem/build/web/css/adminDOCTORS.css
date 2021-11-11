@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header.logo {
+	position: relative;
+	max-width: 80px;
+}
+header a {
+	cursor: pointer;
+}
+header ul {
+	position: relative;
+	display: flex;
+}
+header ul li {
+	list-style: none;
+}
+header ul li a {
+	display: inline-block;
+	font-weight: 700;
+	margin-left: 40px;
+	text-decoration: none;
+	color: #333;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+header ul li a:hover {
+	color: #1d976c;
+}
+
+/*---------------------------------------------------------------------------------*/
+.hor-table {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	font-size: 0.9em;
+	min-width: 250px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	border-collapse: collapse;
+	cursor: default;
+	color: #333;
+}
+caption {
+	text-align: center;
+	padding: 20px 0;
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: 10px;
+	color: #333;
+}
+.hor-table th,
+.hor-table td {
+	padding: 20px 15px;
+}
+.hor-table thead tr {
+	background-color: #1d976c;
+	color: #fff;
+	text-align: left;
+	font-weight: 700;
+}
+.hor-table tbody tr {
+	border-bottom: 1px solid #ddd;
+}
+.hor-table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+.hor-table tbody tr:nth-of-type(odd) {
+	background-color: #fff;
+}
+.hor-table tbody tr:last-of-type {
+	border-bottom: 2px solid #1d976c;
+}
+.hor-table tbody tr:hover {
+	color: #1d976c;
+}
+.hidetext {
+	-webkit-text-security: square;
+}
+
+.hidetext:hover {
+	-webkit-text-security: none;
+}
+/*-----------------------------------------------------------*/
+.success {
+	background-color: #23b96f;
+}
+.danger {
+	background-color: #ff5722;
+}
+.action_container > * {
+	border: none;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 14px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	border: transparent;
+	border-radius: 25px;
+}
+.action_container > *:hover {
+	filter: hue-rotate(-20deg) brightness(0.97);
+	transform: scale(1.05);
+	border-color: transparent;
+	box-shadow: 0 2px 10px #0004;
+	border-radius: 25px;
+}
+.action_container > *:active {
+	transition: unset;
+	transform: scale(0.95);
+}

@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 5, 2021, 6:30:46 PM
+    Author     : osama
+*/
+
+body{
+    background-image: url("../img/babylon.jpg");
+    opacity: 0.97;
+}
+
+.container > h1{
+    margin-top: 200px; 
+}

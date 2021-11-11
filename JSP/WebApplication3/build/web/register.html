@@ -1,0 +1,100 @@
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Sign Up  </title>
+    <link rel="stylesheet" type="text/css" href="register-style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="registration-validation.js"></script>
+
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+    <section>
+
+        <div class="container">
+
+            <div class="user signinBx">
+                <div class="imgBx"><img src="bank2.jpg"></div>
+                <div class="formBx">
+                
+                <form name='registration'  method="POST" action="FormServlet" >
+                    <h2> Create an account </h2>
+                    <input type="text" name="userid" id="userid" placeholder="Username" required>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+
+
+
+                    <input type="password" name="passid"  placeholder="Create Password" title="Must contain between 7-12 characters" required>
+                    
+                    <input type="password" name="passid2" placeholder="Confirm Password"><br>
+
+                    <br>
+                    <h3> Personal Details </h3>
+                    <input type="text" name="fname" id="fname" placeholder="First Name" required>
+                    <input type="text" name="lname" id="lname"placeholder="Last Name" required>
+                    <input type="text" name="mobile" id="mobile" placeholder="Mobile Number" required> 
+                    <input type="text" name="address" id="address" placeholder="Zip Code" required> 
+                    <input type="text" name="dob" id="dob"placeholder="Date of Birth (DD/MM/YY)" required>
+
+                    
+                    <li><select name="country">
+                        <option selected="" value="Default">(Please select a Country)</option>
+                        <option value="AF">Ireland</option>
+                        <option value="AL">United Kingdom</option>
+                        <option value="DZ">France</option>
+                        <option value="AS">Germany</option>
+                        <option value="AD">Spain</option>
+                        </select></li>
+
+                    
+                        <br>
+                        <input type="button" id="add" value="Add to table of responses." onclick="addRow()">
+
+                   
+                    <div class="popup" onclick="myFunction()"><p>Click to view entered responses.</p>
+                        <span class="popuptext" id="myPopup">
+                            
+                          <table id="myTableData" className="myTableData" border="1" cellpadding="7">
+                              <tr>
+                                  <td>&nbsp;</td>
+                                  <td><b>Username</b></td>
+                                  <td><b>Email</b></td>
+                                  <td><b>First Name</b></td>
+                                  <td><b>Last Name</b></td>
+                                  <td><b>Mobile Number</b></td>
+                                  <td><b>Zip Code</b></td>
+                                  <td><b>Date of Birth</b></td>
+
+                              </tr>
+                          </table>
+                         
+                        </span>
+                      </div>
+                      
+                      <br> <br>
+                      <input type="submit" name="" value="Register">
+                        <br>
+
+                    <p class="signup"> Already have an account? <a href="login.html">Sign in.</a></p>
+                </form>
+        
+            </div>
+            </div>
+        </div>
+        
+        
+        </div>
+
+       
+
+
+    </section>
+
+</body>
+
+</html>

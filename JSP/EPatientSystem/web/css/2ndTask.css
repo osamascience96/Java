@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/*@font-space {
+	src: url(fonts/QuickKiss.ttf);
+	font-family: qk;
+}*/
+
+/* selecting all elements*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: #fff;
+}
+/* titles above the tables*/
+caption {
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	padding: 20px 0;
+	font-size: 2rem;
+	font-weight: 500;
+	letter-spacing: 10px;
+	/*fade 3d styling for the titles*/
+	/*color: #1d976c;
+	letter-spacing: normal;
+	height: 15vh;
+	line-height: 10vh;
+	text-shadow: 3px 3px 0px #1a8861, 6px 6px 0px #177956, 9px 9px 0px #177956;*/
+}
+/* setting the font for the tables*/
+.side-table,
+.hor-table {
+	font-family: "Roboto", sans-serif;
+}
+/*---------------------------------PROFILE TABLE----------------------*/
+.side-table {
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(-25%, -50%);
+
+	border-collapse: collapse;
+	/*margin: 25px 0;*/
+	font-size: 0.9em;
+	min-width: 500px;
+	/*border-radius: 5px;
+	overflow: hidden;*/
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	cursor: default;
+}
+
+.side-table tr {
+	border-bottom: 1px solid #ddd;
+}
+.side-table td {
+	background: #fff;
+}
+
+.side-table th,
+.side-table td {
+	padding: 20px 15px;
+}
+
+.side-table th {
+	background-color: #1d976c;
+	color: #fff;
+	text-align: left;
+	font-weight: bold;
+}
+
+/*password field modification */
+
+.hidetext {
+	-webkit-text-security: square;
+}
+
+.hidetext:hover {
+	-webkit-text-security: none;
+}
+
+/* -------------------------APPOINTMENTS TABLE--------------------------------------------*/
+
+.hor-table {
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	transform: translate(
+		-75%,
+		-50%
+	); /* placing the table at the right side of the screen*/
+	/*margin: 25px 0;*/
+	min-width: 250px;
+	font-size: 0.9em;
+	border-collapse: collapse;
+	/*border-radius: 5px 5px 0 0;
+	overflow: hidden;*/
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	cursor: default;
+}
+
+.hor-table th,
+.hor-table td {
+	padding: 20px 15px;
+}
+
+.hor-table thead tr {
+	background-color: #1d976c;
+	color: #fff;
+	text-align: left;
+	font-weight: bold;
+}
+
+.hor-table tbody tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.hor-table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.hor-table tbody tr:last-of-type {
+	border-bottom: 2px solid #1d976c;
+}
+
+.hor-table tbody tr:nth-of-type(odd) {
+	background-color: #fff;
+}
+
+.hor-table tbody tr:hover {
+	color: #1d976c;
+}
+
+/*---------------------------NAVIGATION BAR------------------------------------------*/
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	background: #fff;
+}
+
+header::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.logo {
+	float: left;
+	/*padding:10px 0;*/
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 80px;
+	position: relative;
+}
+
+nav a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+nav a:hover {
+	background: -webkit-linear-gradient(43deg, #93f9b9, #1d976c);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+nav a::after {
+	content: "";
+	display: block;
+	height: 5px;
+	width: 0;
+
+	background: -webkit-linear-gradient(43deg, #93f9b9, #1d976c);
+	background-clip: text;
+
+	position: absolute;
+
+	transition: all ease-in-out 250ms;
+}
+
+nav a:hover::after {
+	width: 100%;
+}
