@@ -1,0 +1,1897 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+
+    The contents of this file are subject to the license and copyright
+    detailed in the LICENSE and NOTICE files at the root of the source
+    tree and available online at
+
+    http://www.dspace.org/license/
+
+-->
+<catalogue xml:lang="ca-ES" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+	<!--
+		The format used by all keys is as follows xmlui.<Aspect>.<Java
+		Class>.<name> There are a few exceptions to this nameing format, 1)
+		Some general keys are in the xmlui.general namespace because they are
+		used very frequently. 2) Some general keys which are specific to a
+		particular aspect may be found at xmlui.<Aspect> without specifiying a
+		particular java class.
+	-->    
+	<!-- General keys -->
+	<message key="xmlui.general.dspace_home">Pàgina inicial del DSpace</message>
+	<message key="xmlui.general.search">Cerca</message>
+	<message key="xmlui.general.go">Vés a</message>
+	<message key="xmlui.general.go_home">Vés a la pàgina inicial del DSpace</message>
+	<message key="xmlui.general.save">Desa</message>
+	<message key="xmlui.general.cancel">Cancel·la</message>
+	<message key="xmlui.general.return">Enrere</message>
+	<message key="xmlui.general.update">Actualitza</message>
+	<message key="xmlui.general.delete">Suprimeix</message>
+	<message key="xmlui.general.next">Següent</message>
+	<message key="xmlui.general.untitled">Sense títol</message>
+
+
+	<!--
+		Page not found keys This is a special component that is not part of
+		any aspect but is added by manakin to all aspect chains.
+	-->
+	<message key="xmlui.PageNotFound.title">No s’ha trobat la pàgina</message>
+	<message key="xmlui.PageNotFound.head">No s’ha trobat la pàgina</message>
+	<message key="xmlui.PageNotFound.para1">No es pot trobar la pàgina que heu sol·licitat.</message>
+
+
+	<!--
+		This section is for feed syndications (RSS, atom, etc)
+	-->
+	<message key="xmlui.feed.general_description">El sistema de dipòsit digital DSpace captura,
+		emmagatzema, indexa, conserva i distribueix material de recerca
+		digital. </message>
+	<message key="xmlui.feed.logo_title">Imatge del canal</message>
+	<message key="xmlui.feed.untitled">Sense títol</message>
+
+	<!--
+                Default notice header
+                -->
+	<message key="xmlui.general.notice.default_head">Avís</message>
+	<!-- 
+		ArtifactBrowser Aspect 
+	-->                
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.AbstractSearch.java -->
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.head1_community">Resultats de cerca de comunitat: {0}</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.head1_collection">Resultats de cerca de col·lecció: {0}</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.head1_none">Resultats de la cerca</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.result_query">La consulta &quot;{0}&quot; ha obtingut {1} resultat(s).</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.head2">Comunitats o col·leccions que coincideixen amb la consulta</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.head3">Unitats que coincideixen amb la consulta</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">La cerca no ha obtingut resultats.</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">Tot el DSpace</message>
+
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.title">títol</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateissued">data d’edició</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateaccessioned">data d’enviament</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.relevance">rellevància</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by">Ordena els elements per</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.order">per ordre</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.order.asc">ascendent</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.order.desc">descendent</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.rpp">Resultats/pàgina</message>
+
+    <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.title">Cerca avançada</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.trail">Cerca avançada</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.head">Cerca avançada</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.search_scope">Àmbit de cerca</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.search_scope_help">Limiteu la cerca a una comunitat o col·lecció.</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.conjunction">Conjunció</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.search_type">Tipus de cerca</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.search_for">Cerca</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Autor</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_title">Títol</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Matèria</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_abstract">Resum</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_series">Sèrie</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsor">Patrocinador</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_identifier">Identificador</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Llengua (ISO) </message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Paraula clau</message>
+   
+    <!--  some common other possibilities for Advanced Search Fields -->
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Col•laborador</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_creator">Autor</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_description">Descripció</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_relation">Relació</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_mime">Tipus Mime</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_other">Un altre col•laborador</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_advisor">Assessor</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_department">Departament</message>
+
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ANY">Text complet</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.and">AND</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.or">OR </message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.not">NOT</message>
+       
+       
+    <!-- org.dspace.app.xmlui.artifactbrowser.ConfigureableBrowse.java -->
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with">O introduïu-ne les primeres lletres:</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with_help">Explora els elements que comencen amb aquestes lletres</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_select">Salta a un punt de l&apos;índex:</message>    
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_month">(Trieu el mes)</message>  
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_year">(Trieu l&apos;any)</message>    
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_year">O escriviu un any: </message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_year_help">Explora els elements pertanyents a aquest any.</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.sort_by"> Ordena per: </message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.order"> Ordre: </message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.rpp"> Resultats: </message><!-- /Page --><!-- /Page -->
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.etal"> Autors/unitat: </message>
+
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.etal.all">Tots</message>
+
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.title">títol</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.dateissued">data d’edició</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.dateaccessioned">data d’enviament</message>
+
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.asc">ascendent</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.desc">descendent</message>
+
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">Nom de l&apos;autor</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading">Tema</message>
+
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.author">Exploració {0} per autor {1}</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">Exploració {0} per autor</message>
+
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.subject">Exploració {0} per tema {1}</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.subject">Exploració {0} per tema</message>
+       
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.title">Exploració {0} per títol {1}</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.title">Exploració {0} per títol</message>
+       
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateissued">Exploració {0} per data d&apos;edició {1}</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateissued">Exploració {0} per data d&apos;edició</message>
+
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateaccessioned">Exploració {0} per data d&apos;enviament {1}</message>
+    <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateaccessioned">Exploració {0} per data d&apos;enviament</message>
+
+
+       
+    <!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
+    <message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Àmbit de cerca</message>
+    <message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">Tot el DSpace</message>
+    <message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Cerca en aquesta col·lecció:</message>
+    <message key="xmlui.ArtifactBrowser.CollectionViewer.head_browse">Explora per</message>
+    <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_titles">Títols</message>
+    <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_authors">Autors</message>
+    <message key="xmlui.ArtifactBrowser.CollectionViewer.browse_dates">Dates</message>
+    <message key="xmlui.ArtifactBrowser.CollectionViewer.advanced_search_link">Cerca avançada</message>
+    <message key="xmlui.ArtifactBrowser.CollectionViewer.head_recent_submissions">Enviaments recents</message>
+       
+    <!-- org.dspace.app.xmlui.artifactbrowser.CommunityBrowser.java -->
+    <message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Llista de comunitats</message>
+    <message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Llista de comunitats</message>
+    <message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Comunitats del DSpace</message>
+    <message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Seleccioneu una comunitat per explorar-ne les col·leccions.</message>
+
+    <!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.search_scope">Àmbit de cerca</message>
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">Tot el DSpace</message>
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Cerca en aquesta comunitat i les seves col·leccions:</message>
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.head_browse">Explora per</message>
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_titles">Títols</message>
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_authors">Autors</message>
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.browse_dates">Dates</message>
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.advanced_search_link">Cerca avançada</message>
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities">Subcomunitats dins d&apos;aquesta comunitat</message>
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections">Col·leccions d&apos;aquesta comunitat</message>
+    <message key="xmlui.ArtifactBrowser.CommunityViewer.head_recent_submissions">Enviaments recents</message>
+       
+       
+    <!-- org.dspace.app.xmlui.artifactbrowser.Contact.java -->
+    <message key="xmlui.ArtifactBrowser.Contact.title">Contacteu amb nosaltres</message>
+    <message key="xmlui.ArtifactBrowser.Contact.trail">Contacteu amb nosaltres</message>
+    <message key="xmlui.ArtifactBrowser.Contact.head">Contacteu amb nosaltres</message>
+    <message key="xmlui.ArtifactBrowser.Contact.para1">Podeu contactar amb els administradors de {0} a:</message>
+    <message key="xmlui.ArtifactBrowser.Contact.feedback_label">Formulari en línia</message>
+    <message key="xmlui.ArtifactBrowser.Contact.feedback_link">Comentaris</message>
+    <message key="xmlui.ArtifactBrowser.Contact.email">Correu electrònic</message>
+       
+    <!-- org.dspace.app.xmlui.artifactbrowser.FeedbackForm.java -->
+    <message key="xmlui.ArtifactBrowser.FeedbackForm.title">Envieu els vostres comentaris</message>
+    <message key="xmlui.ArtifactBrowser.FeedbackForm.trail">Envieu els vostres comentaris</message>
+    <message key="xmlui.ArtifactBrowser.FeedbackForm.head">Envieu els vostres comentaris</message>
+    <message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Gràcies per enviar-nos els vostres comentaris sobre el sistema DSpace. Agraïm els vostres comentaris!</message>
+    <message key="xmlui.ArtifactBrowser.FeedbackForm.email">La vostra adreça electrònica</message>
+    <message key="xmlui.ArtifactBrowser.FeedbackForm.email_help">Aquesta adreça s&apos;utilitzarà per fer el seguiment dels vostres comentaris.</message>
+    <message key="xmlui.ArtifactBrowser.FeedbackForm.comments">Comentaris</message>
+    <message key="xmlui.ArtifactBrowser.FeedbackForm.submit">Envia comentaris</message>
+       
+    <!-- org.dspace.app.xmlui.artifactbrowser.FeedbackSent.java -->
+    <message key="xmlui.ArtifactBrowser.FeedbackSent.title">Envieu els vostres comentaris</message>
+    <message key="xmlui.ArtifactBrowser.FeedbackSent.trail">Envieu els vostres comentaris</message>
+    <message key="xmlui.ArtifactBrowser.FeedbackSent.head">Comentaris enviats</message>
+    <message key="xmlui.ArtifactBrowser.FeedbackSent.para1">Hem rebut els vostres comentaris.</message>
+       
+    <!-- org.dspace.app.xmlui.artifactbrowser.FrontPageSearch.java -->
+    <message key="xmlui.ArtifactBrowser.FrontPageSearch.head">Cerca al DSpace</message>
+    <message key="xmlui.ArtifactBrowser.FrontPageSearch.para1">Introduïu text al quadre de sota per cercar al DSpace.</message>
+       
+    <!-- org.dspace.app.xmlui.artifactbrowser.ItemViewer.java -->
+    <message key="xmlui.ArtifactBrowser.ItemViewer.trail">Visualitza l'element</message>
+    <message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">Aquest element apareix a les col·leccions següents </message>
+    <message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Mostra el registre d&apos;unitat simple</message>
+    <message key="xmlui.ArtifactBrowser.ItemViewer.show_full">Mostra el registre d&apos;unitat complet</message>
+       
+    <!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
+    <message key="xmlui.ArtifactBrowser.Navigation.head_browse">Explora</message>
+    <message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">Tot el DSpace</message>
+    <message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Comunitats i col·leccions</message>
+    <message key="xmlui.ArtifactBrowser.Navigation.browse_title">Títols</message>
+    <message key="xmlui.ArtifactBrowser.Navigation.browse_author">Autors</message>
+    <message key="xmlui.ArtifactBrowser.Navigation.browse_subject">Temes</message>
+    <message key="xmlui.ArtifactBrowser.Navigation.browse_dateissued">Per data d&apos;edició</message>
+    <message key="xmlui.ArtifactBrowser.Navigation.browse_dateaccessioned">Per data d&apos;enviament</message>
+    <message key="xmlui.ArtifactBrowser.Navigation.head_this_collection">Aquesta col·lecció</message>
+    <message key="xmlui.ArtifactBrowser.Navigation.head_this_community">Aquesta comunitat</message>
+       
+    <!-- org.dspace.app.xmlui.artifactbrowser.SimpleSearch.java -->
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.title">Cerca</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.trail">Cerca</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.head">Cerca</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.search_scope">Àmbit de cerca</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.full_text_search">Cerca de text complet</message>
+       
+    <!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.title">Aquest recurs està restringit</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.trail">Restringit</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.head_resource">Aquest recurs està restringit</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.head_community">Aquesta comunitat està restringida</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.head_collection">Aquesta col·lecció està restringida</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.head_item">Aquest element està restringida</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.head_bitstream">Aquest document està restringit</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.para_resource">No teniu les credencials necessàries per accedir al recurs restringit.</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.para_community">No teniu les credencials necessàries per accedir a la comunitat restringida <b>{0}</b>.</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.para_collection">No teniu les credencials necessàries per accedir a la col·lecció restringida <b>{0}</b>.</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.para_item">No teniu les credencials necessàries per accedir a l'element restringit <b>{0}</b>.</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.para_bitstream">No teniu les credencials necessàries per accedir al document restringit <b>{0}</b>.</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.type_collection">col·lecció</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.type_community">comunitat</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.type_bitstream">document</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.type_item">unitat</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.type_resource">recurs</message>
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.unknown">desconegut</message>
+       
+    <!-- Authentication messages used at the top of the login page:  -->
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.auth_header">L'element està restringit</message>        
+    <message key="xmlui.ArtifactBrowser.RestrictedItem.auth_message">L'element al qual intenteu accedir és un element restringit i calen credencials per visualitzar-lo. Inicieu la sessió a sota per accedir a l'element.</message>
+
+    <message key="xmlui.ArtifactBrowser.StatisticsViewer.choose_month">Informes mensuals</message>
+    <message key="xmlui.ArtifactBrowser.StatisticsViewer.report.title">Resum estadístic</message>
+
+    <message key="xmlui.ArtifactBrowser.StatisticsViewer.no_report.title">Actualment no hi ha cap informe disponible</message>
+    <message key="xmlui.ArtifactBrowser.StatisticsViewer.no_report.text">Actualment no hi ha informes disponibles per a aquest servei.  Torneu a consultar-ho més endavant.</message>
+
+    <!-- Authentication messages used for bitstream authentication -->
+    <message key="xmlui.BitstreamReader.auth_header">El fitxer està restringit</message>      
+    <message key="xmlui.BitstreamReader.auth_message">El fitxer al qual intenteu accedir és un fitxer restringit i calen credencials per visualitzar-lo. Inicieu la sessió a sota per accedir al fitxer.</message>
+       
+    <!-- Export Archive download messages -->
+    <message key="xmlui.ItemExportDownloadReader.auth_header">L&apos;arxiu d&apos;exportació està restringit.</message>
+    <message key="xmlui.ItemExportDownloadReader.auth_message">L&apos;arxiu d&apos;exportació al qual intenteu accedir és un recurs restringit i calen credencials per visualitzar-lo. Inicieu la sessió a sota per accedir a l&apos;arxiu d&apos;exportació.</message>
+
+    <!-- REQUEST COPY -->
+    <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestForm.java -->
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.title">Sol·liciteu una còpia del document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.trail">Sol·liciteu una còpia del document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.head">Sol·liciteu una còpia del document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.para1">Introduïu la següent informació per demanar una còpia del document a la persona responsable</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterEmail">Adreça electrònica</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterEmail_help">Aquesta adreça electrònica s'utilitzarà per enviar el document.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterEmail.error">S'ha d'introduir una adreça</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.message">Missatge</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.message.error">S'ha d'introduir un missatge</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.files">Fitxers</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.allFiles">Tots els fitxers (d'aquest document) en accés restringit.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.notAllFiles">Només el fitxer seleccionat.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterName">Nom</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.requesterName.error">S'ha d'introduir un nom</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestForm.submit">Sol·licita una còpia</message>
+
+    <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestSent.java -->
+    <message key="xmlui.ArtifactBrowser.ItemRequestSent.title">S'ha enviat la vostra sol·licitud.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestSent.trail">S'ha enviat la vostra sol·licitud.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestSent.head">S'ha enviat la vostra sol·licitud.</message>
+	 <message key="xmlui.ArtifactBrowser.ItemRequestSent.para1">S'ha enviat la vostra sol·licitud a l'autor/a o persona responsable.</message>
+
+    <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseDecisionForm.java -->
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.title">Sol·licitud de còpia d'un document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.trail">Sol·licitud de còpia d'un document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.head">Sol·licitud de còpia d'un document</message>
+	 <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para1">SI SOU L'AUTOR/A (O UN DELS AUTORS) DEL DOCUMENT «{0}» respongueu a la sol·licitud a través dels botons.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.para2">Aquest repositori us proposarà una resposta model apropiada que podreu editar.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.send">Envia la còpia</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseDecisionForm.dontSend">No enviïs la còpia</message>
+
+    <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseTrueForm.java -->
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.title">Sol·licitud de còpia d'un document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.trail">Sol·licitud de còpia d'un document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.head">Sol·licitud de còpia d'un document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.para1">Aquest és el text que s'enviarà al sol·licitant.</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.message">Missatge</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.subject">Assumpte</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.mail">Envia</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseFalseForm.back">Enrere</message>
+
+    <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseFalseForm.java -->
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.title">Sol·licitud de còpia d'un document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.trail">Sol·licitud de còpia d'un document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.head">Sol·licitud de còpia d'un document</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.para1">Aquest és el text que s'enviarà al sol·licitant (juntament amb el document).</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.message">Missatge</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.subject">Assumpte</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.mail">Envia</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestResponseTrueForm.back">Enrere</message>
+
+    <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestChangeStatusForm.java -->
+    <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.title">Sol·licitud de canvi de permisos</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.trail">Sol·licitud de canvi de permisos</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.head">Sol·licitud de canvi de permisos</message>
+	 <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.para1">Podeu aprofitar per reconsiderar les restriccions d'accés a aquest document (per evitar haver de respondre a aquestes sol·licituds), si no hi ha cap raó per mantindre'l restringit. Per fer-ho, després d'introduir el vostre nom i adreça electrònica (per autenticar-vos), feu clic al botó «Canvia a accés obert».</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.name">Nom</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.email">Adreça electrònica</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.name.error">S'ha d'introduir el nom</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.email.error">S'ha d'introduir l'adreça electrònica</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestChangeStatusForm.changeToOpen">Canvia a accés obert</message>
+
+    <!-- org.dspace.app.xmlui.artifactbrowser.ItemRequestResponseFalseForm.java -->
+    <message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.title">S'ha enviat la sol·licitud</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.trail">S'ha enviat la sol·licitud</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.head">S'ha enviat la vostra sol·licitud de canvi de permisos</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.para1">S'ha enviat la vostra sol·licitud a l'administrador</message>
+    <message key="xmlui.ArtifactBrowser.ItemRequestStatusChanged.para2">Gràcies</message>
+
+ 	<!--
+ 	 EPerson Aspect
+	-->
+	
+	<!-- General keys used by the EPerson aspect -->  <message key="xmlui.EPerson.trail_new_registration">Registre d&apos;usuari nou</message>
+    <message key="xmlui.EPerson.trail_forgot_password">Heu oblidat la contrasenya</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.CannotRegister.java -->
+    <message key="xmlui.EPerson.CannotRegister.title">Registre no disponible</message>
+    <message key="xmlui.EPerson.CannotRegister.head">Registre no disponible</message>
+    <message key="xmlui.EPerson.CannotRegister.para1">La configuració d&apos;aquest dipòsit del DSpace no permet el registre en aquest context. Poseu-vos en contacte amb <a href="../contact">l&apos;administrador del lloc</a> per enviar-li preguntes o comentaris.</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.EditProfile.java -->
+    <message key="xmlui.EPerson.EditProfile.title_update">Actualitza el perfil</message>
+    <message key="xmlui.EPerson.EditProfile.title_create">Crea un perfil</message>
+    <message key="xmlui.EPerson.EditProfile.trail_update">Actualitza el perfil</message>
+    <message key="xmlui.EPerson.EditProfile.head_update">Actualitza el perfil</message>
+    <message key="xmlui.EPerson.EditProfile.head_create">Crea un perfil</message>
+    <message key="xmlui.EPerson.EditProfile.email_address">Adreça electrònica</message>
+    <message key="xmlui.EPerson.EditProfile.first_name">Nom</message>
+    <message key="xmlui.EPerson.EditProfile.last_name">Cognoms</message>
+    <message key="xmlui.EPerson.EditProfile.telephone">Telèfon de contacte</message>
+    <message key="xmlui.EPerson.EditProfile.subscriptions">Subscripcions</message>
+    <message key="xmlui.EPerson.EditProfile.subscriptions_help">Us podeu subscriure a col·leccions per rebre alertes diàries per correu electrònic dels elements nous que s&apos;afegeixin. Podeu subscriure-us a tantes col·leccions com vulgueu. Una altra alternativa a les alertes diàries per correu electrònic es utilitzar les fonts RSS que hi ha disponibles per a les col·leccions.</message>
+    <message key="xmlui.EPerson.EditProfile.email_subscriptions">Subscripcions per correu electrònic</message>
+    <message key="xmlui.EPerson.EditProfile.select_collection">( Seleccioneu la col·lecció )</message>
+    <message key="xmlui.EPerson.EditProfile.update_password_instructions">Opcionalment, podeu introduir una contrasenya nova al quadre de sota i confirmar-la tornant-la a escriure al segon quadre.  Ha de tenir com a mínim sis caràcters.</message>
+    <message key="xmlui.EPerson.EditProfile.create_password_instructions">Introduïu una contrasenya al quadre de sota i confirmeu-la tornant-la a escriure al segon quadre.  Ha de tenir com a mínim sis caràcters.</message>
+    <message key="xmlui.EPerson.EditProfile.password">Contrasenya</message>
+    <message key="xmlui.EPerson.EditProfile.confirm_password">Torneu-la a escriure per confirmar-la</message>
+    <message key="xmlui.EPerson.EditProfile.submit_update">Completa el registre</message>
+    <message key="xmlui.EPerson.EditProfile.submit_create">Actualitza el perfil</message>
+    <message key="xmlui.EPerson.EditProfile.error_required">Aquest camp és necessari</message>
+    <message key="xmlui.EPerson.EditProfile.error_invalid_password">Trieu una contrasenya de com a mínim 6 caràcters</message>
+    <message key="xmlui.EPerson.EditProfile.error_unconfirmed_password">Torneu a escriure la contrasenya per confirmar-la</message>
+    <message key="xmlui.EPerson.EditProfile.head_auth">Grups d&apos;autorització als quals pertanyeu</message>
+    <message key="xmlui.EPerson.EditProfile.head_identify">Identifiqueu-vos</message>
+    <message key="xmlui.EPerson.EditProfile.head_security">Seguretat</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.EPersonUtils.java -->
+    <message key="xmlui.EPerson.EPersonUtils.register_verify_email">Verifica l&apos;adreça electrònica</message>
+    <message key="xmlui.EPerson.EPersonUtils.register_create_profile">Crea un perfil</message>
+    <message key="xmlui.EPerson.EPersonUtils.register_finished">Finalitzat</message>
+    <message key="xmlui.EPerson.EPersonUtils.forgot_verify_email">Verifica l&apos;adreça electrònica</message>
+    <message key="xmlui.EPerson.EPersonUtils.forgot_reset_password">Restableix la contrasenya</message>
+    <message key="xmlui.EPerson.EPersonUtils.forgot_finished">Finalitzat</message>
+
+    <!-- org.dspace.app.xmlui.eperson.ForgotPasswordFinished.java -->
+    <message key="xmlui.EPerson.ForgotPasswordFinished.title">Contrasenya restablerta</message>
+    <message key="xmlui.EPerson.ForgotPasswordFinished.head">Contrasenya restablerta</message>
+    <message key="xmlui.EPerson.ForgotPasswordFinished.para1">S&apos;ha restablert la contrasenya.</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.InvalidToken.java -->
+    <message key="xmlui.EPerson.InvalidToken.title">Testimoni no vàlid</message>
+    <message key="xmlui.EPerson.InvalidToken.trail">Testimoni no vàlid</message>
+    <message key="xmlui.EPerson.InvalidToken.head">Testimoni no vàlid</message>
+    <message key="xmlui.EPerson.InvalidToken.para1">L&apos;adreça URL que heu indicat no és vàlida. Pot ser que l&apos;adreça URL hagi quedat partida en diverses línies al client de correu electrònic, com aquí: </message>
+    <message key="xmlui.EPerson.InvalidToken.para2">Si és així, copieu i enganxeu tota l&apos;adreça URL directament a la barra d&apos;adreces del navegador, en lloc de fer clic a l&apos;enllaç.  La barra d&apos;adreça hauria d&apos;assemblar-se a aquesta:</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.Navigation.java -->
+    <message key="xmlui.EPerson.Navigation.my_account">El meu compte</message>
+    <message key="xmlui.EPerson.Navigation.profile">Perfil</message>
+    <message key="xmlui.EPerson.Navigation.logout">Finalitza la sessió</message>
+    <message key="xmlui.EPerson.Navigation.login">Inicia la sessió</message>
+    <message key="xmlui.EPerson.Navigation.register">Registre</message>
+
+    <!-- org.dspace.app.xmlui.eperson.PasswordLogin.java -->
+    <message key="xmlui.EPerson.PasswordLogin.title">Registreu-vos</message>
+    <message key="xmlui.EPerson.PasswordLogin.trail">Registreu-vos</message>
+    <message key="xmlui.EPerson.PasswordLogin.head1">Registreu-vos al DSpace</message>
+    <message key="xmlui.EPerson.PasswordLogin.email_address">Adreça electrònica</message>
+    <message key="xmlui.EPerson.PasswordLogin.error_bad_login">L&apos;adreça electrònica i/o la contrasenya que heu indicat no són vàlides.</message>
+    <message key="xmlui.EPerson.PasswordLogin.password">Contrasenya</message>
+    <message key="xmlui.EPerson.PasswordLogin.forgot_link"> Heu oblidat la contrasenya?</message>
+    <message key="xmlui.EPerson.PasswordLogin.submit">Registreu-vos</message>
+    <message key="xmlui.EPerson.PasswordLogin.head2">Registre d&apos;usuari nou</message>
+    <message key="xmlui.EPerson.PasswordLogin.para1">Registreu un compte per subscriviu-vos a col·leccions, per rebre actualitzacions per correu electrònic i enviar elements nous al DSpace. </message>
+    <message key="xmlui.EPerson.PasswordLogin.register_link">Feu clic aquí per registrar-vos.</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
+    <message key="xmlui.EPerson.LDAPLogin.title">Registreu-vos</message>
+    <message key="xmlui.EPerson.LDAPLogin.trail">Registreu-vos</message>
+    <message key="xmlui.EPerson.LDAPLogin.head1">Registreu-vos al DSpace</message>
+    <message key="xmlui.EPerson.LDAPLogin.username">Nom d&apos;usuari</message>
+    <message key="xmlui.EPerson.LDAPLogin.error_bad_login">El nom d&apos;usuari i/o la contrasenya que heu indicat no són vàlids.</message>
+    <message key="xmlui.EPerson.LDAPLogin.password">Contrasenya</message>
+    <message key="xmlui.EPerson.LDAPLogin.submit">Registreu-vos</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.LoginChooser.java -->
+    <message key="xmlui.EPerson.LoginChooser.title">Trieu un mètode d&apos;inici de sessió</message>
+    <message key="xmlui.EPerson.LoginChooser.trail">Trieu l&apos;inici de sessió</message>
+    <message key="xmlui.EPerson.LoginChooser.head1">Trieu un mètode d&apos;inici de sessió</message>
+    <message key="xmlui.EPerson.LoginChooser.para1">Inici de sessió per:</message>
+    	<message key="org.dspace.authenticate.ShibAuthentication.title">Autenticació Shibboleth</message>
+    <message key="org.dspace.eperson.LDAPAuthentication.title">Autenticació LDAP</message>
+    <message key="org.dspace.eperson.PasswordAuthentication.title">Autenticació per contrasenya</message>
+    <message key="org.dspace.eperson.X509Authentication.title">Autenticació per certificat web</message>
+
+
+    <!-- org.dspace.app.xmlui.eperson.FailedAuthentication -->
+    <message key="xmlui.EPerson.FailedAuthentication.BadCreds">Les credencials proporcionades no son vàlides.</message>
+    <message key="xmlui.EPerson.FailedAuthentication.BadArgs">No es pot autenticar perquè s&apos;han rebut arguments no vàlids.</message>
+    <message key="xmlui.EPerson.FailedAuthentication.NoSuchUser">No s&apos;ha trobat cap usuari amb les credencials indicades.</message>
+    <message key="xmlui.EPerson.FailedAuthentication.title">Ha fallat l&apos;autenticació</message>
+    <message key="xmlui.EPerson.FailedAuthentication.trail">L&apos;autenticació ha fallat</message>
+    <message key="xmlui.EPerson.FailedAuthentication.h1">Ha fallat l&apos;autenticació</message>
+       
+    <!-- Login xml files -->
+    <message key="xmlui.eperson.noAuthMethod.head">No s&apos;ha trobat cap mètode d&apos;autenticació</message>
+    <message key="xmlui.eperson.noAuthMethod.p1">No s&apos;ha trobat cap mètode d&apos;autenticació.  Poseu-vos en contacte amb l&apos;administrador del lloc.</message>
+    <message key="xmlui.eperson.shibbLoginFailure.head">Ha fallat l&apos;inici de sessió amb Shibboleth</message>
+    <message key="xmlui.eperson.shibbLoginFailure.p1">L&apos;autenticació Shibboleth no està disponible en aquest moment. Poseu-vos en contacte amb l&apos;administrador del lloc.</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.ProfileUpdated.java -->
+    <message key="xmlui.EPerson.ProfileUpdated.title">Perfil actualitzat</message>
+    <message key="xmlui.EPerson.ProfileUpdated.trail">Actualitza el perfil</message>
+    <message key="xmlui.EPerson.ProfileUpdated.head">Perfil actualitzat</message>
+    <message key="xmlui.EPerson.ProfileUpdated.para1">S&apos;ha actualitzat la informació del vostre perfil.</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.RegistrationFinished.java -->
+    <message key="xmlui.EPerson.RegistrationFinished.title">Registre finalitzat</message>
+    <message key="xmlui.EPerson.RegistrationFinished.head">Registre finalitzat</message>
+    <message key="xmlui.EPerson.RegistrationFinished.para1">Ja esteu registrat per utilitzar el sistema.  Us podeu subscriure a col·leccions per rebre actualitzacions per correu electrònic sobre elements nous.</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.ResetPassword.java -->
+    <message key="xmlui.EPerson.ResetPassword.title">Restableix la contrasenya</message>
+    <message key="xmlui.EPerson.ResetPassword.head">Restableix la contrasenya</message>
+    <message key="xmlui.EPerson.ResetPassword.para1">Introduïu una contrasenya nova al quadre de sota i confirmeu-la tornant-la a introduir al segon quadre.  Ha de tenir com a mínim sis caràcters.</message>
+    <message key="xmlui.EPerson.ResetPassword.email_address">Adreça electrònica</message>
+    <message key="xmlui.EPerson.ResetPassword.new_password">Contrasenya nova</message>
+    <message key="xmlui.EPerson.ResetPassword.confirm_password">Torneu-la a escriure per confirmar-la</message>
+    <message key="xmlui.EPerson.ResetPassword.submit">Restableix la contrasenya</message>
+    <message key="xmlui.EPerson.ResetPassword.error_invalid_password">Trieu una contrasenya de com a mínim 6 caràcters</message>
+    <message key="xmlui.EPerson.ResetPassword.error_unconfirmed_password">Torneu a escriure la contrasenya per confirmar-la</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.StartForgotPassword.java -->
+    <message key="xmlui.EPerson.StartForgotPassword.title">Heu oblidat la contrasenya</message>
+    <message key="xmlui.EPerson.StartForgotPassword.head">Heu oblidat la contrasenya</message>
+    <message key="xmlui.EPerson.StartForgotPassword.para1">Introduïu l&apos;adreça electrònica que vàreu indicar en registrar-vos. Se us enviarà un missatge amb instruccions a aquesta adreça.</message>
+    <message key="xmlui.EPerson.StartForgotPassword.email_address">Adreça electrònica</message>
+    <message key="xmlui.EPerson.StartForgotPassword.email_address_help">Introduïu la mateixa adreça que vàreu utilitzar en registrar-vos.</message>
+    <message key="xmlui.EPerson.StartForgotPassword.error_not_found">No s&apos;ha trobat l&apos;adreça electrònica.</message>
+    <message key="xmlui.EPerson.StartForgotPassword.submit">Envia informació</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.StartRegistration.java -->
+    <message key="xmlui.EPerson.StartRegistration.title">Registre d&apos;usuari nou</message>
+    <message key="xmlui.EPerson.StartRegistration.head1">L&apos;adreça electrònica ja s&apos;utilitza</message>
+    <message key="xmlui.EPerson.StartRegistration.para1">Aquesta adreça electrònica ja s&apos;utilitza en un altre compte. Si voleu restablir la contrasenya d&apos;aquest compte, feu clic al botó de restabliment de contrasenya a sota. </message>
+    <message key="xmlui.EPerson.StartRegistration.reset_password_for">Restableix la contrasenya de</message>
+    <message key="xmlui.EPerson.StartRegistration.submit_reset">Restableix la contrasenya</message>
+    <message key="xmlui.EPerson.StartRegistration.head2">Registre d&apos;usuari nou</message>
+    <message key="xmlui.EPerson.StartRegistration.para2">Registreu un compte per subscriviu-vos a col·leccions, per rebre actualitzacions per correu electrònic i enviar elements nous al DSpace. </message>
+    <message key="xmlui.EPerson.StartRegistration.email_address">Adreça electrònica</message>
+    <message key="xmlui.EPerson.StartRegistration.email_address_help">Aquesta adreça es verificarà i s&apos;utilitzarà com a nom d&apos;inici de sessió.</message>
+    <message key="xmlui.EPerson.StartRegistration.error_bad_email">No es pot enviar el missatge a aquesta adreça.</message>
+    <message key="xmlui.EPerson.StartRegistration.submit_register">Registre</message>
+       
+    <!-- org.dspace.app.xmlui.eperson.VerifyEmail.java -->
+    <message key="xmlui.EPerson.VerifyEmail.title">S&apos;ha enviat el missatge de verificació</message>
+    <message key="xmlui.EPerson.VerifyEmail.head">S&apos;ha enviat el missatge de verificació</message>
+    <message key="xmlui.EPerson.VerifyEmail.para">S&apos;ha enviat un missatge a {0} amb una adreça URL especial i més instruccions. </message>
+
+
+	<!--
+		Submission Aspect
+	-->
+	
+	<!-- general submission aspect messages -->
+	<message key="xmlui.Submission.general.mydspace_home">Pàgina principal d&apos;El meu DSpace</message>
+    <message key="xmlui.Submission.general.go_mydspace">Vés a la pàgina principal d&apos;El meu DSpace</message>
+    <message key="xmlui.Submission.general.submission.title">Enviament d&apos;elements</message>
+    <message key="xmlui.Submission.general.submission.trail">Enviament d&apos;elements</message>
+    <message key="xmlui.Submission.general.submission.head">Enviament d&apos;elements</message>      
+    <message key="xmlui.Submission.general.submission.previous">&lt; Anterior</message>
+    <message key="xmlui.Submission.general.submission.save">Desa i surt</message>
+    <message key="xmlui.Submission.general.submission.next">Següent &gt;</message>
+    <message key="xmlui.Submission.general.submission.complete">Completa l&apos;enviament</message>
+    <message key="xmlui.Submission.general.workflow.title">Enviament d&apos;elements</message>
+    <message key="xmlui.Submission.general.workflow.trail">Enviament d&apos;elements</message>
+    <message key="xmlui.Submission.general.workflow.head">Enviament d&apos;elements</message>
+    <message key="xmlui.Submission.general.showfull">Mostra el registre d&apos;element complet</message>
+    <message key="xmlui.Submission.general.showsimple">Mostra el registre d&apos;element simple</message>
+    <message key="xmlui.Submission.general.default.title">Enviament</message>
+    <message key="xmlui.Submission.general.default.trail">Enviament</message>
+       
+    <!-- org.dspace.app.xmlui.submission.CollectiovViewer -->
+    <message key="xmlui.Submission.CollectionViewer.link1">Envia un element nou a aquesta col·lecció</message>
+       
+    <!-- org.dspace.app.xmlui.submission.Navigation -->
+    <message key="xmlui.Submission.Navigation.submissions">Enviaments</message>
+
+       
+    <!-- org.dspace.app.xmlui.Submission.submissions -->
+    <message key="xmlui.Submission.Submissions.title">Enviaments i flux de treball</message>
+    <message key="xmlui.Submission.Submissions.trail">Enviaments</message>
+    <message key="xmlui.Submission.Submissions.head">Enviaments i tasques de flux de treball</message>
+    <message key="xmlui.Submission.Submissions.untitled"><i>Sense títol</i></message>
+    <message key="xmlui.Submission.Submissions.email">correu electrònic: </message>
+    <!-- Same transformer, workflow section -->
+    <message key="xmlui.Submission.Submissions.workflow_head1">Tasques de flux de treball</message>
+    <message key="xmlui.Submission.Submissions.workflow_info1">Aquestes tasques són elements que estan pendents d&apos;aprovació per afegir-se al dipòsit. Hi ha dues cues de tasques, una per a les que heu triat d&apos;acceptar i una altra per a les tasques que encara no ha assumit ningú. </message>
+    <message key="xmlui.Submission.Submissions.workflow_head2">Les vostres tasques</message>
+    <message key="xmlui.Submission.Submissions.workflow_column1"></message>
+    <message key="xmlui.Submission.Submissions.workflow_column2">Tasca</message>
+    <message key="xmlui.Submission.Submissions.workflow_column3">Element</message>
+    <message key="xmlui.Submission.Submissions.workflow_column4">Col·lecció</message>
+    <message key="xmlui.Submission.Submissions.workflow_column5">Qui ho presenta</message>
+    <message key="xmlui.Submission.Submissions.workflow_submit_return">Torna les tasques seleccionades a la memòria</message>
+    <message key="xmlui.Submission.Submissions.workflow_info2">No teniu cap tasca assignada</message>
+    <message key="xmlui.Submission.Submissions.workflow_head3">Tasques a la memòria</message>
+    <message key="xmlui.Submission.Submissions.workflow_submit_take">Assumeix les tasques seleccionades</message>
+    <message key="xmlui.Submission.Submissions.workflow_info3">No hi ha cap tasca a la memòria</message>
+    <!-- Same transformer, submissions section -->
+    <message key="xmlui.Submission.Submissions.submit_head1">Enviaments</message>
+    <message key="xmlui.Submission.Submissions.submit_info1a">Podeu </message>
+    <message key="xmlui.Submission.Submissions.submit_info1b">iniciar un nou enviament</message>
+    <message key="xmlui.Submission.Submissions.submit_info1c">El procés d&apos;enviament inclou la descripció de l'element i la càrrega dels fitxers que el comprenen.  Cada comunitat o col·lecció pot establir la seva pròpia directiva d&apos;enviaments.</message>
+    <message key="xmlui.Submission.Submissions.submit_head2">Enviaments inacabats</message>
+    <message key="xmlui.Submission.Submissions.submit_info2a">Hi ha enviaments d&apos;elements inacabats. També podeu </message>
+    <message key="xmlui.Submission.Submissions.submit_info2b">iniciar un altre enviament</message>
+    <message key="xmlui.Submission.Submissions.submit_info2c">.</message>
+    <message key="xmlui.Submission.Submissions.submit_column1"></message>
+    <message key="xmlui.Submission.Submissions.submit_column2">Títol</message>
+    <message key="xmlui.Submission.Submissions.submit_column3">Col·lecció</message>
+    <message key="xmlui.Submission.Submissions.submit_column4">Qui ho presenta</message>
+    <message key="xmlui.Submission.Submissions.submit_head3">Autoria:</message>
+    <message key="xmlui.Submission.Submissions.submit_info3">No hi ha cap enviament inacabat.</message>
+    <message key="xmlui.Submission.Submissions.submit_head4">Supervisió:</message>
+    <message key="xmlui.Submission.Submissions.submit_submit_remove">Suprimeix els enviaments seleccionats</message>
+    <!-- Same transformer, inprogress section -->
+    <message key="xmlui.Submission.Submissions.progress_head1">Enviaments en revisió</message>
+    <message key="xmlui.Submission.Submissions.progress_info1">Aquests són els vostres enviaments completats que actualment estan revisant els conservadors de la col·lecció.</message>
+    <message key="xmlui.Submission.Submissions.progress_column1">Títol</message>
+    <message key="xmlui.Submission.Submissions.progress_column2">Col·lecció</message>
+    <message key="xmlui.Submission.Submissions.progress_column3">Estat</message>
+    <!-- Same transformer, workflow status -->
+    <message key="xmlui.Submission.Submissions.status_0">Enviat</message>
+    <message key="xmlui.Submission.Submissions.status_1">Pendent de revisió pel revisor</message>
+    <message key="xmlui.Submission.Submissions.status_2">Enviament en procés de revisió</message>
+    <message key="xmlui.Submission.Submissions.status_3">Pendent de revisió per l&apos;editor</message>
+    <message key="xmlui.Submission.Submissions.status_4">Enviament en edició</message>
+    <message key="xmlui.Submission.Submissions.status_5">Pendent de revisió final per l&apos;editor</message>
+    <message key="xmlui.Submission.Submissions.status_6">Enviament en edició</message>
+    <message key="xmlui.Submission.Submissions.status_7">L&apos;enviament s&apos;ha arxivat</message>
+    <message key="xmlui.Submission.Submissions.status_unknown">Estat desconegut</message>
+
+    <!-- submission progress bar messages -->
+    <message key="xmlui.Submission.submit.progressbar.initial-questions">Preguntes inicials</message>
+    <message key="xmlui.Submission.submit.progressbar.describe">Descripció</message>
+    <message key="xmlui.Submission.submit.progressbar.upload">Puja</message>
+    <message key="xmlui.Submission.submit.progressbar.verify">Revisa</message>
+    <message key="xmlui.Submission.submit.progressbar.creative-commons">Creative Commons</message>
+    <message key="xmlui.Submission.submit.progressbar.license">Llicència</message>
+    <message key="xmlui.Submission.submit.progressbar.complete">Complet</message>
+       
+    <!-- org.dspace.app.xmlui.Submission.submit.ResumeStep -->
+    <message key="xmlui.Submission.submit.ResumeStep.submit_resume">Resum</message>
+
+    <!-- org.dspace.app.xmlui.Submission.submit.SelectCollection -->
+    <message key="xmlui.Submission.submit.SelectCollection.head">Seleccioneu una col·lecció</message>
+    <message key="xmlui.Submission.submit.SelectCollection.collection">Col·lecció</message>
+    <message key="xmlui.Submission.submit.SelectCollection.collection_help">Seleccioneu la col·lecció a la qual voleu enviar un element.</message>
+    <message key="xmlui.Submission.submit.SelectCollection.collection_default">Seleccioneu una col·lecció...</message>
+
+    <!-- org.dspace.app.xmlui.Submission.submit.SaveOrRemoveStep -->
+    <message key="xmlui.Submission.submit.SaveOrRemoveStep.head">Voleu desar o cancel·lar l&apos;enviament?</message>
+    <message key="xmlui.Submission.submit.SaveOrRemoveStep.info1">Voleu suprimir l&apos;enviament o voleu continuar treballant-hi més tard?  Podeu tornar al procés d&apos;enviament si heu fet clic a Surt per accident.</message>
+    <message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_back">Continua amb l&apos;enviament </message>
+    <message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_save">Desa-ho. Hi treballaré més tard </message>
+    <message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_remove">Suprimeix l&apos;enviament</message>
+
+       
+    <!-- org.dpspace.app.xmlui.Submission.submit.InitialQuestionsStep -->
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.head">Preguntes inicials</message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.important_note">Nota important: </message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.and"> i  </message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.separator">, </message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.open_set"> (</message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.close_set">)</message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.multiple_titles">Diversos títols</message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.multiple_titles_help">L'element té més d&apos;un títol, <i>p. ex. un títol traduït</i></message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.multiple_titles_note">Si anul·leu la selecció de la casella de dalt els títols següents se suprimiran de l'element:  </message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.published_before">Publicat</message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.published_before_help">L'element ha estat publicat o distribuit públicament abans</message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.published_before_note">Si anul·leu la selecció de la casella de dalt, se suprimirà el següent de l'element:</message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.date_issued">Data d&apos;edició</message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.citation">Cita</message>
+    <message key="xmlui.Submission.submit.InitialQuestionsStep.publisher">Editor</message>
+       
+    <!-- org.dspace.app.xmlui.Submission.submit.DescribeStep -->
+    <message key="xmlui.Submission.submit.DescribeStep.head">Descriu l'element</message>
+    <message key="xmlui.Submission.submit.DescribeStep.unknown_field">Error: Tipus de camp desconegut</message>
+    <message key="xmlui.Submission.submit.DescribeStep.required_field">Aquest camp és necessari</message>
+    <message key="xmlui.Submission.submit.DescribeStep.last_name_help">Cognoms, <i>p. ex. Adrià Acosta</i></message>
+    <message key="xmlui.Submission.submit.DescribeStep.first_name_help">Nom + &quot;,  <i>p. ex. Ferran</i></message>
+    <message key="xmlui.Submission.submit.DescribeStep.year">Any</message>
+    <message key="xmlui.Submission.submit.DescribeStep.month">Mes</message>
+    <message key="xmlui.Submission.submit.DescribeStep.day">Dia</message>
+    <message key="xmlui.Submission.submit.DescribeStep.series_name">Nom de la sèrie</message>
+    <message key="xmlui.Submission.submit.DescribeStep.report_no">Núm. informe o treball</message>
+
+
+    <!-- org.dspace.app.xmlui.Submission.submit.UploadStep -->
+    <message key="xmlui.Submission.submit.UploadStep.head">Puja els fitxers </message>
+    <message key="xmlui.Submission.submit.UploadStep.file">Fitxer</message>
+    <message key="xmlui.Submission.submit.UploadStep.file_help">Introduïu la ruta completa del fitxer de l&apos;ordinador que es correspon amb l'element. Si feu clic a &quot;Explora...&quot; s&apos;obrirà una finestra nova on podreu seleccionar el fitxer de l&apos;ordinador. </message>
+    <message key="xmlui.Submission.submit.UploadStep.file_error">L'element ha de contenir com a mínim un fitxer.</message>
+    <message key="xmlui.Submission.submit.UploadStep.upload_error">Hi ha hagut un problema en carregar el fitxer. O bé el nom del fitxer que heu introduït és incorrecte, hi ha hagut un problema de xarxa que ha impedit que l'arxiu arribi correctament, o s'ha intentat carregar un format de fitxer marcat per a ús intern només del sistema. Torneu-ho a intentar de nou.</message>
+    <message key="xmlui.Submission.submit.UploadStep.description">File Description</message>
+
+    <message key="xmlui.Submission.submit.UploadStep.description">Descripció del fitxer</message>
+    <message key="xmlui.Submission.submit.UploadStep.description_help">Opcionalment, podeu incloure-hi una descripció breu del fitxer, per exemple &quot; <i>Article principal</i>&quot; o &quot; <i>Lectures de dades de prova</i>".</message>
+    <message key="xmlui.Submission.submit.UploadStep.submit_upload">Puja el fitxer i afegeix-ne un altre</message>
+    <message key="xmlui.Submission.submit.UploadStep.head2">Fitxers pujats</message>
+    <message key="xmlui.Submission.submit.UploadStep.column0">Principal</message>
+    <message key="xmlui.Submission.submit.UploadStep.column1">  </message>
+    <message key="xmlui.Submission.submit.UploadStep.column2">Fitxer</message>
+    <message key="xmlui.Submission.submit.UploadStep.column3">Mida</message>
+    <message key="xmlui.Submission.submit.UploadStep.column4">Descripció</message>
+    <message key="xmlui.Submission.submit.UploadStep.column5">Format</message>
+    <message key="xmlui.Submission.submit.UploadStep.column6"></message>
+    <message key="xmlui.Submission.submit.UploadStep.unknown_name">Desconegut</message>
+    <message key="xmlui.Submission.submit.UploadStep.unknown_format">format desconegut</message>
+    <message key="xmlui.Submission.submit.UploadStep.supported">(Admès)</message>
+    <message key="xmlui.Submission.submit.UploadStep.known">(Conegut)</message>
+    <message key="xmlui.Submission.submit.UploadStep.unsupported">(No admès)</message>
+    <message key="xmlui.Submission.submit.UploadStep.submit_edit">Edita</message>
+    <message key="xmlui.Submission.submit.UploadStep.checksum">Suma de comprovació de fitxers:</message>
+    <message key="xmlui.Submission.submit.UploadStep.submit_remove">Suprimeix els fitxers seleccionats</message>
+       
+    <!-- org.dspace.app.xmlui.Submission.submit.EditFileStep -->
+    <message key="xmlui.Submission.submit.EditFileStep.head">Edita el fitxer</message>
+    <message key="xmlui.Submission.submit.EditFileStep.file">Fitxer</message>
+    <message key="xmlui.Submission.submit.EditFileStep.description">Descripció del fitxer</message>
+    <message key="xmlui.Submission.submit.EditFileStep.description_help">Opcionalment, inclogueu una descripció breu del contingut;  per exemple, &quot; <i>Article principal</i>&quot; o &quot; <i>Lectures de dades de prova</i>".</message>
+    <message key="xmlui.Submission.submit.EditFileStep.info1">Seleccioneu el format del fitxer a la llista de sota, per exemple &quot; <i>Adobe PDF</i>&quot; o &quot;<i>Paraula</i>." <strong>Si el format no és a la llista</strong>, descriviu-lo al quadre d&apos;entrada de sota la llista.</message>
+    <message key="xmlui.Submission.submit.EditFileStep.format_detected">Format detectat</message>
+    <message key="xmlui.Submission.submit.EditFileStep.format_selected">Format seleccionat</message>
+    <message key="xmlui.Submission.submit.EditFileStep.format_default">Format no llistat</message>
+    <message key="xmlui.Submission.submit.EditFileStep.info2">Si el format no és a la llista de dalt, <strong>seleccioneu &quot;format no llistat&quot; a dalt</strong> i descriviu el format del fitxer al quadre de sota.</message>
+    <message key="xmlui.Submission.submit.EditFileStep.format_user">Un altre format</message>
+    <message key="xmlui.Submission.submit.EditFileStep.format_user_help">Nom de l&apos;aplicació que heu utilitzat per crear el fitxer, i número de versió (per exemple, &quot; <i>ACMESoft SuperApp versió 1.5 </i>").</message>
+
+    <!-- org.dspace.app.xmlui.Submission.submit.ReviewStep -->
+    <message key="xmlui.Submission.submit.ReviewStep.head">Revisa l&apos;enviament</message>
+    <message key="xmlui.Submission.submit.ReviewStep.yes">Sí</message>
+    <message key="xmlui.Submission.submit.ReviewStep.no">No</message>
+    <message key="xmlui.Submission.submit.ReviewStep.submit_jump">Corregiu algun dels següents elements</message>
+    <message key="xmlui.Submission.submit.ReviewStep.submit_jump_files">Afegiu o suprimiu un fitxer</message>
+    <message key="xmlui.Submission.submit.ReviewStep.head1">Preguntes inicials</message>
+    <message key="xmlui.Submission.submit.ReviewStep.head2">Descriviu la pàgina {0}</message>
+    <message key="xmlui.Submission.submit.ReviewStep.head3">Fitxers pujats</message>
+    <message key="xmlui.Submission.submit.ReviewStep.multiple_titles">Diversos títols</message>
+    <message key="xmlui.Submission.submit.ReviewStep.published_before">Publicat abans</message>
+    <message key="xmlui.Submission.submit.ReviewStep.no_metadata">-</message>
+    <message key="xmlui.Submission.submit.ReviewStep.unknown">desconegut</message>
+    <message key="xmlui.Submission.submit.ReviewStep.known">conegut</message>
+    <message key="xmlui.Submission.submit.ReviewStep.supported">admès</message>
+       
+    <!-- org.dspace.app.xmlui.Submission.submit.CCLicenseStep -->
+    <message key="xmlui.Submission.submit.CCLicenseStep.head">Llicència de Creative Commons</message>
+    <message key="xmlui.Submission.submit.CCLicenseStep.info1">Si voleu, podeu afegir una  <a href="http://creativecommons.org/">llicència </a> Creative Commons al vostre element. <strong>Les llicències de Creative Commons regeixen què poden fer amb la vostra obra les persones que la llegeixen.</strong> Si voleu seleccionar una llicència de Creative Commons feu clic al botó de sota.  Accedireu al lloc web de Creative Commons, on se us oferiran diverses opcions de llicència.   Després de seleccionar una llicència, tornareu a aquesta pàgina. </message>
+    <message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Aneu al lloc web de Creative Commons per seleccionar una llicència</message>
+    <message key="xmlui.Submission.submit.CCLicenseStep.license">Llicència</message>
+    <message key="xmlui.Submission.submit.CCLicenseStep.submit_remove">Treu aquesta llicència de Creative Commons</message>
+    <message key="xmlui.Submission.submit.CCLicenseStep.no_license">no s&apos;ha seleccionat cap llicència de Creative Commons</message>
+
+    <!-- org.dspace.app.xmlui.Submission.submit.LicenseStep -->
+    <message key="xmlui.Submission.submit.LicenseStep.head">Llicència de distribució</message>
+    <message key="xmlui.Submission.submit.LicenseStep.info1"><strong>Falta un darrer pas:</strong> Perquè el DSpace pugui reproduir, traduir i distribuir el vostre material a tot el món, heu d&apos;acceptar les condicions següents. </message>
+    <message key="xmlui.Submission.submit.LicenseStep.info2">Concediu la llicència de distribució estàndard seleccionant &apos;Concedeixo la llicència&apos;;  i fent clic a &apos;Completa l&apos;enviament&apos; tot seguit. </message>
+    <message key="xmlui.Submission.submit.LicenseStep.info3">Si teniu preguntes relacionades amb aquesta llicència, poseu-vos en contacte amb els administradors del sistema.</message>
+    <message key="xmlui.Submission.submit.LicenseStep.decision_label">Llicència de distribució</message>
+    <message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">Concedeixo la llicència</message>
+    <message key="xmlui.Submission.submit.LicenseStep.decision_error">Heu de concedir la llicència per completar l&apos;enviament. Si no podeu concedir la llicència en aquest moment, podeu desar el treball i tornar més tard o suprimir l&apos;enviament fent clic al botó &apos;Desa i surt&apos; a sota.</message>
+
+    <!-- org.dspace.app.xmlui.Submission.submit.RemovedStep -->
+    <message key="xmlui.Submission.submit.RemovedStep.head">Enviament suprimit</message>
+    <message key="xmlui.Submission.submit.RemovedStep.info1">S&apos;ha cancel·lat l&apos;enviament i s&apos;ha suprimit l'element incomplet del sistema. </message>
+    <message key="xmlui.Submission.submit.RemovedStep.go_submission">Vés a la pàgina Enviaments</message>  
+
+    <!-- org.dspace.app.xmlui.Submission.submit.CompletedStep -->
+    <message key="xmlui.Submission.submit.CompletedStep.head">Enviament completat</message>
+    <message key="xmlui.Submission.submit.CompletedStep.info1">L&apos;enviament se sotmetrà ara al procés de revisió de la col·lecció. Rebreu una notificació per correu electrònic quan el vostre enviament hagi entrat a la col·lecció o si hi ha cap problema amb l&apos;enviament.  També podeu comprovar l&apos;estat del vostre enviament visitant la pàgina d&apos;enviaments.</message>      
+    <message key="xmlui.Submission.submit.CompletedStep.go_submission">Vés a la pàgina Enviaments</message>
+    <message key="xmlui.Submission.submit.CompletedStep.submit_again">Envia un altre element</message>        
+
+    <!-- org.dspace.app.xmlui.Submission.workflow.PerformTaskStep -->
+    <message key="xmlui.Submission.workflow.PerformTaskStep.info1">Accions que podeu fer en aquesta tasca:</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.take_help">Assigneu-vos aquesta tasca.</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.take_submit">Assumeix la tasca</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.leave_help">Deixeu aquesta tasca a la memòria perquè l&apos;assumeixi una altra persona.</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.leave_submit">Abandona la tasca</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.approve_help">Si heu revisat l'element i és adequat per incloure&apos;s a la col·lecció, seleccioneu &quot;Aprova&quot;. </message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.approve_submit">Aprova l'element</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.commit_help">Quan hagueu editat l'element, utilitzeu aquesta opció per enviar l'element a l&apos;arxiu. </message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.commit_submit">Envia a l&apos;arxiu</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.reject_help">Si heu revisat l'element i heu conclòs que <strong>no </strong> és adequat per incloure&apos;s a la col·lecció, seleccioneu &quot;Rebutja&quot;.   Posteriorment se us demanarà que introduïu un missatge indicant per què no és adequat l'element i si qui l&apos;ha presentat ha de canviar alguna cosa i tornar a enviar-la. </message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.reject_submit">Rebutja l'element</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.edit_help">Seleccioneu aquesta opció per canviar les metadades de l'element.</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.edit_submit">Edita les metadades</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.return_help">Torneu la tasca a la memòria per tal que un altre usuari pugui fer-la.</message>
+    <message key="xmlui.Submission.workflow.PerformTaskStep.return_submit">Torna la tasca a la memòria</message>
+
+    <!-- org.dspace.app.xmlui.Submission.workflow.RejectTaskStep -->
+    <message key="xmlui.Submission.workflow.RejectTaskStep.info1">Introduïu al quadre de sota la raó per la qual rebutgeu l'element presentat, indicant si qui l&apos;ha presentat pot resoldre un problema i tornar a enviar-la. </message>
+    <message key="xmlui.Submission.workflow.RejectTaskStep.reason">Raó</message>
+    <message key="xmlui.Submission.workflow.RejectTaskStep.reason_required">El camp de raó és necessari</message>
+    <message key="xmlui.Submission.workflow.RejectTaskStep.submit_reject">Rebutja l'element</message>
+
+       <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 
+ Administrative Aspect
+ 
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->    <!-- action-generated messages. These are referenced from the sitemap rather than a transformer -->      <message key="xmlui.administrative.FlowEPersonUtils.add_eperson_success_notice">L&apos;usuari s&apos;ha afegit correctament.</message>
+    <message key="xmlui.administrative.FlowEPersonUtils.edit_eperson_success_notice">L&apos;usuari s&apos;ha editat correctament.</message>
+    <message key="xmlui.administrative.FlowEPersonUtils.reset_password_success_notice">S&apos;ha enviat un missatge de correu electrònic a l&apos;usuari amb un testimoni que es pot utilitzar per triar una contrasenya nova.</message>
+    <message key="xmlui.administrative.FlowEPersonUtils.delete_eperson_success_notice">Els usuaris s&apos;han suprimit correctament. </message>
+    <message key="xmlui.administrative.FlowEPersonUtils.delete_eperson_failed_notice">Els usuaris de la llista no s&apos;han suprimit perquè hi ha restriccions que impedeixen suprimir-los; vegeu la pàgina de detalls d&apos;e-persona per obtenir més informació. </message>
+    <message key="xmlui.administrative.FlowGroupUtils.edit_group_success_notice">El grup s&apos;ha editat correctament.</message>
+    <message key="xmlui.administrative.FlowGroupUtils.delete_group_success_notice">Els grups seleccionats s&apos;han suprimit correctament.</message>
+    <message key="xmlui.administrative.FlowRegistryUtils.add_metadata_schema_success_notice">S&apos;ha creat correctament un esquema nou.</message>
+    <message key="xmlui.administrative.FlowRegistryUtils.delete_metadata_schema_success_notice">Els esquemes s&apos;han suprimit correctament.</message>
+    <message key="xmlui.administrative.FlowRegistryUtils.add_metadata_field_success_notice">S&apos;ha afegit correctament el camp de metadades.</message>
+    <message key="xmlui.administrative.FlowRegistryUtils.edit_metadata_field_success_notice">S&apos;ha editat correctament el camp de metadades.</message>
+    <message key="xmlui.administrative.FlowRegistryUtils.move_metadata_field_success_notice">S&apos;han mogut correctament els camps. </message>
+    <message key="xmlui.administrative.FlowRegistryUtils.delete_metadata_field_success_notice">S&apos;han suprimit correctament els camps. </message>
+    <message key="xmlui.administrative.FlowRegistryUtils.edit_bitstream_format_success_notice">S&apos;ha desat correctament el format.</message>
+    <message key="xmlui.administrative.FlowRegistryUtils.delete_bitstream_format_success_notice">S&apos;han suprimit correctament els formats. </message>
+    <message key="xmlui.administrative.FlowItemUtils.metadata_updated">S&apos;han actualitzat correctament les metadades de l'element.</message>
+    <message key="xmlui.administrative.FlowItemUtils.metadata_added">S&apos;han afegit metadades noves.</message>
+    <message key="xmlui.administrative.FlowItemUtils.item_withdrawn">S&apos;ha retirat l'element.</message>
+    <message key="xmlui.administrative.FlowItemUtils.item_reinstated">S&apos;ha restituït l'element.</message>
+    <message key="xmlui.administrative.FlowItemUtils.bitstream_added">S&apos;ha pujat correctament el nou document.</message>
+    <message key="xmlui.administrative.FlowItemUtils.bitstream_failed">Error en pujar el fitxer.</message>
+    <message key="xmlui.administrative.FlowItemUtils.bitstream_updated">S&apos;ha actualitzat el document.</message>
+    <message key="xmlui.administrative.FlowItemUtils.bitstream_delete">S&apos;han suprimit els fluxos de bits seleccionats.</message>
+    <message key="xmlui.administrative.FlowMapperUtils.map_items">S&apos;han assignat correctament els elements.</message>
+    <message key="xmlui.administrative.FlowMapperUtils.unmaped_items">S&apos;ha anul·lat l&apos;assignació dels elements.</message>
+       
+    <!-- general items for all of the eperson classes -->
+    <message key="xmlui.administrative.eperson.general.epeople_trail">Gestiona les e-persones</message>
+   <!-- org.dspace.app.xmlui.administrative.Navigation -->  <!-- contextual menu items -->  <message key="xmlui.administrative.Navigation.context_head">Context</message>
+    <message key="xmlui.administrative.Navigation.context_edit_item">Edita aquest element</message>
+    <message key="xmlui.administrative.Navigation.context_edit_collection">Edita la col·lecció</message>
+    <message key="xmlui.administrative.Navigation.context_item_mapper">Assignador d&apos;elements</message>
+    <message key="xmlui.administrative.Navigation.context_edit_community">Edita la comunitat</message>
+    <message key="xmlui.administrative.Navigation.context_create_collection">Crea una col·lecció</message>
+    <message key="xmlui.administrative.Navigation.context_create_subcommunity">Crea una subcomunitat</message>
+    <message key="xmlui.administrative.Navigation.context_create_community">Crea una comunitat</message>
+    <message key="xmlui.administrative.Navigation.context_export_item">Exporta l'element</message>
+     <message key="xmlui.administrative.Navigation.context_export_collection">Exporta la col·lecció</message>
+     <message key="xmlui.administrative.Navigation.context_export_community">Exporta la comunitat</message>
+       
+    <!-- Site administrator options -->
+    <message key="xmlui.administrative.Navigation.administrative_head">Administratiu</message>
+    <message key="xmlui.administrative.Navigation.administrative_access_control">Control d&apos;accés</message>
+    <message key="xmlui.administrative.Navigation.administrative_people">Persones</message>
+    <message key="xmlui.administrative.Navigation.administrative_groups">Grups</message>
+    <message key="xmlui.administrative.Navigation.administrative_authorizations">Autoritzacions</message>
+    <message key="xmlui.administrative.Navigation.administrative_registries">Registres</message>
+    <message key="xmlui.administrative.Navigation.administrative_metadata">Metadades</message>
+    <message key="xmlui.administrative.Navigation.administrative_format">Format</message>
+    <message key="xmlui.administrative.Navigation.administrative_items">Unitats</message>
+     <message key="xmlui.administrative.Navigation.administrative_withdrawn">Unitats retirades</message>
+    <message key="xmlui.administrative.Navigation.administrative_control_panel">Tauler de control</message>
+     <message key="xmlui.administrative.Navigation.statistics">Estadístiques</message>
+
+    <!-- my account items -->
+    <message key="xmlui.administrative.Navigation.account_export">Les meves exportacions</message>
+       
+       
+    <!-- export item -->
+    <message key="xmlui.administrative.ItemExport.head">Arxiu d&apos;exportació</message>
+    <message key="xmlui.administrative.ItemExport.item.id.error">L&apos;id. d&apos;unitat indicat no és vàlid.</message>
+    <message key="xmlui.administrative.ItemExport.collection.id.error">L&apos;id. de col·lecció indicat no és vàlid.</message>
+    <message key="xmlui.administrative.ItemExport.community.id.error">L&apos;id. de comunitat indicat no és vàlid</message>
+    <message key="xmlui.administrative.ItemExport.item.not.found">No s&apos;ha trobat l'element sol·licitat.</message>
+    <message key="xmlui.administrative.ItemExport.collection.not.found">No s&apos;ha trobat la col·lecció sol·licitada.</message>
+    <message key="xmlui.administrative.ItemExport.community.not.found">No s&apos;ha trobat la comunitat sol·licitada.</message>
+    <message key="xmlui.administrative.ItemExport.item.success">L'element s&apos;ha exportat correctament.  Rebreu un missatge de correu electrònic quan l&apos;arxiu estigui a punt per baixar.   També podeu utilitzar l&apos;enllaç &apos;Les meves exportacions&apos; per veure una llista dels arxius disponibles.</message>
+    <message key="xmlui.administrative.ItemExport.collection.success">La col·lecció s&apos;ha exportat correctament.  Rebreu un missatge de correu electrònic quan l&apos;arxiu estigui a punt per baixar.   També podeu utilitzar l&apos;enllaç &apos;Les meves exportacions&apos; per veure una llista dels arxius disponibles.</message>
+    <message key="xmlui.administrative.ItemExport.community.success">La comunitat s&apos;ha exportat correctament.  Rebreu un missatge de correu electrònic quan l&apos;arxiu estigui a punt per baixar.   També podeu utilitzar l&apos;enllaç &apos;Les meves exportacions&apos; per veure una llista dels arxius disponibles.</message>
+    <message key="xmlui.administrative.ItemExport.available.head">Arxius d&apos;exportació disponibles per baixar:</message>
+       
+
+
+    <!-- org.dspace.app.xmlui.administrative.eperson.ManageEPeopleMain -->
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.title">Gestiona les e-persones</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.main_head">Gestió d&apos;e-persones</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_head">Accions</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_create">Crea una e-persona nova</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_create_link">Feu clic aquí per afegir una e-persona nova.</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_browse">Explora les e-persones</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_browse_link">Feu clic aquí per explorar totes les e-persones.</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_search">Cerca e-persones</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_help">Les e-persones se cerquen per coincidència parcial amb l&apos;adreça electrònica o el nom</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_para1">A sota es mostra una llista de les e-persones que coincideixen amb la vostra consulta. Seleccioneu les e-persones que voleu suprimir i feu clic al botó de supressió per continuar o a l&apos;adreça electrònica o el nom d&apos;una e-persona per editar-la.</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_head">Resultats de la cerca</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column1"></message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column2">Id.</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column3">Nom </message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column4">Correu electrònic</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.submit_delete">Suprimeix e-persones</message>
+    <message key="xmlui.administrative.eperson.ManageEPeopleMain.no_results">La cerca no ha obtingut resultats...</message>
+               
+               
+    <!-- org.dspace.app.xmlui.administrative.eperson.AddEPersonForm -->
+    <message key="xmlui.administrative.eperson.AddEPersonForm.title">Afegeix una e-persona</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.trail">Afegeix una e-persona</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.head1">Crea un usuari nou</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.email_taken">Aquesta adreça electrònica la utilitza una altra e-persona. Les adreces electròniques han de ser exclusives.</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.head2">Informació de l&apos;e-persona nova:</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.error_email_unique">L&apos;adreça electrònica ha de ser exclusiva</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.error_email">L&apos;adreça electrònica és necessària</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.error_fname">El nom és necessari</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.error_lname">Els cognoms són necessaris</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.req_certs">Requereix certificat</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.can_log_in">Pot iniciar sessió</message>
+    <message key="xmlui.administrative.eperson.AddEPersonForm.submit_create">Crea e-persona</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.eperson.EditEPersonForm -->
+    <message key="xmlui.administrative.eperson.EditEPersonForm.title">Edita e-persona</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.trail">Edita e-persona</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.head1">Edita una e-persona</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.email_taken">Aquesta adreça electrònica la utilitza una altra e-persona. Les adreces electròniques han de ser exclusives.</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.head2">Informació de {0}:</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.error_email_unique">L&apos;adreça electrònica ha de ser exclusiva</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.error_email">L&apos;adreça electrònica és necessària</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.error_fname">El nom és necessari</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.error_lname">Els cognoms són necessaris</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.req_certs">Requereix certificat</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.can_log_in">Pot iniciar sessió</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.submit_reset_password">Restableix la contrasenya</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.special_help">També podeu suprimir per sempre aquesta e-persona del sistema o restablir-ne la contrasenya. En restablir una contrasenya, s&apos;enviarà a l&apos;usuari un missatge de correu electrònic amb un enllaç especial per triar una contrasenya nova.</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.submit_delete">Suprimeix e-persona</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.submit_login_as">Inicia la sessió com a e-persona</message>
+       
+    <message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint">Aquesta e-persona no es pot suprimir per les següents restriccions: </message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint.last_conjunction">i</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint.item">l&apos;e-persona ha enviat un o més elements</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint.workflowitem">l&apos;e-persona té un flux de treball d&apos;enviament actiu</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint.tasklistitem">l&apos;e-persona té una tasca de flux de treball pendent</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint.unknown">l&apos;e-persona té una restricció sense identificar al sistema</message>
+       
+    <message key="xmlui.administrative.eperson.EditEPersonForm.member_head">Grups dels quals és membre aquesta e-persona:</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.indirect_member">(a través del grup:  {0})</message>
+    <message key="xmlui.administrative.eperson.EditEPersonForm.member_none">cap</message>
+       
+       
+    <!-- org.dspace.app.xmlui.administrative.eperson.DeleteEPeopleConfirm -->
+    <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.title">Confirma la supressió d&apos;e-persona</message>
+    <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.trail">Confirma la supressió</message>
+    <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.confirm_head">Confirma la supressió</message>
+    <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.confirm_para">Se suprimiran les e-persones següents: </message>
+    <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.submit_confirm">Confirma la supressió</message>
+    <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.head_id">Id.</message>
+    <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.head_name">Nom </message>
+    <message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.head_email">Correu electrònic</message>
+
+
+    <!-- general items for all of the group classes -->
+    <message key="xmlui.administrative.group.general.group_trail">Gestiona els grups</message>
+
+    <!-- org.dspace.app.xmlui.administrative.group.ManageGroupsMain -->
+    <message key="xmlui.administrative.group.ManageGroupsMain.title">Gestiona els grups</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.main_head">Gestió del grup</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.actions_head">Accions</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.actions_create">Crea un grup nou</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.actions_create_link">Feu clic aquí per afegir un grup nou.</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.actions_browse">Explora els grups</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.actions_browse_link">Feu clic aquí per explorar tots els grups.</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.actions_search">Cerqueu grups</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.search_help">Els grups se cerquen per coincidències parcials del seu nom</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.search_head">Resultats de la cerca</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.search_column1"></message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.search_column2">Id.</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.search_column3">Nom </message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.search_column4">Membres</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.search_column5">Col·lecció</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.collection_link">Visualitza</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.submit_delete">Suprimeix grups</message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.no_results">La cerca no ha obtingut resultats...</message>
+
+    <!-- org.dspace.app.xmlui.administrative.group.EditGroupForm -->
+    <message key="xmlui.administrative.group.EditGroupForm.title">Editor de grups</message>
+    <message key="xmlui.administrative.group.EditGroupForm.trail">Edita el grup</message>
+    <message key="xmlui.administrative.group.EditGroupForm.main_head">Editor de grups: {0} (Id.: {1})</message>
+    <message key="xmlui.administrative.group.EditGroupForm.main_head_new">Editor de grups: grup nou</message>
+    <message key="xmlui.administrative.group.EditGroupForm.submit_clear">Esborra la cerca</message>
+    <message key="xmlui.administrative.group.EditGroupForm.member">Membre</message>
+    <message key="xmlui.administrative.group.EditGroupForm.cycle">Cicle</message>
+    <message key="xmlui.administrative.group.EditGroupForm.pending">Pendent</message>
+    <message key="xmlui.administrative.group.EditGroupForm.pending_warn">Tingueu en compte que els canvis pendents no es desen fins que feu clic al botó de desar. </message>
+    <message key="xmlui.administrative.group.EditGroupForm.submit_add">Afegeix</message>
+    <message key="xmlui.administrative.group.EditGroupForm.submit_remove">Suprimeix</message>
+    <message key="xmlui.administrative.group.EditGroupForm.collection_para">Aquest grup està associat amb la col·lecció: </message>
+    <message key="xmlui.administrative.group.EditGroupForm.label_name">Canvia el nom del grup: </message>
+    <message key="xmlui.administrative.group.EditGroupForm.label_instructions">Aquest grup està associat amb una col·lecció concreta i el seu nom no es pot modificar.</message>
+    <message key="xmlui.administrative.group.EditGroupForm.label_search">Cerca membres per afegir: </message>
+    <message key="xmlui.administrative.group.EditGroupForm.submit_search_people">E-persones...</message>
+    <message key="xmlui.administrative.group.EditGroupForm.submit_search_groups">Grups...</message>
+    <message key="xmlui.administrative.group.EditGroupForm.no_results">La cerca no ha obtingut resultats...</message>
+    <message key="xmlui.administrative.group.EditGroupForm.epeople_column1">Id. </message>
+    <message key="xmlui.administrative.group.EditGroupForm.epeople_column2">Nom </message>
+    <message key="xmlui.administrative.group.EditGroupForm.epeople_column3">Correu electrònic</message>
+    <message key="xmlui.administrative.group.EditGroupForm.epeople_column4"></message>
+    <message key="xmlui.administrative.group.EditGroupForm.groups_column1">Id. </message>
+    <message key="xmlui.administrative.group.EditGroupForm.groups_column2">Nom </message>
+    <message key="xmlui.administrative.group.EditGroupForm.groups_column3">Membres</message>
+    <message key="xmlui.administrative.group.EditGroupForm.groups_column4">Col·lecció</message>
+    <message key="xmlui.administrative.group.EditGroupForm.groups_column5"></message>
+    <message key="xmlui.administrative.group.ManageGroupsMain.groups_collection_link">visualitza</message>
+    <message key="xmlui.administrative.group.EditGroupForm.members_head">Membres</message>
+    <message key="xmlui.administrative.group.EditGroupForm.members_column1">Id.</message>
+    <message key="xmlui.administrative.group.EditGroupForm.members_column2">Nom </message>
+    <message key="xmlui.administrative.group.EditGroupForm.members_column3">Correu electrònic</message>
+    <message key="xmlui.administrative.group.EditGroupForm.members_column4"></message>
+    <message key="xmlui.administrative.group.EditGroupForm.members_group_name">grup: {0}</message>
+    <message key="xmlui.administrative.group.EditGroupForm.members_none">Aquest grup no té cap membre.</message>
+    <message key="xmlui.administrative.group.EditGroupForm.members_pending">[pendent]</message>
+    <message key="xmlui.administrative.group.EditGroupForm.instructions_para">Suprimeix membres</message>
+    <message key="xmlui.administrative.group.EditGroupForm.collection_link_para">Suprimeix membres</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.group.DeleteGroupsConfirm -->
+    <message key="xmlui.administrative.group.DeleteGroupsConfirm.title">Confirma la supressió del grup</message>
+    <message key="xmlui.administrative.group.DeleteGroupsConfirm.trail">Confirma la supressió</message>
+    <message key="xmlui.administrative.group.DeleteGroupsConfirm.head">Confirma la supressió</message>
+    <message key="xmlui.administrative.group.DeleteGroupsConfirm.para">Se suprimiran els grups següents:</message>
+    <message key="xmlui.administrative.group.DeleteGroupsConfirm.column1">Id. </message>
+    <message key="xmlui.administrative.group.DeleteGroupsConfirm.column2">Nom </message>
+    <message key="xmlui.administrative.group.DeleteGroupsConfirm.column3">E-persones</message>
+    <message key="xmlui.administrative.group.DeleteGroupsConfirm.column4">Grups</message>
+       
+    <!-- general items for all of the registries classes -->
+    <message key="xmlui.administrative.registries.general.format_registry_trail">Registre de formats</message>
+    <message key="xmlui.administrative.registries.general.metadata_registry_trail">Registre de metadades</message>      
+       
+    <!-- org.dspace.app.xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.java -->
+    <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.title">Suprimeix formats de document</message>
+    <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.trail">Suprimeix formats de document</message>
+    <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.head">Confirma la supressió</message>
+    <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.para1">Segur que voleu suprimir el format? Tots els fluxos de bits existents amb aquest format es tornaran al format de document desconegut.</message>
+    <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.column1">Id. </message>
+    <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.column2">Tipus MIME</message>
+    <message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.column3">Nom </message>
+
+    <!-- org.dspace.app.xmlui.administrative.registries.DeleteMetadataFieldsConfirm.java -->
+    <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.title">Suprimeix camps</message>
+    <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.trail">Suprimeix camps</message>
+    <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.head">Confirma la supressió</message>
+    <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.para1">Teniu <b>la certesa</b> absoluta que voleu suprimir aquests camps?  Si algun element conté metadades en aquests camps, els camps no es poden suprimir.  Us heu d&apos;assegurar que cap element faci servir aquests camps.</message>
+    <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.warning">ADVERTIMENT: </message>
+    <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.para2">Això ocasionarà un error si hi ha cap element que contingui metadades en aquests camps.</message>
+    <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.column1">Id. </message>
+    <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.column2">Nom </message>
+    <message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.column3">Nota d&apos;àmbit</message>
+
+    <!-- org.dspace.app.xmlui.administrative.registries.DeleteMetadataSchemaConfirm.java-->
+    <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.title">Suprimeix l&apos;esquema</message>
+    <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.trail">Suprimeix l&apos;esquema</message>
+    <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.head">Confirma la supressió</message>
+    <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.para1">Teniu <b>la certesa</b> absoluta que voleu suprimir aquests camps? Si hi ha cap element que contingui metadades als camps inclosos en aquest esquema, l&apos;esquema no es pot suprimir.  Us heu d&apos;assegurar que cap element contingui metadades en aquest esquema.</message>
+    <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.warning">ADVERTIMENT: </message>
+    <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.para2">Això ocasionarà un error si hi ha cap element que contingui metadades dins de l&apos;esquema.</message>
+    <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.column1">Id. </message>
+    <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.column2">Espai de nom</message>
+    <message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.column3">Nom </message>
+
+    <!-- org.dspace.app.xmlui.administrative.registries.EditBitstreamFormat.java -->
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.title">Format de document</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.trail">Format de document</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.head1">Nou format de document</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.head2">Format de document: {0}</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.para1">Inclogueu metadades descriptives sobre el format de document a sota. Si bé els noms de format han de ser exclusius, els tipus MIME no cal que ho siguin.  Podeu tenir entrades de registre de format diferents per a diferents versions del Microsoft Word, encara que el tipus MIME sigui el mateix per a totes dues. </message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.name">Nom </message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.name_help">Nom exclusiu per a aquest format (p. ex.  Microsoft Word XP o Microsoft Word 2000)</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.name_error">El camp de nom és necessari.</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.mimetype">Tipus MIME</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.mimetype_help">Tipus MIME associat amb aquest format, que no cal que sigui exclusiu. </message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.description">Descripció</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.support">Nivell de suport</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.support_help">Nivell de suport que dóna la vostra institució a aquest format.</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.support_0">Desconegut</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.support_1">Conegut</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.support_2">Admès</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.internal">Intern</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.internal_help">Els formats marcats com a interns són ocults per a l&apos;usuari i s&apos;utilitzen amb finalitats administratives. </message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.extensions">Extensions de fitxer</message>
+    <message key="xmlui.administrative.registries.EditBitstreamFormat.extensions_help">Les extensions son extensions de fitxer que s&apos;utilitzen per identificar automàticament el format dels fitxers pujats. Podeu introduir diverses extensions per a cada format.</message>
+
+    <!-- org.dspace.app.xmlui.administrative.registries.EditMetadataSchema.java -->
+    <message key="xmlui.administrative.registries.EditMetadataSchema.title">Esquema de metadades</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.trail">Esquema de metadades</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.head1">Esquema de metadades: &quot;{0}&quot;</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.para1">Aquest és l&apos;esquema de metadades per a &quot;{0}&quot;. Podeu afegir camps de metadades nous o actualitzar els existents a l&apos;esquema. Els camps també es poden seleccionar per suprimir-los o moure&apos;ls a un altre esquema. </message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.head2">Camps de metadades d&apos;esquema</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.column1"></message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.column2">Id. </message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.column3">Camp</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.column4">Nota d&apos;àmbit</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.empty">No hi ha cap camp de metadades</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.submit_delete">Suprimeix camps</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.submit_move">Mou els camps a un altre esquema</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.head3">Afegeix nou camp de metadades</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.name">Nom del fitxer</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.note">Nota d&apos;àmbit</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.note_help">Notes addicionals sobre aquest camp de metadades.</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.submit_add">Afegeix nou camp de metadades</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.head4">Actualitza el camp: {0}</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.submit_update">Actualitza el camp</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error">Error</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error_duplicate_field">El nom del camp ja s&apos;utilitza; tots els elements i els qualificadors han de ser exclusius. </message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error_element_empty">L&apos;element del camp és necessari.</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error_element_badchar">L&apos;element del camp conté un caràcter erroni. L&apos;element NO pot contenir: punts, guions baixos ni espais.</message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error_element_tolong">L&apos;element d&apos;aquest camp és massa llarg; ha de tenir menys de 32 caràcters. </message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error_qualifier_tolong">El qualificador del cap és massa llarg; ha de tenir menys de 32 caràcters. </message>
+    <message key="xmlui.administrative.registries.EditMetadataSchema.error_qualifier_badchar">El qualificador del camp conté un caràcter erroni. El qualificador NO pot contenir: punts, guions baixos ni espais.</message>
+
+    <!-- org.dspace.app.xmlui.administrative.registries.FormatRegistryMain.java -->
+    <message key="xmlui.administrative.registries.FormatRegistryMain.title">Registre de formats</message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.head">Registre de formats de document</message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.para1">Aquesta llista de formats de document ofereix informació sobre formats coneguts i el seu nivell de suport. Amb aquesta eina podeu editar o afegir nous formats de document. Els formats marcats com a &apos;interns&apos; són ocults per a l&apos;usuari i s&apos;utilitzen amb finalitats administratives. </message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.new_link">Afegeix un format de document nou</message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.column1"></message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.column2">Id. </message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.column3">Nom </message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.column4">Tipus MIME</message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.column5">Nivell de suport</message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.internal">(<i>intern</i>)</message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.support_0">Desconegut</message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.support_1">Conegut</message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.support_2">Suport</message>
+    <message key="xmlui.administrative.registries.FormatRegistryMain.submit_delete">Suprimeix formats</message>
+
+    <!-- org.dspace.app.xmlui.administrative.registries.MetadatRegistryMain.java -->
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.title">Registre de metadades</message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.head1">Registre de metadades</message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.para1">El registre de metadades manté una llista de tots els camps de metadades que hi ha disponibles per al dipòsit. Aquests camps es poden dividir entre diversos esquemes.  Amb tot, el DSpace requereix l&apos;esquema qualificat Dublin Core. Podeu ampliar l&apos;esquema Dublin Core amb altres camps o afegir nous esquemes al registre.</message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.column1"></message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.column2">Id. </message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.column3">Espai de nom</message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.column4">Nom </message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.submit_delete">Suprimeix l&apos;esquema</message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.head2">Afegeix un esquema nou</message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.namespace">Espai de nom</message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.namespace_help">L&apos;espai de nom ha de ser una ubicació URI establerta per a l&apos;esquema nou.</message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.namespace_error">Aquest camp és necessari.</message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.name">Nom </message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.name_help">Notació abreujada de l&apos;esquema. S&apos;utilitzarà com a prefix del nom d&apos;un camp (p. ex. dc.element.qualificador).  El nom ha de tenir menys de 32 caràcters i no pot incloure espais, punts ni guions baixos. </message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.name_error">Aquest camp és necessari i ha de tenir menys de 32 caràcters i no pot contenir espais, punts ni guions baixos. </message>
+    <message key="xmlui.administrative.registries.MetadataRegistryMain.submit_add">Afegeix un esquema nou</message>
+
+    <!-- org.dspace.app.xmlui.administrative.registries.MoveMetadataField.java -->
+    <message key="xmlui.administrative.registries.MoveMetadataField.title">Mou camps</message>
+    <message key="xmlui.administrative.registries.MoveMetadataField.trail">Mou camps</message>
+    <message key="xmlui.administrative.registries.MoveMetadataField.head1">Mou camps de metadades</message>
+    <message key="xmlui.administrative.registries.MoveMetadataField.para1">Seleccioneu l&apos;esquema de destinació al qual voleu moure aquests camps. Si l&apos;esquema de destinació ja té camps amb noms idèntics, aquests camps no es mouran.</message>
+    <message key="xmlui.administrative.registries.MoveMetadataField.column1">Id. </message>
+    <message key="xmlui.administrative.registries.MoveMetadataField.column2">Nom </message>
+    <message key="xmlui.administrative.registries.MoveMetadataField.column3">Nota d&apos;àmbit</message>
+    <message key="xmlui.administrative.registries.MoveMetadataField.para2">Mou a l&apos;esquema: </message>
+    <message key="xmlui.administrative.registries.MoveMetadataField.submit_move">Mou camps</message>
+
+
+       
+       
+       
+    <!-- general authorization keywords -->
+    <message key="xmlui.administrative.authorization.general.authorize_trail">Autorització</message>
+    <message key="xmlui.administrative.authorization.general.policyList_trail">Llista de directives</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.authorization.AuthorizationMain -->
+    <message key="xmlui.administrative.authorization.AuthorizationMain.title">Administra les directives d&apos;autorització</message>
+    <message key="xmlui.administrative.authorization.AuthorizationMain.main_head">Administra les directives d&apos;autorització</message>
+    <message key="xmlui.administrative.authorization.AuthorizationMain.actions_head">Autoritzacions d&apos;unitat</message>
+    <message key="xmlui.administrative.authorization.AuthorizationMain.bad_name">L&apos;id. indicat no s&apos;ha resolt en cap element</message>
+    <message key="xmlui.administrative.authorization.AuthorizationMain.actions_item_lookup">Cerca un element</message>
+    <message key="xmlui.administrative.authorization.AuthorizationMain.search_help">Els elements es poden trobar per nansa o per id. intern</message>
+    <message key="xmlui.administrative.authorization.AuthorizationMain.submit_find">Cerca</message>
+    <message key="xmlui.administrative.authorization.AuthorizationMain.actions_advanced">Eina d&apos;autoritzacions avançades</message>
+    <message key="xmlui.administrative.authorization.AuthorizationMain.actions_advanced_link">Feu clic aquí per anar a l&apos;eina d&apos;administració de directives de comodí d&apos;unitat</message>
+    <message key="xmlui.administrative.authorization.AuthorizationMain.containerList_head">Autoritzacions de comunitat/col·lecció</message>
+    <message key="xmlui.administrative.authorization.AuthorizationMain.containerList_para">Feu clic en una comunitat o col·lecció per editar-ne les directives.</message>
+       
+       
+       
+    <!-- org.dspace.app.xmlui.administrative.authorization.EditContainerPolicies -->
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.title">Edita les directives</message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.trail">Llista de directives</message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.main_head_collection">Directives de la col•lecció &quot;{0}&quot; ({1},id.: {2})</message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.main_head_community">Directives de la comunitat &quot;{0}&quot; ({1},id.: {2})</message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.main_add_link">Feu clic aquí per afegir una directiva nova. </message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.submit_add">Afegeix</message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.head_id">Id. </message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.head_action">Acció</message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.head_group">Grup</message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.submit_delete">Suprimeix seleccionats</message>
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.group_edit">Edita</message>
+       
+
+       
+    <!-- org.dspace.app.xmlui.administrative.authorization.EditItemPolicies -->
+    <message key="xmlui.administrative.authorization.EditItemPolicies.title">Edita les directives de l'element</message>
+    <message key="xmlui.administrative.authorization.EditItemPolicies.trail">Llista de directives</message>
+    <message key="xmlui.administrative.authorization.EditItemPolicies.main_head">Directives de l'element {0} (id.={1})</message>
+    <message key="xmlui.administrative.authorization.EditItemPolicies.main_para1">Amb aquest editor podeu visualitzar i modificar les directives d&apos;un element i modificar les directives de components individuals d&apos;un element:  conjunts i fluxos de bits. En breu, un element és un contenidor de conjunts i els conjunts són contenidors de fluxos de bits.  Els contenidors normalment tenen directives d&apos; ADDICIÓ/SUPRESSIÓ/LECTURA/ESCRIPTURA, mentre que els fluxos de bits només tenen directives de LECTURA/ESCRIPTURA. </message>
+    <message key="xmlui.administrative.authorization.EditItemPolicies.main_para2">Veureu que hi ha un conjunt i un document addicional per a cada element que conté el text de llicència de l'element.</message>
+    <message key="xmlui.administrative.authorization.EditItemPolicies.subhead_item">Directives d&apos;unitat</message>
+    <message key="xmlui.administrative.authorization.EditItemPolicies.subhead_bundle">Directives del conjunt {0} ({1})</message>
+    <message key="xmlui.administrative.authorization.EditItemPolicies.subhead_bitstream">Document {0} ({1})</message>
+    <message key="xmlui.administrative.authorization.EditItemPolicies.add_itemPolicy_link">Afegeix una nova directiva d&apos;unitat</message>
+    <message key="xmlui.administrative.authorization.EditItemPolicies.add_bundlePolicy_link">Afegeix una nova directiva de conjunt</message>
+    <message key="xmlui.administrative.authorization.EditItemPolicies.add_bitstreamPolicy_link">Afegeix una nova directiva de document</message>
+       
+    <message key="xmlui.administrative.authorization.EditContainerPolicies.no_policies">No s&apos;ha trobat cap directiva per a aquest objecte.</message>
+       
+       
+    <!-- org.dspace.app.xmlui.administrative.authorization.EditPolicyForm -->
+    <message key="xmlui.administrative.authorization.EditPolicyForm.title">Edita la directiva</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.trail">Edita la directiva</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.main_head_new">Crea una directiva nova per a {0} {1}</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.main_head_edit">Edita la directiva {0} de {1} {2}</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.error_no_group">No s&apos;ha seleccionat cap grup</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.error_no_action">No s&apos;ha seleccionat cap acció</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.groups_column4"></message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.groups_column1">Id. </message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.groups_column2">Nom </message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.groups_column3">Accions d&apos;aquest recurs</message>
+       
+    <message key="xmlui.administrative.authorization.EditPolicyForm.set_group">Estableix</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.current_group">actual</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.groups_head">Resultats de la cerca</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.policy_currentGroup">Seleccioneu un grup</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.label_search">Cerca un grup</message>
+     <message key="xmlui.administrative.authorization.EditPolicyForm.submit_search_groups">Cerca</message>
+     <message key="xmlui.administrative.authorization.EditPolicyForm.label_action">Seleccioneu l&apos;acció</message>
+   
+       
+    <!-- org.dspace.app.xmlui.administrative.authorization.AdvacedAuthorizationsForm -->
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.title">Gestor de directives avançades</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.trail">Autoritzacions avançades</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.main_head">Gestor de directives avançades</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.main_para">Permet afegir comodins a les directives i esborrar directives per a tipus de contingut de col·leccions específiques). ADVERTIMENT - La supressió de permisos de LECTURA dels elements farà que no es puguin visualitzar!</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_groupSentence">Per a tots els grups seleccionats...</message>
+     <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_actionSentence">...concedeix la capacitat de realitzar l&apos;acció següent...</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_resourceSentence">...per als tipus d&apos;objecte següents...</message>
+     <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_collectionSentence">...a les col·leccions següents.</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyGroup">Grup</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyAction">Acció</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyResource">Tipus de contingut</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyCollections">Col·lecció</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.submit_add">Afegeix directives</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.submit_remove_all">Esborra directives</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.authorization.DeletePoliciesConfirm -->
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.title">Confirma la supressió de directiva</message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.trail">Confirma la supressió</message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.confirm_head">Confirma la supressió</message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.confirm_para">Se suprimiran les directives següents: </message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_id">Id. </message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_action">Acció</message>
+    <message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_group">Grup</message>
+       
+    <!-- general edit item messages -->
+    <message key="xmlui.administrative.item.general.item_trail">Unitats</message>
+    <message key="xmlui.administrative.item.general.option_head">Edita l'element</message>
+    <message key="xmlui.administrative.item.general.option_status">Estat de l'element</message>
+    <message key="xmlui.administrative.item.general.option_bitstreams">Fluxos de bits de l'element</message>
+    <message key="xmlui.administrative.item.general.option_metadata">Metadades de l'element</message>
+    <message key="xmlui.administrative.item.general.option_view">Visualitza l'element</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.item.AddBitstreamForm -->
+    <message key="xmlui.administrative.item.AddBitstreamForm.title">Puja document</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.trail">Puja document</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.head1">Puja un document nou</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.bundle_label">Conjunt</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.bundle.ORIGINAL">Fitxers de contingut (per defecte)</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.bundle.METADATA">Fitxers de metadades</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.bundle.THUMBNAIL">Visualitzacions en miniatura</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.bundle.LICENSE">Llicències</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.bundle.CC_LICENSE">Llicències de Creative Commons</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.file_label">Fitxer</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.file_help">Introduïu el nom del fitxer del vostre ordinador corresponent a l'element. Si feu clic a &quot;Explora...&quot;, es mostrarà una finestra nova on podreu localitzar i seleccionar el fitxer de l&apos;ordinador. </message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.description_label">Descripció</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.description_help">Opcionalment, podeu incloure-hi una descripció breu del fitxer, per exemple &quot; <i>Article principal</i>&quot; o &quot; <i>Lectures de dades de prova</i>".</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.submit_upload">Puja</message>
+    <message key="xmlui.administrative.item.AddBitstreamForm.no_bundles">Necessiteu el privilegi d&apos;ADDICIÓ i ESCRIPTURA en com a mínim un conjunt por poder pujar documents nous.</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.item.DeleteBitstreamConfirm -->
+    <message key="xmlui.administrative.item.DeleteBitstreamConfirm.title">Confirma la supressió</message>
+    <message key="xmlui.administrative.item.DeleteBitstreamConfirm.trail">Confirma la supressió</message>
+    <message key="xmlui.administrative.item.DeleteBitstreamConfirm.head1">Confirma les supressions </message>
+    <message key="xmlui.administrative.item.DeleteBitstreamConfirm.para1">Segur que voleu suprimir aquests documents:</message>
+    <message key="xmlui.administrative.item.DeleteBitstreamConfirm.column1">Nom </message>
+    <message key="xmlui.administrative.item.DeleteBitstreamConfirm.column2">Descripció</message>
+    <message key="xmlui.administrative.item.DeleteBitstreamConfirm.column3">Format</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.item.ConfirmItemForm -->
+    <message key="xmlui.administrative.item.ConfirmItemForm.title">Confirma</message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.trail">Confirma</message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.head1">Modifica l'element: {0}</message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.para_delete">Segur que voleu suprimir completament aquest element? Precaució: si feu aquesta acció, l'element no es podrà recuperar. </message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.para_withdraw">Segur que voleu retirar aquest element de l&apos;arxiu?</message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.para_reinstate">Segur que voleu restituir l'element a l&apos;arxiu?</message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.column1">Camp</message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.column2">Valor</message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.column3">Llengua</message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.submit_withdraw">Retira</message>
+    <message key="xmlui.administrative.item.ConfirmItemForm.submit_reinstate">Restitueix</message>
+
+    <!-- org.dspace.app.xmlui.administrative.item.EditBitstreamForm -->
+    <message key="xmlui.administrative.item.EditBitstreamForm.title">Edita el document</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.trail">Edita el document</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.head1">Edita el document</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.file_label">Fitxer</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.primary_label">Document principal</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.primary_option_yes">sí</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.primary_option_no">no</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.description_label">Descripció</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.description_help">Opcionalment, podeu incloure-hi una descripció breu del fitxer, per exemple &quot; <i>Article principal</i>&quot; o &quot; <i>Lectures de dades de prova</i>"."</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.para1">Seleccioneu el format del fitxer a la llista de sota, per exemple &quot; <i>Adobe PDF</i>&quot; o &quot;<i>Paraula</i>", <b>OR</b>  si el format no és a la llista, descriviu-lo al quadre de sota. </message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.format_label">Format seleccionat</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.format_default">Format no llistat</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.para2">Si el format no és a la llista de dalt, <strong>seleccioneu &quot;format no llistat&quot; a dalt</strong> i descriviu-lo al camp de sota.</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.user_label">Un altre format</message>
+    <message key="xmlui.administrative.item.EditBitstreamForm.user_help">Aplicació que heu utilitzat per crear el fitxer, i el número de versió (per exemple, &quot; <i>ACMESoft SuperApp versió 1.5 </i>").</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.item.EditItemBitstreamsForm -->
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.title">Documents de l'element</message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.trail">Documents de l'element</message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.head1">Documents</message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.column1"></message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.column2">Nom </message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.column3">Descripció</message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.column4">Format</message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.column5">Visualitza</message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.bundle_label"><strong>Conjunt: {0}</strong></message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.primary_label"> (principal) </message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.view_link">visualitza</message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.submit_add">Puja un document nou</message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.submit_delete">Suprimeix documents</message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.no_upload">Necessiteu el privilegi d&apos;ADDICIÓ i ESCRIPTURA a l'element i els conjunts per poder pujar nous documents.</message>
+    <message key="xmlui.administrative.item.EditItemBitstreamsForm.no_remove">Necessiteu el privilegi de SUPRESSIÓ a l'element i els conjunts per poder suprimir documents.</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.item.EditItemMetadataForm -->
+    <message key="xmlui.administrative.item.EditItemMetadataForm.title">Metadades de l'element</message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.trail">Metadades de l'element</message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.head1">Afegeix metadades noves</message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.name_label">Nom </message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.value_label">Valor</message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.lang_label">Llengua</message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.submit_add">Afegeix metadades noves</message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.para1">TINGUEU EN COMPTE QUE: Aquests canvis no es validen de cap manera. Teniu tota la responsabilitat d&apos;introduir les dades en el format correcte. Si teniu dubtes pel que fa al format, NO hi feu cap canvi. </message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.head2">Metadades</message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.column1">Suprimeix</message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.column2">Nom </message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.column3">Valor</message>
+    <message key="xmlui.administrative.item.EditItemMetadataForm.column4">Llengua</message>
+
+    <!-- org.dspace.app.xmlui.administrative.item.EditItemStatusForm -->
+    <message key="xmlui.administrative.item.EditItemStatusForm.title">Estat de l'element</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.trail">Estat de l'element</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.para1">Benvinguda a la pàgina de gestió de l'element. Des d&apos;aquí podeu retirar, restituir o suprimir l'element.  També podeu actualitzar o afegir metadades / documents nous a les altres pestanyes.</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_id">Id. intern de l'element</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_handle">Handle</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_modified">Darrera modificació</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_in">A les col·leccions</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_page">Pàgina de l'element</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_auth">Autoritzacions de l'element</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_withdraw">Unitat retirada del dipòsit</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_reinstate">Restitueix l'element al dipòsit</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.label_delete">Esborra l'element completament</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.submit_authorizations">Edita les autoritzacions</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.submit_withdraw">Retira...</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.submit_reinstate">Restitueix...</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.submit_delete">Suprimeix per sempre</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.na">n/d</message>
+    <message key="xmlui.administrative.item.EditItemStatusForm.sysadmins_only">(només administradors del sistema)</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.item.ViewItem -->
+    <message key="xmlui.administrative.item.ViewItem.title">Visualitza l'element</message>
+    <message key="xmlui.administrative.item.ViewItem.trail">Visualitza l'element</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.item.FindItemForm -->
+    <message key="xmlui.administrative.item.FindItemForm.title">Cerca element</message>
+    <message key="xmlui.administrative.item.FindItemForm.head1">Cerca element</message>
+    <message key="xmlui.administrative.item.FindItemForm.identifier_label">Id. intern/nansa de l'element</message>
+    <message key="xmlui.administrative.item.FindItemForm.identifier_error">No es pot resoldre l&apos;identificador.</message>
+    <message key="xmlui.administrative.item.FindItemForm.find">Cerca</message>
+       
+    <!-- general mapper messages -->
+    <message key="xmlui.administrative.mapper.general.mapper_trail">Assignador d&apos;unitats</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.mapper.MapperMain -->
+    <message key="xmlui.administrative.mapper.MapperMain.title">Assignador d&apos;unitats</message>
+    <message key="xmlui.administrative.mapper.MapperMain.head1">Assignador d&apos;unitats - Assigna elements d&apos;altres col·leccions</message>
+    <message key="xmlui.administrative.mapper.MapperMain.para1">Col·lecció: "<strong>{0}</strong>"</message>
+    <message key="xmlui.administrative.mapper.MapperMain.para2">Aquesta és l&apos;eina d&apos;assignació d&apos;unitats que permet als administradors de col·leccions assignar elements d&apos;altres col·leccions en aquesta col·lecció. Podeu cercar elements d&apos;altres col·leccions i assignar-les, o bé explorar la llista d&apos;unitats assignades actualment. </message>
+    <message key="xmlui.administrative.mapper.MapperMain.stat_label">Estadístiques</message>
+    <message key="xmlui.administrative.mapper.MapperMain.stat_info"><strong>{0} de {1}</strong> elements d&apos;aquesta col·lecció estan assignats des d&apos;altres col·leccions</message>
+    <message key="xmlui.administrative.mapper.MapperMain.search_label">Cerca</message>
+    <message key="xmlui.administrative.mapper.MapperMain.submit_search">Cerca elements</message>
+    <message key="xmlui.administrative.mapper.MapperMain.submit_browse">Explora els elements assignats</message>
+    <message key="xmlui.administrative.mapper.MapperMain.no_add">(Requereix el privilegi d&apos;ADDICIÓ a la col·lecció)</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.mapper.SearchItemForm -->
+    <message key="xmlui.administrative.mapper.SearchItemForm.title">Cerca elements</message>
+    <message key="xmlui.administrative.mapper.SearchItemForm.trail">Cerca elements</message>
+    <message key="xmlui.administrative.mapper.SearchItemForm.head1">Cerca elements que coincideixin amb: &quot;{0}&quot;</message>
+    <message key="xmlui.administrative.mapper.SearchItemForm.submit_map">Assigna els elements seleccionats</message>
+    <message key="xmlui.administrative.mapper.SearchItemForm.column1"></message>
+    <message key="xmlui.administrative.mapper.SearchItemForm.column2">Col·lecció</message>
+    <message key="xmlui.administrative.mapper.SearchItemForm.column3">Autor</message>
+    <message key="xmlui.administrative.mapper.SearchItemForm.column4">Títol</message>
+               
+    <!-- org.dspace.app.xmlui.administrative.mapper.BrowseItemForm -->
+    <message key="xmlui.administrative.mapper.BrowseItemForm.title">Explora els elements assignats</message>
+    <message key="xmlui.administrative.mapper.BrowseItemForm.trail">Explora els elements assignats</message>
+    <message key="xmlui.administrative.mapper.BrowseItemForm.head1">Exploració d&apos;unitats assignades</message>
+    <message key="xmlui.administrative.mapper.BrowseItemForm.submit_unmap">Anul·la l&apos;assignació dels elements seleccionats</message>
+    <message key="xmlui.administrative.mapper.BrowseItemForm.column1"></message>
+    <message key="xmlui.administrative.mapper.BrowseItemForm.column2">Col·lecció</message>
+    <message key="xmlui.administrative.mapper.BrowseItemForm.column3">Autor</message>
+    <message key="xmlui.administrative.mapper.BrowseItemForm.column4">Títol</message>
+    <message key="xmlui.administrative.mapper.BrowseItemForm.no_remove">Necessiteu el privilegi de SUPRESSIÓ en aquesta col·lecció per poder anul·lar l&apos;assignació d&apos;unitats d&apos;aquesta col·lecció.</message>
+       
+    <!-- General tags for collection management -->
+    <message key="xmlui.administrative.collection.general.collection_trail">Col·leccions</message>  
+    <message key="xmlui.administrative.collection.general.options_metadata">Edita les metadades</message>
+    <message key="xmlui.administrative.collection.general.options_roles">Assigna rols</message>    
+       
+       
+    <!-- org.dspace.app.xmlui.administrative.collection.AssignCollectionRoles.java -->
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.title">Edita els rols de la col·lecció</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.trail">Rols</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.main_head">Edita la col·lecció: {0}</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.no_role">cap</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.create">Crea...</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.restrict">Restringeix...</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.help_admins">Els administradors de la col·lecció decideixen qui pot enviar elements a la col·lecció, retirar-ne, editar les metadades de l'element (després que s&apos;enviï) i afegir (assignar) elements existents d&apos;altres col·leccions a aquesta (que està sotmès a l&apos;autorització per a aquella col·lecció). </message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step1">Les persones responsables d&apos;aquest pas poden acceptar o rebutjar els enviaments que entren. No obstant, no poden editar les metadades de l&apos;enviament. </message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step2">Les persones responsables d&apos;aquest pas poden editar les metadades dels enviaments que entren i acceptar-los o rebutjar-los. </message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step3">Las persones responsables d&apos;aquest pas poden editar les metadades dels enviaments que entren, però no podran rebutjar-los. </message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.help_submitters">E-persones i grups que tenen permís per enviar elements nous a aquesta col·lecció.</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.help_default_read">E-persones i grups que poden llegir els elements nous enviats a aquesta col·lecció. Els canvis en aquest rol no són retroactius.  Els elements existents del sistema les podran seguir visualitzant les persones que hi tenien accés de lectura en el moment que s&apos;hi varen afegir.</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.default_read_custom">Aquesta col·lecció utilitza paràmetres d&apos;accés per defecte personalitzats. </message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.default_read_anonymous">La lectura per defecte dels elements i els documents que entren està establert actualment com a Anònima.</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.edit_authorization">Edita les directives d&apos;autorització directament.</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.role_name">Rol</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.role_group">Grup associat</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.role_buttons">  </message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.label_admins">Administradors</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.label_wf_step1">Accepta/rebutja el pas</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.label_wf_step2">Accepta/rebutja/edita el pas de metadades</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.label_wf_step3">Edita el pas de metadades</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.label_submitters">Qui ho presenta</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.label_default_read">Accés de lectura per defecte</message>
+    <message key="xmlui.administrative.collection.AssignCollectionRoles.sysadmins_only"><nobr>(només administradors del sistema)</nobr></message>
+
+
+    <!-- org.dspace.app.xmlui.administrative.collection.DeleteCollectionConfirm.java -->
+    <message key="xmlui.administrative.collection.DeleteCollectionConfirm.title">Confirma la supressió</message>
+    <message key="xmlui.administrative.collection.DeleteCollectionConfirm.trail">Confirma</message>
+    <message key="xmlui.administrative.collection.DeleteCollectionConfirm.main_head">Confirma la supressió col·lecció {0}</message>
+    <message key="xmlui.administrative.collection.DeleteCollectionConfirm.main_para">Segur que voleu suprimir la col•lecció {0}? Amb això se suprimirà:</message>
+    <message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item1">Tots els elements i els enviaments incomplets d&apos;aquesta col·lecció que no s&apos;incloguin en altres col·leccions</message>
+    <message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item2">El contingut d&apos;aquells elements</message>
+    <message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item3">Totes les directives d&apos;autorització associades</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.collection.DeleteCollectionRoleConfirm.java -->
+    <message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.title">Confirma la supressió de rol</message>
+    <message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.trail">Confirma</message>
+    <message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_head">Confirma la supressió del rol {0}</message>
+    <message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_para_read">Segur que voleu suprimir aquest rol? La supressió d&apos;aquest grup atorgarà accés de LECTURA a tots els usuaris en totes els elements que s&apos;enviïn a aquesta col·lecció a partir d&apos;ara. Tingueu en compte que aquest canvi no és retroactiu. Els elements existents al sistema estaran restringides als membres definits pel rol que esteu a punt de suprimir.</message>
+    <message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_para">Segur que voleu suprimir aquest rol? Els canvis i les personalitzacions que s&apos;han fet al grup {0} es perdran i s&apos;hauran de tornar a crear. </message>
+       
+    <!-- org.dspace.app.xmlui.administrative.collection.EditCollectionMetadataForm.java -->
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.title">Edita les metadades de la col·lecció</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.trail">Metadades</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.main_head">Edita la col·lecció: {0}</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_name">Nom </message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_short_description">Descripció breu</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_introductory_text">Text introductori (HTML)</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_copyright_text">Text de copyright (sense format)</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_side_bar_text">Notícies (HTML) </message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_license">Llicència</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_provenance_description">Provinença</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_logo">Puja un logotip nou</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_existing_logo">Logotip actual</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_item_template">Plantilla d&apos;unitat</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_create_template">Crea...</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_edit_template">Edita...</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_delete_logo">Suprimeix el logotip</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_delete">Suprimeix la col·lecció</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_save">Desa les actualitzacions</message>
+    <message key="xmlui.administrative.collection.EditCollectionMetadataForm.sysadmins_only"><nobr>(només administradors del sistema)</nobr></message>
+
+    <!-- org.dspace.app.xmlui.administrative.collection.CreateCollectionForm.java -->
+    <message key="xmlui.administrative.collection.CreateCollectionForm.title">Crea una col·lecció</message>
+    <message key="xmlui.administrative.collection.CreateCollectionForm.trail">Crea una col·lecció</message>
+    <message key="xmlui.administrative.collection.CreateCollectionForm.main_head">Introdueix metadades per a una nova col•lecció de {0}</message>
+    <message key="xmlui.administrative.collection.CreateCollectionForm.submit_save">Crea</message>
+
+    <!-- org.dspace.app.xmlui.administrative.community.DeleteCommunityConfirm.java -->
+    <message key="xmlui.administrative.community.DeleteCommunityConfirm.title">Confirma la supressió</message>
+    <message key="xmlui.administrative.community.DeleteCommunityConfirm.trail">Confirma</message>
+    <message key="xmlui.administrative.community.DeleteCommunityConfirm.main_head">Confirma la supressió de la comunitat Confirma la supressió de la comunitat {0}</message>
+    <message key="xmlui.administrative.community.DeleteCommunityConfirm.main_para">Segur que s&apos;ha de suprimir la comunitat {0}? Amb això se suprimirà:</message>
+    <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item1">Totes les col·leccions de la comunitat que no s&apos;incloguin en altres comunitats</message>
+    <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item2">Tots els elements i els enviaments incomplets a aquesta comunitat que no s&apos;incloguin en altres comunitats</message>
+    <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item3">El contingut d&apos;aquells elements</message>
+    <message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item4">Totes les directives d&apos;autorització associades</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.community.EditCommunityMetadataForm.java -->
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.title">Edita les metadades de la comunitat</message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.trail">Metadades</message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.main_head">Edita les metadades de la comunitat {0}</message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.edit_authorizations">Edita les directives d&apos;autorització</message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.label_name">Nom </message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.label_short_description">Descripció breu</message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.label_introductory_text">Text introductori (HTML)</message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.label_copyright_text">Text de copyright (sense format)</message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.label_side_bar_text">Notícies (HTML) </message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.label_logo">Puja un logotip nou</message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.label_existing_logo">Logotip actual</message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.submit_delete_logo">Suprimeix el logotip</message>
+    <message key="xmlui.administrative.community.EditCommunityMetadataForm.submit_delete">Suprimeix la comunitat</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.community.CreateCommunityForm.java -->
+    <message key="xmlui.administrative.community.CreateCommunityForm.title">Crea una comunitat</message>
+    <message key="xmlui.administrative.community.CreateCommunityForm.trail">Crea una comunitat</message>
+    <message key="xmlui.administrative.community.CreateCommunityForm.main_head_sub">Introduïu les metadades d&apos;una nova subcomunitat per a {0}</message>
+    <message key="xmlui.administrative.community.CreateCommunityForm.main_head_top">Edita les metadades d&apos;una nova comunitat de nivell superior</message>
+    <message key="xmlui.administrative.community.CreateCommunityForm.submit_save">Crea</message>
+
+
+    <!-- org.dspace.app.xmlui.administrative.ControlPanel.java -->
+    <message key="xmlui.administrative.ControlPanel.title">Tauler de control</message>
+    <message key="xmlui.administrative.ControlPanel.trail">Tauler de control </message>
+    <message key="xmlui.administrative.ControlPanel.head">Tauler de control</message>
+    <message key="xmlui.administrative.ControlPanel.option_java">Informació Java</message>
+    <message key="xmlui.administrative.ControlPanel.option_dspace">Configuració del DSpace</message>
+    <message key="xmlui.administrative.ControlPanel.option_alerts">Alertes a tot el sistema</message>
+    <message key="xmlui.administrative.ControlPanel.hours">{0} h</message>
+    <message key="xmlui.administrative.ControlPanel.minutes">{0} m</message>
+    <message key="xmlui.administrative.ControlPanel.seconds">{0} s</message>
+    <message key="xmlui.administrative.ControlPanel.java_head">Java i sistema operatiu</message>
+    <message key="xmlui.administrative.ControlPanel.java_version">Versió de Java Runtime Environment</message>
+    <message key="xmlui.administrative.ControlPanel.java_vendor">Proveïdor de Java Runtime Environment</message>
+    <message key="xmlui.administrative.ControlPanel.os_name">Nom del sistema operatiu</message>
+    <message key="xmlui.administrative.ControlPanel.os_arch">Arquitectura del sistema operatiu</message>
+    <message key="xmlui.administrative.ControlPanel.os_version">Versió del sistema operatiu</message>
+    <message key="xmlui.administrative.ControlPanel.runtime_head">Estadístiques de temps d&apos;execució</message>
+    <message key="xmlui.administrative.ControlPanel.runtime_processors">Processadors disponibles</message>
+    <message key="xmlui.administrative.ControlPanel.runtime_max">Memòria màxima</message>
+    <message key="xmlui.administrative.ControlPanel.runtime_total">Memòria assignada</message>
+    <message key="xmlui.administrative.ControlPanel.runtime_used">Memòria utilitzada</message>
+    <message key="xmlui.administrative.ControlPanel.runtime_free">Memòria lliure</message>
+    <message key="xmlui.administrative.ControlPanel.dspace_head">Configuració del DSpace</message>
+    <message key="xmlui.administrative.ControlPanel.dspace_dir">Directori d&apos;instal·lació del DSpace</message>
+    <message key="xmlui.administrative.ControlPanel.dspace_url">Adreça URL base del DSpace</message>
+    <message key="xmlui.administrative.ControlPanel.dspace_hostname">Nom d&apos;hoste del DSpace</message>
+    <message key="xmlui.administrative.ControlPanel.dspace_name">Nom del lloc</message>
+    <message key="xmlui.administrative.ControlPanel.db_name">Nom de la base de dades</message>
+    <message key="xmlui.administrative.ControlPanel.db_url">Adreça URL de la base de dades</message>
+    <message key="xmlui.administrative.ControlPanel.db_driver">Controlador JDBC</message>
+    <message key="xmlui.administrative.ControlPanel.db_maxconnections">Nombre màxim de connexions de base de dades a la memòria</message>
+    <message key="xmlui.administrative.ControlPanel.db_maxwait">Temps d&apos;espera màxim de la base de dades</message>
+    <message key="xmlui.administrative.ControlPanel.db_maxidle">Màxim de connexions inactives</message>
+    <message key="xmlui.administrative.ControlPanel.mail_server">Servidor de correu SMTP</message>
+    <message key="xmlui.administrative.ControlPanel.mail_from_address">Adreça electrònica d&apos;origen</message>
+    <message key="xmlui.administrative.ControlPanel.mail_feedback_recipient">Destinatari dels comentaris</message>
+    <message key="xmlui.administrative.ControlPanel.mail_admin">Adreça electrònica general d&apos;administració del lloc</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_head">Alertes a tot el sistema</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_warning"><strong>Advertiment per a sistemes amb equilibri de càrrega</strong>: Les alertes a tot el sistema només son eficaces per al node on s&apos;activen. Cal que us assegureu que tots els nodes del conjunt rebin l&apos;ordre d&apos;activació de l&apos;alerta.</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_message_label">Missatge d&apos;alerta</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_message_default">El sistema s&apos;aturarà per al manteniment periòdic. Deseu el treball i finalitzeu la sessió.</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_countdown_label">Compte enrere</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_countdown_none">No hi ha cap temporitzador de compte enrere</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_countdown_5">5 minuts</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_countdown_15">15 minuts</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_countdown_30">30 minuts</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_countdown_60">1 hora</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_countdown_keep">Conserva el temporitzador de compte enrere actual</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_session_label">Gestiona la sessió</message>  
+    <message key="xmlui.administrative.ControlPanel.alerts_session_all_sessions">Continua permetent sessions autenticades</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_session_current_sessions">Restringeix l&apos;autenticació però manté les sessions actuals</message>        
+    <message key="xmlui.administrative.ControlPanel.alerts_session_only_administrative_sessions">Restringeix l&apos;autenticació i finalitza les sessions actuals</message>        
+    <message key="xmlui.administrative.ControlPanel.alerts_session_note"><strong>Nota:</strong> Els administradors del lloc estan exempts de la gestió de sessions.</message>  
+    <message key="xmlui.administrative.ControlPanel.alerts_submit_activate">Activa</message>
+    <message key="xmlui.administrative.ControlPanel.alerts_submit_deactivate">Desactiva</message>
+    <message key="xmlui.administrative.ControlPanel.activity_head">Activitat actual ({0} pàgines màxim)</message>
+    <message key="xmlui.administrative.ControlPanel.stop_anonymous">Aturar la gravació anònima de l&apos;activitat.</message>
+    <message key="xmlui.administrative.ControlPanel.start_anonymous">Iniciar la gravació anònima de l&apos;activitat.</message>
+    <message key="xmlui.administrative.ControlPanel.stop_bot">Aturar la gravació de l&apos;activitat del robot.</message>
+    <message key="xmlui.administrative.ControlPanel.start_bot">Iniciar la gravació de l&apos;activitat del robot.</message>
+    <message key="xmlui.administrative.ControlPanel.activity_sort_time">Segell horari</message>
+    <message key="xmlui.administrative.ControlPanel.activity_sort_user">Usuari</message>
+    <message key="xmlui.administrative.ControlPanel.activity_sort_ip">Adreça IP</message>
+    <message key="xmlui.administrative.ControlPanel.activity_sort_url">Adreça URL de la pàgina</message>
+    <message key="xmlui.administrative.ControlPanel.activity_sort_Agent">Usuari-agent</message>
+    <message key="xmlui.administrative.ControlPanel.activity_anonymous">Anònim {0}</message>    
+    <message key="xmlui.administrative.ControlPanel.activity_none">A banda de la vostra, no hi ha hagut cap altra visualització de pàgina a les darreres {0} pàgines.</message>
+       
+    <message key="xmlui.administrative.ControlPanel.select_panel">Utilitzeu les pestanyes de dalt per seleccionar la informació que voleu visualitzar</message>
+       
+    <!-- org.dspace.app.xmlui.administrative.SystemwideAlerts -->
+    <message key="xmlui.administrative.SystemwideAlerts.countdown"><strong>D&apos;aquí a {0} minuts</strong>: </message>
+       
+    <!-- org.dspace.app.xmlui.administrative.NotAuthorized -->
+    <message key="xmlui.administrative.NotAuthorized.title">No autoritzat</message>
+    <message key="xmlui.administrative.NotAuthorized.trail">No autoritzat</message>
+    <message key="xmlui.administrative.NotAuthorized.head">Privilegis insuficients</message>
+    <message key="xmlui.administrative.NotAuthorized.para1a">El vostre compte no té suficients privilegis per realitzar l&apos;acció sol·licitada. Si creieu que és un error o teniu algun dubte sobre els vostres privilegis, poseu-vos en contacte amb els  </message>
+    <message key="xmlui.administrative.NotAuthorized.para1b">administradors del sistema del lloc</message>
+    <message key="xmlui.administrative.NotAuthorized.para1c">.</message>
+    <message key="xmlui.administrative.NotAuthorized.para2">Inicieu la sessió com un altre usuari</message>
+           
+           
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 		dri2xhtml
+ 		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 	-->
+ 	
+ 	<!-- structural.xsl -->  
+ 	<message key="xmlui.dri2xhtml.structural.footer-promotional">
+                <a href="http://di.tamu.edu" id="ds-logo-link">                            
+                        <span id="ds-footer-logo">&#160;</span>
+                </a>
+                <p>
+ Aquest lloc web utilitza Manakin, un nou sistema principal (front end) per al DSpace creat a la Universitat de Texas A&amp;M Biblioteques.  La interfície es pot modificar àmpliament amb aspectes Manakin i temes basats en XSL.  Per obtenir més informació, aneu a  <a href="http://di.tamu.edu">http://di.tamu.edu</a> i  <a href="http://dspace.org">http://dspace.org</a>                            
+                </p>
+    </message>
+    <message key="xmlui.dri2xhtml.structural.contact-link">Contacteu amb nosaltres</message>
+    <message key="xmlui.dri2xhtml.structural.feedback-link">Envia comentaris</message>
+       
+    <message key="xmlui.dri2xhtml.structural.head-subtitle">DSpace/Dipòsit Manakin</message>
+
+    <message key="xmlui.dri2xhtml.structural.profile">Perfil: </message>
+    <message key="xmlui.dri2xhtml.structural.logout">Finalitza la sessió</message>
+    <message key="xmlui.dri2xhtml.structural.login">Inicia la sessió</message>
+
+
+    <message key="xmlui.dri2xhtml.structural.search">Cerca al DSpace</message>
+    <message key="xmlui.dri2xhtml.structural.search-advanced">Cerca avançada</message>
+    <message key="xmlui.dri2xhtml.structural.search-in-community">Aquesta comunitat</message>
+    <message key="xmlui.dri2xhtml.structural.search-in-collection">Aquesta col·lecció</message>
+       
+    <message key="xmlui.dri2xhtml.structural.pagination-previous">Pàgina anterior</message>
+    <message key="xmlui.dri2xhtml.structural.pagination-info">Ara es mostren els elements {0}-{1} de {2}</message>
+    <message key="xmlui.dri2xhtml.structural.pagination-next">Pàgina següent</message>
+       
+    <message key="xmlui.dri2xhtml.structural.link_cc">Creative Commons</message>
+    <message key="xmlui.dri2xhtml.structural.link_original_license">Llicència original </message>
+
+     <!-- DS-METS-1.0-MODS.xsl -->  <!-- DS-METS-1.0-DIM.xsl -->  <!-- DS-METS-1.0-QDC.xsl -->  <message key="xmlui.dri2xhtml.METS-1.0.no-preview">No hi ha cap visualització prèvia disponible</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.no-title">Sense títol</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.no-author">Autor desconegut</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.non-conformant">
+ Aquest objecte del DSpace no compleix el perfil METS 1,0 i, per tant, no es pot representar de manera eficaç. Podeu ometre la plantilla que gestiona el cas general a dri2xhtml per realitzar la funció necessària o crear la vostra pròpia plantilla perquè s&apos;ajusti a qualsevol perfil que utilitzeu.   </message>
+   
+    <message key="xmlui.dri2xhtml.METS-1.0.item-preview">Visualització prèvia</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-title">Títol</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-author">Autor</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Abstract</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-description">Descripció</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-uri">URI</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-date">Data</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Editor</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-subject">Tema</message>
+       
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-head">Fitxers d&apos;aquest element</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-file">Fitxers</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-size">Mida</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-format">Format</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-view">Visualitza</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">Visualitza/<wbr/>Obre</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.item-no-files">No hi ha cap fitxer associat amb aquest element.</message>
+
+    <message key="xmlui.dri2xhtml.METS-1.0.size-bytes">bytes</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.size-kilobytes">Kb</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.size-megabytes">Mb</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.size-gigabytes">Gb</message>
+       
+    <message key="xmlui.dri2xhtml.METS-1.0.license-text">Els fitxers de llicència següents estan associats amb aquest element:</message>
+               
+    <message key="xmlui.dri2xhtml.METS-1.0.collection-not-implemented">	La summaryView (visualització resumida) d&apos;una col·lecció actualment no s&apos;utilitza o implementa.  Això es pot resoldre ometent la plantilla dri2xhtml amb el nom collectionSummaryView.  </message>
+    <message key="xmlui.dri2xhtml.METS-1.0.community-not-implemented">	La summaryView d&apos;una comunitat actualment no s&apos;utilitza o implementa.  Això es pot resoldre ometent la plantilla dri2xhtml&apos;s amb el nom communitySummaryView.  </message>
+    <message key="xmlui.dri2xhtml.METS-1.0.collection-logo-alt">Logotip de la col·lecció</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.community-logo-alt">Logotip de la comunitat</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.no-logo-alt">No hi ha cap logotip</message>          
+    <message key="xmlui.dri2xhtml.METS-1.0.news">Notícies</message>    
+    <message key="xmlui.dri2xhtml.METS-1.0.copyright">Copyright i llicència</message>                      
+               
+    <!-- Internationalization elements specific to the Qualified Dublin Core metadata handler.
+                DS-METS-1.0-QDC.xsl 
+    -->
+    <message key="xmlui.dri2xhtml.METS-1.0.qdc-not-applicable"> El Qualified Dublin Core (QDC) no és aplicable a les comunitats i col·leccions del DSpace en aquest moment.  Si utilitzeu el QDC, heu d&apos;utilitzar el pas del QDC per a elements del DSpace i DIM o MODS per al processament de comunitats i col·leccions.   </message>
+    <message key="xmlui.dri2xhtml.METS-1.0.header-qdc-elements">Elements de Dublin Core</message>
+    <message key="xmlui.dri2xhtml.METS-1.0.header-qdc-terms">Condicions de Dublin Core</message>
+       
+       
+    <!-- Special pioneer model related text, wherever it might end up -->
+    <message key="xmlui.dri2xhtml.pioneer.preview">Visualització prèvia</message>
+    <message key="xmlui.dri2xhtml.pioneer.date">Data</message>
+    <message key="xmlui.dri2xhtml.pioneer.title">Títol</message>
+    <message key="xmlui.dri2xhtml.pioneer.author">Autor</message>
+       
+    <!-- tag used to handle the empty textarea tag added 09/28/2006 -->
+    <message key="xmlui.dri2xhtml.default.textarea.value"> </message>
+
+    <!--###### File Format MIME Type Mappings ######-->
+
+    <!-- Application-based formats -->
+    <message key="xmlui.dri2xhtml.mimetype.application/marc">Registre MARC</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/mathematica">Mathematica</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/msword">Microsoft Word</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/octet-stream">Desconegut</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/pdf">PDF</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/postscript">Postscript</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/sgml">SGML</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.ms-excel">Microsoft Excel</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.ms-powerpoint">Microsoft PowerPoint</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.ms-project">Microsoft Project</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.database">OpenOffice Base</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.formula">OpenOffice Math</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.graphics">OpenOffice Draw</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.presentation">OpenOffice Impress</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.spreadsheet">OpenOffice Calc</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.text">OpenOffice Writer</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.openxmlformats-officedocument.presentationml.presentation">Microsoft PowerPoint 2007</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Microsoft Excel 2007</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.openxmlformats-officedocument.wordprocessingml.document">Microsoft Word 2007</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.sun.xml.calc">OpenOffice Calc (1.x)</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.sun.xml.draw">OpenOffice Draw (1.x)</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.sun.xml.impress">OpenOffice Impress (1.x)</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.sun.xml.writer.global">OpenOffice Writer (1.x)</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/vnd.visio">Microsoft Visio</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/wordperfect5.1">WordPerfect</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/x-dvi">TeX DVI</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/x-filemaker">FileMaker Pro</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/x-java-applet">Java applet</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/x-latex">LaTeX</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/x-photoshop">Photoshop</message>
+    <message key="xmlui.dri2xhtml.mimetype.application/x-tex">TeX</message>
+
+    <!-- Audio-based formats -->
+    <message key="xmlui.dri2xhtml.mimetype.audio/basic">Àudio bàsic</message>
+    <message key="xmlui.dri2xhtml.mimetype.audio/flac">FLAC</message>
+    <message key="xmlui.dri2xhtml.mimetype.audio/m4a">AAC</message>
+    <message key="xmlui.dri2xhtml.mimetype.audio/m4a-latm">AAC</message>
+    <message key="xmlui.dri2xhtml.mimetype.audio/mpeg">mp3</message>
+    <message key="xmlui.dri2xhtml.mimetype.audio/x-aiff">AIFF</message>
+    <message key="xmlui.dri2xhtml.mimetype.audio/x-mpeg">MPEG</message>
+    <message key="xmlui.dri2xhtml.mimetype.audio/x-ms-wma">WMA</message>
+    <message key="xmlui.dri2xhtml.mimetype.audio/x-ms-wmv">WMV</message>
+    <message key="xmlui.dri2xhtml.mimetype.audio/x-ogg">Ogg Vorbis</message>
+    <message key="xmlui.dri2xhtml.mimetype.audio/x-pn-realaudio">RealAudio</message>
+    <message key="xmlui.dri2xhtml.mimetype.audio/x-wav">WAV</message>
+
+    <!-- Image-based formats -->
+    <message key="xmlui.dri2xhtml.mimetype.image/gif">Imatge GIF</message>
+    <message key="xmlui.dri2xhtml.mimetype.image/jp2">Imatge JPEG 2000</message>
+    <message key="xmlui.dri2xhtml.mimetype.image/jpeg">Imatge JPEG</message>
+    <message key="xmlui.dri2xhtml.mimetype.image/png">Imatge PNG</message>
+    <message key="xmlui.dri2xhtml.mimetype.image/tiff">Imatge TIFF</message>
+    <message key="xmlui.dri2xhtml.mimetype.image/x-ms-bmp">Imatge BMP</message>
+    <message key="xmlui.dri2xhtml.mimetype.image/x-photo-cd">Photo CD</message>
+
+    <!-- Text-based formats -->
+    <message key="xmlui.dri2xhtml.mimetype.text/css">Arxiu CSS</message>
+    <message key="xmlui.dri2xhtml.mimetype.text/csv">Arxiu CSV</message>
+    <message key="xmlui.dri2xhtml.mimetype.text/html">HTML</message>
+    <message key="xmlui.dri2xhtml.mimetype.text/javascript">Javascript</message>
+    <message key="xmlui.dri2xhtml.mimetype.text/plain">Arxiu de text</message>
+    <message key="xmlui.dri2xhtml.mimetype.text/richtext">Arxiu RTF</message>
+    <message key="xmlui.dri2xhtml.mimetype.text/xml">XML</message>
+ 
+    <!-- Video-based formats -->
+    <message key="xmlui.dri2xhtml.mimetype.video/avi">AVI</message>
+    <message key="xmlui.dri2xhtml.mimetype.video/mjp2">Motion JPEG 2000</message>
+    <message key="xmlui.dri2xhtml.mimetype.video/mpeg">MPEG</message>
+    <message key="xmlui.dri2xhtml.mimetype.video/mpeg2">MPEG-2</message>
+    <message key="xmlui.dri2xhtml.mimetype.video/mp4">MPEG-4</message>
+    <message key="xmlui.dri2xhtml.mimetype.video/quicktime">QuickTime</message>
+
+    <!-- org.dspace.app.xmlui.artifactbrowser.AbstractSearch.java -->
+
+
+
+
+    <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.contributor.author_filter">Autor</message>
+
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.subject_filter">Matèria</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.type_filter">Tipus de contingut</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.date.issued">Data d'edició</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dateIssued">Data d'edició</message>
+
+
+    <!-- Site Leve Recently Added Content -->
+    <message key="xmlui.ArtifactBrowser.SiteViewer.head_recent_submissions">Enviaments recents</message>
+
+    <message key="xmlui.ArtifactBrowser.AbstractRecentSubmissionTransformer.recent_submissions_more">Mostra'n més</message>
+    <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.head">{0}: Enviaments recents</message>
+    <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.trail">Enviaments recents</message>
+    <message key="xmlui.Discovery.RecentSubmissions.RecentSubmissionTransformer.recent.head">Enviaments recents</message>
+
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_type_filter">Tipus</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_publisher_filter">Editor</message>
+
+
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.ispartof">Parent</message>
+
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by">Agrupa els resultats per</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by.none">Cap</message>
+
+
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.group_by.publication_grp">Publicació</message>
+
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location.comm">Comunitat</message>
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_location.coll">Col·lecció</message>
+
+
+    <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_dc.relation.ispartofseries_filter">Sèrie</message>
+
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.contributor.author_browse">Exploració per: Autor</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.title_browse">Exploració per: Títol</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.subject_browse">Exploració per: Matèria</message>
+        
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dc.description.abstract_browse">Exploració per: Resum</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_series_browse">Exploració per: Sèrie</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_sponsor_browse">Exploració per: Patrocinador</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_identifier_browse">Exploració per: Identificador</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_language_browse">Exploració per: Llengua (ISO)</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_keyword_browse">Exploració per: Paraula clau</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_taxon_browse">Exploració per: Nom científic</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_contributor_browse">Exploració per: Col·laborador</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_creator_browse">Exploració per: Autor</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_subject_browse">Exploració per: Matèria</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_description_browse">Exploració per: Descripció</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_relation_browse">Exploració per: Relació</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_mime_browse">Exploració per: Tipus Mime</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_other_browse">Exploració per: Un altre col·laborador</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_advisor_browse">Exploració per: Assessor</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_department_browse">Exploració per: Departament</message>
+    <message key="xmlui.ArtifactBrowser.AbstractSearch.type_dateissued_dt_browse">Exploració per: Data d'edició</message>
+
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.author">Autor</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.title">Títol</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject">Matèria</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateIssued">Data d'edició</message>
+
+
+
+    <message key="xmlui.dri2xhtml.structural.pagination-info.nototal">Ara es mostren els elements {0}-{1}</message>
+
+    <message key="xmlui.Discovery.AbstractSearch.type_author">Filtre per: Autor</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.author">Autor</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.author_filter">Autor</message>
+    <message key="xmlui.Discovery.AbstractSearch.type_subject">Filtre per: Matèria</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject">Matèria</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.subject_filter">Matèria</message>
+    <message key="xmlui.ArtifactBrowser.SimpleSearch.filter.dateIssued.year">Data d'edició</message>
+
+
+    <message key="xmlui.Discovery.AbstractSearch.startswith">Comença per</message>
+    <message key="xmlui.Discovery.AbstractSearch.startswith.help">O introduïu-ne les primeres lletres:</message>
+
+    <message key="xmlui.Discovery.AbstractSearch.sort_by.head">Opcions d'ordenació:</message>
+    <message key="xmlui.Discovery.AbstractSearch.sort_by.relevance">Rellevància</message>
+    <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.title_sort_desc">Títol desc.</message>
+    <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_desc">Data d'edició desc.</message>
+
+    <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.title_sort_asc">Títol asc.</message>
+    <message key="xmlui.Discovery.AbstractSearch.sort_by.dc.date.issued_dt_asc">Data d'edició asc.</message>
+
+	 <message key="xmlui.Discovery.AbstractSearch.rpp">Resultats per pàgina:</message>
+
+
+    <message key="xmlui.Discovery.AbstractSearch.filters.controls.add-filter">Afegeix filtre</message>
+    <message key="xmlui.Discovery.AbstractSearch.filters.controls.apply-filters">Aplica</message>
+    <message key="xmlui.Discovery.AbstractSearch.filters.controls.remove-filter">Suprimeix</message>
+    <message key="xmlui.Discovery.AbstractSearch.filters.controls.new-filters.head">Filtres nous:</message>
+    <message key="xmlui.Discovery.AbstractSearch.filters.controls.current-filters.head">Filtres actuals:</message>
+    <message key="xmlui.Discovery.AbstractSearch.filters.display">Afegeix filtres</message>
+
+    <message key="xmlui.discovery.SearchFacetFilter.no-results">No s'han trobat valors per al filtre</message>
+
+    <message key="xmlui.discovery.AbstractFiltersTransformer.filters.head">Filtra</message>
+    <message key="xmlui.discovery.AbstractFiltersTransformer.filters.view-more">... Mostra'n més</message>
+
+
+    <message key="xmlui.Discovery.SimpleSearch.search_scope">Cerca</message>
+    <message key="xmlui.discovery.SimpleSearch.search_label">Cerca</message>
+    <message key="xmlui.Discovery.SimpleSearch.filter_head">Filtres</message>
+    <message key="xmlui.Discovery.SimpleSearch.filter_help">Utilitzeu els filtres per refinar els resultats de la cerca.</message>
+
+    <message key="xmlui.Discovery.SimpleSearch.filter.contains">Conté</message>
+    <message key="xmlui.Discovery.SimpleSearch.filter.equals">És igual a</message>
+    <message key="xmlui.Discovery.SimpleSearch.filter.authority">ID</message>
+    <message key="xmlui.Discovery.SimpleSearch.filter.notcontains">No conté</message>
+    <message key="xmlui.Discovery.SimpleSearch.filter.notequals">No és igual a</message>
+    <message key="xmlui.Discovery.SimpleSearch.filter.notauthority">No ID</message>
+    
+    <message key="xmlui.Discovery.RelatedItems.head">Elements relacionats</message>
+    <message key="xmlui.Discovery.RelatedItems.help">Mostrant elements relacionats per títol, autor i matèria.</message>
+
+    <message key="xmlui.Discovery.AbstractSearch.head1_community">Mostrant {0} d'un total de {1} resultats per la comunitat: {2}. <span class="searchTime">({3} segons)</span></message>
+    <message key="xmlui.Discovery.AbstractSearch.head1_collection">Mostrant {0} d'un total de {1} resultats per la col·lecció: {2}. <span class="searchTime">({3} segons)</span></message>
+    <message key="xmlui.Discovery.AbstractSearch.head1_none">Mostrant {0} d'un total de {1} resultats. <span class="searchTime">({2} segons)</span></message>
+
+    <message key="xmlui.Discovery.AbstractSearch.head2">Comunitats o col·leccions que coincideixen amb la consulta</message>
+    <message key="xmlui.Discovery.AbstractSearch.head3">Elements que coincideixen amb la consulta</message>
+
+    <message key="xmlui.Discovery.SimpleSearch.did_you_mean">Volíeu dir: </message>
+
+
+    <message key="xmlui.mirage2.itemSummaryView.MetaData">Metadades</message>
+    <message key="xmlui.mirage2.itemSummaryView.Collections">Col·leccions</message>
+
+    <message key="xmlui.mirage2.discovery.reset">Restableix</message>
+    <message key="xmlui.mirage2.discovery.newFilter">Afegeix un nou filtre</message>
+    <message key="xmlui.mirage2.discovery.showAdvancedFilters">Mostra els filtres avançats</message>
+    <message key="xmlui.mirage2.discovery.hideAdvancedFilters">Amaga els filtres avançats</message>
+
+
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.add">Afegeix</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.remove">Suprimeix</message>
+    <message key="xmlui.mirage2.forms.instancedCompositeFields.noSuggestionError">ERROR: El camp d'entrada amb "suggerències" (autocompleció) no està implementat per camps Composite (p. ex. "nom").</message>
+    <message key="xmlui.mirage2.forms.nonInstancedCompositeFields.noSuggestionError">ERROR: El camp d'entrada amb "suggerències" (autocompleció) no està implementat per camps Composite (p. ex. "nom").</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.add">Afegeix</message>
+    <message key="xmlui.mirage2.forms.nonCompositeFieldSet.remove">Suprimeix</message>
+
+    <message key="xmlui.mirage2.page-structure.aboutThisRepository">Quant al repositori</message>
+    <message key="xmlui.mirage2.page-structure.toggleNavigation">Activa/desactiva la navegació</message>
+
+    <message key="xmlui.mirage2.page-structure.heroUnit.title">Quant al repositori</message>
+
+    <message key="xmlui.mirage2.navigation.rss.feed">Canals de difusió</message>
+
+    <message key="xmlui.mirage2.choice-authority-control.loading">Carregant...</message>
+
+    <message key="xmlui.mirage2.item-list.thumbnail">Miniatura</message>
+	 
+</catalogue>

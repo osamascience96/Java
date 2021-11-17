@@ -1,0 +1,1983 @@
+﻿<?xml version="1.0"?>
+  <!--
+  messages.xml
+
+  Version: $Revision: 4909 $
+ 
+  Date: $Date: 2010-05-10 10:03:35 +0000 (Mon, 10 May 2010) $
+ 
+  Copyright (c) 2002-2005, Hewlett-Packard Company and Massachusetts
+  Institute of Technology.  All rights reserved.
+ 
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are
+  met:
+ 
+  - Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+ 
+  - Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+ 
+  - Neither the name of the Hewlett-Packard Company nor the name of the
+  Massachusetts Institute of Technology nor the names of their
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+ 
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+  OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+  TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+  DAMAGE.
+-->
+<catalogue xml:lang="ru" xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+	
+	<!--
+		The format used by all keys is as follows
+		
+		xmlui.<Aspect>.<Java Class>.<name>
+		
+		There are a few exceptions to this nameing format,
+		1) Some general keys are in the xmlui.general namespace 
+		   because they are used very frequently.
+		2) Some general keys which are specific to a particular aspect 
+		   may be found at xmlui.<Aspect> without specifiying a 
+		   particular java class. 
+		--> 
+	
+	<!-- General keys -->
+	<message key="xmlui.general.dspace_home">Головна сторінка DSpace</message>
+	<message key="xmlui.general.search">Пошук</message>
+	<message key="xmlui.general.go">>></message>
+	<message key="xmlui.general.go_home">Перейти на головну</message>
+	<message key="xmlui.general.save">Зберегти</message>
+	<message key="xmlui.general.cancel">Відміна</message>
+	<message key="xmlui.general.return">Назад</message>
+	<message key="xmlui.general.update">Оновити</message>
+	<message key="xmlui.general.delete">Видалити</message>
+	<message key="xmlui.general.next">Далі</message>
+	<message key="xmlui.general.untitled">Немає даних</message>
+	
+	
+	<!-- 
+		Page not found keys 
+		
+		This is a special component that is not part of any aspect but is added
+		by manakin to all aspect chains.
+		-->
+	<message key="xmlui.PageNotFound.title">Page not found</message>
+	<message key="xmlui.PageNotFound.head">Page not found</message>
+	<message key="xmlui.PageNotFound.para1">We can't find the page you asked for.</message>
+	
+	
+	<!--
+		This section is for feed syndications (RSS, atom, etc)  
+	-->
+	<message key="xmlui.feed.general_description">The DSpace digital repository system captures, stores, indexes, preserves, and distributes digital research material.</message>
+	<message key="xmlui.feed.logo_title">The Channel Image</message>
+	<message key="xmlui.feed.untitled">Немає даних</message>
+	
+	<!--
+		Default notice header 
+	 	-->
+	<message key="xmlui.general.notice.default_head">Notice</message>
+	
+	
+	
+	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  
+		             ArtifactBrowser Aspect
+	
+		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	
+	
+	
+	
+	
+	
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.AbstractSearch.java -->
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.head1_community">Результати пошуку у Фонді: {0}</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.head1_collection">Результати пошуку у Колукції: {0}</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.head1_none">Результати пошуку</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.result_query">Ваш запит "{0}" дав {1} результатів.</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.head2">Фонд чи колекція що відповідають вашому запиту</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.head3">Матеріали що відповідають вашому запиту</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.no_results">Нічого не знайдено.</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.all_of_dspace">Всі фонди</message>
+
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.title">назві</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateissued">даті публікації</message>
+   <message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.dateaccessioned">даті додання</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by.relevance">релевантності</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.sort_by">Сортувати відповідно</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.order">по</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.order.asc">зростанню</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.order.desc">спаданню</message>
+	<message key="xmlui.ArtifactBrowser.AbstractSearch.rpp">Результатів на сторінку</message>
+
+    <!-- org.dspace.app.xmlui.artifactbrowser.AdvancedSearch.java -->
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.title">Розширений пошук</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.trail">Розширений пошук</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.head">Розширений пошук</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.search_scope">Де шукати</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.search_scope_help">Оберіть фонд чи колекцію, в якій проводитиметься пошук.</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.conjunction">Правило</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.search_type">Тип пошуку</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.search_for">Шукана фраза</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_author">Автор</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_title">Назва</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Тема</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_abstract">Короткий опис</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_series">Серія/Номер</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_sponsor">Спонсор(и)</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_identifier">Реєстраційний номер</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_language">Мова</message>
+	<message key="xmlui.ArtifactBrowser.AdvancedSearch.type_keyword">Ключові слова</message>
+   
+   <!--  some common other possibilities for Advanced Search Fields -->
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_contributor">Хто вніс в базу</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_creator">Автор</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_subject">Тема</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_description">Деякий опис</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_relation">Відношення</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_mime">Mime-тип</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_other">Інші автори</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_advisor">Консультант</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_department">Підрозділ</message>
+
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.type_ANY">Повнотекстовий</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.and">І</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.or">АБО</message>
+   <message key="xmlui.ArtifactBrowser.AdvancedSearch.not">НЕ</message>
+	
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.ConfigureableBrowse.java -->
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with">Або введіть перші кілька букв:</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.starts_with_help">Шукати матеріали що починаються з цих букв</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_select">Перейти до значення в індексі:</message>	
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_month">(Оберіть місяць)</message>	
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.choose_year">(Оберіть рік)</message>	
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_year">Або введіть рік: </message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.jump_year_help">Шукати матеріали вказаного року.</message>
+        <message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.no_results">Нажаль жоден матеріал не відповідає вашому запиту.</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.sort_by"> Сортувати по: </message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.order"> Порядок: </message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.rpp"> Рузультати: </message><!-- /Page -->
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.general.etal"> Автори/Item: </message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.etal.all">Все</message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.title">назва</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.dateissued">дата публікації</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.sort_by.dateaccessioned">дата додання</message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.asc">зростанням</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.order.desc">спаданням</message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.author.column_heading">Ім'я автора</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.subject.column_heading">Тема</message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.author">Перегляд {0} по Автору {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.author">Перегляд {0} по Автору</message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.metadata.subject">Перегляд {0} по темі {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.metadata.subject">Перегляд {0} по темі</message>
+	
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.title">Перегляд {0} по назві {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.title">Перегляд {0} по назві</message>
+	
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateissued">Перегляд {0} за датою {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateissued">Перегляд {0} за датою</message>
+
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.title.item.dateaccessioned">Перегляд {0} датою додання {1}</message>
+	<message key="xmlui.ArtifactBrowser.ConfigurableBrowse.trail.item.dateaccessioned">Перегляд {0} датою додання</message>
+
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.CollectionViewer.java -->
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.search_scope">Область пошуку</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.all_of_dspace">Всі колекції</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.full_text_search">Пошук по цій колекції:</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.head_browse">Перегляд по</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_titles">Назви</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_authors">Автори</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.browse_dates">Дати</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.advanced_search_link">Розширений пошук</message>
+	<message key="xmlui.ArtifactBrowser.CollectionViewer.head_recent_submissions">Останні додані</message>
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityBrowser.java -->
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.title">Список фондів</message>
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.trail">Список фондів</message>
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.head">Фонди</message>
+	<message key="xmlui.ArtifactBrowser.CommunityBrowser.select">Виберіть фонд для перегляду його колекцій.</message>
+
+	<!-- org.dspace.app.xmlui.artifactbrowser.CommunityViewer.java -->
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.search_scope">Область пошуку</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.all_of_dspace">Всі матераіли 37</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.full_text_search">Пошук по фонду:</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_browse">Перегляд по 29</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_titles">Назви</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_authors">Автори</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.browse_dates">Дати</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.advanced_search_link">Розширений пошук</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_communities">Під-фонди цього фонду</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_sub_collections">Колекції в цьому фонді:</message>
+	<message key="xmlui.ArtifactBrowser.CommunityViewer.head_recent_submissions">Останні додані</message>
+	
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.Contact.java -->
+	<message key="xmlui.ArtifactBrowser.Contact.title">Зворотній зв'язок</message>
+	<message key="xmlui.ArtifactBrowser.Contact.trail">Зворотній зв'язок</message>
+	<message key="xmlui.ArtifactBrowser.Contact.head">Зворотній зв'язок</message>
+	<message key="xmlui.ArtifactBrowser.Contact.para1">{0} зв'язок з адміністратором(и):</message>
+	<message key="xmlui.ArtifactBrowser.Contact.feedback_label">On-line форма</message>
+	<message key="xmlui.ArtifactBrowser.Contact.feedback_link">Зворотній зв'язок</message>
+	<message key="xmlui.ArtifactBrowser.Contact.email">Email</message>
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.FeedbackForm.java -->
+	<message key="xmlui.ArtifactBrowser.FeedbackForm.title">Зворотній зв'язок</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackForm.trail">Зворотній зв'язок</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackForm.head">Зворотній зв'язок</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackForm.para1">Дякуємо за ваш відгук щодо роботи даного сервісу. Він буде розглянутий найближчим часом!</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackForm.email">Ваш Email</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackForm.email_help">Ця адреса буде використана для відповіді на ваш вігук.</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackForm.comments">Відгук</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackForm.submit">Надіслати відгук</message>
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.FeedbackSent.java -->
+	<message key="xmlui.ArtifactBrowser.FeedbackSent.title">Зворотній зв'язок</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackSent.trail">Зворотній зв'язок</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackSent.head">Відгук надіслано</message>
+	<message key="xmlui.ArtifactBrowser.FeedbackSent.para1">Ваш відгук отримано.</message>
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.FrontPageSearch.java -->
+	<message key="xmlui.ArtifactBrowser.FrontPageSearch.head">Пошук</message>
+	<message key="xmlui.ArtifactBrowser.FrontPageSearch.para1">Введіть текст для пошуку:</message>
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.ItemViewer.java -->
+	<message key="xmlui.ArtifactBrowser.ItemViewer.trail">Перегляд матеріалів</message>
+	<message key="xmlui.ArtifactBrowser.ItemViewer.head_parent_collections">Даний матеріал зустрічається у наступних фондах</message>
+	<message key="xmlui.ArtifactBrowser.ItemViewer.show_simple">Показати скорочений опис матеріалу</message>
+	<message key="xmlui.ArtifactBrowser.ItemViewer.show_full">Показати повний опис матеріалу</message>
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.Navigation.java -->
+	<message key="xmlui.ArtifactBrowser.Navigation.head_browse">Перегляд</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.head_all_of_dspace">Всі матеріали</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.communities_and_collections">Фонди та колекції</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_title">Заголовки</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_author">Автори</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_subject">Теми</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateissued">За датою публикації</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.browse_dateaccessioned">За датою додання</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.head_this_collection">Колекція</message>
+	<message key="xmlui.ArtifactBrowser.Navigation.head_this_community">Фонд</message>
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.SimpleSearch.java -->
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.title">Пошук</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.trail">Пошук</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.head">Пошук</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.search_scope">Область пошуку</message>
+	<message key="xmlui.ArtifactBrowser.SimpleSearch.full_text_search">Повнотекстовий пошук</message>
+	
+	<!-- org.dspace.app.xmlui.artifactbrowser.RestrictedItem.java -->
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.title">Даний матеріал недоступний</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.trail">Недоступно</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_resource">Даний ресурс конфіденційний</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_community">Даний фонд конфіденційний</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_collection">Дана колекція конфіденційна</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_item">Даний об'єкт конфіденційний</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.head_bitstream">Даний файл конфіденційний</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_resource">У вас недостатньо прав для доступу до даного ресурсу.</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_community">У вас недостатньо прав для доступу до даного фонду <b>{0}</b>.</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_collection">У вас недостатньо прав для доступу до даної колекції <b>{0}</b>.</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_item">У вас недостатньо прав для доступу до даного матеріалу <b>{0}</b>.</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.para_bitstream">У вас недостатньо прав для доступу до даного файлу <b>{0}</b>.</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_collection">колекція</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_community">фонд</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_bitstream">файл</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_item">матеріал</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.type_resource">ресурс</message>
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.unknown">невідомо</message>
+	
+	<!-- Authentication messages used at the top of the login page:  -->
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.auth_header">Матеріал недоступний</message>	
+	<message key="xmlui.ArtifactBrowser.RestrictedItem.auth_message">Запрошений вами матеріал має обмеження перегляду. Для доступу до нього ввійдіть в систему.</message>
+
+    <message key="xmlui.ArtifactBrowser.StatisticsViewer.choose_month">Щомісячні звіти</message>
+    <message key="xmlui.ArtifactBrowser.StatisticsViewer.report.title">Сумарна статистика</message>
+
+    <message key="xmlui.ArtifactBrowser.StatisticsViewer.no_report.title">No reports currently available</message>
+    <message key="xmlui.ArtifactBrowser.StatisticsViewer.no_report.text">There are currently no reports available for this service.  Please check back later.</message>
+
+    <!-- Authentication messages used for bitstream authentication -->
+	<message key="xmlui.BitstreamReader.auth_header">Файл конфіденційний</message>	
+	<message key="xmlui.BitstreamReader.auth_message">Запрошений вами файл має обмеження перегляду. Для доступу до нього ввійдіть в систему.</message>
+	
+	<!-- Export Archive download messages -->
+	<message key="xmlui.ItemExportDownloadReader.auth_header">Даний експортний архів конфіденційний.</message>
+	<message key="xmlui.ItemExportDownloadReader.auth_message">Запрошений вами експортний архів має обмеження перегляду. Для доступу до нього ввійдіть в систему.</message>
+
+	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		
+		                EPerson Aspect
+		
+		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	
+	
+	
+	
+	
+	
+	
+	<!-- General keys used by the EPerson aspect -->
+	<message key="xmlui.EPerson.trail_new_registration">Реєстрація нового користувача</message>
+	<message key="xmlui.EPerson.trail_forgot_password">Відновлення паролю</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.CannotRegister.java -->
+	<message key="xmlui.EPerson.CannotRegister.title">Реєстрація недоступна</message>
+	<message key="xmlui.EPerson.CannotRegister.head">Реєстрація недоступна</message>
+	<message key="xmlui.EPerson.CannotRegister.para1">На даний момент реєстрація заборонена. Зв'язок з <a href="../contact">адміністратором</a> </message>
+	
+	<!-- org.dspace.app.xmlui.eperson.EditProfile.java -->
+	<message key="xmlui.EPerson.EditProfile.title_update">Оновити профіль</message>
+	<message key="xmlui.EPerson.EditProfile.title_create">Створити профіль</message>
+	<message key="xmlui.EPerson.EditProfile.trail_update">Оновити профіль</message>
+	<message key="xmlui.EPerson.EditProfile.head_update">Оновити профіль</message>
+	<message key="xmlui.EPerson.EditProfile.head_create">Створити профіль</message>
+	<message key="xmlui.EPerson.EditProfile.email_address">Email адреса</message>
+	<message key="xmlui.EPerson.EditProfile.first_name">Прізвище</message>
+	<message key="xmlui.EPerson.EditProfile.last_name">Ім'я, по батькові</message>
+	<message key="xmlui.EPerson.EditProfile.telephone">Контактний телефон</message>
+        <message key="xmlui.EPerson.EditProfile.Language">Мова</message>
+	<message key="xmlui.EPerson.EditProfile.subscriptions">Підписка</message>
+	<message key="xmlui.EPerson.EditProfile.subscriptions_help">Ви можете підписатись на отримання щоденного оповіщення про нові матеріали. Оповіщення приходитиме вказану вами адресу. Також ви можете скористатись RSS.</message>
+	<message key="xmlui.EPerson.EditProfile.email_subscriptions">Email підписка</message>
+	<message key="xmlui.EPerson.EditProfile.select_collection">( Оберіть колекцію )</message>
+	<message key="xmlui.EPerson.EditProfile.update_password_instructions">Ви можете ввести новий пароль. Повторіть новий пароль в другому полі. Мінімальна довжина пароля 6 символів.</message>
+	<message key="xmlui.EPerson.EditProfile.create_password_instructions">Введіть новий пароль у цьому полі та повторіть його в другому полі. Мінімальна довжина пароля 6 символів.</message>
+	<message key="xmlui.EPerson.EditProfile.password">Пароль</message>
+	<message key="xmlui.EPerson.EditProfile.confirm_password">Повторіть пароль для підтвердження</message>
+	<message key="xmlui.EPerson.EditProfile.submit_update">Завершити реєстрацію</message>
+	<message key="xmlui.EPerson.EditProfile.submit_create">Обновити профіль</message>
+	<message key="xmlui.EPerson.EditProfile.error_required">Це поле обов'язкове для заповнення</message>
+	<message key="xmlui.EPerson.EditProfile.error_invalid_password">Мінімальна довжина пароля 6 символів.</message>
+	<message key="xmlui.EPerson.EditProfile.error_unconfirmed_password">Повторіть пароль для підтвердження</message>
+	<message key="xmlui.EPerson.EditProfile.head_auth">Групи, в які ви входите</message>
+	<message key="xmlui.EPerson.EditProfile.head_identify">Identify</message>
+	<message key="xmlui.EPerson.EditProfile.head_security">Security</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.EPersonUtils.java -->
+	<message key="xmlui.EPerson.EPersonUtils.register_verify_email">Підтвердіть Email</message>
+	<message key="xmlui.EPerson.EPersonUtils.register_create_profile">Створити профіль</message>
+	<message key="xmlui.EPerson.EPersonUtils.register_finished">Завершено</message>
+	<message key="xmlui.EPerson.EPersonUtils.forgot_verify_email">Підтвердіть Email</message>
+	<message key="xmlui.EPerson.EPersonUtils.forgot_reset_password">Скинути пароль</message>
+	<message key="xmlui.EPerson.EPersonUtils.forgot_finished">Завершено</message>
+
+	<!-- org.dspace.app.xmlui.eperson.ForgotPasswordFinished.java -->
+	<message key="xmlui.EPerson.ForgotPasswordFinished.title">Пароль скинуто</message>
+	<message key="xmlui.EPerson.ForgotPasswordFinished.head">Пароль скинуто</message>
+	<message key="xmlui.EPerson.ForgotPasswordFinished.para1">Ваш пароль скинуто.</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.InvalidToken.java -->
+	<message key="xmlui.EPerson.InvalidToken.title">Invalid token</message>
+	<message key="xmlui.EPerson.InvalidToken.trail">Invalid token</message>
+	<message key="xmlui.EPerson.InvalidToken.head">Invalid token</message>
+	<message key="xmlui.EPerson.InvalidToken.para1">Вказана Вами URL недійсна. URL можливо записана невірно через ваш email клієнт, наприклад:</message>
+	<message key="xmlui.EPerson.InvalidToken.para2">Якщо так, скопіюйте та вставте URL в адресну строку вашого веб браузеру повністю, а не просто клікайте на посилання. Адресна строка має містити щось подібне до:</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.Navigation.java -->
+	<message key="xmlui.EPerson.Navigation.my_account">Мій профіль</message>
+	<message key="xmlui.EPerson.Navigation.profile">Профіль</message>
+	<message key="xmlui.EPerson.Navigation.logout">Вийти</message>
+	<message key="xmlui.EPerson.Navigation.login">Ввійти</message>
+	<message key="xmlui.EPerson.Navigation.register">Зареєструватися</message>
+
+	<!-- org.dspace.app.xmlui.eperson.PasswordLogin.java -->
+	<message key="xmlui.EPerson.PasswordLogin.title">Вхід</message>
+	<message key="xmlui.EPerson.PasswordLogin.trail">Вхід</message>
+	<message key="xmlui.EPerson.PasswordLogin.head1">Вхід</message>
+	<message key="xmlui.EPerson.PasswordLogin.title">Вхід</message>
+	<message key="xmlui.EPerson.PasswordLogin.email_address">E-Mail адреса</message>
+	<message key="xmlui.EPerson.PasswordLogin.error_bad_login">Введено неправильні email або пароль.</message>
+	<message key="xmlui.EPerson.PasswordLogin.password">Пароль</message>
+	<message key="xmlui.EPerson.PasswordLogin.forgot_link"> Забули пароль?</message>
+	<message key="xmlui.EPerson.PasswordLogin.submit">Вхід</message>
+	<message key="xmlui.EPerson.PasswordLogin.head2">Реєстрація нового користувача</message>
+	<message key="xmlui.EPerson.PasswordLogin.para1">Зареєструйтесь для оповіщення по email про появу нових матеріалів у обраних вами фондах та колекціях, а також для публікації власних матеріалів.</message>
+	<message key="xmlui.EPerson.PasswordLogin.register_link">Натисніть тут для реєстрації.</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.LDAPLogin.java -->
+	<message key="xmlui.EPerson.LDAPLogin.title">Вхід</message>
+	<message key="xmlui.EPerson.LDAPLogin.trail">Вхід</message>
+	<message key="xmlui.EPerson.LDAPLogin.head1">Вхід</message>
+	<message key="xmlui.EPerson.LDAPLogin.title">Вхід</message>
+	<message key="xmlui.EPerson.LDAPLogin.username">Ім'я користувача</message>
+	<message key="xmlui.EPerson.LDAPLogin.error_bad_login">Введено неправильне ім'я чи пароль.</message>
+	<message key="xmlui.EPerson.LDAPLogin.password">Пароль</message>
+	<message key="xmlui.EPerson.LDAPLogin.submit">Вхід</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.LoginChooser.java -->
+	<message key="xmlui.EPerson.LoginChooser.title">Choose a Login Method</message>
+	<message key="xmlui.EPerson.LoginChooser.trail">Choose Login</message>
+	<message key="xmlui.EPerson.LoginChooser.head1">Choose a Login Method</message>
+	<message key="xmlui.EPerson.LoginChooser.para1">Log in via:</message>
+	<message key="org.dspace.authenticate.ShibAuthentication.title">Shibboleth Authentication</message>
+	<message key="org.dspace.eperson.LDAPAuthentication.title">LDAP Authentication</message>
+	<message key="org.dspace.eperson.PasswordAuthentication.title">Password Authentication</message>
+	<message key="org.dspace.eperson.X509Authentication.title">Web Certificate Authentication</message>
+
+	<!-- org.dspace.app.xmlui.eperson.FailedAuthentication -->
+	<message key="xmlui.EPerson.FailedAuthentication.BadCreds">The credentials provided are invalid.</message>
+	<message key="xmlui.EPerson.FailedAuthentication.BadArgs">Unable to authenticate due to invalid arguments received.</message>
+	<message key="xmlui.EPerson.FailedAuthentication.NoSuchUser">A user was not found with the credentials provided.</message>
+	<message key="xmlui.EPerson.FailedAuthentication.title">Authentication Failed</message>
+    <message key="xmlui.EPerson.FailedAuthentication.trail">Failed Authentication</message>
+    <message key="xmlui.EPerson.FailedAuthentication.h1">Authentication Failed</message>
+	
+	<!-- Login xml files -->
+	<message key="xmlui.eperson.noAuthMethod.head">No Authentication Method Found</message>
+	<message key="xmlui.eperson.noAuthMethod.p1">No authentication method was found.  Please contact the site administrator.</message>
+	<message key="xmlui.eperson.shibbLoginFailure.head">Shibboleth Login Failed</message>
+	<message key="xmlui.eperson.shibbLoginFailure.p1">Shibboleth authentication not available at this time. Please contact the site administrator.</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.ProfileUpdated.java -->
+	<message key="xmlui.EPerson.ProfileUpdated.title">Профіль оновлено</message>
+	<message key="xmlui.EPerson.ProfileUpdated.trail">Профіль оновлено</message>
+	<message key="xmlui.EPerson.ProfileUpdated.head">Профіль оновлено</message>
+	<message key="xmlui.EPerson.ProfileUpdated.para1">Ваш профіль було оновлено.</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.RegistrationFinished.java -->
+	<message key="xmlui.EPerson.RegistrationFinished.title">Реєстрація завершена</message>
+	<message key="xmlui.EPerson.RegistrationFinished.head">Реєстрація завершена</message>
+	<message key="xmlui.EPerson.RegistrationFinished.para1">Тепер ви зареєстрований користувач. Ви можете підписатись на отримання розсилки по email.</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.ResetPassword.java -->
+	<message key="xmlui.EPerson.ResetPassword.title">Оновити пароль</message>
+	<message key="xmlui.EPerson.ResetPassword.head">Оновити пароль</message>
+	<message key="xmlui.EPerson.ResetPassword.para1">Введіть новий пароль у цьому полі та повторіть його у полі що нижче. Мінімальна довжина пароля 6 символів.</message>
+	<message key="xmlui.EPerson.ResetPassword.email_address">Email адреса</message>
+	<message key="xmlui.EPerson.ResetPassword.new_password">Новий пароль</message>
+	<message key="xmlui.EPerson.ResetPassword.confirm_password">Повторіть для підтвердження</message>
+	<message key="xmlui.EPerson.ResetPassword.submit">Оновити пароль</message>
+	<message key="xmlui.EPerson.ResetPassword.error_invalid_password">Мінімальна довжина пароля 6 символів.</message>
+	<message key="xmlui.EPerson.ResetPassword.error_unconfirmed_password">Павторіть пароль для підтвердження.</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.StartForgotPassword.java -->
+	<message key="xmlui.EPerson.StartForgotPassword.title">Відновити пароль</message>
+	<message key="xmlui.EPerson.StartForgotPassword.head">Відновити пароль</message>
+	<message key="xmlui.EPerson.StartForgotPassword.para1">Введіть email адресу, яку ви ввели при реєстрації. Тутди буде відправлено листа із подальшими інструкціями.</message>
+	<message key="xmlui.EPerson.StartForgotPassword.email_address">Email адреса</message>
+	<message key="xmlui.EPerson.StartForgotPassword.email_address_help">Введіть email адресу, яку вводили при реєстрації.</message>
+	<message key="xmlui.EPerson.StartForgotPassword.error_not_found">Email адреса не знайдена.</message>
+	<message key="xmlui.EPerson.StartForgotPassword.submit">Відправити</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.StartRegistration.java -->
+	<message key="xmlui.EPerson.StartRegistration.title">Реєстрація нового користувача</message>
+	<message key="xmlui.EPerson.StartRegistration.head1">Ця email адреса вже використовується</message>
+	<message key="xmlui.EPerson.StartRegistration.para1">Ця email адреса вже використовується іншим користувачем. Якщо ви хочете скинути пароль для цього користувача натисніть на кнопку "Скинути пароль".</message>
+	<message key="xmlui.EPerson.StartRegistration.reset_password_for">Скинути пароль для</message>
+	<message key="xmlui.EPerson.StartRegistration.submit_reset">Скинути пароль</message>
+	<message key="xmlui.EPerson.StartRegistration.head2">Реєстрація нового користувача</message>
+	<message key="xmlui.EPerson.StartRegistration.para2">Зареєструйтесь для додання нових матеріалів та перегляду матеріалів з обмеженим доступом.</message>
+	<message key="xmlui.EPerson.StartRegistration.email_address">Email адреса</message>
+	<message key="xmlui.EPerson.StartRegistration.email_address_help">Ця адреса буде використовуватись як ваш логін(ім'я при вході).</message>
+	<message key="xmlui.EPerson.StartRegistration.error_bad_email">Неможливо дівправити email за вказаною адресою.</message>
+	<message key="xmlui.EPerson.StartRegistration.submit_register">Реєстрація</message>
+	
+	<!-- org.dspace.app.xmlui.eperson.VerifyEmail.java -->
+	<message key="xmlui.EPerson.VerifyEmail.title">Лист для підтвердження надіслано</message>
+	<message key="xmlui.EPerson.VerifyEmail.head">Лист для підтвердження надіслано</message>
+	<message key="xmlui.EPerson.VerifyEmail.para">Лист із подільшими інструкціями надіслано за цією адресою  {0} </message>
+
+
+
+
+
+
+	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		
+		               Submission Aspect
+		
+		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->	
+	
+	
+
+
+
+
+
+	<!-- general submission aspect messages -->
+	<message key="xmlui.Submission.general.mydspace_home">Мій DSpace</message>
+	<message key="xmlui.Submission.general.go_mydspace">До моїх наукових робіт</message>
+	<message key="xmlui.Submission.general.submission.title">Додання матеріалів</message>
+	<message key="xmlui.Submission.general.submission.trail">Додання матеріалів</message>
+	<message key="xmlui.Submission.general.submission.head">Додання матеріалів</message>	
+	<message key="xmlui.Submission.general.submission.previous">&lt; Назад</message>
+	<message key="xmlui.Submission.general.submission.save">Зберегти та вийти</message>
+	<message key="xmlui.Submission.general.submission.next">Далі &gt;</message>
+	<message key="xmlui.Submission.general.submission.complete">Завершити</message>
+	<message key="xmlui.Submission.general.workflow.title">Додання матеріалів</message>
+	<message key="xmlui.Submission.general.workflow.trail">Додання матеріалів</message>
+	<message key="xmlui.Submission.general.workflow.head">Додання матеріалів</message>
+	<message key="xmlui.Submission.general.showfull">Показати повний опис матеріалу</message>
+	<message key="xmlui.Submission.general.showsimple">Показати скорчений опис матеріалу</message>
+	<message key="xmlui.Submission.general.default.title">Submission</message>
+	<message key="xmlui.Submission.general.default.trail">Submission</message>
+	
+	<!-- org.dspace.app.xmlui.submission.CollectiovViewer -->
+	<message key="xmlui.Submission.CollectionViewer.link1">Додати новий матеріал до колекції</message>
+	
+	<!-- org.dspace.app.xmlui.submission.Navigation -->
+	<message key="xmlui.Submission.Navigation.submissions">Додати нові матеріали</message>
+
+	
+	<!-- org.dspace.app.xmlui.Submission.submissions -->
+	<message key="xmlui.Submission.Submissions.title">Додання нових матеріалів</message>
+	<message key="xmlui.Submission.Submissions.trail">Нові матеріали</message>
+	<message key="xmlui.Submission.Submissions.head">Нові матеріали</message>
+	<message key="xmlui.Submission.Submissions.untitled"><i>Немає даних</i></message>
+	<message key="xmlui.Submission.Submissions.email">email: </message>
+	<!-- Same transformer, workflow section -->
+	<message key="xmlui.Submission.Submissions.workflow_head1">Завдання робочого процесу</message>
+	<message key="xmlui.Submission.Submissions.workflow_info1">Ці завдання - матеріали, які очікують затвердження перед тим як будуть додані до репозитарію. Тут є дві черги, одна черга для матеріалів які затверджуєте ви, інша - для ваших матеріалів які ще не були розглянуті.</message>
+	<message key="xmlui.Submission.Submissions.workflow_head2">Ваші завдання</message>
+	<message key="xmlui.Submission.Submissions.workflow_column1"></message>
+	<message key="xmlui.Submission.Submissions.workflow_column2">Завдання</message>
+	<message key="xmlui.Submission.Submissions.workflow_column3">Елемент</message>
+	<message key="xmlui.Submission.Submissions.workflow_column4">Колекція</message>
+	<message key="xmlui.Submission.Submissions.workflow_column5">Хто додав</message>
+	<message key="xmlui.Submission.Submissions.workflow_submit_return">Повернути відмічені завдання в пул</message>
+	<message key="xmlui.Submission.Submissions.workflow_info2">Немає задань закріплених за вами</message>
+	<message key="xmlui.Submission.Submissions.workflow_head3">Завдання в пулі</message>
+	<message key="xmlui.Submission.Submissions.workflow_submit_take">Обрати водмічені завдання</message>
+	<message key="xmlui.Submission.Submissions.workflow_info3">Немає завдань в пулі</message>
+	<!-- Same transformer, submissions section -->
+	<message key="xmlui.Submission.Submissions.submit_head1">Додання нових матеріалів</message>
+	<message key="xmlui.Submission.Submissions.submit_info1a">Ви можете </message>
+	<message key="xmlui.Submission.Submissions.submit_info1b">додати нові матеріали</message>
+	<message key="xmlui.Submission.Submissions.submit_info1c"> Цей процес включає опис матеріалівта їх завантаження. Кожен фонд чи колекція можуть встановлювати власні правила додавання нових матеріалів.</message>
+	<message key="xmlui.Submission.Submissions.submit_head2">Незавершені додання</message>
+	<message key="xmlui.Submission.Submissions.submit_info2a">Не всі матеріали офоромлено до кінця. Ви можете продовжити роботу з ними, або</message>
+	<message key="xmlui.Submission.Submissions.submit_info2b">додати нові матеріали</message>
+	<message key="xmlui.Submission.Submissions.submit_info2c">.</message>
+	<message key="xmlui.Submission.Submissions.submit_column1"></message>
+	<message key="xmlui.Submission.Submissions.submit_column2">Заголовок</message>
+	<message key="xmlui.Submission.Submissions.submit_column3">Колецкія</message>
+	<message key="xmlui.Submission.Submissions.submit_column4">Хто додав матеріал</message>
+	<message key="xmlui.Submission.Submissions.submit_head3">Authoring:</message>
+	<message key="xmlui.Submission.Submissions.submit_info3">No submissions left unfinished.</message>
+	<message key="xmlui.Submission.Submissions.submit_head4">Supervising:</message>
+	<message key="xmlui.Submission.Submissions.submit_submit_remove">Видалити позначені</message>
+	<!-- Same transformer, inprogress section -->
+	<message key="xmlui.Submission.Submissions.progress_head1">Надходження розглядається</message>
+	<message key="xmlui.Submission.Submissions.progress_info1">Це ваші завершені додання, які зараз на розгляді у редактора колекції.</message>
+	<message key="xmlui.Submission.Submissions.progress_column1">Заголовок</message>
+	<message key="xmlui.Submission.Submissions.progress_column2">Колекція</message>
+	<message key="xmlui.Submission.Submissions.progress_column3">Статус</message>
+	<!-- Same transformer, workflow status -->
+	<message key="xmlui.Submission.Submissions.status_0">Додано</message>
+	<message key="xmlui.Submission.Submissions.status_1">Очікує розгляду рецензента</message>
+	<message key="xmlui.Submission.Submissions.status_2">Надходження розглядається</message>
+	<message key="xmlui.Submission.Submissions.status_3">Очікує розгляду редактора</message>
+	<message key="xmlui.Submission.Submissions.status_4">Надходження редагується редактором</message>
+	<message key="xmlui.Submission.Submissions.status_5">Очікує остаточного розгляду редактора</message>
+	<message key="xmlui.Submission.Submissions.status_6">Надходження редагується редактором</message>
+	<message key="xmlui.Submission.Submissions.status_7">Надходження прийнято і архівовано</message>
+	<message key="xmlui.Submission.Submissions.status_unknown">Невідома стадія</message>
+
+	<!-- submission progress bar messages -->
+	<message key="xmlui.Submission.submit.progressbar.initial-questions">Стартові запитання</message>
+	<message key="xmlui.Submission.submit.progressbar.describe">Опис</message>
+	<message key="xmlui.Submission.submit.progressbar.upload">Завантаження</message>
+	<message key="xmlui.Submission.submit.progressbar.verify">Перевірка</message>
+	<message key="xmlui.Submission.submit.progressbar.creative-commons">Creative Commons</message>
+	<message key="xmlui.Submission.submit.progressbar.license">License</message>
+	<message key="xmlui.Submission.submit.progressbar.complete">Complete</message>
+	
+	<!-- org.dspace.app.xmlui.Submission.submit.ResumeStep -->
+	<message key="xmlui.Submission.submit.ResumeStep.submit_resume">Продовжити</message>
+
+	<!-- org.dspace.app.xmlui.Submission.submit.SelectCollection -->
+	<message key="xmlui.Submission.submit.SelectCollection.head">Оберіть колекцію</message>
+	<message key="xmlui.Submission.submit.SelectCollection.collection">Колекції</message>
+	<message key="xmlui.Submission.submit.SelectCollection.collection_help">Оберіть колекцію до якої буть додані матеріали</message>
+	<message key="xmlui.Submission.submit.SelectCollection.collection_default">Оберіть колекцію...</message>
+
+	<!-- org.dspace.app.xmlui.Submission.submit.SaveOrRemoveStep -->
+	<message key="xmlui.Submission.submit.SaveOrRemoveStep.head">Зберегти чи відмінити додавання цього матеріалу?</message>
+	<message key="xmlui.Submission.submit.SaveOrRemoveStep.info1">Ви хочете видалити цей матеріал, чи продовжити роботу з ним пізніше? Ви можете повернутись на попередню сторінку натиснувши на кнопку "Продовжити додання матеріалу".</message>
+	<message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_back">Продовжити додання матеріалу</message>
+	<message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_save">Зберегти, я продовжу роботу з матеріалом пізніше</message>
+	<message key="xmlui.Submission.submit.SaveOrRemoveStep.submit_remove">Видалити цей матеріал</message>
+
+	
+	<!-- org.dpspace.app.xmlui.Submission.submit.InitialQuestionsStep -->
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.head">Стартові запитання</message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.important_note">Увага: </message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.and"> та </message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.separator">, </message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.open_set"> (</message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.close_set">)</message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.multiple_titles">Декілька заголовків</message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.multiple_titles_help">Матеріал має більш ніж один заголовок, наприклад мовою оригіналу та перекладений.</message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.multiple_titles_note">If the checkbox above is unchecked then the following title(s) will be removed from the item: </message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.published_before">Публікції</message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.published_before_help">Матеріал раніше публікувався.</message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.published_before_note">Якщо позначення вище буде знято, то наступні дані будуть видалені:</message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.date_issued">Дата публікації</message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.citation">Цитування</message>
+	<message key="xmlui.Submission.submit.InitialQuestionsStep.publisher">Видавник</message>
+	
+	<!-- org.dspace.app.xmlui.Submission.submit.DescribeStep -->
+	<message key="xmlui.Submission.submit.DescribeStep.head">Опис</message>
+	<message key="xmlui.Submission.submit.DescribeStep.unknown_field">Помилка: невідомий тип файлу</message>
+	<message key="xmlui.Submission.submit.DescribeStep.required_field">Це поле обов'язкове для заповнення</message>
+	<message key="xmlui.Submission.submit.DescribeStep.last_name_help">Прізвище</message>
+	<message key="xmlui.Submission.submit.DescribeStep.first_name_help">Ім'я, по батькові</message>
+	<message key="xmlui.Submission.submit.DescribeStep.year">Рік</message>
+	<message key="xmlui.Submission.submit.DescribeStep.month">Місяць</message>
+	<message key="xmlui.Submission.submit.DescribeStep.day">День</message>
+	<message key="xmlui.Submission.submit.DescribeStep.series_name">Series Name</message>
+	<message key="xmlui.Submission.submit.DescribeStep.report_no">Report or paper No.</message>
+
+	<!-- org.dspace.app.xmlui.Submission.submit.UploadStep -->
+	<message key="xmlui.Submission.submit.UploadStep.head">Завантажити файл(и)</message>
+	<message key="xmlui.Submission.submit.UploadStep.file">Файл</message>
+	<message key="xmlui.Submission.submit.UploadStep.file_help">Вкажіть повний шлях до файла на вашому компютері, або натисніть кнопку і оберіть необхідний файл.</message>
+	<message key="xmlui.Submission.submit.UploadStep.file_error">Матеріал має містити хоча б один файл</message>
+	<message key="xmlui.Submission.submit.UploadStep.upload_error">При завантаженні вказаного файла виникла помилка. Це могло статись з наступних прицин: імя'я файлу вказано невірно, або помилка в мережі - неможливо отримати файл, або ж формат файлу, який ви намагаєтесь додати, заборонений для розміщення. Будь-ласка спробуйте ще раз.</message>
+	<message key="xmlui.Submission.submit.UploadStep.description">Опис файла</message>
+	<message key="xmlui.Submission.submit.UploadStep.description_help">Короткий опис файла, наприклад "основна стаття", "результати експериментів".</message>
+	<message key="xmlui.Submission.submit.UploadStep.submit_upload">Завантажити цей файл, а потім іще один</message>
+	<message key="xmlui.Submission.submit.UploadStep.head2">Завантажені файли</message>
+	<message key="xmlui.Submission.submit.UploadStep.column0">Основний файл</message>
+	<message key="xmlui.Submission.submit.UploadStep.column1">  </message>
+	<message key="xmlui.Submission.submit.UploadStep.column2">Ім'я файла</message>
+	<message key="xmlui.Submission.submit.UploadStep.column3">Розмір</message>
+	<message key="xmlui.Submission.submit.UploadStep.column4">Опис</message>
+	<message key="xmlui.Submission.submit.UploadStep.column5">Формат</message>
+	<message key="xmlui.Submission.submit.UploadStep.column6"></message>
+	<message key="xmlui.Submission.submit.UploadStep.unknown_name">Невідомий</message>
+	<message key="xmlui.Submission.submit.UploadStep.unknown_format">невідомий формат</message>
+	<message key="xmlui.Submission.submit.UploadStep.supported">(Підтримуваний)</message>
+	<message key="xmlui.Submission.submit.UploadStep.known">(Відомий)</message>
+	<message key="xmlui.Submission.submit.UploadStep.unsupported">(непідтримуваний)</message>
+	<message key="xmlui.Submission.submit.UploadStep.submit_edit">Змінити</message>
+	<message key="xmlui.Submission.submit.UploadStep.checksum">Контрольна сума:</message>
+	<message key="xmlui.Submission.submit.UploadStep.submit_remove">Видалити позначені файли</message>
+	
+	<!-- org.dspace.app.xmlui.Submission.submit.EditFileStep -->
+	<message key="xmlui.Submission.submit.EditFileStep.head">Змінити файл</message>
+	<message key="xmlui.Submission.submit.EditFileStep.file">Ім'я</message>
+	<message key="xmlui.Submission.submit.EditFileStep.description">Опис файла</message>
+	<message key="xmlui.Submission.submit.EditFileStep.description_help">Короткий опис файла, наприклад "<i>основна стаття</i>", чи "<i>Результати експеримента</i>".</message>
+	<message key="xmlui.Submission.submit.EditFileStep.info1">Оберіть формат файла зі списка, на приклад "<i>Adobe PDF</i>" чи "<i>Microsoft Word</i>." <strong> Якщо необхідного формату в списку немає</strong>, будь-ласка вкажіть його у полі що знаходиться під списком доступних форматів.</message>
+	<message key="xmlui.Submission.submit.EditFileStep.format_detected">Автоматично-визначений формат</message>
+	<message key="xmlui.Submission.submit.EditFileStep.format_selected">Обраний формат</message>
+	<message key="xmlui.Submission.submit.EditFileStep.format_default">Формат відсутній у списку</message>
+	<message key="xmlui.Submission.submit.EditFileStep.info2">Якщо необхідного формату в списку немає, будь-ласка <strong>оберіть "Формат відсутній у списку"</strong> та вкажіть необхідний формат у полі що знаходиться під списком доступних форматів.</message>
+	<message key="xmlui.Submission.submit.EditFileStep.format_user">Інший формат</message>
+	<message key="xmlui.Submission.submit.EditFileStep.format_user_help">Вкажіть ім'я програми, якою було створено цей файл, версію цієї програми (наприклад, "<i>ACMESoft SuperApp version 1.5</i>").</message>
+
+	<!-- org.dspace.app.xmlui.Submission.submit.ReviewStep -->
+	<message key="xmlui.Submission.submit.ReviewStep.head">Перевірка</message>
+	<message key="xmlui.Submission.submit.ReviewStep.yes">Так</message>
+	<message key="xmlui.Submission.submit.ReviewStep.no">Ні</message>
+	<message key="xmlui.Submission.submit.ReviewStep.submit_jump">Змінити один з цих пунктів</message>
+	<message key="xmlui.Submission.submit.ReviewStep.submit_jump_files">Додати чи видалити файл</message>
+	<message key="xmlui.Submission.submit.ReviewStep.head1">Стартові запитання</message>
+	<message key="xmlui.Submission.submit.ReviewStep.head2">Сторінка опису {0}</message>
+	<message key="xmlui.Submission.submit.ReviewStep.head3">Завантажені файли</message>
+	<message key="xmlui.Submission.submit.ReviewStep.multiple_titles">Декілька заголовків</message>
+	<message key="xmlui.Submission.submit.ReviewStep.published_before">Публікувалось раніше</message>
+	<message key="xmlui.Submission.submit.ReviewStep.no_metadata">-</message>
+	<message key="xmlui.Submission.submit.ReviewStep.unknown">невідомо</message>
+	<message key="xmlui.Submission.submit.ReviewStep.known">відомо</message>
+	<message key="xmlui.Submission.submit.ReviewStep.supported">підтримувано</message>
+	
+	<!-- org.dspace.app.xmlui.Submission.submit.CCLicenseStep -->
+	<message key="xmlui.Submission.submit.CCLicenseStep.head">Creative Commons License</message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.info1">If you wish, you may add a <a href="http://creativecommons.org/">Creative Commons</a> License to your item. <strong>Creative Commons licenses govern what people who read your work may then do with it.</strong> If you wish to select a Creative Commons license click the button below. You will be taken to the Creative Commons website, where you will be presented with several licensing options.  After selecting a license, you will be returned to this page.</message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.submit_to_creative_commons">Proceed to Creative Commons website to select a license</message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.license">Ліцензія</message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.submit_remove">Remove this Creative Commons License</message>
+	<message key="xmlui.Submission.submit.CCLicenseStep.no_license">no creative commons license selected</message>
+
+	<!-- org.dspace.app.xmlui.Submission.submit.LicenseStep -->
+	<message key="xmlui.Submission.submit.LicenseStep.head">Distribution License</message>
+	<message key="xmlui.Submission.submit.LicenseStep.info1"><strong>There is one last step:</strong> In order for DSpace to reproduce, translate and distribute your submission worldwide, you must agree to the following terms.</message>
+	<message key="xmlui.Submission.submit.LicenseStep.info2">Grant the standard distribution license by selecting 'I Grant the License'; and then click 'Complete Submission'.</message>
+	<message key="xmlui.Submission.submit.LicenseStep.info3">If you have questions regarding this license please contact the system administrators.</message>
+	<message key="xmlui.Submission.submit.LicenseStep.decision_label">Distribution license</message>
+	<message key="xmlui.Submission.submit.LicenseStep.decision_checkbox">I Grant the License</message>
+	<message key="xmlui.Submission.submit.LicenseStep.decision_error">You must grant this license to complete your submission. If you are unable to grant this license at this time you may save your work and return later or remove the submission by clicking the 'Save &amp; Exit' button below.</message>
+
+	<!-- org.dspace.app.xmlui.Submission.submit.RemovedStep -->
+	<message key="xmlui.Submission.submit.RemovedStep.head">Надходження видалено</message>
+	<message key="xmlui.Submission.submit.RemovedStep.info1">Ваше надходження було видалено із системи, разом із усіма його матеріалами.</message>
+	<message key="xmlui.Submission.submit.RemovedStep.go_submission">На сторінку додання матеріалів</message>	
+
+	<!-- org.dspace.app.xmlui.Submission.submit.CompletedStep -->
+	<message key="xmlui.Submission.submit.CompletedStep.head">Новий матеріал успішно додано</message>	
+	<message key="xmlui.Submission.submit.CompletedStep.info1">Тепер ваш матеріал буде додано до колекції, після чого вам надійде e-mail повідомлення.</message>	
+	<message key="xmlui.Submission.submit.CompletedStep.go_submission">Перейти до сторінки нових матеріалів</message>	
+	<message key="xmlui.Submission.submit.CompletedStep.submit_again">Додати нові матеріали</message>		
+
+	<!-- org.dspace.app.xmlui.Submission.workflow.PerformTaskStep -->
+	<message key="xmlui.Submission.workflow.PerformTaskStep.info1">Дії, доступні для цього завдання:</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.take_help">Призначити це завдання собі.</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.take_submit">Взяти завдання</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.leave_help">Залишити завдання в пулі для іншого.</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.leave_submit">Залишити завдання</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.approve_help">Якщо ви переглядаєте матеріали, і вважаєте їх вдповідними цій колекції, натисніть "Затвердити".</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.approve_submit">Затвердити матеріали</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.commit_help">Якщо ви редагували матеріали, використайте цю опцію передачі для матеріалу в архів.</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.commit_submit">Передати в архів</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.reject_help">Якщо ви переглядали матеріали і вважаєте їх <strong>не</strong> відповідними колекції, натисніть "Відхилити". При цьому необхідно вказати чому матеріали невідповідають вимогам колекції і чи може користувач змінити щось та переподати їх.</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.reject_submit">Відхилити матеріали</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.edit_help">Оберіть цю опцію для зміни метаданих матеріалу.</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.edit_submit">Редагувати метадані</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.return_help">Повернути завдання в пул щоб інші користувачі могли перевірити матеріали.</message>
+	<message key="xmlui.Submission.workflow.PerformTaskStep.return_submit">Повернути завдання в пул</message>
+
+	<!-- org.dspace.app.xmlui.Submission.workflow.RejectTaskStep -->
+	<message key="xmlui.Submission.workflow.RejectTaskStep.info1">Будь-ласка введіть причину відхилення матеріалів у поле що нижче, уточнюючи чи може користувач виправити проблему і переподати матеріали.</message>
+	<message key="xmlui.Submission.workflow.RejectTaskStep.reason">Причина</message>
+	<message key="xmlui.Submission.workflow.RejectTaskStep.reason_required">Потрібно обов'язково вказати причину</message>
+	<message key="xmlui.Submission.workflow.RejectTaskStep.submit_reject">Відхилити матеріали</message>
+
+	
+	
+	
+	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		
+		             Administrative Aspect
+		
+		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+	
+	<!-- action-generated messages. These are referenced from the sitemap rather than a transformer --> 	
+	
+	<message key="xmlui.administrative.FlowEPersonUtils.add_eperson_success_notice">Користувача успішно додано.</message>
+	<message key="xmlui.administrative.FlowEPersonUtils.edit_eperson_success_notice">Користувача успішно змінено.</message>
+	<message key="xmlui.administrative.FlowEPersonUtils.reset_password_success_notice">Користувачу було відправлено email повідомлення в якому міститься наступний крок для генерації нового пароля.</message>
+	<message key="xmlui.administrative.FlowEPersonUtils.delete_eperson_success_notice">Цей користувач(і) був успішно видалений.</message>
+	<message key="xmlui.administrative.FlowEPersonUtils.delete_eperson_failed_notice">Наступні користувач(і) не були видалені, оскільки з ними є пов'язані записи, що не дозволяє їх видалити, перегляньте eperson detail page для отримання більш детальної інформації.</message>
+	<message key="xmlui.administrative.FlowGroupUtils.edit_group_success_notice">Група успішно змінена.</message>
+	<message key="xmlui.administrative.FlowGroupUtils.delete_group_success_notice">Обрані групи успішно видалені.</message>
+	<message key="xmlui.administrative.FlowRegistryUtils.add_metadata_schema_success_notice">Нова схема була успішно створена.</message>
+	<message key="xmlui.administrative.FlowRegistryUtils.delete_metadata_schema_success_notice">Схема(и) була успішно видалена.</message>
+	<message key="xmlui.administrative.FlowRegistryUtils.add_metadata_field_success_notice">Поле метаданих успішно додано.</message>
+	<message key="xmlui.administrative.FlowRegistryUtils.edit_metadata_field_success_notice">Поле метаданих успішно змінено.</message>
+	<message key="xmlui.administrative.FlowRegistryUtils.move_metadata_field_success_notice">Поле(я) успішно переміщено.</message>
+	<message key="xmlui.administrative.FlowRegistryUtils.delete_metadata_field_success_notice">Поле(я) успішно видалено.</message>
+	<message key="xmlui.administrative.FlowRegistryUtils.edit_bitstream_format_success_notice">Формат успішно збережено.</message>
+	<message key="xmlui.administrative.FlowRegistryUtils.delete_bitstream_format_success_notice">Формат успішно видалено.</message>
+	<message key="xmlui.administrative.FlowItemUtils.metadata_updated">Метадані матеріалу успішно оновлено.</message>
+	<message key="xmlui.administrative.FlowItemUtils.metadata_added">Нові метадані додано.</message>
+	<message key="xmlui.administrative.FlowItemUtils.item_withdrawn">Матеріали було знято.</message>
+	<message key="xmlui.administrative.FlowItemUtils.item_reinstated">Матеріали було відновлено.</message>
+	<message key="xmlui.administrative.FlowItemUtils.item_moved">Матеріали було переміщено.</message>
+	<message key="xmlui.administrative.FlowItemUtils.item_move_failed">Обраної для переміщення колекції не знайдено.</message>
+	<message key="xmlui.administrative.FlowItemUtils.bitstream_added">Новий файл успішно завантажено.</message>
+	<message key="xmlui.administrative.FlowItemUtils.bitstream_failed">Помилка при завантаженні файлу.</message>
+	<message key="xmlui.administrative.FlowItemUtils.bitstream_updated">Файл успішно оновлено.</message>
+	<message key="xmlui.administrative.FlowItemUtils.bitstream_delete">Обрані файли було видалено.</message>
+	<message key="xmlui.administrative.FlowMapperUtils.map_items">Матеріали упішно відображено(mapped).</message>
+	<message key="xmlui.administrative.FlowMapperUtils.unmaped_items">Матеріали не відоражено(unmapped).</message>
+	
+	<!-- general items for all of the eperson classes -->
+	<message key="xmlui.administrative.eperson.general.epeople_trail">Керувати E-people</message>
+		
+	<!-- org.dspace.app.xmlui.administrative.Navigation -->
+	<!-- contextual menu items -->
+	<message key="xmlui.administrative.Navigation.context_head">Цей матеріал</message>
+	<message key="xmlui.administrative.Navigation.context_edit_item">Редагувати матеріал</message>
+	<message key="xmlui.administrative.Navigation.context_edit_collection">Редагувати колекцію</message>
+	<message key="xmlui.administrative.Navigation.context_item_mapper">Item Mapper</message>
+	<message key="xmlui.administrative.Navigation.context_edit_community">Змінити фонд</message>
+	<message key="xmlui.administrative.Navigation.context_create_collection">Створити колекцію</message>
+	<message key="xmlui.administrative.Navigation.context_create_subcommunity">Створити під-фонд</message>
+	<message key="xmlui.administrative.Navigation.context_create_community">Створити фонд</message>
+	<message key="xmlui.administrative.Navigation.context_export_item">Завантажити</message>
+        <message key="xmlui.administrative.Navigation.context_export_collection">Експорт колекції</message>
+        <message key="xmlui.administrative.Navigation.context_export_community">Експортувати фонд</message>
+        <message key="xmlui.administrative.Navigation.context_export_metadata">Метадані</message>
+	
+	<!-- Site administrator options -->
+	<message key="xmlui.administrative.Navigation.administrative_head">Адміністрування</message>
+	<message key="xmlui.administrative.Navigation.administrative_access_control">Контроль доступу</message>
+	<message key="xmlui.administrative.Navigation.administrative_people">Користувачі</message>
+	<message key="xmlui.administrative.Navigation.administrative_groups">Групи</message>
+	<message key="xmlui.administrative.Navigation.administrative_authorizations">Права доступу</message>
+	<message key="xmlui.administrative.Navigation.administrative_registries">Налаштування</message>
+	<message key="xmlui.administrative.Navigation.administrative_metadata">Метадані</message>
+	<message key="xmlui.administrative.Navigation.administrative_format">Формати файлів</message>
+	<message key="xmlui.administrative.Navigation.administrative_items">Матеріали</message>
+    <message key="xmlui.administrative.Navigation.administrative_withdrawn">Отримання елементів</message>
+	<message key="xmlui.administrative.Navigation.administrative_control_panel">Панель керування</message>
+    <message key="xmlui.administrative.Navigation.statistics">Статистика</message>
+        <message key="xmlui.administrative.Navigation.administrative_import_metadata">Імпорт метаданих</message>
+
+    <!-- my account items -->
+	<message key="xmlui.administrative.Navigation.account_export">Мої матеріали</message>
+	
+	
+	<!-- export item -->
+	<message key="xmlui.administrative.ItemExport.head">Додані мною матеріали</message>
+	<message key="xmlui.administrative.ItemExport.item.id.error">Вказаний id(ідентифікатор) матеріалу не дійсний.</message>
+	<message key="xmlui.administrative.ItemExport.collection.id.error"> Вказаний id(ідентифікатор) колекцекції не дійсний.</message>
+	<message key="xmlui.administrative.ItemExport.community.id.error">Вказаний id(ідентифікатор) фонду не дійсний.</message>
+	<message key="xmlui.administrative.ItemExport.item.not.found">Вказаний матеріал не знайдено.</message>
+	<message key="xmlui.administrative.ItemExport.collection.not.found">Вказана колекція не знайдена.</message>
+	<message key="xmlui.administrative.ItemExport.community.not.found">Вказаний фонд не знайдено.</message>
+	<message key="xmlui.administrative.ItemExport.item.success">Матеріал успішно експортовано. Вам надійде e-mail лист коли архів буде готовий до завантаження. Також ви можете скористатись посиланням 'Додані мною матеріали' для перегляду доступних архівів.</message>
+	<message key="xmlui.administrative.ItemExport.collection.success">Колекція успішно експортована. TВам надійде e-mail лист коли архів буде готовий до завантаження. Також ви можете скористатись посиланням 'Додані мною матеріали' для перегляду доступних архівів.</message>
+	<message key="xmlui.administrative.ItemExport.community.success">Фонд успішно експортовано. Вам надійде e-mail лист коли архів буде готовий до завантаження. Також ви можете скористатись посиланням 'Додані мною матеріали' для перегляду доступних архівів.</message>
+	<message key="xmlui.administrative.ItemExport.available.head">Доступні для скачування архіви матеріалів:</message>
+	
+
+
+    <!-- org.dspace.app.xmlui.administrative.eperson.ManageEPeopleMain -->
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.title">Керуваня користувачами</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.main_head">Керування користувачами</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_head">Доступні дії</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_create">Створити нового користувача</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_create_link">Натисніть тут щоб додати нового користувача.</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_browse">Перегляд користувачів</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_browse_link">Натисніть тут для перегляду всіх користувачів.</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.actions_search">Шукати користувача</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_help">Користувачі шукаються по будь-якому частковому збігу email адреси чи імені</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_para1">Список користувачів, які відповідають запиту. Ви можете позначити користувачів яких хочете видалити та видалити їх, натиснувши "Видалити користувачів". Або натиснути на імені/Email користувача, редагувати його.</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_head">Результати пошуку</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column1"></message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column2">ID</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column3">Ім'я</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.search_column4">Email</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.submit_delete">Видалити користувачів</message>
+	<message key="xmlui.administrative.eperson.ManageEPeopleMain.no_results">За вашим запитом не знайдено жодного користувача...</message>
+		
+		
+	<!-- org.dspace.app.xmlui.administrative.eperson.AddEPersonForm -->
+	<message key="xmlui.administrative.eperson.AddEPersonForm.title">Додати користувача</message>
+	<message key="xmlui.administrative.eperson.AddEPersonForm.trail">Додати користувача</message>
+	<message key="xmlui.administrative.eperson.AddEPersonForm.head1">Створення нового користувача</message>
+	<message key="xmlui.administrative.eperson.AddEPersonForm.email_taken">Ця email адреса вже використовується іншим користувачем. Email не повинен повторюватись.</message>
+	<message key="xmlui.administrative.eperson.AddEPersonForm.head2">Інформація про нову E-Person:</message>
+	<message key="xmlui.administrative.eperson.AddEPersonForm.error_email_unique">Email адреса має бути унікальною</message>
+	<message key="xmlui.administrative.eperson.AddEPersonForm.error_email">Email адреса необхідно</message>
+	<message key="xmlui.administrative.eperson.AddEPersonForm.error_fname">Ім'я обов'язкове</message>
+	<message key="xmlui.administrative.eperson.AddEPersonForm.error_lname">Прізвище необхідно</message>
+	<message key="xmlui.administrative.eperson.AddEPersonForm.req_certs">Необхідний Сертифікат</message>
+	<message key="xmlui.administrative.eperson.AddEPersonForm.can_log_in">Може входити в систему</message>
+	<message key="xmlui.administrative.eperson.AddEPersonForm.submit_create">Створити E-Person</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.eperson.EditEPersonForm -->
+	<message key="xmlui.administrative.eperson.EditEPersonForm.title">Змінити E-Person</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.trail">Змінити E-Person</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.head1">Змінити E-Person</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.email_taken">Ця email адреса вже використовується іншим E-Person. Email адреса має бути унікальною.</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.head2">{0} інформація:</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.error_email_unique">Email адреса має бути унікальною</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.error_email">Email необхідно</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.error_fname">Ім'я необхідно</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.error_lname">Прізвище необхідно</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.req_certs">Необхідний Сертифікат</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.can_log_in">Може входити в систему</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.submit_reset_password">Скинути пароль</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.special_help">Ви також перманентно видалити цього користувача E-Person з системи, або скинути його/її пароль. При скиданні паролю користувачу буде надіслано email лист, в якому міститиметься спеціальне посилання для створення нового паролю.</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.submit_delete">Видалити E-Person</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.submit_login_as">Ввійти як E-Person</message>
+	
+	<message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint">Цей користувач E-Person не може бути видалений по одній з наступних причин:</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint.last_conjunction">і</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint.item">eperson має архівовані матеріали, один чи більше</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint.workflowitem">eperson має активні надходження/завдання для розгляду редактором відповідної колекції</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint.tasklistitem">eperson має нерозглянуті завдання</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.delete_constraint.unknown">eperson маєневідомі зв'язки з системою</message>
+	
+	<message key="xmlui.administrative.eperson.EditEPersonForm.member_head">Групи, в які входить цей користувач E-Person:</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.indirect_member">(via group: {0})</message>
+	<message key="xmlui.administrative.eperson.EditEPersonForm.member_none">жодна</message>
+	
+	
+	<!-- org.dspace.app.xmlui.administrative.eperson.DeleteEPeopleConfirm -->
+	<message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.title">Підтвердити видалення E-Person</message>
+	<message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.trail">Підтвердити видалення</message>
+	<message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.confirm_head">Підтвердити видалення</message>
+	<message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.confirm_para">Наступні користувачі E-People будуть видалені: </message>
+	<message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.submit_confirm">Підтвердити видалення</message>
+	<message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.head_id">ID</message>
+	<message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.head_name">Ім'я</message>
+	<message key="xmlui.administrative.eperson.DeleteEPeopleConfirm.head_email">Email</message>
+
+	<!-- general items for all of the group classes -->
+	<message key="xmlui.administrative.group.general.group_trail">Керування групами</message>
+
+	<!-- org.dspace.app.xmlui.administrative.group.ManageGroupsMain -->
+	<message key="xmlui.administrative.group.ManageGroupsMain.title">Керування групами</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.main_head">Керування групами</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.actions_head">Дії</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.actions_create">Створити нову групу</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.actions_create_link">Натисніть для створення нової групи.</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.actions_browse">Перегляд груп</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.actions_browse_link">Натисніть для перегляду всіх груп.</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.actions_search">Пошук групи</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.search_help">Пошук групи за їх назвою</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.search_head">Результати пошуку</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.search_column1"></message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.search_column2">ID</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.search_column3">Ім'я</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.search_column4">Члени</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.search_column5">Фонди / Колекції</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.collection_link">Перегляд</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.submit_delete">Видалити групи</message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.no_results">Ваш пошук не дав результатів...</message>
+
+	<!-- org.dspace.app.xmlui.administrative.group.EditGroupForm -->
+	<message key="xmlui.administrative.group.EditGroupForm.title">Редактор груп</message>
+	<message key="xmlui.administrative.group.EditGroupForm.trail">Редагувати групу</message>
+	<message key="xmlui.administrative.group.EditGroupForm.main_head">Редактор груп: {0} (id: {1})</message>
+	<message key="xmlui.administrative.group.EditGroupForm.main_head_new">Редактор груп: Нова група</message>
+	<message key="xmlui.administrative.group.EditGroupForm.submit_clear">Очистити пошук</message>
+	<message key="xmlui.administrative.group.EditGroupForm.member">Член</message>
+	<message key="xmlui.administrative.group.EditGroupForm.cycle">Сycle</message>
+	<message key="xmlui.administrative.group.EditGroupForm.pending">Незавершені</message>
+	<message key="xmlui.administrative.group.EditGroupForm.pending_warn">Зауваження, незавершені зміни зберігаються тільки при натисканні кнопки "Зберегти".</message>
+	<message key="xmlui.administrative.group.EditGroupForm.submit_add">Додати</message>
+	<message key="xmlui.administrative.group.EditGroupForm.submit_remove">Видалити</message>
+	<message key="xmlui.administrative.group.EditGroupForm.collection_para">Ця група пов'язана з колекцією: </message>
+	<message key="xmlui.administrative.group.EditGroupForm.community_para">Ця група пов'язана з фондом: </message>
+	<message key="xmlui.administrative.group.EditGroupForm.label_name">Змінити ім'я групи: </message>
+	<message key="xmlui.administrative.group.EditGroupForm.label_instructions">TЦя група пов'язана з фондом чи колекцією і не може змінюватись.</message>
+	<message key="xmlui.administrative.group.EditGroupForm.label_search">Пошук користувача для додання: </message>
+	<message key="xmlui.administrative.group.EditGroupForm.submit_search_people">E-People...</message>
+	<message key="xmlui.administrative.group.EditGroupForm.submit_search_groups">Групи...</message>
+	<message key="xmlui.administrative.group.EditGroupForm.no_results">Ваш пошук не дав результатів...</message>
+	<message key="xmlui.administrative.group.EditGroupForm.epeople_column1">ID</message>
+	<message key="xmlui.administrative.group.EditGroupForm.epeople_column2">Ім'я</message>
+	<message key="xmlui.administrative.group.EditGroupForm.epeople_column3">Email</message>
+	<message key="xmlui.administrative.group.EditGroupForm.epeople_column4"></message>
+	<message key="xmlui.administrative.group.EditGroupForm.groups_column1">ID</message>
+	<message key="xmlui.administrative.group.EditGroupForm.groups_column2">Ім'я</message>
+	<message key="xmlui.administrative.group.EditGroupForm.groups_column3">Члени</message>
+	<message key="xmlui.administrative.group.EditGroupForm.groups_column4">Колекції</message>
+	<message key="xmlui.administrative.group.EditGroupForm.groups_column5"></message>
+	<message key="xmlui.administrative.group.ManageGroupsMain.groups_collection_link">перегляд</message>
+	<message key="xmlui.administrative.group.EditGroupForm.members_head">Члени</message>
+	<message key="xmlui.administrative.group.EditGroupForm.members_column1">ID</message>
+	<message key="xmlui.administrative.group.EditGroupForm.members_column2">Ім'я</message>
+	<message key="xmlui.administrative.group.EditGroupForm.members_column3">Email</message>
+	<message key="xmlui.administrative.group.EditGroupForm.members_column4"></message>
+	<message key="xmlui.administrative.group.EditGroupForm.members_group_name">група: {0}</message>	
+	<message key="xmlui.administrative.group.EditGroupForm.members_none">В цій групі немає користувачів.</message>
+	<message key="xmlui.administrative.group.EditGroupForm.members_pending">[очікування]</message>
+	<message key="xmlui.administrative.group.EditGroupForm.instructions_para">Видалити учасника</message>
+	<message key="xmlui.administrative.group.EditGroupForm.collection_link_para">Видалити учасника</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.group.DeleteGroupsConfirm -->
+	<message key="xmlui.administrative.group.DeleteGroupsConfirm.title">Підвердити видалення групи</message>
+	<message key="xmlui.administrative.group.DeleteGroupsConfirm.trail">Підтвердити видалення</message>
+	<message key="xmlui.administrative.group.DeleteGroupsConfirm.head">Підтвердити видалення</message>
+	<message key="xmlui.administrative.group.DeleteGroupsConfirm.para">Наступні групи будуть видалені:</message>
+	<message key="xmlui.administrative.group.DeleteGroupsConfirm.column1">ID</message>
+	<message key="xmlui.administrative.group.DeleteGroupsConfirm.column2">Ім'я</message>
+	<message key="xmlui.administrative.group.DeleteGroupsConfirm.column3">E-People</message>
+	<message key="xmlui.administrative.group.DeleteGroupsConfirm.column4">Групи</message>
+	
+	<!-- general items for all of the registries classes -->
+	<message key="xmlui.administrative.registries.general.format_registry_trail">Реєстр форматів</message>
+	<message key="xmlui.administrative.registries.general.metadata_registry_trail">Реєстр метаданих</message>	
+	
+	<!-- org.dspace.app.xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.java -->
+	<message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.title">Видилити формати файлів</message>
+	<message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.trail">видалити формати файлів</message>
+	<message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.head">Підтвердити видалення</message>
+	<message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.para1">Ви впевнені що хочете видалити формат? Всі архівовані файли цього типу перейдуть в невідомий тип формату файлу.</message>
+	<message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.column1">ID</message>
+	<message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.column2">MIME тип</message>
+	<message key="xmlui.administrative.registries.DeleteBitstreamFormatsConfirm.column3">Ім'я</message>
+
+	<!-- org.dspace.app.xmlui.administrative.registries.DeleteMetadataFieldsConfirm.java -->
+	<message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.title">Видалити поля</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.trail">Видалити поля</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.head">Підтвердити видалення</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.para1">Ви <b>абсолютно</b> впевнені в тому що хочете видалити ці поля? Якщо хоча б якісь матеріали містять метадані до цих полів, ці поля не можуть бути видалені. Ви меєте пересвідчитись що жодний матеріал не використовує дані поля.</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.warning">ПОПЕРЕДЖЕННЯ: </message>
+	<message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.para2">Це спричинить помилкуякщо хоча б якісь матеріали містять метадані до цих полів.</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.column1">ID</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.column2">Ім'я</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataFieldsConfirm.column3">Обмежуюча примітка</message>
+
+	<!-- org.dspace.app.xmlui.administrative.registries.DeleteMetadataSchemaConfirm.java-->
+	<message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.title">Видалення схеми</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.trail">Видалення схеми</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.head">Підтвердити видалення</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.para1">Ви <b>абсолютно</b> впевнені що хочете видалити цю схему? Якщо хоча б якісь матеріали містять метадані до полів цієї схеми, схема не може бути видалена. Ви маєте пересвідчитись що жодні матеріали не використовують цю схему.</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.warning">ПОПЕРЕДЖЕННЯ: </message>
+	<message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.para2">Це спричинить помилкуякщо хоча б якісь матеріали містять метадані до полів цієї схеми.</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.column1">ID</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.column2">Namespace</message>
+	<message key="xmlui.administrative.registries.DeleteMetadataSchemaConfirm.column3">Ім'я</message>
+
+	<!-- org.dspace.app.xmlui.administrative.registries.EditBitstreamFormat.java -->
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.title">Формат Файлу</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.trail">Формат файлу</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.head1">Нофий формат файлу</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.head2">Формат файлу: {0}</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.para1">Опишіть формат файлу нижче. Якщо формат має бути унікальним, то MIME тип не обов'язково. Так ви можете розділити формат для різних версій of Microsoft Word, навіть якщо MIME тип буде однаковим для всіх.</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.name">Ім'я</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.name_help">Унікальна назва формату, (наприклад  Microsoft Word XP чи Microsoft Word 2000)</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.name_error">Назва обов'язкова.</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.mimetype">MIME тип</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.mimetype_help">MIME тип не зобов'язаний бети  унікальним.</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.description">Опис</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.support">Рівень підтримки</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.support_help">Рівень підтримки який забезпечуватиметься для цього формату.</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.support_0">Невідомий</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.support_1">Відомий</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.support_2">Підтримуваний</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.internal">Внутрішній</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.internal_help">Формати позначені як "Внутрішній" приховані від користувачів і використовуються тільки для адміністративних цілей.</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.extensions">Розширення файлу</message>
+	<message key="xmlui.administrative.registries.EditBitstreamFormat.extensions_help">Розширення файлу використувується для автоматичного визначення формату завантаженого файлу. Ви можете вказати кілька розширень для кожного формату.</message>
+
+	<!-- org.dspace.app.xmlui.administrative.registries.EditMetadataSchema.java -->
+	<message key="xmlui.administrative.registries.EditMetadataSchema.title">Схема метаданих</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.trail">Схема метаданих</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.head1">Схема метаданих: "{0}"</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.para1">Ця схема метаданих для "{0}". Ви можете додати нову чи оновити існучі поля метаданих цієї схеми. Поля також можуть бути видалені чи переміщені до іншої схеми. </message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.head2">Поля схеми метаданих</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.column1"></message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.column2">ID</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.column3">Поле</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.column4">Обмежуюча примітка</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.empty">Немає полів метаданих</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.submit_delete">Видалити поля</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.submit_move">Перемістити поля до іншої схеми</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.head3">Додати нове поле метаданих</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.name">Ім'я поля</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.note">Обмежуюча примітка</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.note_help">Додаткові примітки до полів метаданих.</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.submit_add">додати нове поле метаданих</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.head4">Оновити поле: {0}</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.submit_update">Оновити поле</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.error">Помилка</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.error_duplicate_field">Це ім'я вже використовується, всі елементи мають бути унікальними.</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.error_element_empty">Назва обов'язкова.</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.error_element_badchar">Елемент поля містить "погані" символи. Не допускаються "_", " ", табуляція.</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.error_element_tolong">Елемент надто довгий, довжина не повинна перевищувати 32 символи.</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.error_qualifier_tolong">Специфікатор надто довгий, довжина не повинна перевищувати 32 символи.</message>
+	<message key="xmlui.administrative.registries.EditMetadataSchema.error_qualifier_badchar">Специфікатор містить "погані" символи. Не допускаються "_", " ", табуляція.</message>
+
+	<!-- org.dspace.app.xmlui.administrative.registries.FormatRegistryMain.java -->
+	<message key="xmlui.administrative.registries.FormatRegistryMain.title">Реєстр форматів</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.head">Реєстр форматів</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.para1">Цей список форматів файлів містить інформацію про відомі формати та рівень їх підтримки. Ви можете редагувати формати файлів з допомогою цього інструменту. Формати  позначені як "Внутрішній" приховані від користувачів і використовуються тільки для адміністративних цілей.</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.new_link">Додати нофий формат файлу</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.column1"></message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.column2">ID</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.column3">Ім'я</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.column4">MIME тип</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.column5">Рівень підтримки</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.internal">(<i>внутрішній</i>)</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.support_0">Невідомий</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.support_1">Відомий</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.support_2">Підримуваний</message>
+	<message key="xmlui.administrative.registries.FormatRegistryMain.submit_delete">Видалити формат</message>
+
+	<!-- org.dspace.app.xmlui.administrative.registries.MetadatRegistryMain.java -->
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.title">Реєстр метаданих</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.head1">Реєстр метаданих</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.para1">Реєстр метаданих містить список всіх полів доступних у репозитарії. Ці поля можуть бути поділені між кількома схемами. Однак DSpace потребує Qualified Dublin Core схеми. Ви можете доповнити схему Dublin Core додатковими полями чи схемами.</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.column1"></message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.column2">ID</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.column3">Namespace</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.column4">Ім'я</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.submit_delete">Видалити схему</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.head2">Нова схема</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.namespace">Namespace</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.namespace_help">Namespace - простір імен, має встановлювати URI розміщення нової схеми.</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.namespace_error">Це поле обов'язкове.</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.name">Ім'я</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.name_help">Короткий опис схеми. Буде використовуватись як префікс до імені поля(наприклад dc.element.qualifier). Ім'я має бути не довше 32 символів і не повинно містити "_", " ", табуляцію.</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.name_error">Це поле обов'язкове і повинно бути не довше 32 символи, не повинно містити "_", " ", табуляцію.</message>
+	<message key="xmlui.administrative.registries.MetadataRegistryMain.submit_add">Додати нову схему</message>
+
+	<!-- org.dspace.app.xmlui.administrative.registries.MoveMetadataField.java -->
+	<message key="xmlui.administrative.registries.MoveMetadataField.title">Перемістити поля</message>
+	<message key="xmlui.administrative.registries.MoveMetadataField.trail">Перемістити поля</message>
+	<message key="xmlui.administrative.registries.MoveMetadataField.head1">Перемістити поля метаданих</message>
+	<message key="xmlui.administrative.registries.MoveMetadataField.para1">оберіть схему до якої буде переміщено поля. Якщо цільова схема вже має поле з ідентичним іменем переміщення не відбудеться.</message>
+	<message key="xmlui.administrative.registries.MoveMetadataField.column1">ID</message>
+	<message key="xmlui.administrative.registries.MoveMetadataField.column2">Ім'я</message>
+	<message key="xmlui.administrative.registries.MoveMetadataField.column3">Обмежуюча примітка</message>
+	<message key="xmlui.administrative.registries.MoveMetadataField.para2">Перемістити до схеми: </message>
+	<message key="xmlui.administrative.registries.MoveMetadataField.submit_move">Перемістити поля</message>
+
+	
+	
+	
+	<!-- general authorization keywords -->
+	<message key="xmlui.administrative.authorization.general.authorize_trail">авторизація</message>
+	<message key="xmlui.administrative.authorization.general.policyList_trail">Правила доступу</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.authorization.AuthorizationMain -->
+	<message key="xmlui.administrative.authorization.AuthorizationMain.title">Адміністрування прав доступу</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.main_head">Адміністрування прав доступу</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.actions_head">Права доступу</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.bad_name">Вказаний ID не відповідає жодному об'єкту</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.actions_item_lookup">Пошук об'єкта</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.search_help">Об'єкти шукаються по імені або внутрішньому ID</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.submit_find">Знайти</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.actions_advanced">Додаткові інструменти</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.actions_advanced_link">Натисніть тут для переходу</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.containerList_head">Правила доступу до Фонду/Колекції</message>
+	<message key="xmlui.administrative.authorization.AuthorizationMain.containerList_para">Натисніть на імені фонду/колекції для того щоб змінити правила доступу до них.</message>
+	
+	
+	
+	<!-- org.dspace.app.xmlui.administrative.authorization.EditContainerPolicies -->
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.title">Зміна правил доступу</message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.trail">Зміна правил доступу</message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.main_head_collection">Правила доступу до колекції"{0}" ({1},ID: {2})</message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.main_head_community">Правила доступу до "{0}" ({1},ID: {2})</message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.main_add_link">Натисніть тут для створення нового правила. </message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.submit_add">Додати</message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.head_id">ID</message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.head_action">Дія</message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.head_group">Група</message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.submit_delete">Видалити позначене</message>
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.group_edit">Змінити</message>
+	
+
+	
+	<!-- org.dspace.app.xmlui.administrative.authorization.EditItemPolicies -->
+	<message key="xmlui.administrative.authorization.EditItemPolicies.title">Редагувати правила доступу</message>
+	<message key="xmlui.administrative.authorization.EditItemPolicies.trail">Список правил</message>
+	<message key="xmlui.administrative.authorization.EditItemPolicies.main_head">Правила для елементів {0} (ID={1})</message>
+	<message key="xmlui.administrative.authorization.EditItemPolicies.main_para1">За допомогою цього редактора ви можете переглядати та змінювати правила доступу до матеріалів, їх пакетів чи окремих файлів.</message>
+	<message key="xmlui.administrative.authorization.EditItemPolicies.main_para2">Ви можете бачити пакети та файли для кожного матеріалу що містить текст ліцензії для матеріалів.</message>
+	<message key="xmlui.administrative.authorization.EditItemPolicies.subhead_item">Доступ до матеріалів</message>
+	<message key="xmlui.administrative.authorization.EditItemPolicies.subhead_bundle">Доступ до пакетів {0} ({1})</message>
+	<message key="xmlui.administrative.authorization.EditItemPolicies.subhead_bitstream">Файли {0} ({1})</message>
+	<message key="xmlui.administrative.authorization.EditItemPolicies.add_itemPolicy_link">Додати нове правило</message>
+	<message key="xmlui.administrative.authorization.EditItemPolicies.add_bundlePolicy_link">Додати нове правило доступу до пакетів</message>
+	<message key="xmlui.administrative.authorization.EditItemPolicies.add_bitstreamPolicy_link">Додати нове правило доступу до файлів</message>
+	
+	<message key="xmlui.administrative.authorization.EditContainerPolicies.no_policies">Не знайдено правил доступу для цього об'єкту.</message>
+	
+	
+	<!-- org.dspace.app.xmlui.administrative.authorization.EditPolicyForm -->
+	<message key="xmlui.administrative.authorization.EditPolicyForm.title">Змінити правило</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.trail">Змінити правило</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.main_head_new">Створити нове правило для {0} {1}</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.main_head_edit">Змінити правило {0} для {1} {2}</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.error_no_group">Група не обрана</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.error_no_action">Дія не обрана</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column4"></message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column1">ID</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column2">Ім'я</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_column3">Дозволені дії для групи</message>
+	
+	<message key="xmlui.administrative.authorization.EditPolicyForm.set_group">Встановити</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.current_group">поточна група</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.groups_head">Результати пошуку</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.policy_currentGroup">Оберіть групу</message>
+	<message key="xmlui.administrative.authorization.EditPolicyForm.label_search">Шукати групу</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.submit_search_groups">Пошук</message>
+    <message key="xmlui.administrative.authorization.EditPolicyForm.label_action">Оберіть дію</message>
+    
+	
+	<!-- org.dspace.app.xmlui.administrative.authorization.AdvacedAuthorizationsForm -->
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.title">Майстер налаштування правил доступу</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.trail">Майстер налаштування правил доступу</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.main_head">Майстер налаштування правил доступу</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.main_para">  </message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_groupSentence">Оберіть групи для яких створюється правило(Ctrl та Shift діють)</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_actionSentence">...їм надається дозвіл на виконання наступної дії...</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_resourceSentence">...для всіх наступних об'єктів...</message>
+    <message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_collectionSentence">...розповсюджується на наступні колекції.</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyGroup">Група(и)</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyAction">Дія</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyResource">Тип об'єкта</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.actions_policyCollections">Колекція(ї)</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.submit_add">Додати правило</message>
+	<message key="xmlui.administrative.authorization.AdvacedAuthorizationsForm.submit_remove_all">Скинути правило</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.authorization.DeletePoliciesConfirm -->
+	<message key="xmlui.administrative.authorization.DeletePoliciesConfirm.title">Підтвердіть видаленя правила</message>
+	<message key="xmlui.administrative.authorization.DeletePoliciesConfirm.trail">Підтвердіть видаленя правила</message>
+	<message key="xmlui.administrative.authorization.DeletePoliciesConfirm.confirm_head">Підтвердіть видаленя правила</message>
+	<message key="xmlui.administrative.authorization.DeletePoliciesConfirm.confirm_para">Наступні правила будуть видалені: </message>
+	<message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_id">ID</message>
+	<message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_action">Дія</message>
+	<message key="xmlui.administrative.authorization.DeletePoliciesConfirm.head_group">Група</message>
+	
+	<!-- general edit item messages -->
+	<message key="xmlui.administrative.item.general.item_trail">Матеріали</message>
+	<message key="xmlui.administrative.item.general.template_head">Редагувати шаблон для колекції: {0}</message>
+	<message key="xmlui.administrative.item.general.option_head">Редагувати матеріал</message>
+	<message key="xmlui.administrative.item.general.option_status">Статус матеріалу</message>
+	<message key="xmlui.administrative.item.general.option_bitstreams">Файли матеріалу</message>
+	<message key="xmlui.administrative.item.general.option_metadata">Метадані матеріалу</message>
+	<message key="xmlui.administrative.item.general.option_view">Переглянути матеріал</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.item.AddBitstreamForm -->
+	<message key="xmlui.administrative.item.AddBitstreamForm.title">Завантажити файл</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.trail">Завантажити файл</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.head1">Завантажити новий файл</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.bundle_label">Пакет</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.bundle.ORIGINAL">мыстить файли(default)</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.bundle.METADATA">Файли метаданих</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.bundle.THUMBNAIL">Мініатюра</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.bundle.LICENSE">Ліцензії</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.bundle.CC_LICENSE">Creative Commons Licenses</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.file_label">Файл</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.file_help">Будь-ласка введіть ім'я файлу на вашому комп'ютері для додавання до вашого матеріалу. Якщо натиснути "Обзор..." з'явиться вікно в якому ви можете обрати необхідний файл.</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.description_label">Опис</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.description_help">Дайте короткий опис файлу, наприклад "<i>Основна стаття</i>", "<i>Експерементальні дані</i>" тощо.</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.submit_upload">Завантаження</message>
+	<message key="xmlui.administrative.item.AddBitstreamForm.no_bundles">Вам необхідно мати ADD &amp; WRITE права доступу хоча б до пакету, щоб мати можливість завантажити новий файл.</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.item.DeleteBitstreamConfirm -->
+	<message key="xmlui.administrative.item.DeleteBitstreamConfirm.title">Підтвердіть видалення</message>
+	<message key="xmlui.administrative.item.DeleteBitstreamConfirm.trail">Підтвердіть видалення</message>
+	<message key="xmlui.administrative.item.DeleteBitstreamConfirm.head1">Підтвердіть видалення</message>
+	<message key="xmlui.administrative.item.DeleteBitstreamConfirm.para1">Ви впевнені що бажаєте видалити ці файли:</message>
+	<message key="xmlui.administrative.item.DeleteBitstreamConfirm.column1">Ім'я</message>
+	<message key="xmlui.administrative.item.DeleteBitstreamConfirm.column2">Опис</message>
+	<message key="xmlui.administrative.item.DeleteBitstreamConfirm.column3">Формат</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.item.ConfirmItemForm -->
+	<message key="xmlui.administrative.item.ConfirmItemForm.title">Підтвердити</message>
+	<message key="xmlui.administrative.item.ConfirmItemForm.trail">Підтвердити</message>
+	<message key="xmlui.administrative.item.ConfirmItemForm.head1">Модифікувати матеріал: {0}</message>
+	<message key="xmlui.administrative.item.ConfirmItemForm.para_delete">Ви впевнені в тому що цей матеріал необхідно повністю видалити? попередження: після цього відновити файл буде неможливо.</message>
+	<message key="xmlui.administrative.item.ConfirmItemForm.para_withdraw">Ви впевнені що даний матеріал має бути вилучений з архіву?</message>
+	<message key="xmlui.administrative.item.ConfirmItemForm.para_reinstate">Ви впевнені що даний матеріал має бути відновлений в архіві?</message>
+	<message key="xmlui.administrative.item.ConfirmItemForm.column1">Поле</message>
+	<message key="xmlui.administrative.item.ConfirmItemForm.column2">Значення</message>
+	<message key="xmlui.administrative.item.ConfirmItemForm.column3">Мова</message>
+	<message key="xmlui.administrative.item.ConfirmItemForm.submit_withdraw">Вилучити</message>
+	<message key="xmlui.administrative.item.ConfirmItemForm.submit_reinstate">Відновити</message>
+
+    <!-- org.dspace.app.xmlui.aspect.administrative.item.MoveItemForm -->
+	<message key="xmlui.administrative.item.MoveItemForm.title">Перемістити</message>
+	<message key="xmlui.administrative.item.MoveItemForm.trail">Перемістити</message>
+	<message key="xmlui.administrative.item.MoveItemForm.head1">Перемістити матеріал: {0}</message>
+	<message key="xmlui.administrative.item.MoveItemForm.collection">Колекція</message>
+	<message key="xmlui.administrative.item.MoveItemForm.collection_help">Оберіть колекцію до якої ви бажаєте перемістити цей матеріал.</message>
+	<message key="xmlui.administrative.item.MoveItemForm.collection_default">Оберіть колекцію...</message>
+	<message key="xmlui.administrative.item.MoveItemForm.submit_move">Перемістити</message>
+    <message key="xmlui.administrative.item.MoveItemForm.inherit_policies">Політики наслідування</message>
+    <message key="xmlui.administrative.item.MoveItemForm.inherit_policies_help">Inherit the default policies of the destination collection</message>
+
+	<!-- org.dspace.app.xmlui.administrative.item.EditBitstreamForm -->
+	<message key="xmlui.administrative.item.EditBitstreamForm.title">Редагувати файл</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.trail">Редагувати файл</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.head1">Редагувати файл</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.file_label">Файл</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.primary_label">Основний файл</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.primary_option_yes">так</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.primary_option_no">ні</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.description_label">Опис</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.description_help">Дайте короткий опис файлу, наприклад "<i>Основна стаття</i>", "<i>Експерементальні дані</i>" тощо.</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.para1">Оберіть тип файлу зі списку, наприклад "<i>Adobe PDF</i>" чи "<i>Microsoft Word</i>", <b>АБО</b> якщо в списку немає необхідного формату, будь-ласка, опишіть його у полі що нижче.</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.format_label">Оберіть формат</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.format_default">Немає в списку</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.para2">Якщо в списку немає необхідного формату, <strong>оберіть "Немає в списку"</strong> та опишіть формат у полі що нижче.</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.user_label">Інший формат</message>
+	<message key="xmlui.administrative.item.EditBitstreamForm.user_help">Програма якою було створено даний файл та її версія (наприкллад "<i>ACMESoft SuperApp version 1.5</i>").</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.item.EditItemBitstreamsForm -->
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.title">Файли</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.trail">Файли</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.head1">Файли</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column1"></message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column2">Ім'я</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column3">Опис</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column4">Формат</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.column5">Перегляд</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.bundle_label"><strong>Пакет: {0}</strong></message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.primary_label"> (основний) </message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.view_link">перегляд</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.submit_add">Завантажте новий файл</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.submit_delete">Видалити файли</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.no_upload">Вам необхідно мати ADD &amp; WRITE права доступу до матеріалу та пакету, для того щоб мамти змогу завантажувати нові файли.</message>
+	<message key="xmlui.administrative.item.EditItemBitstreamsForm.no_remove">Лише системні адміністратори можуть видаляти файли.</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.item.EditItemMetadataForm -->
+	<message key="xmlui.administrative.item.EditItemMetadataForm.title">Метадані матеріалу</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.trail">Метадані матеріалу</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.head1">Додати нові метадані</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.name_label">Ім'я</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.value_label">Значення</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.lang_label">Мова</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.submit_add">Додати нові метадані</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.para1">ЗАУВАЖТЕ: Зміни не затверджуються. Ви відповідальні за внесення даних у коректному форматі. Якщо ви не певні щодо формату, будь-ласка, НЕ ВНОСЬТЕ змін.</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.head2">Метадані</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.column1">Видалити</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.column2">Ім'я</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.column3">Значення</message>
+	<message key="xmlui.administrative.item.EditItemMetadataForm.column4">Мова</message>
+
+	<!-- org.dspace.app.xmlui.administrative.item.EditItemStatusForm -->
+	<message key="xmlui.administrative.item.EditItemStatusForm.title">Статус матеріалу</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.trail">Статус матеріалу</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.para1">Тут ви можете внести зміни до цих матеріалів чи навіть повністю їх видалити. Також ви можете додати нову інформацію/файли.</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_id">Внутрішній ID матеріалу</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_handle">Handle</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_modified">Отанні зміни</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_in">Входить в колекцію</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_page">Власна сторінка</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_auth">Змінити правила доступу</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_withdraw">Видалучити матеріал(потім можна відновити)</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_reinstate">Відновити матеріал</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_move">Перемістити до іншої колекції</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.label_delete">Повністю видалити матеріал</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.submit_authorizations">Правила...</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.submit_withdraw">Вилучити...</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.submit_reinstate">Відновити...</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.submit_move">Перемістити...</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.submit_delete">Повністю видалити</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.na">n/a</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.sysadmins_only">(тільки системні адміністратори)</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.collection_admins_only">(тільки адміністратори колекції)</message>
+	<message key="xmlui.administrative.item.EditItemStatusForm.not_allowed">(вам не дозволено виконувати цю дію)</message>
+
+	<!-- org.dspace.app.xmlui.administrative.item.ViewItem -->
+	<message key="xmlui.administrative.item.ViewItem.title">Переглянути матеріал</message>
+	<message key="xmlui.administrative.item.ViewItem.trail">Переглянути матеріал</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.item.FindItemForm -->
+	<message key="xmlui.administrative.item.FindItemForm.title">Знайти матеріал</message>
+	<message key="xmlui.administrative.item.FindItemForm.head1">Знайти матеріал</message>
+	<message key="xmlui.administrative.item.FindItemForm.identifier_label">Внутрішній ID матеріалу/Item Handle</message>
+	<message key="xmlui.administrative.item.FindItemForm.identifier_error">Неможливо знайти ідентифікатор.</message>
+	<message key="xmlui.administrative.item.FindItemForm.find">Знайти</message>
+
+        <!-- org.dspace.app.xmlui.administrative.metadataimport -->
+        <message key="xmlui.administrative.metadataimport.general.title">Імпорт метаданих</message>
+        <message key="xmlui.administrative.metadataimport.general.head1">Імпорт метаданих</message>
+        <message key="xmlui.administrative.metadataimport.general.trail">Імпорт метаданих</message>
+        <message key="xmlui.administrative.metadataimport.general.changes">pvsyb</message>
+        <message key="xmlui.administrative.metadataimport.general.no_changes">Змін немає</message>
+        <message key="xmlui.administrative.metadataimport.general.new_item">Новий матеріал</message>
+        <message key="xmlui.administrative.metadataimport.flow.upload_successful">Завантаження успішне</message>
+        <message key="xmlui.administrative.metadataimport.flow.upload_failed">Завантаження неуспішне</message>
+        <message key="xmlui.administrative.metadataimport.flow.import_successful">Імпорт успішний</message>
+        <message key="xmlui.administrative.metadataimport.flow.import_failed">Імпорт неуспішний</message>
+        <message key="xmlui.administrative.metadataimport.flow.over_limit">Перевищено максимально дозволену кількість змін. Змінити ліміт можна тут bulkedit.gui-item-limit у файлі налашувань dspace.cfg</message>
+
+        <!-- org.dspace.app.xmlui.administrative.metadataimport.MetadataImportConfirm -->
+        <message key="xmlui.administrative.metadataimport.MetadataImportMain.submit_upload">Завантажити CSV</message>
+
+        <!-- org.dspace.app.xmlui.administrative.metadataimport.MetadataImportConfirm -->
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.success">Успішно завершено</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.changes_committed">Зміни внесено до матеріалу</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.item_added">Додано: </message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.item_removed">Видалено: </message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_newowner">Додано до колекції</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_oldowner">Видалено з колекції</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_mapped">Mapped to collection</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportConfirm.collection_unmapped">Unmapped from collection</message>
+        
+        <!-- org.dspace.app.xmlui.administrative.metadataimport.MetadataImportUpload -->
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.item_add">Додати: </message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.item_remove">Видалити: </message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_newowner">Додати до колекції</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_oldowner">Видалити з колекції</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_mapped">Map to collection</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.collection_unmapped">Un-map from collection</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.changes_pending">Changes pending for item</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.submit_confirm">Підтвердити зміни</message>
+        <message key="xmlui.administrative.metadataimport.MetadataImportUpload.hint">Pending changes are listed below for review</message>
+
+	<!-- general mapper messages -->
+	<message key="xmlui.administrative.mapper.general.mapper_trail">Item mapper</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.mapper.MapperMain -->
+	<message key="xmlui.administrative.mapper.MapperMain.title">Item Mapper</message>
+	<message key="xmlui.administrative.mapper.MapperMain.head1">Item Mapper - Map Items from Other Collection</message>
+	<message key="xmlui.administrative.mapper.MapperMain.para1">Колекція: "<strong>{0}</strong>"</message>
+	<message key="xmlui.administrative.mapper.MapperMain.para2">This is the item mapper tool that allows collection administrators to map items from other колекція into this collection. You can search for items from other collection and map them, or browse the list of currently mapped items.</message>
+	<message key="xmlui.administrative.mapper.MapperMain.stat_label">Статистика</message>
+	<message key="xmlui.administrative.mapper.MapperMain.stat_info"><strong>{0} of {1}</strong> items in this collection are mapped in from other колекція</message>
+	<message key="xmlui.administrative.mapper.MapperMain.search_label">Пошук</message>
+	<message key="xmlui.administrative.mapper.MapperMain.submit_search">Пошук матеріалів</message>
+	<message key="xmlui.administrative.mapper.MapperMain.submit_browse">Перегляд mapped матеріалів</message>
+	<message key="xmlui.administrative.mapper.MapperMain.no_add">(Потребує права доступу ADD до колекції)</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.mapper.SearchItemForm -->
+	<message key="xmlui.administrative.mapper.SearchItemForm.title">Пошук матеріалів</message>
+	<message key="xmlui.administrative.mapper.SearchItemForm.trail">Пошук матеріалів</message>
+	<message key="xmlui.administrative.mapper.SearchItemForm.head1">Пошуку матеріалів відповідає: "{0}"</message>
+	<message key="xmlui.administrative.mapper.SearchItemForm.submit_map">Map обрані матеріали</message>
+	<message key="xmlui.administrative.mapper.SearchItemForm.column1"></message>
+	<message key="xmlui.administrative.mapper.SearchItemForm.column2">Колекція</message>
+	<message key="xmlui.administrative.mapper.SearchItemForm.column3">Автор</message>
+	<message key="xmlui.administrative.mapper.SearchItemForm.column4">Заголовок</message>
+		
+	<!-- org.dspace.app.xmlui.administrative.mapper.BrowseItemForm -->
+	<message key="xmlui.administrative.mapper.BrowseItemForm.title">Browse Mapped Items</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.trail">Browse mapped items</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.head1">Browsing mapped items</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.submit_unmap">Unmap selected items</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.column1"></message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.column2">Колекція</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.column3">Автор</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.column4">Заголовок</message>
+	<message key="xmlui.administrative.mapper.BrowseItemForm.no_remove">Необхідно мати право REMOVE для колекції, щоб мати можливість unmap матеріали з колекції.</message>
+	
+	<!-- General tags for collection management -->
+	<message key="xmlui.administrative.collection.general.collection_trail">колекція</message>	
+	<message key="xmlui.administrative.collection.general.options_metadata">Редагувати метадані</message>	
+	<message key="xmlui.administrative.collection.general.options_roles">Призначити ролі</message>	
+	
+	
+	<!-- org.dspace.app.xmlui.administrative.collection.AssignCollectionRoles.java -->
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.title">Редагвати роля колекції</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.trail">ролі</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.main_head">Редагувати колекцію: {0}</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.no_role">жодну</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.create">Створити...</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.restrict">Обмедити...</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_admins">Адміністратори колекції визначають хто може додавати нові матеріали, редагувати метадані(після подачі матеріалів), а також додавати(map) існуючі матеріали з іншоїколекції.</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step1">Люди відповідальні за цей крок можуть затверджувати надходження. однак вони не мають права редагувати метадані цих матеріалів.</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step2">Люди відповідальні за цей крок можуть редагувати метадані, а також затвеерджувати/відхиляти надходження.</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_wf_step3">Люди відповідальні за цей крок можуть редагувати надходження, але не можуть їх відхиляти.</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_submitters">Користувачі(E-People) та групимають право додавати нові матеріали до цієї колекції.</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.help_default_read">Користувачі(E-People) та групимають право читати матеріали в цій колекції. Зміни даного правила не має зворотньої дії. Існуючі матеріали все ще будуть доступні для перегляду для тих хто переглядав матеріали в момент зміни правила доступу.</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.default_read_custom">Для даної колекції діють стандартні налаштування правил доступу. </message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.default_read_anonymous">За замовчуванням Анонімні користувачі мають право читати матеріали і файли.</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.edit_authorization">Змініть правила доступу безпосередньо.</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.role_name">Роль</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.role_group">Зв'язана група</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.role_buttons">  </message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.label_admins">Адміністратори</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.label_wf">Кроки робочого процесу</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.label_wf_step1">Крок Затвердити/Відхилити</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.label_wf_step2">Крок Затвердити/Відхилити/Редагувати метадані</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.label_wf_step3">Крок Редагувати метадані</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.label_submitters">Хто додає</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.label_default_read">Доступ за замовчуванням</message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.sysadmins_only"><nobr>(тільки адміністратори)</nobr></message>
+	<message key="xmlui.administrative.collection.AssignCollectionRoles.not_allowed"><nobr>(у вас недостатньо прав для)</nobr></message>
+
+	<!-- org.dspace.app.xmlui.administrative.collection.DeleteCollectionConfirm.java -->
+	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.title">Підтвердити видалення</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.trail">Підтвердити</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.main_head">Підтвердити видалення колекції{0}</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.main_para">Ви впевнені що хочете видлалити колекцію {0}? Це призведе до видалення:</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item1">Будь-які матеріали та незавершені надходження до цієї колекції що не містяться в інших колекціях</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item2">Зміст цих матеріалів</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionConfirm.confirm_item3">Всі пов'язані правила доступу</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.collection.DeleteCollectionRoleConfirm.java -->
+	<message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.title">Підтвердити видалення ролі</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.trail">Підтвердити</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_head">Підтвердити видалення ролі {0}</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_para_read">Ви впевнені що хочете видалити цю роль? Видалення цієї групи надасть право доступу READ для всіх елементів колекції, для всіх користувачів. Зауважте що дана операція не має зворотної дії. Існуючі матеріали все ще будуть не доступні для перегляду момент зміни правила доступу.</message>
+	<message key="xmlui.administrative.collection.DeleteCollectionRoleConfirm.main_para">Ви впевнені що хочете видалити цю роль? Всі зміни та налаштування зроблені для {0} групи будуть втрачені і їх доведеться створювати  заново.</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.collection.EditCollectionMetadataForm.java -->
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.title">Редагувати метадані колекції</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.trail">Метадані</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.main_head">Редагувати колекцію: {0}</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_name">Ім'я</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_short_description">Короткий опис</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_introductory_text">Вступний текст (HTML)</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_copyright_text">Copyright текст (HTML)</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_side_bar_text">Новини (HTML)</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_license">Ліцензія</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_provenance_description">Походження</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_logo">Завантажити новий логотип</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_existing_logo">Поточний логотип</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.label_item_template">Шаблон матеріалів</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_create_template">Створити...</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_edit_template">Редагувати...</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_delete_logo">Видалити логотип</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_delete">Видалити колекцію</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.submit_save">Зберегти зміни</message>
+	<message key="xmlui.administrative.collection.EditCollectionMetadataForm.sysadmins_only"><nobr>(лише системні адміністратори)</nobr></message>
+
+	<!-- org.dspace.app.xmlui.administrative.collection.CreateCollectionForm.java -->
+	<message key="xmlui.administrative.collection.CreateCollectionForm.title">Створити колекцію</message>
+	<message key="xmlui.administrative.collection.CreateCollectionForm.trail">Створити колекцію</message>
+	<message key="xmlui.administrative.collection.CreateCollectionForm.main_head">Ввести метадані для нової колекції {0}</message>
+	<message key="xmlui.administrative.collection.CreateCollectionForm.submit_save">Створити</message>
+		
+	<!-- General to the harvesting options under collection -->
+	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.title">Налаштування харвестінгу(Harvesting) для колекції</message>
+	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.trail">Harvesting</message>
+	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.options_harvest">Джерело матералів</message>
+	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.label_source">Джерело матералів</message>
+	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.source_normal">Це стандартна колекція DSpace</message>
+	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.source_harvested">Ця колекція отримує(harvests) матеріали із зовнішнього ждерела</message>
+	<message key="xmlui.administrative.collection.GeneralCollectionHarvestingForm.submit_save">Зберегти</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.collection.SetupCollectionHarvestingForm.java -->
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.main_settings_head">Розміщення отримуваної(Harvested) колекції</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.options_head">Налаштування харвестінгу(Harvesting)</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_oai_provider">OAI Provider</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_setid">OAI Set id</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_metadata_format">Формат метаданих</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.help_oaiurl">Url посилання на OAI provider service цільового репозитарію</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.error_oaiurl">Ви маєте вказати set id цільової колекції.</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.help_oaisetid">Точний ідентифікатор, який використовує OAI provider для визначення цільової колекції</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.error_oaisetid">Ви маєте вказати set id цільової колекції.</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_harvest_level">Content being harvested</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.label_harvest_level">Content being harvested</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.option_md_only">Harvest metadata only.</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.option_md_and_ref">Harvest metadata and references to bitstreams (requires ORE support).</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.option_md_and_bs">Harvest metadata and bitstreams (requires ORE support).</message>
+	<message key="xmlui.administrative.collection.SetupCollectionHarvestingForm.submit_test">тестові налаштування</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.collection.EditCollectionHarvestingForm.java -->
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.main_settings_head">Розміщення колекції харвестінгу</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_oai_provider">OAI Provider</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_setid">OAI Set id</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_metadata_format">Формат метаданих</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_harvest_level">Контент наразі обробляється</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_harvest_result">Результати останньогго харвестінгу</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_result_new">Для цеї колекції ще не проводився харвестінг.</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.label_harvest_status">Статус харвестінгу</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_ready">Колекція готова до харвестігу</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_busy">Виконується харвестінг колекції</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_queued">Колекція в черзі на харвестінг</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_oai_error">Під час останнього харвестінгу відбулась помилка OAI</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.harvest_status_unknown_error">Unexpected error occured during last harvest</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.option_md_only">Harvest metadata only.</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.option_md_and_ref">Harvest metadata and references to bitstreams.</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.option_md_and_bs">Harvest metadata and bitstreams (full replication).</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.submit_change_settings">Change Settings</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.submit_import_now">Імпотувати зараз</message>
+	<message key="xmlui.administrative.collection.EditCollectionHarvestingForm.submit_reimport_collection">Перевстановити і переімпотувати колекцію</message>
+
+	<message key="xmlui.administrative.ControlPanel.option_harvest">Харвестінг</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_scheduler_head">Розклад харвестінгу</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_label_status">Статус</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_label_actions">Дії</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_submit_start">Розпочати харвестінг</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_submit_reset">Скинути статус харвестінгу</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_submit_resume">Продовжити</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_submit_pause">Пауза</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_submit_stop">Стоп</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_label_collections">Колекція готова до харвестінгу</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_label_active">активні процеси харвестінгу</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_label_queued">Відкладені харвестінги</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_label_oai_errors">Помилки OAI</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_label_internal_errors">Внутрішні помилки</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_head_generator_settings">Основні налаштування</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_label_oai_url">OAI-PMH URL</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_label_oai_source">ORE source</message>
+	<message key="xmlui.administrative.ControlPanel.harvest_head_harvester_settings">Налаштування харвестера(Harvester)</message>	
+
+	<!-- General tags for community management -->
+	<message key="xmlui.administrative.community.general.community_trail">Фонди</message>
+	<message key="xmlui.administrative.community.general.options_metadata">Редагувати метадані</message>
+	<message key="xmlui.administrative.community.general.options_roles">Призначити ролі</message>
+
+	<!-- org.dspace.app.xmlui.administrative.community.AssignCommunityRoles.java -->
+	<message key="xmlui.administrative.community.AssignCommunityRoles.title">Редагувати ролі для фонду</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.trail">Ролі</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.main_head">Редагувати фонд: {0}</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.no_role">немає</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.create">Створити...</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.help_admins">Адміністратори фонду можуть створювати під-фонди та колекції, а також керувати ролями для цих під-фондів та колекцій. Також вини можуть додавати матеріали до будь-якої під-колекції, редагувати метадані(після надходження матеріалів до архіву) і додавати(map) існуючі матеріали з інших колекцій.</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.default_read_custom">Для даного фонду діють користувацькі налаштування правил доступу. </message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.default_read_anonymous">Для анонімних користувачів діють стандартні налаштування доступу: читання матеріалів та файлів що надходять.</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.edit_authorizations">Редагувати правила доступу безпосередньо.</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.role_name">роль</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.role_group">Пов'язана група</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.role_buttons">  </message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.label_admins">Адміністратори</message>
+	<message key="xmlui.administrative.community.AssignCommunityRoles.sysadmins_only"><nobr>(тільки для системних адміністраторів)</nobr></message>
+
+	<!-- org.dspace.app.xmlui.administrative.community.DeleteCommunityConfirm.java -->
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.title">Підтвердити видалення</message>
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.trail">Підтвердити</message>
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.main_head">Підтвердити видалення фонду {0}</message>
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.main_para">Ви впевнені що хочете видалити фонд {0}? Це призведе до видалення:</message>
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item1">Колекція у фонді яка не міститься в інших фондах</message>
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item2">Матеріали і надходження у цьому фонді, які не містяться в інших фондах</message>
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item3">Зміст цих матеріалів</message>
+	<message key="xmlui.administrative.community.DeleteCommunityConfirm.confirm_item4">Всі пов'язані політики доступу</message>
+
+	<!-- org.dspace.app.xmlui.administrative.community.DeleteCommunityRoleConfirm.java -->
+	<message key="xmlui.administrative.community.DeleteCommunityRoleConfirm.title">Підтвердити видалення ролі</message>
+	<message key="xmlui.administrative.community.DeleteCommunityRoleConfirm.trail">Підтвердити</message>
+	<message key="xmlui.administrative.community.DeleteCommunityRoleConfirm.main_head">Підтвердити видалення ролі {0}</message>
+	<message key="xmlui.administrative.community.DeleteCommunityRoleConfirm.main_para">Ви впевнені що хочете видалити цю роль? Всі зміни і зміни групи {0} будуть втрачені і їх потрібно буде створювати заново.</message>
+
+	<!-- org.dspace.app.xmlui.administrative.community.EditCommunityMetadataForm.java -->
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.title">Редагувати метадані фонду</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.trail">Метадані</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.main_head">Редагувати метадані фонду {0}</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.edit_authorizations">Редагувати політики доступу</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.label_name">Ім'я</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.label_short_description">ороткий опис</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.label_introductory_text">Вступний текст (HTML)</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.label_copyright_text">Copyright text (HTML)</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.label_side_bar_text">Новини (HTML)</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.label_logo">Завантажити новий логотип</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.label_existing_logo">Поточний логотип</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.submit_delete_logo">Видалити логотип</message>
+	<message key="xmlui.administrative.community.EditCommunityMetadataForm.submit_delete">Видалити фонд</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.community.CreateCommunityForm.java -->
+	<message key="xmlui.administrative.community.CreateCommunityForm.title">Створити фонд</message>
+	<message key="xmlui.administrative.community.CreateCommunityForm.trail">Створити фонд</message>
+	<message key="xmlui.administrative.community.CreateCommunityForm.main_head_sub">Ввести метадані для нового під-фонду {0}</message>
+	<message key="xmlui.administrative.community.CreateCommunityForm.main_head_top">Ввести метадані для нового під-фонду верхнього рівня</message>
+	<message key="xmlui.administrative.community.CreateCommunityForm.submit_save">Створити</message>
+
+
+	<!-- org.dspace.app.xmlui.administrative.ControlPanel.java -->
+	<message key="xmlui.administrative.ControlPanel.title">Панель керування</message>
+	<message key="xmlui.administrative.ControlPanel.trail">Панель керування</message>
+	<message key="xmlui.administrative.ControlPanel.head">Панель керування</message>
+	<message key="xmlui.administrative.ControlPanel.option_java">Інформація Java</message>
+	<message key="xmlui.administrative.ControlPanel.option_dspace">DSpace</message>
+	<message key="xmlui.administrative.ControlPanel.option_alerts">Попередження</message>
+	<message key="xmlui.administrative.ControlPanel.hours">{0} г</message>
+	<message key="xmlui.administrative.ControlPanel.minutes">{0} хв</message>
+	<message key="xmlui.administrative.ControlPanel.seconds">{0} с</message>
+	<message key="xmlui.administrative.ControlPanel.java_head">Java і операційна система</message>
+	<message key="xmlui.administrative.ControlPanel.java_version">Java Runtime Environment Version</message>
+	<message key="xmlui.administrative.ControlPanel.java_vendor">Java Runtime Environment Vendor</message>
+	<message key="xmlui.administrative.ControlPanel.os_name">Назва операційної системи</message>
+	<message key="xmlui.administrative.ControlPanel.os_arch">Архітектура операційної системи</message>
+	<message key="xmlui.administrative.ControlPanel.os_version">Версія операційної системи</message>
+	<message key="xmlui.administrative.ControlPanel.runtime_head">Runtime статистика</message>
+	<message key="xmlui.administrative.ControlPanel.runtime_processors">Доступні процесори</message>
+	<message key="xmlui.administrative.ControlPanel.runtime_max">Максимум пам'яті</message>
+	<message key="xmlui.administrative.ControlPanel.runtime_total">Виділена пам'ять</message>
+	<message key="xmlui.administrative.ControlPanel.runtime_used">Використовується пам'яті</message>
+	<message key="xmlui.administrative.ControlPanel.runtime_free">Вільна пам'ять</message>
+	<message key="xmlui.administrative.ControlPanel.dspace_head">DSpace Налаштування</message>
+	<message key="xmlui.administrative.ControlPanel.dspace_dir">DSpace Installation Directory</message>
+	<message key="xmlui.administrative.ControlPanel.dspace_url">DSpace базовий URL</message>
+	<message key="xmlui.administrative.ControlPanel.dspace_hostname">DSpace ім'я хоста</message>
+	<message key="xmlui.administrative.ControlPanel.dspace_name">Назва сайту</message>
+	<message key="xmlui.administrative.ControlPanel.db_name">Назва БД</message>
+	<message key="xmlui.administrative.ControlPanel.db_url">URL адреса БД</message>
+	<message key="xmlui.administrative.ControlPanel.db_driver">JDBC драйвер</message>
+	<message key="xmlui.administrative.ControlPanel.db_maxconnections">Максимальна кількість з'єднань з БД</message>
+	<message key="xmlui.administrative.ControlPanel.db_maxwait">Максимальний час очікування БД</message>
+	<message key="xmlui.administrative.ControlPanel.db_maxidle">Максимально пасивних з'єднань</message>
+	<message key="xmlui.administrative.ControlPanel.mail_server">SMTP поштовий сервер</message>
+	<message key="xmlui.administrative.ControlPanel.mail_from_address">Відсилаються з E-mail адреси</message>
+	<message key="xmlui.administrative.ControlPanel.mail_feedback_recipient">E-mail зворотнього зв'язку</message>
+	<message key="xmlui.administrative.ControlPanel.mail_admin">E-mail адміністрації сайту</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_head">Загальносистемні попередження</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_warning"><strong>Warning for load balanced systems</strong>: System-wide alerts are only effective for the node on which it is activated. You need to ensure that each node in the set receives the activate alert command.</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_message_label">Повідомлення попередження</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_message_default">Система іде на регулярну технічну перерву. Будь-ласка збережіть вашу роботу і відключіться.</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_countdown_label">Зворотній відлік</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_countdown_none">Немає зворотнього відліку</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_countdown_5">5 хвилин</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_countdown_15">15 хвилин</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_countdown_30">30 хвилин</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_countdown_60">1 година</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_countdown_keep">Продовжувати зворотній відлік</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_session_label">Керування сесіями</message>	
+	<message key="xmlui.administrative.ControlPanel.alerts_session_all_sessions">Дозволити аутентифікацію</message>	
+	<message key="xmlui.administrative.ControlPanel.alerts_session_current_sessions">Заборонити аутентифікацію, окрім вже відкритих сесій</message>	
+	<message key="xmlui.administrative.ControlPanel.alerts_session_only_administrative_sessions">Заборонити аутентифікацію і завершити всі відкриті сесії</message>	
+	<message key="xmlui.administrative.ControlPanel.alerts_session_note"><strong>Зауваження:</strong> на адміністрацію сайту заборона аутентифікації не розповсюджується.</message>	
+	<message key="xmlui.administrative.ControlPanel.alerts_submit_activate">Активувати</message>
+	<message key="xmlui.administrative.ControlPanel.alerts_submit_deactivate">Деактивувати</message>
+	<message key="xmlui.administrative.ControlPanel.activity_head">Поточна активність ({0} сторінок максимум)</message>
+	<message key="xmlui.administrative.ControlPanel.stop_anonymous">Зупинити запис анонімної активності.</message>
+	<message key="xmlui.administrative.ControlPanel.start_anonymous">Старт запису анонімної активності.</message>
+	<message key="xmlui.administrative.ControlPanel.stop_bot">Зупинити запис bot активності.</message>
+	<message key="xmlui.administrative.ControlPanel.start_bot">Старт запису bot активності.</message>
+	<message key="xmlui.administrative.ControlPanel.activity_sort_time">Time Stamp</message>
+	<message key="xmlui.administrative.ControlPanel.activity_sort_user">Користувач</message>
+	<message key="xmlui.administrative.ControlPanel.activity_sort_ip">IP адреса</message>
+	<message key="xmlui.administrative.ControlPanel.activity_sort_url">URL сторінка</message>
+	<message key="xmlui.administrative.ControlPanel.activity_sort_Agent">User-Agent</message>
+	<message key="xmlui.administrative.ControlPanel.activity_anonymous">Анонім {0}</message>	
+	<message key="xmlui.administrative.ControlPanel.activity_none">Переглядів не зареєстровано.</message>
+	
+	<message key="xmlui.administrative.ControlPanel.select_panel">Використовуйте вкладки, що вище, для перегляду відповідоної інформації</message>
+	
+	<!-- org.dspace.app.xmlui.administrative.SystemwideAlerts -->
+	<message key="xmlui.administrative.SystemwideAlerts.countdown"><strong>Через {0} хвилин</strong>: </message>
+	
+	<!-- org.dspace.app.xmlui.administrative.NotAuthorized -->
+	<message key="xmlui.administrative.NotAuthorized.title">Не авторизовано</message>
+	<message key="xmlui.administrative.NotAuthorized.trail">Не авторизовано</message>
+	<message key="xmlui.administrative.NotAuthorized.head">Недостатньо прав</message>
+	<message key="xmlui.administrative.NotAuthorized.para1a">ваш аккаунт має недостатньо прав для виконання цих дій. Якщо ви вважаєте це помилкою чи маєте запитання щодо ваших прав, будь-ласка зв'яжітся з </message>
+	<message key="xmlui.administrative.NotAuthorized.para1b">адміністратором</message>
+	<message key="xmlui.administrative.NotAuthorized.para1c">.</message>
+	<message key="xmlui.administrative.NotAuthorized.para2">Ввійти під іншим аккаунтом</message>
+
+
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+                     Statistics Aspect
+
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <message key="xmlui.statistics.title">Статистика</message>
+    <message key="xmlui.statistics.visits.total">Відвідувань всього</message>
+    <message key="xmlui.statistics.visits.month">Відвідувань ща місяць</message>
+    <message key="xmlui.statistics.visits.views">Переглядів</message>
+    <message key="xmlui.statistics.visits.countries">Найбільше переглядів з країни</message>
+    <message key="xmlui.statistics.visits.cities">Найбільше переглядів з сайтів</message>
+    <message key="xmlui.statistics.visits.bitstreams">Перегляди файлів</message>
+    <message key="xmlui.statistics.Navigation.title">Статистика</message>
+    <message key="xmlui.statistics.Navigation.view">Переглянути статистику</message>
+    <message key="xmlui.statistics.trail">Статистика</message>
+
+	
+	
+	
+	
+	
+	
+	
+	<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		
+		                  dri2xhtml
+		
+		!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+
+
+
+
+	<!-- structural.xsl -->
+	<message key="xmlui.dri2xhtml.structural.footer-promotional">
+		<a href="http://di.tamu.edu" id="ds-logo-link">                            
+			<span id="ds-footer-logo">&#160;</span>
+		</a>
+		<p>
+			Цей вебсайт використвоує Manakin, новий користувацький інтерфейс для DSpace створений Texas A&amp;M University 
+			Libraries. Інтерфейс може бути значною мірою модифікований через Manakin Aspects та XSL based Themes.
+			Детальніше:
+		</p>
+	</message>
+	<message key="xmlui.dri2xhtml.structural.contact-link">Контакти</message>
+	<message key="xmlui.dri2xhtml.structural.feedback-link">Зворотній зв'язок</message>
+	
+	<message key="xmlui.dri2xhtml.structural.head-subtitle">00 DSpace/Manakin Repository</message>
+
+	<message key="xmlui.dri2xhtml.structural.profile">Профіль: </message>
+	<message key="xmlui.dri2xhtml.structural.logout">Вийти</message>
+	<message key="xmlui.dri2xhtml.structural.login">Ввійти</message>
+
+	<message key="xmlui.dri2xhtml.structural.search">Пошук</message>
+	<message key="xmlui.dri2xhtml.structural.search-advanced"> Розширений пошук</message>
+	<message key="xmlui.dri2xhtml.structural.search-in-community">Фонд</message>
+	<message key="xmlui.dri2xhtml.structural.search-in-collection">По цій колекції</message>
+	
+	<message key="xmlui.dri2xhtml.structural.pagination-previous">Попередня сторінка</message>
+	<message key="xmlui.dri2xhtml.structural.pagination-info">Зараз показуються {0}-{1} з {2}</message>
+	<message key="xmlui.dri2xhtml.structural.pagination-next">Наступна сторінка</message>
+	
+	<message key="xmlui.dri2xhtml.structural.link_cc">Creative Commons</message>
+	<message key="xmlui.dri2xhtml.structural.link_original_license">Original License</message>
+		
+	
+	<!-- DS-METS-1.0-MODS.xsl -->
+	<!-- DS-METS-1.0-DIM.xsl -->
+	<!-- DS-METS-1.0-QDC.xsl -->
+	<message key="xmlui.dri2xhtml.METS-1.0.no-preview">Попередній перегляд недоступний</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.no-title">Немає неми</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.no-author">Невідомий автор</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.non-conformant">
+		This is not a DSpace object conformant to the METS 1.0 profile and as such cannot be
+        rendered effectively. You can override either the template that handles the general 
+        case in dri2xhtml to perform the needed function, or create your template to match 
+        whatever profile you use.
+    </message>
+	
+	<message key="xmlui.dri2xhtml.METS-1.0.item-preview">Попередній перегляд</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-title">Тема</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-author">Автор</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-abstract">Короткий опис(реферат)</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-description">Суть розробки, основні результати</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-uri">URI</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-date">Дата</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-publisher">Publisher</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-subject">Ключові слова</message>
+	
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-head">Долучені файли</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-file">Файл</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-size">Розмір</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-format">Формат</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-view">Переглянути</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-description">Опис файла</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-files-viewOpen">Переглянути</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.item-no-files">Даний матеріал не має долучених файлів.</message>
+
+	<message key="xmlui.dri2xhtml.METS-1.0.size-bytes">bytes</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.size-kilobytes">Kb</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.size-megabytes">Mb</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.size-gigabytes">Gb</message>
+	
+	<message key="xmlui.dri2xhtml.METS-1.0.license-text">Наступні файли містять ліцензії повязані з цим матеріалом:</message>
+		
+	<message key="xmlui.dri2xhtml.METS-1.0.collection-not-implemented">
+		The summaryView of a collection is not currently used or implemented. This can be fixed 
+		by overriding the dri2xhtml's template named collectionSummaryView.
+	</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.community-not-implemented">
+		The summaryView of a community is not currently used or implemented. This can be fixed 
+		by overriding the dri2xhtml's template named communitySummaryView.
+	</message>
+	
+	<message key="xmlui.dri2xhtml.METS-1.0.collection-logo-alt">Логотип колекції</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.community-logo-alt">Логотип фонду</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.no-logo-alt">Немає логотипу</message>		
+	<message key="xmlui.dri2xhtml.METS-1.0.news">Новини</message>	
+		
+	<!-- Internationalization elements specific to the Qualified Dublin Core metadata handler.
+		DS-METS-1.0-QDC.xsl -->
+	<message key="xmlui.dri2xhtml.METS-1.0.qdc-not-applicable">
+		Qualified Dublin Core (QDC) is not applicable to DSpace community and collection at 
+		this time. When using QDC, you should use the QDC crosswalk for DSpace items and either 
+		DIM or MODS for processing of фонди and колекція.
+	</message>
+	
+	<message key="xmlui.dri2xhtml.METS-1.0.header-qdc-elements">Dublin Core elements</message>
+	<message key="xmlui.dri2xhtml.METS-1.0.header-qdc-terms">Dublin Core terms</message>
+	
+	
+	<!-- Special pioneer model related text, wherever it might end up -->
+	<message key="xmlui.dri2xhtml.pioneer.preview">Попередній перегляд</message>
+	<message key="xmlui.dri2xhtml.pioneer.date">Дата</message>
+	<message key="xmlui.dri2xhtml.pioneer.title">Заголовок</message>
+	<message key="xmlui.dri2xhtml.pioneer.author">Автор</message>
+	
+	<!-- tag used to handle the empty textarea tag added 09/28/2006 -->
+	<message key="xmlui.dri2xhtml.default.textarea.value"> </message>
+
+  <!--###### File Format MIME Type Mappings ######-->
+
+  <!-- Application-based formats -->
+  <message key="xmlui.dri2xhtml.mimetype.application/marc">MARC record</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/mathematica">Mathematica</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/msword">Microsoft Word</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/octet-stream">Unknown</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/pdf">PDF</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/postscript">Postscript</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/sgml">SGML</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.ms-excel">Microsoft Excel</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.ms-powerpoint">Microsoft PowerPoint</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.ms-project">Microsoft Project</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.database">OpenOffice Base</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.formula">OpenOffice Math</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.graphics">OpenOffice Draw</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.presentation">OpenOffice Impress</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.spreadsheet">OpenOffice Calc</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.oasis.opendocument.text">OpenOffice Writer</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.openxmlformats-officedocument.presentationml.presentation">Microsoft PowerPoint 2007</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">Microsoft Excel 2007</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.openxmlformats-officedocument.wordprocessingml.document">Microsoft Word 2007</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.sun.xml.calc">OpenOffice Calc (1.x)</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.sun.xml.draw">OpenOffice Draw (1.x)</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.sun.xml.impress">OpenOffice Impress (1.x)</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.sun.xml.writer.global">OpenOffice Writer (1.x)</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/vnd.visio">Microsoft Visio</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/wordperfect5.1">WordPerfect</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/x-dvi">TeX DVI</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/x-filemaker">FileMaker Pro</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/x-java-applet">Java applet</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/x-latex">LaTeX</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/x-photoshop">Photoshop</message>
+  <message key="xmlui.dri2xhtml.mimetype.application/x-tex">TeX</message>
+
+  <!-- Audio-based formats -->
+  <message key="xmlui.dri2xhtml.mimetype.audio/basic">Basic Audio</message>
+  <message key="xmlui.dri2xhtml.mimetype.audio/flac">FLAC Audio</message>
+  <message key="xmlui.dri2xhtml.mimetype.audio/m4a">AAC audio</message>
+  <message key="xmlui.dri2xhtml.mimetype.audio/m4a-latm">AAC audio</message>
+  <message key="xmlui.dri2xhtml.mimetype.audio/mpeg">mp3 audio</message>
+  <message key="xmlui.dri2xhtml.mimetype.audio/x-aiff">AIFF audio</message>
+  <message key="xmlui.dri2xhtml.mimetype.audio/x-mpeg">MPEG Audio</message>
+  <message key="xmlui.dri2xhtml.mimetype.audio/x-ms-wma">WMA Audio</message>
+  <message key="xmlui.dri2xhtml.mimetype.audio/x-ms-wmv">WMV Audio</message>
+  <message key="xmlui.dri2xhtml.mimetype.audio/x-ogg">Ogg Vorbis</message>
+  <message key="xmlui.dri2xhtml.mimetype.audio/x-pn-realaudio">RealAudio</message>
+  <message key="xmlui.dri2xhtml.mimetype.audio/x-wav">WAV audio</message>
+
+  <!-- Image-based formats -->
+  <message key="xmlui.dri2xhtml.mimetype.image/gif">GIF image</message>
+  <message key="xmlui.dri2xhtml.mimetype.image/jp2">JPEG 2000 image</message>
+  <message key="xmlui.dri2xhtml.mimetype.image/jpeg">JPEG image</message>
+  <message key="xmlui.dri2xhtml.mimetype.image/png">PNG image</message>
+  <message key="xmlui.dri2xhtml.mimetype.image/tiff">TIFF image</message>
+  <message key="xmlui.dri2xhtml.mimetype.image/x-ms-bmp">BMP image</message>
+  <message key="xmlui.dri2xhtml.mimetype.image/x-photo-cd">Photo CD</message>
+
+  <!-- Text-based formats -->
+  <message key="xmlui.dri2xhtml.mimetype.text/css">CSS file</message>
+  <message key="xmlui.dri2xhtml.mimetype.text/csv">CSV file</message>
+  <message key="xmlui.dri2xhtml.mimetype.text/html">HTML</message>
+  <message key="xmlui.dri2xhtml.mimetype.text/javascript">Javascript</message>
+  <message key="xmlui.dri2xhtml.mimetype.text/plain">Text file</message>
+  <message key="xmlui.dri2xhtml.mimetype.text/richtext">RTF file</message>
+  <message key="xmlui.dri2xhtml.mimetype.text/xml">XML</message>
+
+  <!-- Video-based formats -->
+  <message key="xmlui.dri2xhtml.mimetype.video/avi">AVI video</message>
+  <message key="xmlui.dri2xhtml.mimetype.video/mjp2">Motion JPEG 2000</message>
+  <message key="xmlui.dri2xhtml.mimetype.video/mpeg">MPEG video</message>
+  <message key="xmlui.dri2xhtml.mimetype.video/mpeg2">MPEG-2 video</message>
+  <message key="xmlui.dri2xhtml.mimetype.video/mp4">MPEG-4 video</message>
+  <message key="xmlui.dri2xhtml.mimetype.video/quicktime">QuickTime video</message>
+
+  <!-- explanatory messages for choice authority confidence values -->
+  <message key="xmlui.authority.confidence.description.cf_unset">Confidence was never recorded for this value</message>
+  <message key="xmlui.authority.confidence.description.cf_novalue">No reasonable confidence value was returned from the authority</message>
+  <message key="xmlui.authority.confidence.description.cf_rejected">The authority recommends this submission be rejected</message>
+  <message key="xmlui.authority.confidence.description.cf_failed">The authority encountered an internal failure</message>
+  <message key="xmlui.authority.confidence.description.cf_notfound">There are no matching answers in the authority</message>
+  <message key="xmlui.authority.confidence.description.cf_ambiguous">There are multiple matching authority values of equal validity</message>
+  <message key="xmlui.authority.confidence.description.cf_uncertain">Value is singular and valid but has not been seen and accepted by a human so it is still uncertain</message>
+  <message key="xmlui.authority.confidence.description.cf_accepted">This authority value has been confirmed as accurate by an interactive user</message>
+  <!-- help message on "unlock" button in EditItemMetadata display -->
+  <message key="xmlui.authority.confidence.unlock.help">Unlock the authority key value for manual editing, or toggle it locked again</message>
+
+  <!-- Choice Lookup popup window -->
+  <!-- NOTE: These messages necessarily use a *different* format for
+     - parameters, unfortunately, since substitution happens in the
+     - JavaScript (AJAX) that completes the lookup popup window.
+     - So, positional parameters are @1@, @2@, etc.
+    -->
+  <message key="xmlui.ChoiceLookupTransformer.title">DSpace Value Lookup</message>
+  <message key="xmlui.ChoiceLookupTransformer.accept">Прийняти</message>
+  <message key="xmlui.ChoiceLookupTransformer.add">Додати</message>
+  <message key="xmlui.ChoiceLookupTransformer.cancel">Відмінити</message>
+  <message key="xmlui.ChoiceLookupTransformer.more">Більше результатів</message>
+  <!-- params are: start, end, total-count, search-value -->
+  <message key="xmlui.ChoiceLookupTransformer.results">Результати @1@ до @2@ з @3@ для "@4@"</message>
+  <message key="xmlui.ChoiceLookupTransformer.fail">Помилка при завантаженні: </message>
+
+  <!-- Choice Lookup - sample config for dc.publisher field -->
+  <message key="xmlui.ChoiceLookupTransformer.field.dc_publisher.help">Ім'я Publisher</message>
+  <message key="xmlui.ChoiceLookupTransformer.field.dc_publisher.title">Шукати Publisher</message>
+  <!-- Params are: search-value -->
+  <message key="xmlui.ChoiceLookupTransformer.field.dc_publisher.nonauthority">Non-authority value: @1@</message>
+
+  <!-- Choice Lookup - sample config for dc.contributor.author field -->
+  <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.help">Ім'я у вишляді "Прізвище, ім'я, по батькові"</message>
+  <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.help.last">Прізвище, наприклад "Іваненко"</message>
+  <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.help.first">Ім'я, наприклад "Іван Іванович"</message>
+  <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.title">LC Name Authority author lookup</message>
+  <message key="xmlui.ChoiceLookupTransformer.field.dc_contributor_author.nonauthority">Local value "@1@" (not in Naming Authority)</message>
+
+</catalogue>

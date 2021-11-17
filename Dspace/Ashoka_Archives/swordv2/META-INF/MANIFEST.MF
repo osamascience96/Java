@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: DSpace SWORD v2 :: Local Customizations
+Implementation-Version: 6.3
+Archiver-Version: Plexus Archiver
+Built-By: osama
+Specification-Vendor: DuraSpace
+Specification-Title: DSpace SWORD v2 :: Local Customizations
+Implementation-Vendor-Id: org.dspace.modules
+Implementation-Vendor: DuraSpace
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_281
+Specification-Version: 6.3
+Implementation-URL: https://github.com/dspace/DSpace/modules/swordv2
+
