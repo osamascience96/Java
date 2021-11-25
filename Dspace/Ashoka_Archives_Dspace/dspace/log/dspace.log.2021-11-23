@@ -1,0 +1,58 @@
+2021-11-23 10:00:44,195 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=93E9FA93496FD65DDF0AA9A331E1A446:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 10:00:44,371 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 14:20:51,520 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=39A7ACF17B8F27FD0535E388A067136F:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 14:20:51,624 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 14:26:49,862 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=39A7ACF17B8F27FD0535E388A067136F:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 14:26:49,870 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 15:03:51,137 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=39A7ACF17B8F27FD0535E388A067136F:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 15:03:51,150 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 21:57:20,003 INFO  org.dspace.authenticate.PasswordAuthentication @ anonymous:session_id=219431F8F33B70BB0FE54FF1DD100002:ip_addr=0:0:0:0:0:0:0:1:authenticate:attempting password auth of user=osamahu96@gmail.com
+2021-11-23 21:57:20,230 INFO  org.dspace.authenticate.PasswordAuthentication @ osamahu96@gmail.com:session_id=219431F8F33B70BB0FE54FF1DD100002:ip_addr=0:0:0:0:0:0:0:1:authenticate:type=PasswordAuthentication
+2021-11-23 21:57:20,231 INFO  org.dspace.eperson.EPersonServiceImpl @ osamahu96@gmail.com:session_id=219431F8F33B70BB0FE54FF1DD100002:ip_addr=0:0:0:0:0:0:0:1:update_eperson:eperson_id=eb87e145-3bdd-4fb7-a298-d2250818c09d
+2021-11-23 21:57:20,434 INFO  org.dspace.app.webui.servlet.PasswordServlet @ osamahu96@gmail.com:session_id=219431F8F33B70BB0FE54FF1DD100002:ip_addr=0:0:0:0:0:0:0:1:login:type=explicit
+2021-11-23 21:57:20,580 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=4F25A6E2697F1D8D450E39CE85806A62:ip_addr=0:0:0:0:0:0:0:1:view_mydspace:
+2021-11-23 21:57:27,028 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=4F25A6E2697F1D8D450E39CE85806A62:ip_addr=0:0:0:0:0:0:0:1:view_own_submissions:count=0
+2021-11-23 21:57:29,632 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=4F25A6E2697F1D8D450E39CE85806A62:ip_addr=0:0:0:0:0:0:0:1:view_mydspace:
+2021-11-23 21:57:36,362 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=4F25A6E2697F1D8D450E39CE85806A62:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 21:57:36,477 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 21:57:40,432 INFO  org.dspace.app.webui.servlet.LogoutServlet @ osamahu96@gmail.com:session_id=4F25A6E2697F1D8D450E39CE85806A62:ip_addr=0:0:0:0:0:0:0:1:logout:
+2021-11-23 21:57:43,005 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4F25A6E2697F1D8D450E39CE85806A62:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 21:57:43,026 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 23:23:14,404 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4F25A6E2697F1D8D450E39CE85806A62:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 23:23:14,526 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 23:24:07,429 INFO  org.dspace.authenticate.PasswordAuthentication @ anonymous:session_id=4F25A6E2697F1D8D450E39CE85806A62:ip_addr=0:0:0:0:0:0:0:1:authenticate:attempting password auth of user=osamahu96@gmail.com
+2021-11-23 23:24:07,447 INFO  org.dspace.authenticate.PasswordAuthentication @ osamahu96@gmail.com:session_id=4F25A6E2697F1D8D450E39CE85806A62:ip_addr=0:0:0:0:0:0:0:1:authenticate:type=PasswordAuthentication
+2021-11-23 23:24:07,447 INFO  org.dspace.eperson.EPersonServiceImpl @ osamahu96@gmail.com:session_id=4F25A6E2697F1D8D450E39CE85806A62:ip_addr=0:0:0:0:0:0:0:1:update_eperson:eperson_id=eb87e145-3bdd-4fb7-a298-d2250818c09d
+2021-11-23 23:24:07,509 INFO  org.dspace.app.webui.servlet.PasswordServlet @ osamahu96@gmail.com:session_id=4F25A6E2697F1D8D450E39CE85806A62:ip_addr=0:0:0:0:0:0:0:1:login:type=explicit
+2021-11-23 23:24:07,533 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:view_mydspace:
+2021-11-23 23:24:11,115 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 23:24:11,120 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 23:24:41,595 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 23:24:41,599 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 23:26:02,560 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 23:26:02,571 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 23:30:49,754 INFO  org.dspace.app.webui.servlet.LogoutServlet @ osamahu96@gmail.com:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:logout:
+2021-11-23 23:30:55,281 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 23:30:56,114 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 23:31:14,737 INFO  org.dspace.app.webui.servlet.HandleServlet @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c7751a47-6519-4797-b382-1e3abb930e71
+2021-11-23 23:31:14,787 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:browse_by_item:
+2021-11-23 23:31:14,946 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, org.dspace.content.Collection@aa7db3b3: 4
+2021-11-23 23:31:15,141 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c7751a47-6519-4797-b382-1e3abb930e71
+2021-11-23 23:31:17,140 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-23 23:31:17,143 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-23 23:31:24,590 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 23:31:24,615 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 23:31:35,070 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 23:31:35,109 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 23:31:44,188 INFO  org.dspace.app.webui.servlet.HandleServlet @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=7b7bd153-c8eb-42a1-82ab-917d706c606b
+2021-11-23 23:31:44,191 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:browse_by_item:
+2021-11-23 23:31:44,213 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, org.dspace.content.Collection@4157c8fc: 4
+2021-11-23 23:31:44,289 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=7b7bd153-c8eb-42a1-82ab-917d706c606b
+2021-11-23 23:31:44,635 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-23 23:31:44,636 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-23 23:31:51,670 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 23:31:51,693 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 23:37:41,949 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 23:37:41,984 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-23 23:53:55,911 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=327EC0D45E46FE49CA530C7872760602:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-23 23:53:55,919 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4

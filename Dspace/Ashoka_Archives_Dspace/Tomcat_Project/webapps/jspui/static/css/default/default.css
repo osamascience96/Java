@@ -1,0 +1,108 @@
+.undernavigation{
+    padding-top: 0!important;
+}
+
+.nav_layout{
+    background-color: white;
+}
+
+.navbar-nav > li > a{
+    color: white!important;
+}
+
+.dropdown > a{
+    color: white!important;
+}
+
+.caret{
+    border-top-color: white!important;
+    border-bottom-color: white!important;
+}
+
+.login_btn{
+    font-family: none;
+    border: none;
+    border-radius: 0;
+    background: #004164;
+    color: white;
+}
+
+.logout_btn{
+    font-family: none;
+    border: none;
+    border-radius: 0;
+}
+
+body{
+    background: url('../../../image/khakibg.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slider_img{
+    height: 400px!important;
+}
+
+#content_title{
+    margin: 0;
+    padding: 20px 0 20px 0;
+    color: #8B1615;
+    font-weight: bold;
+}
+
+#content_para{
+    color: #8B1615;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.jumbotron{
+    background-color: white;
+    padding: 15px;
+}
+
+footer{
+    margin-bottom: 0!important;
+    border-top: 4px solid white!important;
+    background:#8B1615!important;
+    border-radius: 0!important;
+}
+
+.open>a:focus{
+    background-color: #8B1615!important;
+}
+
+.dropdown-menu>li>a{
+    color: white;
+    border-top: 1px solid white;
+    background-color: #8B1615;
+}
+
+.explore_arch_nav{
+    background-color: #B7B7B7;
+    padding: 10px;
+}
+
+.explore_arch_nav > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 5px 0 5px;
+    overflow: hidden;
+}
+
+.explore_arch_nav > ul > li{
+    display: inline;
+    float: left;
+}
+
+.explore_arch_nav_li{
+    padding: 0 10px 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #8B1615;
+}
+
+.explore_arch_nav_li:hover{
+    color: white;
+}

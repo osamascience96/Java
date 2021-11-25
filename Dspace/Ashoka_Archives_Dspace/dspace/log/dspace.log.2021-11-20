@@ -1,0 +1,597 @@
+2021-11-20 09:55:49,175 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 09:55:49,247 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:12:53,232 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:12:53,244 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:19:47,721 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:19:47,732 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:20:52,204 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:20:52,217 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:26:10,782 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:26:10,792 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:26:28,341 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:26:28,378 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:27:00,677 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:27:00,685 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:30:47,587 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:30:47,594 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:31:26,498 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:31:26,504 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:34:14,995 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:34:14,999 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:35:54,675 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:35:54,682 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:47:59,866 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:47:59,876 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:47:59,947 WARN  org.dspace.app.webui.servlet.InternalErrorServlet @ :session_id=4AD54BEB86B8695B611C71A5324B8CEF:internal_error:-- URL Was: http://localhost:8080/jspui/internal-error
+-- Method: GET
+-- Parameters were:
+
+org.apache.jasper.JasperException: javax.servlet.ServletException: org.apache.jasper.JasperException: /home.jsp (line: 119, column: 0) The end tag "&lt;/dspace:layout" is unbalanced
+	at org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:565)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.dspace.utils.servlet.DSpaceWebappServletFilter.doFilter(DSpaceWebappServletFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.servlet.ServletException: org.apache.jasper.JasperException: /home.jsp (line: 119, column: 0) The end tag "&lt;/dspace:layout" is unbalanced
+	at org.dspace.app.webui.util.JSPManager.showJSP(JSPManager.java:71)
+	at org.apache.jsp.index_jsp._jspService(index_jsp.java:191)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:443)
+	... 28 more
+Caused by: org.apache.jasper.JasperException: /home.jsp (line: 119, column: 0) The end tag "&lt;/dspace:layout" is unbalanced
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:291)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:97)
+	at org.apache.jasper.compiler.Parser.checkUnbalancedEndTag(Parser.java:1609)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1474)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:145)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:244)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:105)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:201)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:715)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:460)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311)
+	at org.dspace.app.webui.util.JSPManager.showJSP(JSPManager.java:64)
+	... 32 more
+2021-11-20 10:48:00,023 WARN  org.dspace.app.webui.util.UIUtil @ Unable to send email alert
+javax.mail.SendFailedException: Send failure (javax.mail.MessagingException: Unknown SMTP host: smtp.example.com (java.net.UnknownHostException: smtp.example.com))
+	at javax.mail.Transport.send(Transport.java:163)
+	at javax.mail.Transport.send(Transport.java:48)
+	at org.dspace.core.Email.send(Email.java:360)
+	at org.dspace.app.webui.util.UIUtil.sendAlert(UIUtil.java:538)
+	at org.dspace.app.webui.servlet.InternalErrorServlet.doGet(InternalErrorServlet.java:54)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:715)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:462)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:332)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Unknown SMTP host: smtp.example.com (java.net.UnknownHostException: smtp.example.com)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1959)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:274)
+	at javax.mail.Service.connect(Service.java:91)
+	at javax.mail.Service.connect(Service.java:76)
+	at javax.mail.Transport.send(Transport.java:94)
+	... 28 more
+Caused by: java.net.UnknownHostException: smtp.example.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:321)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:237)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 33 more
+2021-11-20 10:48:05,907 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:48:05,920 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 10:50:05,527 WARN  org.dspace.app.webui.servlet.InternalErrorServlet @ :session_id=4AD54BEB86B8695B611C71A5324B8CEF:internal_error:-- URL Was: http://localhost:8080/jspui/internal-error
+-- Method: GET
+-- Parameters were:
+
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 56 in the jsp file: /index.jsp
+Unreachable catch block for SQLException. This exception is never thrown from the try statement body
+53:         // Show home page JSP
+54:         JSPManager.showJSP(request, response, "/home.jsp");
+55:     }
+56:     catch (SQLException se)
+57:     {
+58:         // Database error occurred.
+59:         Logger log = Logger.getLogger("org.dspace.jsp");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:212)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:377)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.dspace.utils.servlet.DSpaceWebappServletFilter.doFilter(DSpaceWebappServletFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2021-11-20 10:50:05,528 WARN  org.dspace.app.webui.util.UIUtil @ No context, the database might be down or the connection pool exhausted.
+2021-11-20 10:50:05,532 WARN  org.dspace.app.webui.util.UIUtil @ Unable to send email alert
+javax.mail.SendFailedException: Send failure (javax.mail.MessagingException: Unknown SMTP host: smtp.example.com (java.net.UnknownHostException: smtp.example.com))
+	at javax.mail.Transport.send(Transport.java:163)
+	at javax.mail.Transport.send(Transport.java:48)
+	at org.dspace.core.Email.send(Email.java:360)
+	at org.dspace.app.webui.util.UIUtil.sendAlert(UIUtil.java:538)
+	at org.dspace.app.webui.servlet.InternalErrorServlet.doGet(InternalErrorServlet.java:54)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:715)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:462)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:332)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Unknown SMTP host: smtp.example.com (java.net.UnknownHostException: smtp.example.com)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1959)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:274)
+	at javax.mail.Service.connect(Service.java:91)
+	at javax.mail.Service.connect(Service.java:76)
+	at javax.mail.Transport.send(Transport.java:94)
+	... 28 more
+Caused by: java.net.UnknownHostException: smtp.example.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:321)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:237)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 33 more
+2021-11-20 10:50:10,343 WARN  org.dspace.app.webui.servlet.InternalErrorServlet @ :session_id=4AD54BEB86B8695B611C71A5324B8CEF:internal_error:-- URL Was: http://localhost:8080/jspui/internal-error
+-- Method: GET
+-- Parameters were:
+
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 56 in the jsp file: /index.jsp
+Unreachable catch block for SQLException. This exception is never thrown from the try statement body
+53:         
+54:         try
+55:         {
+56:             SiteHomeProcessor[] chp = (SiteHomeProcessor[]) CoreServiceFactory.getInstance().getPluginService().getPluginSequence(SiteHomeProcessor.class);
+57:             for (int i = 0; i < chp.length; i++)
+58:             {
+59:                 chp[i].process(context, request, response);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:212)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:377)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.dspace.utils.servlet.DSpaceWebappServletFilter.doFilter(DSpaceWebappServletFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2021-11-20 10:50:10,344 WARN  org.dspace.app.webui.util.UIUtil @ No context, the database might be down or the connection pool exhausted.
+2021-11-20 10:50:10,347 WARN  org.dspace.app.webui.util.UIUtil @ Unable to send email alert
+javax.mail.SendFailedException: Send failure (javax.mail.MessagingException: Unknown SMTP host: smtp.example.com (java.net.UnknownHostException: smtp.example.com))
+	at javax.mail.Transport.send(Transport.java:163)
+	at javax.mail.Transport.send(Transport.java:48)
+	at org.dspace.core.Email.send(Email.java:360)
+	at org.dspace.app.webui.util.UIUtil.sendAlert(UIUtil.java:538)
+	at org.dspace.app.webui.servlet.InternalErrorServlet.doGet(InternalErrorServlet.java:54)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:715)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:462)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:332)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Unknown SMTP host: smtp.example.com (java.net.UnknownHostException: smtp.example.com)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1959)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:274)
+	at javax.mail.Service.connect(Service.java:91)
+	at javax.mail.Service.connect(Service.java:76)
+	at javax.mail.Transport.send(Transport.java:94)
+	... 28 more
+Caused by: java.net.UnknownHostException: smtp.example.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:321)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:237)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 33 more
+2021-11-20 10:50:12,473 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 10:50:12,477 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 11:17:30,588 WARN  org.dspace.app.webui.servlet.InternalErrorServlet @ :session_id=4AD54BEB86B8695B611C71A5324B8CEF:internal_error:-- URL Was: http://localhost:8080/jspui/internal-error
+-- Method: GET
+-- Parameters were:
+
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 49 in the jsp file: /index.jsp
+The method getWriter() is undefined for the type HttpServletRequest
+46:     Locale sessionLocale = UIUtil.getSessionLocale(request);
+47:     Config.set(request.getSession(), Config.FMT_LOCALE, sessionLocale);
+48:     
+49:     request.getWriter().println("Hello");
+50: %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:212)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:377)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.dspace.utils.servlet.DSpaceWebappServletFilter.doFilter(DSpaceWebappServletFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2021-11-20 11:17:30,588 WARN  org.dspace.app.webui.util.UIUtil @ No context, the database might be down or the connection pool exhausted.
+2021-11-20 11:17:30,596 WARN  org.dspace.app.webui.util.UIUtil @ Unable to send email alert
+javax.mail.SendFailedException: Send failure (javax.mail.MessagingException: Unknown SMTP host: smtp.example.com (java.net.UnknownHostException: smtp.example.com))
+	at javax.mail.Transport.send(Transport.java:163)
+	at javax.mail.Transport.send(Transport.java:48)
+	at org.dspace.core.Email.send(Email.java:360)
+	at org.dspace.app.webui.util.UIUtil.sendAlert(UIUtil.java:538)
+	at org.dspace.app.webui.servlet.InternalErrorServlet.doGet(InternalErrorServlet.java:54)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:715)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:462)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:332)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Unknown SMTP host: smtp.example.com (java.net.UnknownHostException: smtp.example.com)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1959)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:274)
+	at javax.mail.Service.connect(Service.java:91)
+	at javax.mail.Service.connect(Service.java:76)
+	at javax.mail.Transport.send(Transport.java:94)
+	... 28 more
+Caused by: java.net.UnknownHostException: smtp.example.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:321)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:237)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 33 more
+2021-11-20 11:20:04,481 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 11:20:04,489 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 11:21:09,274 WARN  org.dspace.app.webui.servlet.InternalErrorServlet @ :session_id=4AD54BEB86B8695B611C71A5324B8CEF:internal_error:-- URL Was: http://localhost:8080/jspui/internal-error
+-- Method: GET
+-- Parameters were:
+
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 1 in the jsp file: /aboutus_aaci.jsp
+feedData cannot be resolved to a variable
+1: <dspace:layout locbar="nolink" titlekey="jsp.home.title" feedData="<%= feedData %>">
+2: 
+3: 	<div class="row" style="background-color:white;">
+4: 		<div class="col-sm-12 col-md-3">
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:212)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:377)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:349)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:333)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:600)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.dspace.utils.servlet.DSpaceWebappServletFilter.doFilter(DSpaceWebappServletFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2021-11-20 11:21:09,274 WARN  org.dspace.app.webui.util.UIUtil @ No context, the database might be down or the connection pool exhausted.
+2021-11-20 11:21:09,282 WARN  org.dspace.app.webui.util.UIUtil @ Unable to send email alert
+javax.mail.SendFailedException: Send failure (javax.mail.MessagingException: Unknown SMTP host: smtp.example.com (java.net.UnknownHostException: smtp.example.com))
+	at javax.mail.Transport.send(Transport.java:163)
+	at javax.mail.Transport.send(Transport.java:48)
+	at org.dspace.core.Email.send(Email.java:360)
+	at org.dspace.app.webui.util.UIUtil.sendAlert(UIUtil.java:538)
+	at org.dspace.app.webui.servlet.InternalErrorServlet.doGet(InternalErrorServlet.java:54)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:715)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:462)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:385)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:332)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: javax.mail.MessagingException: Unknown SMTP host: smtp.example.com (java.net.UnknownHostException: smtp.example.com)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1959)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:654)
+	at javax.mail.Service.connect(Service.java:274)
+	at javax.mail.Service.connect(Service.java:91)
+	at javax.mail.Service.connect(Service.java:76)
+	at javax.mail.Transport.send(Transport.java:94)
+	... 28 more
+Caused by: java.net.UnknownHostException: smtp.example.com
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:321)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:237)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1927)
+	... 33 more
+2021-11-20 11:23:55,218 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 11:23:55,226 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 11:41:44,929 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 11:41:44,937 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 11:43:30,032 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 11:43:30,040 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 11:44:49,994 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 11:44:50,002 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 11:48:32,135 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4AD54BEB86B8695B611C71A5324B8CEF:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 11:48:32,143 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 17:03:50,864 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=BE2BEB695728109A104D0A67A3BA4E8B:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 17:03:50,896 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 19:55:49,722 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=4C59DF7642123F3B4FAB7369EEBAA570:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 19:55:49,738 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 23:30:38,289 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=CD034B552865479090501704E49C04F2:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 23:30:38,345 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 23:30:45,993 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=CD034B552865479090501704E49C04F2:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 23:30:46,017 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 23:37:20,504 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=CD034B552865479090501704E49C04F2:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 23:37:20,512 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 23:38:16,308 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=CD034B552865479090501704E49C04F2:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 23:38:16,324 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 23:38:26,708 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=CD034B552865479090501704E49C04F2:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 23:38:26,724 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 23:38:29,006 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=CD034B552865479090501704E49C04F2:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 23:38:29,022 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 23:38:29,843 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=CD034B552865479090501704E49C04F2:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 23:38:29,851 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 23:38:37,204 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=CD034B552865479090501704E49C04F2:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 23:38:37,212 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 23:38:42,130 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=CD034B552865479090501704E49C04F2:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 23:38:42,138 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 23:38:44,198 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=CD034B552865479090501704E49C04F2:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 23:38:44,214 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-20 23:40:15,111 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=CD034B552865479090501704E49C04F2:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-20 23:40:15,119 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4

@@ -1,0 +1,74 @@
+#!/bin/sh
+###########################################################################
+# The contents of this file are subject to the license and copyright
+# detailed in the LICENSE and NOTICE files at the root of the source
+# tree and available online at
+#
+# http://www.dspace.org/license/
+###########################################################################
+# 'make-handle-config' script
+# Unix shell script for writing a simple barebones configuration file for the
+# Handle server, with default options, unencrypted keys and connected
+# to the DSpace Handle plugin code.
+
+# Get the DSPACE/bin directory
+BINDIR=`dirname $0`
+
+echo "Writing simple Handle server configuration"
+
+# Read parameters from DSpace config
+dshostname=`$BINDIR/dspace dsprop --property dspace.hostname`
+dshostip=`host $dshostname | awk '/has address/ { print $4; exit }'`
+dsname=`$BINDIR/dspace dsprop --property dspace.name`
+handle=`$BINDIR/dspace dsprop --property handle.prefix`
+handledir=`$BINDIR/dspace dsprop --property handle.dir`
+tempfile=/tmp/handleconfig$$
+contactemail=`$BINDIR/dspace dsprop --property mail.admin`
+
+# Write the options to a file we can pipe into the setup tool
+echo "1" >$tempfile   # 1 = non-caching server, 2 = caching server
+echo "" >>$tempfile   # Primary server?  Default = y (n = mirror server)
+echo $dshostip >>$tempfile   # IP address
+echo "" >>$tempfile   # Port to listen to (default=2641)
+echo "" >>$tempfile   # Port for HTTP i/f to listen to (default=8000)
+echo "" >>$tempfile   # Log all accesses?  ("y" or "n", default=n)
+echo "" >>$tempfile   # Rotate logs? (default=No)
+echo "" >>$tempfile   # Version/serial no. of site (default=1)
+echo $dsname Handle Server >>$tempfile  # Server description
+echo $dsname >>$tempfile # Server descriptive name
+echo "" >>$tempfile   # Contact name (default=none)
+echo "" >>$tempfile   # Contact telephone (default=none)
+echo $contactemail >>$tempfile   # Contact email
+echo "" >>$tempfile   # Block UDP access?  ("y" or "n", default=n)
+echo "n" >>$tempfile  # Do not encrypt server cert private key
+                      # OR do not overwrite old server cert private key
+echo "n" >>$tempfile  # Do not encrypt admin private key
+                      # OR do not overwrite old admin private key
+
+# Now run Handle server config tool, and pipe our config in
+$BINDIR/dspace dsrun net.handle.server.SimpleSetup $handledir < $tempfile >/dev/null
+
+# Remove temp file
+rm -f $tempfile
+
+# Now update server configuration (config.dct) with our handle prefix and the
+# DSpace Handle plugin
+sed 's/YOUR_NAMING_AUTHORITY/'$handle'/' <$handledir/config.dct >$tempfile
+
+# Remove original config file - will replace
+rm -f $handledir/config.dct
+
+# Insert our HandlePlugin - this awk script inserts these lines in the
+# server_config section:
+#   "storage_type" = "CUSTOM"
+#   "storage_class" = "org.dspace.handle.HandlePlugin"
+awk '/.*/ {print $0} /"server_config" = {/ {printf "\"storage_type\" = \"CUSTOM\"\n\"storage_class\" = \"org.dspace.handle.HandlePlugin\"\n\n",$0}' <$tempfile >$handledir/config.dct
+
+
+#sed 's/"server_config" = {/"server_config" = {\n"storage_type" = "CUSTOM"\n"storage_class" = "org.dspace.handle.HandlePlugin"/'  <$tempfile >$handledir/config.dct
+
+
+#awk 'NR==1 {printf "%s\n\"storage_type\" = \"CUSTOM\"\n\"storage_class\" = \"org.dspace.handle.HandlePlugin\"\n\n",$0} NR!=1 {print $0}' <$tempfile >$handledir/config.dct
+
+# Remove temp file
+rm -f $tempfile

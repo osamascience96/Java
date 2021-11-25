@@ -1,0 +1,8 @@
+2021-11-21 17:35:41,653 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=492196CE001AA72EC1B86D7FD80D38C9:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-21 17:35:41,741 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-21 17:36:08,269 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=492196CE001AA72EC1B86D7FD80D38C9:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-21 17:36:08,285 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-21 17:46:07,919 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=492196CE001AA72EC1B86D7FD80D38C9:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-21 17:46:07,935 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-21 17:46:34,857 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=492196CE001AA72EC1B86D7FD80D38C9:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-21 17:46:34,857 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4

@@ -1,0 +1,265 @@
+2021-11-25 12:37:54,513 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 12:37:54,737 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 12:39:10,077 INFO  org.dspace.app.webui.servlet.HandleServlet @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c7751a47-6519-4797-b382-1e3abb930e71
+2021-11-25 12:39:10,097 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:browse_by_item:
+2021-11-25 12:39:10,127 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, org.dspace.content.Collection@aa7db3b3: 4
+2021-11-25 12:39:10,197 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c7751a47-6519-4797-b382-1e3abb930e71
+2021-11-25 12:39:10,882 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 12:39:10,882 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 12:39:15,543 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 12:39:15,562 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 12:46:19,572 INFO  org.dspace.app.webui.servlet.HandleServlet @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c7751a47-6519-4797-b382-1e3abb930e71
+2021-11-25 12:46:19,577 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:browse_by_item:
+2021-11-25 12:46:19,587 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, org.dspace.content.Collection@aa7db3b3: 4
+2021-11-25 12:46:19,626 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c7751a47-6519-4797-b382-1e3abb930e71
+2021-11-25 12:46:19,737 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 12:46:19,737 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 12:46:27,257 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 12:46:27,257 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 12:47:21,592 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 12:47:21,592 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 12:47:55,343 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 12:47:55,362 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 12:50:47,612 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 12:50:47,627 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 12:52:13,427 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 12:52:13,446 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 13:01:33,681 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:01:33,686 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 13:01:42,051 INFO  org.dspace.app.webui.servlet.HandleServlet @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c7751a47-6519-4797-b382-1e3abb930e71
+2021-11-25 13:01:42,056 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:browse_by_item:
+2021-11-25 13:01:42,071 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, org.dspace.content.Collection@aa7db3b3: 4
+2021-11-25 13:01:42,106 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c7751a47-6519-4797-b382-1e3abb930e71
+2021-11-25 13:01:42,255 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:01:42,255 INFO  org.dspace.usage.LoggerUsageEventListener @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:02:03,056 INFO  org.dspace.authenticate.PasswordAuthentication @ anonymous:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:authenticate:attempting password auth of user=osamahu96@gmail.com
+2021-11-25 13:02:03,081 INFO  org.dspace.authenticate.PasswordAuthentication @ osamahu96@gmail.com:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:authenticate:type=PasswordAuthentication
+2021-11-25 13:02:03,086 INFO  org.dspace.eperson.EPersonServiceImpl @ osamahu96@gmail.com:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:update_eperson:eperson_id=eb87e145-3bdd-4fb7-a298-d2250818c09d
+2021-11-25 13:02:03,136 INFO  org.dspace.app.webui.servlet.PasswordServlet @ osamahu96@gmail.com:session_id=2AF526456D0BE7E123FFD4C70631FC4D:ip_addr=0:0:0:0:0:0:0:1:login:type=explicit
+2021-11-25 13:02:03,156 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_mydspace:
+2021-11-25 13:02:06,566 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:02:06,566 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 13:02:12,635 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_mydspace:
+2021-11-25 13:03:07,415 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:03:07,431 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 13:03:13,465 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_mydspace:
+2021-11-25 13:05:47,565 INFO  org.dspace.app.webui.servlet.CommunityListServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2021-11-25 13:05:47,985 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=0613a039-76e1-4f28-9eb9-d2acc722fba8
+2021-11-25 13:05:47,985 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=0613a039-76e1-4f28-9eb9-d2acc722fba8
+2021-11-25 13:05:48,061 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:05:48,061 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:05:48,075 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:05:48,080 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:06:38,190 WARN  org.dspace.app.util.Util @ Unable to recoginze UUID from String "null". Will return null.
+java.lang.IllegalArgumentException: Invalid UUID string: null
+	at java.util.UUID.fromString(Unknown Source)
+	at org.dspace.app.util.Util.getUUIDParameter(Util.java:262)
+	at org.dspace.app.webui.servlet.admin.EditCommunitiesServlet.doDSPost(EditCommunitiesServlet.java:156)
+	at org.dspace.app.webui.servlet.DSpaceServlet.processRequest(DSpaceServlet.java:122)
+	at org.dspace.app.webui.servlet.DSpaceServlet.doPost(DSpaceServlet.java:80)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.dspace.app.webui.filter.AdminOnlyFilter.doFilter(AdminOnlyFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.dspace.utils.servlet.DSpaceWebappServletFilter.doFilter(DSpaceWebappServletFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2021-11-25 13:06:38,200 WARN  org.dspace.app.util.Util @ Unable to recoginze UUID from String "null". Will return null.
+java.lang.IllegalArgumentException: Invalid UUID string: null
+	at java.util.UUID.fromString(Unknown Source)
+	at org.dspace.app.util.Util.getUUIDParameter(Util.java:262)
+	at org.dspace.app.webui.servlet.admin.EditCommunitiesServlet.processConfirmEditCommunity(EditCommunitiesServlet.java:520)
+	at org.dspace.app.webui.servlet.admin.EditCommunitiesServlet.doDSPost(EditCommunitiesServlet.java:237)
+	at org.dspace.app.webui.servlet.DSpaceServlet.processRequest(DSpaceServlet.java:122)
+	at org.dspace.app.webui.servlet.DSpaceServlet.doPost(DSpaceServlet.java:80)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.dspace.app.webui.filter.AdminOnlyFilter.doFilter(AdminOnlyFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.dspace.utils.servlet.DSpaceWebappServletFilter.doFilter(DSpaceWebappServletFilter.java:78)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:745)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2021-11-25 13:06:38,333 INFO  org.hibernate.dialect.Dialect @ HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2021-11-25 13:06:38,445 INFO  org.dspace.content.CommunityServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:create_community:community_id=e930b0c5-0a35-4b07-8589-85999b40a6fe,handle=123456789/4
+2021-11-25 13:06:38,475 INFO  org.dspace.content.CommunityServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_community:community_id=e930b0c5-0a35-4b07-8589-85999b40a6fe
+2021-11-25 13:06:38,695 INFO  org.dspace.discovery.SolrServiceImpl @ Wrote Community: 123456789/4 to Index
+2021-11-25 13:06:38,733 INFO  org.dspace.app.webui.servlet.HandleServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_community:community_id=e930b0c5-0a35-4b07-8589-85999b40a6fe
+2021-11-25 13:06:38,741 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:06:38,783 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, org.dspace.content.Community@fdccdb1a: 4
+2021-11-25 13:06:38,815 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_community:community_id=e930b0c5-0a35-4b07-8589-85999b40a6fe
+2021-11-25 13:06:47,190 INFO  org.dspace.content.MetadataValueServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:delete_metadata_value: metadata_value_id=42
+2021-11-25 13:06:47,209 INFO  org.dspace.content.MetadataValueServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:delete_metadata_value: metadata_value_id=43
+2021-11-25 13:06:47,213 INFO  org.dspace.content.CommunityServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_community:community_id=e930b0c5-0a35-4b07-8589-85999b40a6fe
+2021-11-25 13:06:47,215 INFO  org.dspace.content.CommunityServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_community:community_id=e930b0c5-0a35-4b07-8589-85999b40a6fe
+2021-11-25 13:06:47,365 INFO  org.dspace.discovery.SolrServiceImpl @ Wrote Community: 123456789/4 to Index
+2021-11-25 13:07:01,325 INFO  org.dspace.content.BitstreamServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_bitstream:bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:07:01,325 INFO  org.dspace.content.BitstreamServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:create_bitstream:bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:07:01,345 INFO  org.dspace.content.CommunityServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:set_logo:community_id=e930b0c5-0a35-4b07-8589-85999b40a6felogo_bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:07:01,355 INFO  org.dspace.content.BitstreamServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_bitstream:bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:07:01,365 INFO  org.dspace.content.CommunityServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_community:community_id=e930b0c5-0a35-4b07-8589-85999b40a6fe
+2021-11-25 13:07:01,450 INFO  org.dspace.discovery.SolrServiceImpl @ Wrote Community: 123456789/4 to Index
+2021-11-25 13:07:01,496 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:07:01,496 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:07:08,280 INFO  org.dspace.content.MetadataValueServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:delete_metadata_value: metadata_value_id=44
+2021-11-25 13:07:08,280 INFO  org.dspace.content.MetadataValueServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:delete_metadata_value: metadata_value_id=45
+2021-11-25 13:07:08,285 INFO  org.dspace.content.CommunityServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_community:community_id=e930b0c5-0a35-4b07-8589-85999b40a6fe
+2021-11-25 13:07:08,330 INFO  org.dspace.discovery.SolrServiceImpl @ Wrote Community: 123456789/4 to Index
+2021-11-25 13:07:08,365 INFO  org.dspace.app.webui.servlet.HandleServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_community:community_id=e930b0c5-0a35-4b07-8589-85999b40a6fe
+2021-11-25 13:07:08,365 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:07:08,380 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, org.dspace.content.Community@fdccdb1a: 4
+2021-11-25 13:07:08,415 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_community:community_id=e930b0c5-0a35-4b07-8589-85999b40a6fe
+2021-11-25 13:07:08,570 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:07:08,571 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:07:16,642 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:07:16,650 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 13:08:04,365 INFO  org.dspace.content.CommunityServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:add_collection:community_id=e930b0c5-0a35-4b07-8589-85999b40a6fe,collection_id=be302f4a-ab5e-4508-bb58-5ad8d2cee26c
+2021-11-25 13:08:04,375 INFO  org.hibernate.dialect.Dialect @ HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL82Dialect
+2021-11-25 13:08:04,399 INFO  org.dspace.content.CollectionServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:create_collection:collection_id=be302f4a-ab5e-4508-bb58-5ad8d2cee26c,handle=123456789/5
+2021-11-25 13:08:04,685 INFO  org.dspace.discovery.SolrServiceImpl @ Wrote Collection: 123456789/5 to Index
+2021-11-25 13:08:07,665 INFO  org.dspace.eperson.GroupServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:create_group:group_id=9db6adf6-f47d-4a11-88f1-30d13b01feee
+2021-11-25 13:08:07,675 INFO  org.dspace.eperson.GroupServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_group:group_id=9db6adf6-f47d-4a11-88f1-30d13b01feee
+2021-11-25 13:08:07,881 INFO  org.dspace.eperson.GroupServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_group:group_id=9db6adf6-f47d-4a11-88f1-30d13b01feee
+2021-11-25 13:08:07,905 INFO  org.dspace.content.CollectionServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_collection:collection_id=be302f4a-ab5e-4508-bb58-5ad8d2cee26c
+2021-11-25 13:08:08,115 INFO  org.dspace.discovery.SolrServiceImpl @ Wrote Collection: 123456789/5 to Index
+2021-11-25 13:08:22,260 INFO  org.dspace.content.MetadataValueServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:delete_metadata_value: metadata_value_id=50
+2021-11-25 13:08:22,310 INFO  org.dspace.content.BitstreamServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_bitstream:bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:08:22,310 INFO  org.dspace.content.BitstreamServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:create_bitstream:bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:08:22,330 INFO  org.dspace.content.CollectionServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:set_logo:collection_id=be302f4a-ab5e-4508-bb58-5ad8d2cee26clogo_bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:08:22,350 INFO  org.dspace.content.BitstreamServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_bitstream:bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:08:22,357 INFO  org.dspace.content.CollectionServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_collection:collection_id=be302f4a-ab5e-4508-bb58-5ad8d2cee26c
+2021-11-25 13:08:22,710 INFO  org.dspace.discovery.SolrServiceImpl @ Wrote Collection: 123456789/5 to Index
+2021-11-25 13:08:26,355 INFO  org.dspace.eperson.GroupServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_group:group_id=9db6adf6-f47d-4a11-88f1-30d13b01feee
+2021-11-25 13:08:26,660 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:08:26,660 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:08:31,025 INFO  org.dspace.content.MetadataValueServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:delete_metadata_value: metadata_value_id=51
+2021-11-25 13:08:31,030 INFO  org.dspace.content.MetadataValueServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:delete_metadata_value: metadata_value_id=52
+2021-11-25 13:08:31,030 INFO  org.dspace.content.MetadataValueServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:delete_metadata_value: metadata_value_id=53
+2021-11-25 13:08:31,030 INFO  org.dspace.content.MetadataValueServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:delete_metadata_value: metadata_value_id=54
+2021-11-25 13:08:31,030 INFO  org.dspace.content.MetadataValueServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:delete_metadata_value: metadata_value_id=55
+2021-11-25 13:08:31,030 INFO  org.dspace.content.MetadataValueServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:delete_metadata_value: metadata_value_id=56
+2021-11-25 13:08:31,045 INFO  org.dspace.content.CollectionServiceImpl @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:update_collection:collection_id=be302f4a-ab5e-4508-bb58-5ad8d2cee26c
+2021-11-25 13:08:31,100 INFO  org.dspace.app.webui.servlet.HandleServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=be302f4a-ab5e-4508-bb58-5ad8d2cee26c
+2021-11-25 13:08:31,100 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_by_item:
+2021-11-25 13:08:31,115 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, org.dspace.content.Collection@7cf9390e: 4
+2021-11-25 13:08:31,150 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=be302f4a-ab5e-4508-bb58-5ad8d2cee26c
+2021-11-25 13:08:31,395 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:08:31,395 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:08:39,435 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:08:39,445 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 13:09:02,225 INFO  org.dspace.app.webui.servlet.HandleServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=7b7bd153-c8eb-42a1-82ab-917d706c606b
+2021-11-25 13:09:02,225 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_by_item:
+2021-11-25 13:09:02,233 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, org.dspace.content.Collection@4157c8fc: 4
+2021-11-25 13:09:02,270 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=7b7bd153-c8eb-42a1-82ab-917d706c606b
+2021-11-25 13:09:02,380 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:09:02,380 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:09:19,575 INFO  org.dspace.app.webui.servlet.HandleServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:display_statistics:handle=123456789/5, path=/statistics
+2021-11-25 13:09:28,630 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:09:28,635 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 13:24:36,099 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_mydspace:
+2021-11-25 13:24:49,769 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_mydspace:
+2021-11-25 13:24:51,764 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_own_submissions:count=0
+2021-11-25 13:25:16,260 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_mydspace:
+2021-11-25 13:25:29,584 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:25:29,624 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 13:25:33,299 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_mydspace:
+2021-11-25 13:25:44,304 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_mydspace:
+2021-11-25 13:26:12,859 INFO  org.dspace.app.webui.servlet.MyDSpaceServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_own_submissions:count=0
+2021-11-25 13:26:23,499 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:26:23,519 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 13:26:26,639 INFO  org.dspace.app.webui.servlet.HandleServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c7751a47-6519-4797-b382-1e3abb930e71
+2021-11-25 13:26:26,639 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_by_item:
+2021-11-25 13:26:26,649 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, org.dspace.content.Collection@aa7db3b3: 4
+2021-11-25 13:26:26,684 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=c7751a47-6519-4797-b382-1e3abb930e71
+2021-11-25 13:26:26,805 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:26:26,805 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:26:40,884 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:26:40,884 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:26:57,054 INFO  org.dspace.app.webui.servlet.admin.MetadataSchemaRegistryServlet @ Showing Schemas
+2021-11-25 13:27:43,259 INFO  org.dspace.app.webui.servlet.admin.MetadataSchemaRegistryServlet @ Showing Schemas
+2021-11-25 13:29:41,494 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:29:41,504 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 13:34:43,918 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:34:43,925 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 13:34:46,838 INFO  org.dspace.app.webui.servlet.HandleServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=7b7bd153-c8eb-42a1-82ab-917d706c606b
+2021-11-25 13:34:46,838 INFO  org.dspace.browse.BrowseEngine @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_by_item:
+2021-11-25 13:34:46,843 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, org.dspace.content.Collection@4157c8fc: 4
+2021-11-25 13:34:46,880 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_collection:collection_id=7b7bd153-c8eb-42a1-82ab-917d706c606b
+2021-11-25 13:34:46,968 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:34:46,968 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:34:52,799 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:34:52,799 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:35:04,983 INFO  org.dspace.app.webui.servlet.CommunityListServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2021-11-25 13:35:05,179 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=0613a039-76e1-4f28-9eb9-d2acc722fba8
+2021-11-25 13:35:05,183 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=0613a039-76e1-4f28-9eb9-d2acc722fba8
+2021-11-25 13:35:05,213 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:35:05,218 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:35:05,313 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:35:05,318 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:35:05,351 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:35:05,351 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:35:05,893 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:35:05,903 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:35:11,433 INFO  org.dspace.app.webui.servlet.CommunityListServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_community_list:
+2021-11-25 13:35:11,653 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:35:11,653 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=e36eeb3c-e68a-4f94-91ee-2cdb1a5c20f3
+2021-11-25 13:35:11,698 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=0613a039-76e1-4f28-9eb9-d2acc722fba8
+2021-11-25 13:35:11,703 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=0613a039-76e1-4f28-9eb9-d2acc722fba8
+2021-11-25 13:35:11,877 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:35:11,888 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=8454cea8-3e7a-4dfe-9cb3-c5029f7b2e8e
+2021-11-25 13:35:11,948 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:35:11,953 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=4178f0f7-f414-42c3-8356-0ded421c9ead
+2021-11-25 13:35:12,053 INFO  org.dspace.app.webui.servlet.RetrieveServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:35:12,053 INFO  org.dspace.usage.LoggerUsageEventListener @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:view_bitstream:bitstream_id=50ea0f19-3ba9-4bee-87c2-a7d4e5ef1dca
+2021-11-25 13:35:38,628 INFO  org.dspace.app.webui.servlet.LogoutServlet @ osamahu96@gmail.com:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:logout:
+2021-11-25 13:35:41,353 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 13:35:41,369 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 14:00:27,321 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 14:00:27,380 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
+2021-11-25 14:01:16,391 INFO  org.dspace.browse.BrowseEngine @ anonymous:session_id=F8FFD438303E0DA3F9A13074B79EF338:ip_addr=0:0:0:0:0:0:0:1:browse_mini:
+2021-11-25 14:01:16,391 INFO  org.dspace.app.webui.discovery.DiscoverUtility @ facets for scope, null: 4
