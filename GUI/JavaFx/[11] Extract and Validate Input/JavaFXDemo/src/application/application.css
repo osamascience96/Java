@@ -1,0 +1,23 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.error{
+	-fx-border-color: red;
+	-fx-border-width: 2px;
+	-fx-border-radius: 2px;
+	-fx-border-style: solid;
+}
+
+.error_text{
+	-fx-text-fill: red;
+}
+
+.success_text{
+	-fx-text-fill: green;
+}
+
+.success{
+	-fx-border-color: green;
+	-fx-border-width: 2px;
+	-fx-border-radius: 2px;
+	-fx-border-style: solid;
+}

@@ -1,0 +1,10 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.message_text_error{
+	-fx-text-fill: red;
+}
+
+.listview_message{
+	-fx-font-family: sans-serif;
+	-fx-text-fill: blue;
+}
