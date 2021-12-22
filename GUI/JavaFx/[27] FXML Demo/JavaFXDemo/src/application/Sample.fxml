@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="application.Controller">
+    
+    <Label text="I love books"/>
+    <Label>
+    	<text>
+    		This text consists of full tags
+    	</text>
+    </Label>
+    <!-- set on button click -->
+    <Button text="Submit" fx:id="button" onAction="#handleSubmit"/>
+    
+</VBox>
