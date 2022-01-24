@@ -1,0 +1,13 @@
+#contact_main{
+    background: #858CE4;
+    color: white;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+}
+
+#contact_submit_btn{
+    color:#858CE4;
+    font-weight: bold;
+    float: right;
+}

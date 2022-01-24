@@ -1,0 +1,16 @@
+#articles{
+    background: rgba(133, 140, 228, 0.5);
+    border: 1px solid rgba(133, 140, 228, 0.5);
+    padding: 20px!important;
+}
+
+.sub_articles{
+    background: #858CE4;
+    margin: 5px;
+    color: white;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}

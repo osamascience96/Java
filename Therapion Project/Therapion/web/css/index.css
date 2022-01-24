@@ -1,0 +1,12 @@
+.consult_btn{
+    width: 200px;
+    padding: 10px;
+    border-radius: 55px;
+    background: #858CE4;
+    text-decoration: none;
+    margin:auto; 
+}
+
+.consult_btn:hover{
+    color:white!important;
+}
