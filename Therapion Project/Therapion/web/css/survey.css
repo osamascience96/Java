@@ -2,3 +2,71 @@
     margin-top: 50px;
     text-align: center;
 }
+
+#template{
+    background: rgba(133, 140, 228, 0.5);
+    padding: 20px;
+    margin: auto;
+    color: white;
+}
+
+.option_gender_survey > button{
+    width: 50%;
+    margin: 5px 0;
+    background: #858CE4;
+    text-align: left;
+    color: white;
+    border: 2px solid white;
+}
+
+.option_identity_survey > button{
+    width: 50%;
+    margin: 5px 0;
+    background: #858CE4;
+    text-align: left;
+    color: white;
+    border: 2px solid white;
+}
+
+.option_communicatemethod_survey > button{
+    width: 50%;
+    margin: 5px 0;
+    background: #858CE4;
+    text-align: left;
+    color: white;
+    border: 2px solid white;
+}
+
+#continue_last_btn{
+    width: 50%;
+    background: #858CE4;
+    color: white;
+    border: 2px solid white;
+}
+
+.option_preferences_survey{
+    width: 45%;
+    text-align: start;
+    margin: auto;
+}
+
+#age_option{
+    width: 50%;
+    margin: auto;
+    background: #858CE4;
+    border: 2px solid white;
+    color: white;
+}
+
+#country_select, #language_select{
+    width: 50%;
+    margin: auto;
+    background: #858CE4;
+    border: 2px solid white;
+    color: white;
+}
+
+#survey_btn_nav{
+    width: 40%;
+    margin: 10px auto;
+}
