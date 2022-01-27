@@ -1,8 +1,17 @@
+<%@page import="helper.Utility"%>
 <%@include file="includes/header.jsp" %>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/css/survey.css">
 <title>Survey - Therapion</title>
 </head>
   <body>
+      <%
+          String surveyResponse = request.getParameter("response");
+      %>
+      <% if(surveyResponse != null){%>
+        <% if(surveyResponse.compareTo("params_not_completed") == 0){%>
+            <%=Utility.GetAlert("danger", "Error!", "Parameters missing")%>
+        <% }%>
+      <% }%>
       <div id="survey_container" class="container">
           <h3>Welcome to the first step of knowing yourself more</h3>
           <p>This questionnaire asks several questions to help us understand how you're feeling and match you with the right therapist.</p>

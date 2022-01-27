@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 24, 2022 at 07:37 PM
+-- Generation Time: Jan 27, 2022 at 03:04 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -47,11 +47,19 @@ CREATE TABLE `faq` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `first_name` text NOT NULL,
-  `last_name` text NOT NULL,
+  `last_name` text DEFAULT NULL,
   `email` text NOT NULL,
   `message` text NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `faq`
+--
+
+INSERT INTO `faq` (`id`, `user_id`, `first_name`, `last_name`, `email`, `message`, `created_at`) VALUES
+(1, 5, 'Osama', 'Ahmed', 'osamahu96@gmail.com', 'How this system works?', '2022-01-27 07:57:56'),
+(2, 0, 'Ali ', 'Raza', 'aliraza88@gmail.com', 'This is Ali Raza, how can i register to your website?', '2022-01-27 07:59:35');
 
 -- --------------------------------------------------------
 
@@ -73,7 +81,7 @@ INSERT INTO `gender` (`id`, `name`, `created_at`) VALUES
 (1, 'Male', '2022-01-20 13:41:33'),
 (2, 'Female', '2022-01-20 13:41:33'),
 (3, 'Transgender', '2022-01-20 13:42:04'),
-(4, 'other', '2022-01-20 13:42:04');
+(4, 'Other', '2022-01-26 17:47:18');
 
 -- --------------------------------------------------------
 
@@ -96,7 +104,7 @@ INSERT INTO `identity` (`id`, `name`, `created_at`) VALUES
 (2, 'Gay', '2022-01-20 13:42:51'),
 (3, 'Lesbian', '2022-01-20 13:43:15'),
 (4, 'Prefer Not to Say', '2022-01-20 13:43:15'),
-(5, 'other', '2022-01-20 13:43:20');
+(5, 'Other', '2022-01-26 17:47:12');
 
 -- --------------------------------------------------------
 
@@ -115,6 +123,13 @@ CREATE TABLE `questionaire` (
   `language` text NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `questionaire`
+--
+
+INSERT INTO `questionaire` (`id`, `patient_id`, `gender_id`, `age`, `identity_id`, `source`, `country`, `language`, `created_at`) VALUES
+(1, 5, 1, 26, 1, 'Mostly via messaging', 'Pakistan', 'Urdu', '2022-01-27 07:09:51');
 
 -- --------------------------------------------------------
 
@@ -138,7 +153,7 @@ INSERT INTO `religion` (`id`, `name`, `created_at`) VALUES
 (3, 'Judaism', '2022-01-20 13:39:33'),
 (4, 'Hinduism', '2022-01-20 13:39:33'),
 (5, 'Buddism', '2022-01-20 13:40:06'),
-(6, 'other', '2022-01-20 13:40:06');
+(6, 'Other', '2022-01-26 17:47:03');
 
 -- --------------------------------------------------------
 
@@ -153,6 +168,13 @@ CREATE TABLE `therapist` (
   `background` text NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `therapist`
+--
+
+INSERT INTO `therapist` (`id`, `user_id`, `religion_id`, `background`, `created_at`) VALUES
+(1, 6, 2, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci, diam a tincidunt tortor donec pharetra, aliquam eget. Faucibus ornare lectus libero, ac eget erat id. Tempus, vitae in elementum sagittis, nec, facilisis arcu.', '2022-01-27 09:02:52');
 
 -- --------------------------------------------------------
 
@@ -199,7 +221,7 @@ CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL,
   `type_id` int(11) NOT NULL,
-  `image_addr` text NOT NULL,
+  `image_addr` text DEFAULT NULL,
   `gender_id` int(11) NOT NULL,
   `dob` date NOT NULL,
   `address` text NOT NULL,
@@ -208,6 +230,14 @@ CREATE TABLE `user` (
   `phone` text NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `name`, `type_id`, `image_addr`, `gender_id`, `dob`, `address`, `email`, `password`, `phone`, `created_at`) VALUES
+(5, 'osamaahmed886', 2, NULL, 1, '1996-10-26', 'House No.43, Street No.102, Farooq Street, Krishan Nagar, Lahore, Pakistan', 'osamahu96@gmail.com', '8ecaa2f7db2fc4bf2cc944c5e01ab49ea841b21e60ccc56d5d3316680eb44a83', '03364172345', '2022-01-27 07:09:13'),
+(6, 'Dr. Leslie Alexander', 3, 'f8c98fac-28e6-44d2-943d-a017a2cf2ab8.png', 2, '1986-10-26', 'House No.43, Street No.102, Washington Street, USA', 'lesliealexdar86@gmail.com', '8ecaa2f7db2fc4bf2cc944c5e01ab49ea841b21e60ccc56d5d3316680eb44a83', '03321252345', '2022-01-27 09:04:31');
 
 --
 -- Indexes for dumped tables
@@ -287,7 +317,7 @@ ALTER TABLE `appointment`
 -- AUTO_INCREMENT for table `faq`
 --
 ALTER TABLE `faq`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `gender`
@@ -305,7 +335,7 @@ ALTER TABLE `identity`
 -- AUTO_INCREMENT for table `questionaire`
 --
 ALTER TABLE `questionaire`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `religion`
@@ -317,7 +347,7 @@ ALTER TABLE `religion`
 -- AUTO_INCREMENT for table `therapist`
 --
 ALTER TABLE `therapist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `timeslots`
@@ -335,7 +365,7 @@ ALTER TABLE `type`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

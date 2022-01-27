@@ -1,5 +1,8 @@
+<%@page import="pojo.User"%>
 <%
     String page_name = (String)request.getAttribute("page_name");
+    HttpSession httpSession = request.getSession();
+    User userObj = (User)httpSession.getAttribute("userObj");
 %>
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
   <div class="container-fluid">

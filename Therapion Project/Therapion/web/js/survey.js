@@ -112,7 +112,7 @@ function checkValidity(currentScren){
             is_validated = therapist_csv !== undefined ? true : false;
             break;
         case 'survey8':
-            // redirect the data to the registration page
+            
             break;
         default:
             return false;
@@ -175,3 +175,8 @@ function option_communicate_event(button){
     btn_specs.css('background', 'rgba(133, 140, 228, 0.5)');
     communication_method = btn_specs.html();
 }
+
+$('#continue_last_btn').on('click', () => {
+   // redirect the data to the registration page
+   window.location.replace(`signup?gender=${gender}&age=${age}&identity=${identity}&country=${country}&language=${language}&communication_method=${communication_method}&therapist_csv=${therapist_csv}`); 
+});

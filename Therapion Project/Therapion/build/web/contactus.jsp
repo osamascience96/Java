@@ -8,21 +8,21 @@
           <p>Please Provide some information to get started.</p>
           <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-8">
-                  <form action="#" method="post">
+                  <form action="ContactController" method="post">
                       <div class="form-group">
-                          <input type="text" class="form-control" placeholder="First name" required/>
+                          <input type="text" class="form-control" name="firstname" placeholder="First name" required/>
                       </div>
                       <br>
                       <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Last name" />
+                          <input type="text" class="form-control" name="lastname" placeholder="Last name" />
                       </div>
                       <br>
                       <div class="form-group">
-                          <input type="email" class="form-control" placeholder="Email Address" required/>
+                          <input type="email" class="form-control" name="emailaddress" placeholder="Email Address" required/>
                       </div>
                       <br>
                       <div class="form-group">
-                          <textarea class="form-control" placeholder="Message" rows="3" required></textarea>
+                          <textarea class="form-control" placeholder="Message" name="message" rows="3" required></textarea>
                       </div>
                       <br>
                       <input id="contact_submit_btn" type="submit" class="btn btn-light" value="Submit">

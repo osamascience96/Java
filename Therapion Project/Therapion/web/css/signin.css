@@ -1,0 +1,40 @@
+body{
+    background: url('../img/curved_bg.png')
+}
+
+.navbar{
+    display: none;
+}
+
+form{
+    position: relative;
+    top: 150px;
+    width: 40%;
+    margin: auto;
+}
+
+.input-group-text, .form-control{
+    background: #858CE4!important;
+    color: white!important;
+    font-weight: bold;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white!important;
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+  color: white!important;
+}
+
+input[type='submit']{
+    width: 100%;
+    color: #858CE4!important;
+    font-weight: bold;
+}
+
+.login_link{
+    color: white;
+    text-decoration: none;
+    text-align: end;
+}
