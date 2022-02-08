@@ -1,0 +1,84 @@
+[
+	{ 
+		"class": "DashboardTab",
+		"name": "student",
+		"label": "$object.role.student.label",
+		"workspaceNames": [ "student" ],
+		"weight": "MAXI",
+		"tiles": [
+			{ 
+				"class":"WelcomeDashboardPart", 
+				"name":"welcome",
+			},
+			{ 
+				"class":"ProductsCountDashboardPart", 
+				"name":"countActive", 
+			},
+			{ 
+				"class":"ProductsCountDashboardPart", 
+				"name":"countDone", 
+				"productsTab":"history", 
+				"labelPart":"countDone", 
+				"view":"productDone", 
+			},
+		],
+		"infobar": [
+			{ 
+				"class":"SummaryListDashboardPart", 
+				"name":"summaryList", 
+				"FeatureUse":"cal:report", 
+				"forSelf":true, 
+			},
+			{ 
+				"class":"UpcomingEventsDashboardPart", 
+				"name":"upcomingEvents", 
+				"FeatureUse":"cal:report", 
+			},
+			{ 
+				"class":"NewMessagesDashboardPart", 
+				"name":"newMessages", 
+				"FeatureUse":"pad:open", 
+			},
+		] 
+	},
+	{ 
+		"class": "DashboardTab",
+		"name": "shop.top",
+		"workspaceNames": [ "shop.user" ],
+		"label": "Aktuell",
+		"weight": "MIDI",
+		"carousel": { 
+			"class":"WelcomeDashboardPart", 
+			"class":"welcome", 
+		},
+		"ribbons": [
+			{ 
+				"class":"FeaturedProductsRecoPart", 
+				"name":"featuredProducts", 
+				"label":"Aktuell", 
+			},
+			{ 
+				"class":"RecommenderRecoPart", 
+				"name":"personalReco", 
+				"label":"Für Sie empfohlen", 
+				"recommender":"shopPersonal", 
+			},
+			{ 
+				"class":"ViewLogRecoPart", 
+				"name":"viewedProducts", 
+				"label":"Zuletzt angesehen", 
+			},
+			{ 
+				"class":"NewProductsRecoPart", 
+				"name":"newProducts", 
+				"label":"Neu", 
+			},
+		],
+		"infobar": [
+			{ 
+				"class":"WelcomeDashboardPart", 
+				"name":"welcome", 
+			},
+		] 
+	},
+]
