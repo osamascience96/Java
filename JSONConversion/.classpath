@@ -8,5 +8,7 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/osama/Downloads/jar_files/jankson-1.2.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/osama/Downloads/jar_files/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/osama/Downloads/jar_files/javax.json-1.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/osama/Downloads/jar_files/gson-2.2.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
