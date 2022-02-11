@@ -12,6 +12,6 @@ public class Main {
 		String sample2 = path.concat("/src/main/sample2.json");
 		String sample3 = path.concat("/src/main/sample3.json");
 		
-		Conversion.ConverttoJavax(sample2);
+		Conversion.ConverttoJavax(sample3);
 	}
 }

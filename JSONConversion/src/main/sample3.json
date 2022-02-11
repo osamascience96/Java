@@ -1,5 +1,5 @@
 [
-	{ 
+	[{ 
 		"class": "DashboardTab",
 		"name": "student",
 		"label": "$object.role.student.label",
@@ -40,8 +40,8 @@
 				"FeatureUse":"pad:open", 
 			},
 		] 
-	},
-	{ 
+	}],
+	[{ 
 		"class": "DashboardTab",
 		"name": "shop.top",
 		"workspaceNames": [ "shop.user" ],
@@ -80,5 +80,5 @@
 				"name":"welcome", 
 			},
 		] 
-	},
+	}],
 ]
