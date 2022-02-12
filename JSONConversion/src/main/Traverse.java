@@ -3,73 +3,79 @@ package main;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import javax.json.Json;
-import javax.json.JsonArray;
-import javax.json.JsonArrayBuilder;
-import javax.json.JsonObject;
-import javax.json.JsonObjectBuilder;
-import javax.json.JsonValue;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+import blue.endless.jankson.Jankson;
+import blue.endless.jankson.JsonArray;
+import blue.endless.jankson.JsonElement;
+import blue.endless.jankson.JsonObject;
+import blue.endless.jankson.api.SyntaxError;
 
 public class Traverse {
-	
-	public static Object RecursiveTraverse(Object object) {
+	public static Object DoTraverse(Object jsonObject) {
 		JsonArray finaljsonArrx = null;
 		JsonObject finaljsonobjx = null;
 		
-		if(object instanceof JSONArray) {
-			JsonArrayBuilder jsonArrayBuilder = Json.createArrayBuilder();
+		if(jsonObject instanceof JsonArray) {
+			finaljsonArrx = new JsonArray();
 			
-			JSONArray jsonArray = (JSONArray) object;
-			for (Object jsonarrObj : jsonArray) {
-				Object tempobj = RecursiveTraverse(jsonarrObj);
-				if(tempobj instanceof JsonObject) {
-					JsonObject jsonObject = (JsonObject) tempobj;
-					jsonArrayBuilder.add(jsonObject);
-				}else if(tempobj instanceof JsonArray){
-					JsonArray jsonArrayx = (JsonArray) tempobj;
-					jsonArrayBuilder.add(jsonArrayx);
+			JsonArray jsonArray = (JsonArray) jsonObject;
+			
+			for(Object jsonarrObj : jsonArray) {
+				Object tempObj = DoTraverse(jsonarrObj);
+				if(tempObj instanceof JsonObject) {
+					JsonObject jsonObjectx = (JsonObject) tempObj;
+					finaljsonArrx.add(jsonObjectx);
+				}else if(tempObj instanceof JsonArray) {
+					JsonArray jsonArrayx = (JsonArray) tempObj;
+					finaljsonArrx.add(jsonArrayx);
 				}else {
-					jsonArrayBuilder.add(Json.createValue(tempobj.toString()));
+					JsonElement jsonElement = null;
+					try {
+						jsonElement = Jankson.builder().build().loadElement(tempObj.toString());
+					} catch (SyntaxError e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					finaljsonArrx.add(jsonElement);
 				}
 			}
 			
-			finaljsonArrx = jsonArrayBuilder.build();
 			return finaljsonArrx;
-		}else if(object instanceof JSONObject) {
-			Map<String, JsonValue> mapObject = new HashMap<String, JsonValue>();
+		}else if(jsonObject instanceof JsonObject) {
+			Map<String, JsonElement> mapObject = new HashMap<String, JsonElement>();
 			
-			JsonObjectBuilder builder = Json.createObjectBuilder();
+			finaljsonobjx = new JsonObject();
 			
-			JSONObject jsonObject = (JSONObject) object;
-			Set<String> keySet = jsonObject.keySet();
-			
-			for (String key : keySet) {
-				Object valueObj = jsonObject.get(key);
+			JsonObject jsonobj = (JsonObject) jsonObject;
+			Set<String> keySet = jsonobj.keySet();
+			for(String key: keySet) {
+				Object valueObj = jsonobj.get(key);
 				// check if the value inside the key is string object
-				if(!(valueObj instanceof JSONObject) && !(valueObj instanceof JSONArray)) {
-					JsonValue jsonValue = Json.createValue(valueObj.toString());
-					mapObject.put(key, jsonValue);
+				if(!(valueObj instanceof JsonObject) && !(valueObj instanceof JsonArray)) {
+					try {
+						JsonElement jsonElement = Jankson.builder().build().loadElement(valueObj.toString());
+						mapObject.put(key, jsonElement);
+					} catch (SyntaxError e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 				}else {
-					Object tempObj = RecursiveTraverse(valueObj);
+					Object tempObj = DoTraverse(valueObj);
 					
 					if(tempObj instanceof JsonArray) {
 						JsonArray jsonArray = (JsonArray) tempObj;
 						mapObject.put(key, jsonArray);
 					}else {
 						JsonObject jsonObjectx = (JsonObject) tempObj;
-						mapObject.put(key, Json.createValue(jsonObjectx.toString()));
+						mapObject.put(key, jsonObjectx);
 					}
 				}
 			}
 			
-			mapObject.forEach(builder::add);
-			finaljsonobjx = builder.build();
+			finaljsonobjx.putAll(mapObject);
 			return finaljsonobjx;
 		}
 		
-		return object;
+		return jsonObject;
 	}
 }
