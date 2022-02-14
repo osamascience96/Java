@@ -1,0 +1,41 @@
+/* CSS Document */
+
+.captchaDiv A:link {
+	color: #0033cc;	text-decoration: underline;
+}
+.captchaDiv A:hover {
+	color: #0033cc;	text-decoration: underline;
+}
+.captchaDiv A:visited {
+	color: #9933cc;	text-decoration: underline;
+}
+#imgCaptcha{
+float:left;
+margin-right: 5px;
+border:1px solid #000000;
+width: 150px;
+height:75px;
+}
+
+
+.txtAudioHidden{
+	position: absolute;
+	top:-10000px;
+	left:-10000px;
+}
+
+.audioFrame{
+	position: absolute;
+	top:-10000px;
+	left:-10000px;
+}
+
+#codiceSicurezzaCaptcha{
+	position:  relative;
+	top: 10px;
+}
+.clearer{clear: left}
+
+#ajax{
+	color: #FF0000;
+}

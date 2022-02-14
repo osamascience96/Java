@@ -1,0 +1,699 @@
+/* Nuovo CSS per le applicazioni web del progetto Sanità 
+   versione 1.0 - 09/03/2012 */
+
+body {
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	font-size:0.80em;
+	margin:0;
+	padding:0;
+	background-image:url("../img/centro.gif"); 
+	background-repeat:no-repeat;
+	background-position:0 80px;
+	max-width:1680px;
+	min-width:980px;
+	width:100%;
+}
+
+/*Link invisibile salta ai contenuti */
+.invisibile {
+	display:none;
+}
+
+p.invisible	{
+	display:none;
+}
+
+#testata {
+	background-image:url("../img/sfondo_testata.gif");
+	background-repeat:repeat-x;
+	margin:0;
+	padding:0;
+}
+
+#barra_alta {
+	background-image:url("../img/testata_alta.jpg");
+	background-repeat:no-repeat;
+	margin:0;
+	height:59px;
+	padding:0;
+}
+
+#messaggio_testata { 
+	font-weight:bold;
+	font-size:1.6em;
+	margin:0;
+	padding:15px 26px 0px 0px;
+	float:right;
+	color:#000060;
+	background-color:inherit;	
+}
+
+#bordo {
+	background-color:#37699a;
+	background-image:url("../img/sfondo_menu.gif");
+	background-repeat:repeat-x;
+	height:21px;
+	margin:0;
+	padding:0;
+	color:inherit;
+}
+
+#menu_voci {
+	float:right;
+	font-weight:bold;
+	margin:0 15px 0 0;
+	padding:0 0 0 0;
+}
+
+#menu_voci ol { 
+	margin:0 0 0 0; 
+	padding:2px 0 0 0; 
+}
+
+#menu_voci li { 
+	display:inline; 
+	margin:0 0 0 0; 
+	padding:0 0 0 0; 
+	white-space:normal; 
+	list-style-image:url("../img/separatore_menu.gif"); 
+}
+
+#menu_voci li a  { 
+	color:#FFFFFF; 
+	background-color:inherit;
+	margin:0 0 0 0; 
+	padding:0 12px 0 12px; 
+	text-decoration:none; 
+}
+
+#menu_voci li a:hover { 
+	color:#FFC11B;
+	margin:0 0 0 0; 
+	padding:0 12px 0 12px; 
+	text-decoration:none; 
+	background-color:inherit;
+}
+
+#menu_voci li.sep a { 
+	background-image:url("../img/separatore_menu.gif"); 
+	background-position:top left;
+	background-repeat:no-repeat; 
+}
+
+#menu_sec {
+	background-color:white;
+	margin:0px auto;
+	padding:3px 12px;
+	background-image:url("../img/sfondo_ombra_menu.gif"); 
+	background-repeat:repeat-x;
+	border-bottom:1px solid #00466C;
+	border-top:1px solid #00466C;
+	height:15px;
+}
+
+#titroviin {
+	font-size:85%;
+	margin-top:1px;
+}
+
+a {
+	color:#0000CB;
+	background-color:inherit;
+}
+
+a:hover {
+	color:#C00000;
+	background-color:inherit;
+}
+
+a:active {
+	color:#FF0000;
+	background-color:inherit;
+} 
+
+a.nohover:hover {
+	background-color:transparent;
+}
+
+a.nohover:active {
+	background-color:transparent;
+}
+
+label {
+	font-weight:bold;
+}
+
+#sezione {
+	color:#003156;
+	font-weight:bold;
+} 
+
+#istituzioni {
+	background-image:url("../img/loghi_istituzionali.gif");
+	background-repeat:no-repeat;
+	height:55px;
+	margin-top:30px;
+	padding:0;
+	border-bottom:1px solid #00466C; 
+	border-top:1px solid #00466C; 
+}
+
+#istituzioni_vuoto {
+	float:left;
+	height:40px;
+	width:210px;
+}
+
+#mef {
+	float:left;
+	height:40px;
+	width:110px;
+}
+
+h1 {
+	text-align:center;
+	font-weight:bold;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	font-size:12px;
+	color:#315D84; 
+}
+
+h2 {
+	text-align:center;
+	font-weight:bold;
+	font-size:x-small;
+	margin:0px 0px 0px 0px;
+	padding:10px 0px 0px 0px;
+	color:#27518A;
+}
+
+h3 {
+	text-align:center;
+	background-color:transparent;
+	font-weight:bold;
+	font-size:12px;
+	padding:0px 0px 0px 0px;
+	margin:2px 2px 2px 2px;
+	color:#315D84;
+}
+
+h4 {
+	text-align:center;
+	font-weight:bold;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	font-size:11px;
+	color:#315D84;
+}
+
+fieldset {
+	width:70%;
+	padding:9px;
+	border:1px solid #e6e6e6;
+	margin:auto auto auto auto;
+}
+
+fieldset.errori {
+	font-size:11px;
+	font-weight:bold;
+}
+
+fieldset.errori legend {
+	color:#315D84; 
+	font-size:12px;
+}
+
+fieldset label {
+	margin-bottom:5px;
+	clear:both;
+	width:45%;
+	text-align:right;
+	line-height:23px;
+	font-weight:bold;
+}
+
+fieldset.menu {
+	width:42%;
+	text-align:left;
+	color:#27518A;
+	float:left;
+	height:auto;
+	padding:5px;
+}
+
+fieldset.menu_centro {
+	width:90%;
+	text-align:center;
+	color:#27518A;
+	height:auto; 
+	padding:5px;
+	margin-left:5px;
+	margin:auto auto auto auto;
+}
+
+legend {
+	font:bold 100% Tahoma, Arial, sans-serif;
+	color:#27518A; 
+	margin:0 0 20px 0;
+	background-color:inherit;
+}
+
+fieldset input, textarea, select {
+	margin-bottom:8px;
+	border-style:solid;
+	border-color:#778AA2 #7EA4D8 #7EA4D8 #778AA2;
+    border-width:2px 1px 1px 2px;
+}
+
+div.menuUtente {
+	padding:2px;
+	border-color:#315D84;
+	width:40%;
+	color:#315D84;
+}
+
+div.cellaMenuUtente {
+	margin:5px 5px 5px 5px;
+	text-align:center;
+	background-color:transparent;
+	font-size:12px; 
+	color:#315D84; 
+}
+
+input#go {
+	margin:10px 0 0 -35px;
+	font-weight:bold;
+	border-style:solid;
+	border-color:#FFF #333 #333 #FFF;
+	border-width:1px 2px 2px 1px;
+	background:#69c;
+	text-align:center;
+}
+
+input#go1 {
+	font-weight:bold;
+	border-style:solid;
+	border-color:#FFF #333 #333 #FFF;
+	border-width:1px 2px 2px 1px;
+	background:#69c;
+	text-align:center;
+}
+
+div.margin-top {
+	margin-top:5px;
+}
+	
+div.marginTop8 {
+	margin-top:8px;
+}
+
+div.marginTop10 {
+	margin-top:10px;
+}
+
+div.margin-top15 {
+	margin-top:15px;
+}
+
+div.marginTop18 {
+	margin-top:18px;
+}
+
+div.spazioMenu {
+	width:98%;
+	height:2px;
+	border:0;
+	overflow:hidden;
+}
+
+div.margin-bottom {
+	margin-bottom:8px;
+}
+
+div.margin-right {
+	margin-right:5px;
+}
+
+div.spazio {
+	width:100%;
+	height:auto;
+}
+
+div.tabellaContenitoreTitoli {
+	width:90%;
+	margin:1px 1px 1px 1px;
+}
+
+div.tabellaContenitoreTitoli50 {
+	width:50%;
+	margin:1px 1px 1px 1px;
+}
+
+div.tabellaContenitoreTitoli55 {
+	width:55%;
+	margin:1px 1px 1px 1px;
+}
+
+div.tabellaContenitoreTitoli60 {
+	width:60%;
+	margin:1px 1px 1px 1px;
+}
+
+div.tabellaContenitoreTitoli65 {
+	width:65%;
+	margin:1px 1px 1px 1px;
+}
+
+div.tabellaContenitoreTitoli70 {
+	width:70%;
+	margin:1px 1px 1px 1px;
+}
+
+div.tabellaContenitoreTitoli75 {
+	width:75%;
+	margin:1px 1px 1px 1px;
+}
+
+div.tabellaContenitoreTitoli80 {
+	width:80%;
+	margin:1px 1px 1px 1px;
+}
+
+div.tabellaContenitoreRiga {
+	width:90%;
+	margin:1px 1px 1px 1px;
+}
+
+div.cella {
+	border:1px solid #00466C;
+	min-height:35px; /* non è interpretata da Internet Explorer */
+	max-height:45px; /* non è interpretata da Internet Explorer */
+	height:45px;
+	float:left;
+	background-color:#E2ECF6;
+	text-align:center;	
+	font-weight:bold;
+	font-size:13px;
+	vertical-align:middle;
+	line-height:22px;
+	margin:1px 1px 1px 1px;
+}
+
+div.cella2 {
+	float:left;
+	text-align:center;	
+	font-size:13px;
+	vertical-align:middle;
+	line-height:45px;
+	margin:2px 2px 2px 2px;
+}
+
+div.cellaMenu {
+	border:1px solid #00466C;
+	margin-bottom:2px;
+	margin-top:2px;
+	background-color:#E2ECF6;
+	font-size:11px;
+	height:25px;
+	width:98%;
+	vertical-align:middle;
+	line-height:25px;
+}
+
+div.cellaDatiPerLink {
+	border:1px solid #00466C;
+	height:35px;
+	float:left;
+	text-align:center;
+	vertical-align:middle;
+	line-height:35px;
+	border-collapse:separate;
+	margin:1px 1px 1px 1px;
+}
+
+img.prp {
+	height:31px;
+	vertical-align:middle;
+}
+
+div.error {
+	color:black;
+}
+
+div.left_column {  
+	float:left;
+	height:auto;
+	text-align:right;
+} 
+
+div.left_column_sx {  
+	float:left;
+	height:auto;
+	text-align:left;
+} 
+
+div.right_column {
+	height:auto;
+	float:left;
+	text-align:left;
+}
+
+div.terza_column {
+	height:auto;
+	width:20%;
+	float:left;
+	text-align:left;
+}
+
+div.cellaTitoli {
+	border:1px solid #00466C;
+	min-height:35px; /* non è interpretata da Internet Explorer */
+	max-height:62px; /* non è interpretata da Internet Explorer */
+	height:62px;
+	line-height:15px;
+	float:left;
+	background-color:#E2ECF6;
+	text-align:center;	
+	font-weight:bold;
+	font-size:13px;
+	vertical-align:middle;
+	margin:1px 1px 1px 1px;
+}
+
+div.menu {
+	padding:2px;
+	height:auto !important; /* serve per Opera, Mozilla e gli altri browser per sovrascrivere la terza dichiarazione che vincolerebbe in ogni caso l'altezza del box (cosa non prevista da min-height). Internet Explorer non dà; peso alla direttiva !important */
+	border-color:#315D84;
+	width:90%;
+	text-align:center;
+	/* margin-top: 0.5cm; */
+	margin:auto auto auto auto;	
+}
+
+div.menuIniziale {
+	padding:2px;
+	height:auto !important; /* serve per Opera, Mozilla e gli altri browser per sovrascrivere la terza dichiarazione che vincolerebbe in ogni caso l'altezza del box (cosa non prevista da min-height). Internet Explorer non dà; peso alla direttiva !important */
+	border-color:#315D84;
+	width:50%;
+	text-align:center;
+}
+
+#noPadding {
+	padding:0px 0px 0px 0px;
+}
+
+div.bold {
+	font-weight:bold;
+}
+
+div.testoCentrato {
+	text-align:center;
+}
+
+div.lineH15 {
+	line-height:15px;
+}
+
+div.height20 {
+	height:20px;
+}
+
+div.height62 {
+	height:62px;
+}
+
+div.margin-right {
+	margin-right:5px;
+}
+
+div.margin-left {
+	margin-left:5px;
+}
+
+div.width5 {
+	width:5%;
+}
+
+div.width8 {
+	width:8%;
+}
+
+div.width10 {
+	width:10%;
+}
+
+div.width11 {
+	width:11%;
+}
+
+div.width12 {
+	width:12%;
+}
+
+div.width14 {
+	width:14%;
+}
+
+div.width15 {
+	width:15%;
+}
+
+div.width16 {
+	width:16%;
+}
+
+div.width18 {
+	width:18%;
+}
+
+div.width19 {
+	width:19%;
+}
+
+div.width20 {
+	width:20%;
+}
+div.width22 {
+	width:22%;
+}
+
+div.width23 {
+	width:23%;
+}
+
+div.width24 {
+	width:24%;
+}
+
+div.width25 {
+	width:25%;
+}
+
+div.width26 {
+	width:26%;
+}
+
+div.width28 {
+	width:28%;
+}
+
+div.width30 {
+	width:30%;
+}
+
+div.width32 {
+	width:32%;
+}
+
+div.width34 {
+	width:34%;
+}
+
+div.width35 {
+	width:35%;
+}
+
+div.width36 {
+	width:36%;
+}
+
+div.width38 {
+	width:38%;
+}
+
+div.width40 {
+	width:40%;
+}
+
+div.width41 {
+	width:41%;
+}
+
+div.width42 {
+	width:42%;
+}
+
+div.width44 {
+	width:44%;
+}
+
+div.width45 {
+	width:45%;
+}
+
+div.width46 {
+	width:46%;
+}
+
+div.width48 {
+	width:48%;
+}
+
+div.width50 {
+	width:50%;
+}
+
+div.width51 {
+	width:51%;
+}
+
+div.width52 {
+	width:52%;
+}
+
+div.width54 {
+	width:54%;
+}
+
+div.width55 {
+	width:55%;
+}
+
+div.width57 {
+	width:57%;
+}
+
+div.width60 {
+	width:60%;
+}
+
+div.width68 {
+	width:68%;
+}
+
+div.width70 {
+	width:70%;
+}
+
+div.width75 {
+	width:75%;
+}
+
+div.width80 {
+	width:80%;
+}
+
+div.width85 {
+	width:85%;
+}
