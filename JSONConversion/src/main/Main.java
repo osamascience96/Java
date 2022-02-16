@@ -12,8 +12,9 @@ public class Main {
 		String sample2 = path.concat("/src/main/sample2.json");
 		String sample3 = path.concat("/src/main/sample3.json");
 		String sample4 = path.concat("/src/main/sample4.json");
+		String sample5 = path.concat("/src/main/sample5.json");
 		
-		String json = new Reader().GetJSONData(sample1);
+		String json = new Reader().GetJSONData(sample5);
 		
 		Conversion.ConverttoJavax(json);
 	}

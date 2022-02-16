@@ -14,10 +14,8 @@ public class Conversion {
 		try {
 			// set received json to jsonelement
 			jsonElement = Jankson.builder().build().loadElement(ReceivedJSONString);
-			// set the object value from the travered jankson jsonelement
-			Object finalObject = Traverse.DoTraverse(jsonElement);
-			// set the final object to the jsonvalue
-			JsonValue jsonValue = Json.createValue(finalObject.toString());
+			// Set the Jsonvalue by traversing
+			JsonValue jsonValue = Traverse.DoTraverse(jsonElement);
 			System.out.println(jsonValue);
 		} catch (SyntaxError e) {
 			// TODO Auto-generated catch block
