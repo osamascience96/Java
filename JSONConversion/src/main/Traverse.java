@@ -3,25 +3,15 @@ package main;
 import java.util.Set;
 import javax.json.Json;
 import javax.json.JsonArrayBuilder;
-import javax.json.JsonNumber;
 import javax.json.JsonObjectBuilder;
-import javax.json.JsonString;
 import javax.json.JsonValue;
 import blue.endless.jankson.JsonArray;
 import blue.endless.jankson.JsonElement;
+import blue.endless.jankson.JsonNull;
 import blue.endless.jankson.JsonObject;
 import blue.endless.jankson.JsonPrimitive;
 
 public class Traverse {
-	private static String JanksonObjectClassName = "blue.endless.jankson.JsonObject";
-	private static String JanksonArrayClassName = "blue.endless.jankson.JsonArray";
-	private static String JanksonNullClassName = "blue.endless.jankson.JsonNull";
-	
-	private static String JavaxObjectClassName = "org.glassfish.json.JsonObjectBuilderImpl$JsonObjectImpl";
-	private static String JavaxArrayClassName = "org.glassfish.json.JsonArrayBuilderImpl$JsonArrayImpl";
-	
-	private static String NumberType = "org.glassfish.json.JsonNumberImpl";
-	private static String StringType = "org.glassfish.json.JsonStringImpl";
 	
 	public static JsonValue DoTraverse(JsonElement jsonElement) {
 		JsonValue jsonValue = null;
@@ -30,8 +20,7 @@ public class Traverse {
 		javax.json.JsonObject jsonObject = null;
 		
 		// get the class type of janksonElement
-		String className = jsonElement.getClass().getName();
-		if(className.compareTo(JanksonArrayClassName) == 0) {
+		if(jsonElement instanceof JsonArray) {
 			// init the JanksonArray
 			JsonArray jnkArray = (JsonArray) jsonElement;			
 			JsonArrayBuilder jsonArrayBuilder = Json.createArrayBuilder();
@@ -39,33 +28,13 @@ public class Traverse {
 			// iterate through jankson array
 			for(JsonElement jsonelem: jnkArray) {
 				JsonValue tempJsonVal = DoTraverse(jsonelem);
-				if(tempJsonVal != null) {
-					String jsonValClassName = tempJsonVal.getClass().getName();
-					
-					if(jsonValClassName.compareTo(JavaxObjectClassName) == 0) {
-						javax.json.JsonObject jsonxOb = (javax.json.JsonObject) tempJsonVal;
-						jsonArrayBuilder.add(jsonxOb);
-					}else if(jsonValClassName.compareTo(JavaxArrayClassName) == 0) {
-						javax.json.JsonArray jsonxArr = (javax.json.JsonArray) tempJsonVal;
-						jsonArrayBuilder.add(jsonxArr);
-					}else {
-						if(jsonValClassName.contains(NumberType)) {
-							JsonNumber jsonNumber = (JsonNumber) tempJsonVal;
-							jsonArrayBuilder.add(jsonNumber);
-						}else if(jsonValClassName.contains(StringType)) {
-							JsonString jsonString = (JsonString) tempJsonVal;
-							jsonArrayBuilder.add(jsonString);
-						}
-					}
-				}else {
-					jsonArrayBuilder.add("null");
-				}
+				jsonArrayBuilder.add(tempJsonVal);
 			}
 			
 			jsonArray = jsonArrayBuilder.build();
 			return jsonArray;
 		}
-		else if(className.compareTo(JanksonObjectClassName) == 0) {
+		else if(jsonElement instanceof JsonObject) {
 			// init the JanksonObject
 			JsonObject jnkObject = (JsonObject) jsonElement;
 			// init the empty jsonObjectBuilder
@@ -74,36 +43,19 @@ public class Traverse {
 			Set<String> keySet = jnkObject.keySet();
 			for(String key: keySet) {
 				JsonElement tempJnkElem = jnkObject.get(key);
-				className = tempJnkElem.getClass().getName();
 				
-				if(className.compareTo(JanksonArrayClassName) != 0 && className.compareTo(JanksonObjectClassName) != 0) {
+				if(!(tempJnkElem instanceof JsonArray) && !(tempJnkElem instanceof JsonObject)) {
 					// add primitive type to the jsonValue
-					if(tempJnkElem != null) {
+					if(!(tempJnkElem instanceof JsonNull)) {
 						JsonPrimitive jsonPrimitive = (JsonPrimitive) tempJnkElem;
 						JsonValue jsval = Helper.GetPrimitiveData(jsonPrimitive);
-						className = jsval.getClass().getName();
-						
-						if(className.contains(NumberType)) {
-							JsonNumber jsonNumber = (JsonNumber) jsval;
-							jsonObjectBuilder.add(key, jsonNumber);
-						}else if(className.contains(StringType)) {
-							JsonString jsonString = (JsonString) jsval;
-							jsonObjectBuilder.add(key, jsonString);
-						}
+						jsonObjectBuilder.add(key, jsval);
 					}else {
-						jsonObjectBuilder.add(key, "null");
+						jsonObjectBuilder.add(key, JsonValue.NULL);
 					}
 				}else {
 					JsonValue jsVal = DoTraverse(tempJnkElem);
-					String jsonValClassName = jsVal.getClass().getName();
-					
-					if(jsonValClassName.compareTo(JavaxArrayClassName) == 0) {
-						javax.json.JsonArray jsonArr = (javax.json.JsonArray) jsVal;
-						jsonObjectBuilder.add(key, jsonArr);
-					}else {
-						javax.json.JsonObject jsonOb = (javax.json.JsonObject) jsVal;
-						jsonObjectBuilder.add(key, jsonOb);
-					}
+					jsonObjectBuilder.add(key, jsVal);
 				}
 			}
 			
@@ -111,9 +63,11 @@ public class Traverse {
 			return jsonObject;
 		}else {
 			// add the primitive type to the json value
-			if(className.compareTo(JanksonNullClassName) != 0) {
+			if(!(jsonElement instanceof JsonNull)) {
 				JsonPrimitive jsonPrimitive = (JsonPrimitive) jsonElement;
 				jsonValue = Helper.GetPrimitiveData(jsonPrimitive);
+			}else {
+				jsonValue = JsonValue.NULL;
 			}
 		}
 		
