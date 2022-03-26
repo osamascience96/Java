@@ -46,11 +46,10 @@ public class Login extends HttpServlet {
 				HttpSession httpSession = request.getSession();
 				httpSession.setAttribute("user_login_obj", userObj);
 				
+				ArrayList<pojo.User> users = usermodel.GetallUsers();
+				httpSession.setAttribute("users", users);
+				
 				if(userObj.getType().compareTo("admin") == 0) {
-					
-					ArrayList<pojo.User> users = usermodel.GetallUsers();
-					httpSession.setAttribute("users", users);
-					
 					redirUrl = request.getContextPath().toString() + "/dashboard.jsp";
 				}else {
 					redirUrl = request.getContextPath().toString() + "/users.jsp";
