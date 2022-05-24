@@ -64,10 +64,11 @@
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
                                         <li class="active"> <a href="<%=request.getContextPath()%>">Home</a> </li>
+                                        <li class="active"> <a href="<%=request.getContextPath()%>/signin.jsp">Sign In</a> </li>
+                                        <li class="active"> <a href="<%=request.getContextPath()%>">Sign Up</a> </li>
                                         <li> <a href="<%=request.getContextPath()%>/about.jsp">About</a> </li>
                                         <li><a href="<%=request.getContextPath()%>/brand.jsp">Brand</a></li>
                                         <li><a href="<%=request.getContextPath()%>/special.jsp">Specials</a></li>
-                                        <li><a href="<%=request.getContextPath()%>/contact.jsp">Contact Us</a></li>
                                         <li class="last">
                                             <a href="#"><img src="<%=request.getContextPath()%>/images/search_icon.png" alt="icon" /></a>
                                         </li>
