@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+      <h:head>
+      	<title>Home</title>
+      	<style>
+      		.error{
+      			color:red;
+      			list-style-type: none;
+      		}
+      	</style>
+      </h:head>
+      
+      <h:form>
+      	<h:outputLabel for="firstname" value="Enter First Name" />
+      	<h:inputText id="firstname" value="#{user.firstName}" />
+      	<br/>
+      	<h:outputLabel for="lastname" value="Enter Last Name*" />
+      	<h:inputText id="lastname" value="#{user.lastName}" required="true" requiredMessage="Your Last Name is Mandatory" />
+      	<h:messages for="lastname" styleClass="error"/>
+      	<br />
+      	<h:outputLabel value="Enter Email Address*" for="email" />
+      	<h:inputText value="#{user.email}" id="email" required="true" requiredMessage="Email is Required" />
+      	<h:messages for="email" styleClass="error" />
+      	<br/>
+      	<h:commandButton action="response" value="Submit" />
+      </h:form>
+   
+</html>

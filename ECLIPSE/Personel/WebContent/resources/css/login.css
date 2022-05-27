@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+
+.container{
+	margin-top: 100px!important;
+}
+
+.error{
+	color: red;
+	list-style-type: none;
+}
+
+.confirmation_message{
+	list-style-type: none;
+	color: blue;
+	text-align: center;
+}

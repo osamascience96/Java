@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+      	<h:head>  
+			<title>User Details</title>  
+		</h:head>  
+		<h:body>  
+			<h2><h:outputText value="Hello #{user.name}"/></h2>  
+			<h4><h:outputText value="You have Registered with us Successfully, Your Details are The Following."/></h4>  
+			<table>  
+				<tr>  
+					<td><b>Email: </b></td>  
+					<td><h:outputText value="#{user.email}"/><br/></td>  
+				</tr>  
+				<tr>  
+					<td><b>Password:</b></td>  
+					<td><h:outputText value="#{user.password}"/><br/></td>  
+				</tr>  
+				<tr>  
+					<td><b>Gender:</b></td>  
+					<td><h:outputText value="#{user.gender}"/><br/></td>  
+				</tr>  
+				<tr>  
+					<td><b>Address: </b></td>  
+					<td><h:outputText value="#{user.address}"/></td>  
+				</tr>  
+			</table>  
+		</h:body>
+   
+</html>

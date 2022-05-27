@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  background-color:#000;
+  color:#333;
+  font: normal 14px "Open Sans", sans-serif;
+  margin:0;
+}
+
+h1,h2,h3,p,li {
+  text-align:left;	
+}
+
+a {
+  background-color:inherit;
+  color:#333;
+  text-decoration:none; 
+}
+
+a:hover {
+  text-decoration:underline; 
+}	
+
+blockquote {
+font: italic 18px "Times New Roman",serif;
+width: 70%;
+margin: 5px auto;
+padding: 10px 50px;
+position: relative;
+color: #690;
+}
+	
+
+blockquote:before {
+display: block;
+content: "\201c";
+font: bold 120px "Times New Roman", serif;
+position: absolute;
+left: -20px;
+top: -10px;
+color: #690;
+}
+
+
+
+#pseudo-wrap1 {
+background: #80bc00;
+background: -moz-linear-gradient(top,  #80bc00 1%, #8fc800 78%);
+background: -webkit-linear-gradient(top,  #80bc00 1%,#8fc800 78%);
+background: linear-gradient(to bottom,  #80bc00 1%,#8fc800 78%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80bc00', endColorstr='#8fc800',GradientType=0 );
+height: 195px;
+margin:0;
+width:100%;
+z-index:-100;
+position:absolute;
+top:15px; left:0; right:0;
+}
+
+#pseudo-wrap2 {
+background: #88b503;
+background: -moz-linear-gradient(top,  #88b503 0%, #000000 98%);
+background: -webkit-linear-gradient(top,  #88b503 0%,#000000 98%);
+background: linear-gradient(to bottom,  #88b503 0%,#000000 98%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88b503', endColorstr='#000000',GradientType=0 );
+height: 190px;
+margin:0;
+width:100%;
+z-index:-100;
+position:absolute;
+top:211px; left:0; right:0;
+}
+
+#wrap {
+  width:80%;
+  background-color:#fff;
+  color:inherit;
+  padding:0;
+  margin:30px auto 15px auto; 
+}
+
+#header {
+  background: #7fb50c;
+  background: -moz-linear-gradient(top,  #7fb50c 0%, #61a810 50%, #4ea800 51%, #568e07 100%);
+  background: -webkit-linear-gradient(top,  #7fb50c 0%,#61a810 50%,#4ea800 51%,#568e07 100%);
+  background: linear-gradient(to bottom,  #7fb50c 0%,#61a810 50%,#4ea800 51%,#568e07 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fb50c', endColorstr='#568e07',GradientType=0 );
+  color:#fff;
+  height:200px;
+  -webkit-box-shadow: 0px 40px 20px -15px #C4D9A3;
+  -moz-box-shadow: 0px 40px 20px -15px #c4d9a3;
+  box-shadow: 0px 40px 20px -15px #c4d9a3;
+  border:10px solid #fff;
+  border-bottom:1px solid #fff;
+}
+
+#header h1 {	
+  text-align:center;
+  padding:0;
+  margin:80px auto 0 auto; 
+}
+
+#header a
+{	background-color:inherit;
+	color:#fff;
+	text-decoration:none; }
+	
+#header p
+{	text-align:center;
+	margin:0 auto; }
+
+nav {
+  text-align:center;
+  margin:15px auto;
+}
+	
+ul#menu {
+    list-style-type: none;
+    margin: 0 auto;
+    display: table;
+    padding: 0;
+    overflow: hidden;
+    width:50%;
+
+    }
+
+ul#menu li  
+ { 	display: table-cell;
+    text-align:center;  }
+   
+ul#menu li a {
+    background-color:inherit;
+    color: #000;
+    /*display:block;*/
+    padding:10px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:0 1px;
+}
+
+ul#menu li a:hover,ul#menu li a.current
+{	background-color:#fff;
+	color:#000;	}
+	
+/* Content */
+#content
+{	text-align:left;
+	width:90%;
+	padding:0 25px 10px 25px;
+	margin:0 auto;	}
+	
+#content h2
+{	
+	padding:0;
+	margin:0 auto; }	
+
+#content h3
+{	background-color:inherit;
+	color:#690;
+	font:bold 12pt Arial,sans-serif;	
+	padding:0;	}
+
+#content span.author
+{	font:normal 8pt Arial,Helvetica,sans-serif;
+	background-color:inherit;
+	color:#666;	}
+
+#content span.author a
+{	background-color:inherit;
+	color:#999;
+	text-decoration:none;
+	padding:0 3px; }
+
+#content span.author a:hover
+{	background-color:#690;
+	color:#fff;	}
+
+#content p a
+{	background-color:inherit;
+	color:#690;
+	text-decoration:underline;	} 	
+	
+#content p
+{	text-align:justify;
+	line-height:24px; }
+
+#content p.center { text-align: center; }
+	
+#content li
+{	line-height:24px;	}
+
+#content li a
+{	background-color:inherit;
+	color:#690;
+	text-decoration:none;	}
+
+#content li a:hover
+{	text-decoration:underline; }
+
+#content ul {
+  list-style:none;
+  padding:0;
+}
+	
+#content ul li
+{	list-style-position:inside;
+    text-indent: 0px;
+	padding-left:20px;
+	margin:0; }	
+	
+#content ul li:before {
+  content: "\27a1 \00a0 \00a0";
+  background-color:inherit;
+  color:#690;
+  font-size:16px;
+}
+
+#content .post
+{	padding:0 0 20px 0;
+	margin:auto;	}
+
+#content img.photo
+{
+   display: block;
+   height:480x;
+   width: 720px;
+   margin-left: auto;
+   margin-right: auto;}
+
+/* Footer */	
+#footer {
+  background: #7fb50c;
+  background: -moz-linear-gradient(top,  #7fb50c 0%, #61a810 50%, #4ea800 51%, #568e07 100%);
+  background: -webkit-linear-gradient(top,  #7fb50c 0%,#61a810 50%,#4ea800 51%,#568e07 100%);
+  background: linear-gradient(to bottom,  #7fb50c 0%,#61a810 50%,#4ea800 51%,#568e07 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fb50c', endColorstr='#568e07',GradientType=0 );
+  color:#fff;
+  height:40px;
+  text-align:center;
+  font-size:12px;
+  padding:0;
+  margin:0 auto;	
+  border:10px solid #fff;
+}
+
+#footer a
+{	background-color:inherit;
+	color:#fff;	
+	text-decoration:none;	}
+	
+#footer .notice
+{	background-color:inherit;
+	color: #eee;
+	padding:0;
+  line-height:40px;
+}
+
+/* Attribution: Under Creative Commons, Attribution should not be removed or hidden */
+#attribution {	
+  background-color:inherit;
+  color:#568e07;
+  text-align:center;
+  font-size:11px;
+  padding:5px 0;
+  margin:0 auto;	
+}
+
+#attribution a
+{	background-color:inherit;
+	color:#568e07;
+	text-decoration:none;	}
+	
+#attribution a:hover
+{	color:#999;	}
+
+/* Responsive Styles */
+
+#show-menu {display: none;}
+.responsive { text-align:left; font-weight:bold; font-size:18px; font-style:underline; padding: 0; display:none; margin-left:20px;}
+
+@media screen and (max-width : 700px){
+
+body { font-size:12px; }
+blockquote { font-size:16px; }
+blockquote:before { font-size:80px;}
+#footer { font-size: 11px; }
+#attribution { font-size: 10px; }
+
+ul#menu {display:none;}
+.responsive { display:block;}
+#show-menu:checked ~ ul#menu {display: block; position: absolute;  width:50%; margin:1% 0 0 -8%; overflow:visible; z-index:100;}
+ul#menu li { display: block; text-align:left; margin:0 0 0 20%;}
+ul#menu li a { display: block; background-color:#fff;}
+ul#menu li a:hover { background-color:#690; color:#fff;}
+ul#menu li a.current, ul#menu li a.active:hover {    background-color:#eee;  color: #000;}
+

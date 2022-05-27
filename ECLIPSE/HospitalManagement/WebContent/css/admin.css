@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+a > img{
+	border-radius: 5px;
+}
+
+a{
+	margin: 10px;
+}
+
+.table{
+	margin-top: 10px;
+	width: 100%!important;
+}
+
+#doctors_table{
+	max-height: 500px!important;
+	overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+#system_patients_table{
+	max-height: 300px!important;
+	overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+#annonymous_patients_table{
+	max-height: 300px!important;
+	overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+#appointment_table{
+	max-height: 300px!important;
+	overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+td > img{
+	border-radius: 5px;
+}

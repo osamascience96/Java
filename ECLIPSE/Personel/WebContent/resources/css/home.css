@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+
+*, body{
+	background: black!important;
+}
+
+.container-fluid{
+	margin-top: 150px!important;
+}
+
+#button-login{
+	margin-left: 550px!important;
+}
+
+h1{
+	color: white!important;
+}
+
+#choose_lang{
+	color: white;
+	margin: auto!important;
+}

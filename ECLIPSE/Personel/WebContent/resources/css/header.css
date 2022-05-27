@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+
+.navigation{
+	width: 100%;
+	height: 60px;
+	background: silver;
+	color: white;
+}
+
+.navigation > img{
+	margin-top: 5px;
+	margin-left: 10px;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#logout-btn{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}

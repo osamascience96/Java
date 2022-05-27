@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- ===========================================================================
+admin_addemployee.xhtml - Personnel Management System / Mitarbeiterverwaltung               
+============================================================================ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+      <ui:include src="/includes/header.xhtml"></ui:include>
+      <f:view locale="#{language.localeValue}">
+      <h:head>
+      	<title>#{msg['add_personel_title']}</title>
+      	<h:outputStylesheet library="css" name="admin.css"></h:outputStylesheet>
+      </h:head>
+      <h:body>
+      	<ui:include src="/includes/navigation.xhtml">
+      		<ui:param name="login_value" value="true"></ui:param>
+      	</ui:include>
+      	<div class="container">
+	      	<br />
+      		<h6 class="database_message">#{employee.message}</h6>
+      		<h6 class="database_message_dept">#{department.message}</h6>
+      		<h6 class="database_message_job">#{job.message}</h6>
+      		
+      		<!-- panels to add the employee -->
+      		<br />
+	      	<div id="add_personnel" data-role="panel" data-title-caption="Add Personnel" data-collapsible="true">
+	      		<h:form>
+	      			<div class="form-group">
+	      				<label for="first_name">#{msg['enter_fn']}</label>
+	      				<h:inputText id="first_name" styleClass="metro-input" value="#{employee.firstName}" required="true" requiredMessage="#{msg['req_fn']}" />
+	      				<h:messages for="first_name" styleClass="error_message"/>
+	      			</div>
+	      			<div class="form-group">
+	      				<label for="last_name">#{msg['enter_ln']}</label>
+	      				<h:inputText id="last_name" styleClass="metro-input" value="#{employee.lastName}" required="true" requiredMessage="#{msg['req_ln']}" />
+	      				<h:messages for="last_name" styleClass="error_message"/>
+	      			</div>
+	      			<div class="form-group">
+	      				<label for="date_of_birth">#{msg['table_col_dob']}</label>
+	      				<h:inputText id="date_of_birth" styleClass="metro-input" value="#{employee.dateOfBirth}" required="true" requiredMessage="#{msg['req_dob']}" />
+	      				<h:messages for="date_of_birth" styleClass="error_message"/>
+	      			</div>
+	      			<div class="form-group">
+	      				<label for="phone">#{msg['enter_phone']}</label>
+	      				<h:inputText id="phone" styleClass="metro-input" value="#{employee.phone}" required="true" requiredMessage="#{msg['req_phone']}" />
+	      				<h:messages for="phone" styleClass="error_message"/>
+	      			</div>
+	      			<div class="form-group">
+	      				<label for="email">#{msg['enter_email']}</label>
+	      				<h:inputText id="email" styleClass="metro-input" value="#{employee.email}" required="true" requiredMessage="#{msg['req_email']}" />
+	      				<h:message for="email" styleClass="error_message"/>
+	      			</div>
+	      			<div class="form-group">
+	      				<label for="password">#{msg['enter_pass']}</label>
+	      				<h:inputSecret id="password" styleClass="metro-input" value="#{employee.password}" required="true" requiredMessage="#{msg['req_pass']}" />
+	      				<h:message for="password" styleClass="error_message"/>
+	      			</div>
+	      			<div class="form-group">
+	      				<label>#{msg['enter_sal']}</label>
+	      				<h:inputText styleClass="metro-input" value="#{employee.salary}" required="true" requiredMessage="#{msg['req_sal']}" validatorMessage="#{msg['sal_validator']}">
+	      					<f:validateDoubleRange minimum="100" />
+	      				</h:inputText>
+	      			</div>
+	      			<div class="form-group">
+	      				<label>Select Role</label>
+	      				<h:selectOneMenu styleClass="metro-input" id="user_role" value="${employee.auth}">
+	      					<f:selectItem itemValue="manager" itemLabel="#{msg['manager_label']}"/>
+	      					<f:selectItem itemValue="employee" itemLabel="#{msg['employee_label']}"/>
+	      				</h:selectOneMenu>
+	      			</div>
+	      			<div class="form-group">
+	      				<label>#{msg['selct_dept_label']}</label>
+	      				<h:selectOneMenu styleClass="metro-input" id="deparment_select" value="${employee.departmentId}">
+	      					<f:selectItems var="dept" value="#{user.departmentArrayList}" itemLabel="#{dept.name}" itemValue="#{dept.id}" />
+	      				</h:selectOneMenu>
+	      			</div>
+	      			<div class="form-group">
+	      				<label>#{msg['selct_job_label']}</label>
+	      				<h:selectOneMenu styleClass="metro-input" id="job_select" value="${employee.jobId}">
+	      					<f:selectItems var="j" value="#{user.jobsArrayList}" itemLabel="#{j.designation}" itemValue="#{j.id}" />
+	      				</h:selectOneMenu>
+	      			</div>
+	      			<div class="form-group">
+	      				<h:commandButton action="#{employee.addEmployee()}" value="#{msg['add_personel_title']}" class="button primary rounded" />
+	      			</div>
+	      		</h:form>
+	      	</div>
+	      	<br />
+	      	<!-- panels to add the department -->
+	      	<div id="add_department" data-role="panel" data-title-caption="#{msg['select_add_dept']}" data-collapsible="true">
+	      		<h:form>
+	      			<div class="form-group">
+	      				<label for="department_name">#{msg['enter_dept_name']}</label>
+	      				<h:inputText id="department_name" styleClass="metro-input" value="#{department.name}" required="true" requiredMessage="#{msg['req_dept_name']}" />
+	      				<h:messages for="department_name" styleClass="error_message"/>
+	      			</div>
+	      			<div class="form-group">
+	      				<label>#{msg['selct_mgr']}</label>
+	      				<h:selectOneMenu styleClass="metro-input" id="manager_select" value="${department.manager}">
+	      					<f:selectItems var="m" value="#{user.managerArrayList}" itemLabel="#{m.firstName}" itemValue="#{m.id}" />
+	      				</h:selectOneMenu>
+	      			</div>
+	      			<div class="form-group">
+	      				<label for="department_location">#{msg['location_title']}</label>
+	      				<h:inputText id="department_location" styleClass="metro-input" value="#{department.location}" required="true" requiredMessage="#{msg['location_req']}" />
+	      				<h:messages for="department_location" styleClass="error_message"/>
+	      			</div>
+	      			<div class="form-group">
+	      				<h:commandButton action="#{department.addDepartment()}" value="#{msg['select_add_dept']}" class="button info outline rounded" />
+	      			</div>
+	      		</h:form>
+	      	</div>
+	      	<br />
+	      	
+	      	<!-- panels to add the job -->
+	      	<div id="add_job" data-role="panel" data-title-caption="#{msg['add_job']}" data-collapsible="true">
+	      		<h:form>
+	      			<div class="form-group">
+	      				<label for="job_designation">#{msg['designation_label']}</label>
+	      				<h:inputText id="job_designation" styleClass="metro-input" value="#{job.designation}" required="true" requiredMessage="#{msg['req_designation']}" />
+	      				<h:messages for="job_designation" styleClass="error_message"/>
+	      			</div>
+	      			<div class="form-group">
+	      				<label for="weekly_working_hours">#{msg['enter_wwh']}</label>
+	      				<h:inputText id="weekly_working_hours" styleClass="metro-input" value="#{job.working_weekly_hours}" required="true" requiredMessage="#{msg['wwh_required']}" />
+	      				<h:messages for="weekly_working_hours" styleClass="error_message"/>
+	      			</div>
+	      			<div class="form-group">
+	      				<h:commandButton action="#{job.addJob()}" value="#{msg['add_job']}" class="button warning outline rounded" />
+	      			</div>
+	      		</h:form>
+	      	</div>
+	      	<h:link id="redirect_btn" value="#{msg['go_back_home']}" class="button outline dark rounded w-100" style="margin:auto;" outcome="admin" />
+	      	 <br />
+      	</div>
+      	<br />
+      </h:body>
+      </f:view>
+      <ui:include src="/includes/metrojs.xhtml"></ui:include>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Form</title>
+<style type="text/css">
+	html, body{
+		margin: 0;
+		padding: 0;
+		background-color: silver;
+	}
+	form{
+		background-color: white;
+		width: 50%;
+		padding: 100px;
+		margin: auto;
+		overflow: hidden;
+		position: relative;
+		top: 50px;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+	input {
+		width: 100%;
+		margin: 10px;
+		padding: 10px;
+		border: 2px solid black;
+		border-radius: 10px;
+		font-weight: bold;
+	}
+	
+	h2{
+		width: 10%;
+		margin: auto;
+		position: relative;
+		top: 20px;
+	}
+</style>
+</head>
+<body>
+	<h2>Login Form</h2>
+	<form action="login" method="POST">
+		<input type="email" name="email_input" placeholder="Enter Email Address" required>
+		<br>
+		<input type="password" name="password_input" placeholder="Enter Password" required>
+		<br>
+		<input type="submit" value="Login">
+	</form>
+</body>
+</html>

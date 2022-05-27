@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+      
+      <h:head>
+      	<title>User Registration Form</title>
+      </h:head>
+      
+      <h:body>
+      	<h:form id="form">
+      		<table>
+      			<!-- user name -->
+      			<tr>
+      				<td><h:outputLabel for="username">User Name</h:outputLabel></td>
+      				<td><h:inputText id="username" required="true" value="#{user.name}"></h:inputText></td>
+      			</tr>
+      			<tr>
+      				<td><h:outputLabel for="email">Email</h:outputLabel></td>
+      				<td><h:inputText id="email" required="true" value="#{user.email}"></h:inputText></td>
+      			</tr>
+      			<tr>
+      				<td><h:outputLabel for="password">Password</h:outputLabel></td>
+      				<td><h:inputSecret id="password" required="true" value="#{user.password}"></h:inputSecret></td>
+      			</tr>
+      			<tr>
+      				<td><h:outputLabel for="gender">Gender</h:outputLabel></td>
+      				<td><h:selectOneRadio id="gender" required="true" value="#{user.gender}">
+      					<f:selectItem itemValue="Male" itemLabel="Male" />
+      					<f:selectItem itemLabel="Female" itemValue="Female"/>
+      				</h:selectOneRadio></td>
+      			</tr>
+      			<tr>
+	      			<td><h:outputLabel for="address">Address</h:outputLabel></td>  
+					<td><h:inputTextarea id="address" cols="50" rows="5" required="true" value="#{user.address}"/></td>
+				</tr>  
+      		</table>
+      		<h:commandButton value="Submit" action="response.xhtml"></h:commandButton>  
+      	</h:form>
+      </h:body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Girls</title>
+<style type="text/css">
+	html, body{
+		font-family: sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #382F32;
+	}
+	h2{
+		background-color: #FBC4D7;
+		color: white;
+		width: 50%;
+		padding: 10px;
+		text-align: center;
+		margin: auto;
+		position: relative;
+		top: 10px;
+		border-radius: 10px;
+	}
+	form {
+		background-color: #E14666;
+		width: 50%;
+		margin: auto;
+		position: relative;
+		top: 50px;
+		padding: 10px;
+		overflow: hidden;
+		border: 2px solid white;
+		border-radius: 3px;
+	}
+	form:hover{
+		border: 2px solid #E52EEE;
+		transition: 0.1s ease-in-out;
+	}
+	input{
+		margin: 10px;
+		width: 80%;
+		position: relative;
+		left: 40px;
+		padding: 10px;
+		font-weight: bold;
+	}
+	input:hover{
+		border: 2px dashed #DB1258;
+		border-radius: 5px;
+		transition: 0.1s ease-in;
+		cursor: pointer;
+	}
+	.submit-btn{
+		border: 3px solid white;
+		background-color: silver;
+	}
+	
+	.submit-btn:hover {
+		background-color: #B00BEE;
+		border-style: solid;
+		border-color: #E52EEE;
+		color: white;
+		transition: 0.1s ease-in-out;
+	}
+</style>
+</head>
+<body>
+	<!-- heading for the website -->
+	<h2>My most favourate girls</h2>
+	<!-- form to login user -->
+	<form action="login" method="POST">
+		<input type="text" name="username" placeholder="Enter Username" required><br>
+		<input type="password" name="password" placeholder="Enter Password" required><br>
+		<input class="submit-btn" type="submit" value="Come in Baby">
+	</form>	
+</body>
+</html>

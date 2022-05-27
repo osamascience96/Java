@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- ===========================================================================
+login.xhtml - Personnel Management System / Mitarbeiterverwaltung               
+============================================================================ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+      <ui:include src="/includes/header.xhtml"></ui:include>
+      <f:view locale="#{language.localeValue}">
+      <h:head>
+      	<title>#{msg['login_btn']}</title>
+      	<h:outputStylesheet library="css" name="login.css"></h:outputStylesheet>
+      </h:head>
+      
+      <h:body>
+	      	<ui:include src="/includes/navigation.xhtml"></ui:include>
+	      	<div class="container">
+	      		<h6 class="confirmation_message">#{user.message}</h6>
+	      		<h:form>
+		      		<div class="form-group">	
+		   				<label for="credentials">#{msg['enter_cred']}</label>
+		   				<h:inputText id="credentials" class="metro-input" value="#{user.username}" required="true" requiredMessage="Credentials username or email provided by the HR is required"/>
+		   				<small class="text-muted">#{msg['email_small']}</small>
+		   				<h:messages for="credentials" styleClass="error"/>
+		   			</div>
+		   			<div class="form-group">	
+		   				<label for="password">#{msg['enter_pass']}</label>
+		   				<h:inputSecret id="password" class="metro-input" value="#{user.password}" required="true" requiredMessage="Password is required" />
+		   				<h:messages for="password" styleClass="error"/>
+		   			</div>
+		   			<div class="form-group">
+		   				<h:commandButton action="#{user.login()}" class="button outline primary rounded w-100" value="#{msg['login_btn']}" />
+		   			</div>
+	      		</h:form>
+	      	</div>
+      </h:body>
+      </f:view>
+      
+      <ui:include src="/includes/metrojs.xhtml"></ui:include>
+</html>

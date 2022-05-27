@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+      <h:head>
+      	<title>JSF Tutorial</title>
+      </h:head>
+      
+      <h:body>
+      	<h2>Multilingual Language</h2>
+      	
+      	<h:form>
+      		<h3><h:outputLabel value="#{msg['greeting']}" /></h3>
+      		
+      		<h:panelGrid columns="2">
+      			Language:
+      			<h:selectOneMenu value="#{users.locale}" onchange="submit()" valueChangeListener="#{users.localChanged}">
+      				<f:selectItems value="#{users.GetCountries()}"/>
+      			</h:selectOneMenu>	
+      		</h:panelGrid>
+      		<h:link value="Another Page" outcome="another.xhtml"/>
+      	</h:form>
+      </h:body>
+   
+</html>

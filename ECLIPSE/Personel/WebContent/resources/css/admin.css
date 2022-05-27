@@ -1,0 +1,55 @@
+@charset "ISO-8859-1";
+
+.message{
+	text-align: center;
+	color: blue;
+}
+
+#add_personnel{
+	margin: 10px;
+}
+
+.error_message{
+	color: red;
+	font-weight: bold;
+	list-style-type: none;
+}
+
+#redirect_btn{
+	margin-left: 100px;
+	margin-top: 30px;
+	width: 80%;
+}
+
+.database_message{
+	color: blue;
+	font-weight: bold;
+	list-style-type: none;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.database_message_dept{
+	color: green;
+	font-weight: bold;
+	list-style-type: none;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.database_message_job{
+	color: purple;
+	font-weight: bold;
+	list-style-type: none;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#logout_admin_btn{
+	width: 90%;
+}
+
+#table_property{
+	overflow-x: scroll;
+	width: 90%!important;
+}

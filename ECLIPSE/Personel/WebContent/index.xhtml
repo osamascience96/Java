@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- ===========================================================================
+index.xhtml - Personnel Management System / Mitarbeiterverwaltung               
+============================================================================ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+      <ui:include src="/includes/header.xhtml"></ui:include>
+      
+      <h:head>
+      	<title>Home</title>
+      	<h:outputStylesheet library="css" name="home.css"></h:outputStylesheet>
+      </h:head>
+      
+      <h:body>
+      	<div class="container-fluid">
+      		<f:view locale="#{language.localeValue}">
+	      		<h1 class="text-center">Personnel Managemet System</h1>
+	      		<!-- id=id for a component; value=angezeigter Wert; outcome=logical outcome for navigation; class  -->
+		      	<h:link id="button-login" value="#{msg['login_label']}" outcome="login" class="button primary outline rounded large" /> 
+	      	</f:view>
+	      	<div data-role="cube"></div>
+      	</div>
+      	
+      	  <h:form id="choose_lang">
+		      <!-- Choose Language -->
+		      <h:panelGrid columns="2">
+		 			Language: 
+		 			<h:selectOneMenu style="color: white;" value="#{language.locale}" onchange="submit()" valueChangeListener="#{language.localChanged}">
+		 				<f:selectItems value="#{language.GetCountries()}"/>
+		 			</h:selectOneMenu>	
+		      </h:panelGrid>
+	      </h:form>
+      </h:body>
+      <ui:include src="/includes/metrojs.xhtml"></ui:include>
+   
+</html>

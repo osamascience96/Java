@@ -1,0 +1,14 @@
+{
+	"EventRun": [
+		[ "revoked", "canceled", "closed" ],
+		[ "completed" ],
+		[ "preliminary", "proposed", "planned", "null" ],
+		[ "confirmed", "active" ],
+	],
+	"EventUnit": [
+		[ "revoked", "canceled", "closed" ],
+		[ "completed" ],
+		[ "preliminary", "proposed", "planned", "null" ],
+		[ "confirmed", "active" ],
+	],
+}

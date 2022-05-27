@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+      <h:form>
+      	<h:outputLabel value="Enter First Name" />
+      	<h:inputText  value="#{studentTwo.firstName}" />
+      	<br /> <br />
+      	<h:outputLabel value="Enter Last Name" />
+      	<h:inputText  value="#{studentTwo.lastName}" />
+      	<br/>
+      	<h:outputLabel value="Favorite Programming Language" />
+      	<h:selectOneRadio value="#{studentTwo.favLanguage}">
+      		<f:selectItem itemValue="Java" itemLabel="Java"/>
+      		<f:selectItem itemValue="C++" itemLabel="C++"/>
+      		<f:selectItem itemValue="Python" itemLabel="Python"/>
+      		<f:selectItem itemValue="Django" itemLabel="Django"/>
+      	</h:selectOneRadio>
+      	<h:commandButton action="response" value="Submit" />
+      </h:form>
+</html>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- ===========================================================================
+view_dept.xhtml - Personnel Management System / Mitarbeiterverwaltung               
+============================================================================ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+      <ui:include src="/includes/header.xhtml"></ui:include>
+      <f:view locale="#{language.localeValue}">
+      <h:head>
+      	<title>#{msg['view_dept_btn']}</title>
+      	<h:outputStylesheet library="css" name="admin.css"></h:outputStylesheet>
+      </h:head>
+      <h:body>
+      	<ui:include src="/includes/navigation.xhtml">
+      		<ui:param name="login_value" value="true"></ui:param>
+      	</ui:include>
+      	<div class="container"> <!-- https://metroui.org.ua/icons.html -->
+      		<h1><span class="mif-codepen mif-3x fg-cyan"></span> #{user.department.name}</h1>
+   			<h4><span class="mif-user-check mif-2x fg-blue"></span> #{user.department.managername}</h4>
+   			<h6><span class="mif-location mif-3x fg-red"></span> #{user.department.location}</h6>
+      	</div>
+      </h:body>
+      </f:view>
+      <ui:include src="/includes/metrojs.xhtml"></ui:include>
+</html>

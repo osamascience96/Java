@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- ===========================================================================
+admin.xhtml - Personnel Management System / Mitarbeiterverwaltung               
+============================================================================ -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets" 
+      xmlns:h="http://java.sun.com/jsf/html" 
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+      <ui:include src="/includes/header.xhtml">
+      </ui:include>
+      <f:view locale="#{language.localeValue}">
+      <h:head>
+      	<c:if test="#{user.user_type eq 'hr_employee'}">
+	    	<title>#{msg['hr_employee_title']}</title>
+	    </c:if>
+	    <c:if test="#{user.user_type eq 'hr_manager'}">
+	    	<title>HR Manager</title>
+	    </c:if>
+	    <br />
+      	<h:outputStylesheet library="css" name="admin.css"></h:outputStylesheet>
+      </h:head>
+      <h:body>
+      	<ui:include src="/includes/navigation.xhtml">
+      		<ui:param name="login_value" value="true"></ui:param>
+      	</ui:include>
+      	<br/>
+      	<div class="container-fluid">
+	      	<!-- panels for all the Employees and also with them to delete -->
+	      	<div id="personnel_data_table" data-role="panel" data-title-caption="#{msg['all_personels']}" data-collapsible="true">
+	      								<!-- onchange = executes a JavaScript when a user changes the selected option of <select> element -->
+	      		<h:selectOneMenu id="select_search_type" class="metro-input" onchange="select_search_type_function()">
+	      					<!-- itemValue = value to be returned to the server if this option is selected by the user; itemLabel = displayed Label -->
+	      			<f:selectItem itemValue="id" itemLabel="#{msg['search_id']}" />
+	      			<f:selectItem itemValue="first_name" itemLabel="#{msg['search_firstname']}" />
+	      			<f:selectItem itemValue="last_name" itemLabel="#{msg['search_lastname']}" />
+	      			<f:selectItem itemValue="date_of_birth" itemLabel="#{msg['search_dob']}" />
+	      			<f:selectItem itemValue="email" itemLabel="#{msg['search_email']}" />
+	      			<f:selectItem itemValue="phone" itemLabel="#{msg['search_phone']}"/>
+	      			<c:if test="#{user.user_type eq 'hr_manager'}">
+	      				<f:selectItem itemValue="salary" itemLabel="#{msg['search_salary']}"/>
+	      			</c:if>
+      				<f:selectItem itemValue="weekly_working_hours" itemLabel="#{msg['search_week_work_hrs']}" />
+	      		</h:selectOneMenu>
+	      		<br/>	    <!-- onkeyup = führt eine JavaScript-Funktion aus, wenn ein User etwas eingibt -->
+			      	<h:inputText id="search_input_by_id" class="metro-input" onkeyup="search_data_by_id()" />
+			      	<h:inputText id="search_input_by_first_name" class="metro-input" onkeyup="search_data_by_firstname()" />
+			      	<h:inputText id="search_input_by_last_name" class="metro-input" onkeyup="search_data_by_lastname()" />
+			      	<h:inputText id="search_input_by_dateofbirth" class="metro-input" onkeyup="search_data_by_dateofbirth()" />
+			      	<h:inputText id="search_input_by_email" class="metro-input" onkeyup="search_data_by_email()" />
+			      	<h:inputText id="search_input_by_phone" class="metro-input" onkeyup="search_data_by_phone()"/>
+			      	<c:if test="#{user.user_type eq 'hr_manager'}">
+			      		<h:inputText id="search_input_by_salary" class="metro-input" onkeyup="search_data_by_salary()" />
+			      	</c:if>
+			      	<h:inputText id="search_input_by_weeklyhrs" class="metro-input" onkeyup="search_data_by_weeklyhrs()" /> 
+		      	<br/>
+				
+		      	<table class="table table-border striped" data-role="table" data-horizontal-scroll="true" data-show-search="false">
+				    <thead>	<!-- Tabellen-Header -->  
+						<tr> <!-- tr (table-row) besitzt th & td -->
+						<!-- Alle Tabellen-Header-Namen (Spaltennamen) -->  
+							<th>#{msg['table_col_Id']}</th>      
+							<th>#{msg['table_col_firstName']}</th>
+							<th>#{msg['table_col_lastName']}</th>
+							<th>#{msg['table_col_dob']}</th>
+							<th>#{msg['table_col_Email']}</th>
+							<c:if test="#{user.user_type eq 'hr_manager'}">
+								<th>#{msg['table_col_pass']}</th>
+							</c:if>
+							<th>#{msg['table_col_phone']}</th>
+							<c:if test="#{user.user_type eq 'hr_manager'}">
+								<th>#{msg['table_col_salary']}</th>
+							</c:if>
+							<th>#{msg['table_col_wwh']}</th>
+							<th>#{msg['table_col_dept']}</th>
+							<th>#{msg['table_col_job']}</th>
+							<c:if test="#{user.user_type eq 'hr_manager'}">
+								<th>#{msg['table_col_delete']}</th>
+							</c:if>
+					    </tr>
+				    </thead>
+				    <!-- kapselt die Tabellenzeilen Körper der Tabelle -->
+					<tbody id="table_body">  
+						<!-- Iteriert über die ArrayList und fügt die Daten im HTML-Tabellenformat ein --> 
+						<ui:repeat var="personnel" value="#{user.employeeArrayList}">
+							<tr> 
+							<!-- Die Werte der Tabellen-Header (Spaltennamen) -->     
+								<td>#{personnel.id}</td>    <!-- eine Tabellen-Zelle -->
+								<td>#{personnel.firstName}</td>
+								<td>#{personnel.lastName}</td>
+								<td>#{personnel.dateOfBirth}</td>
+								<td>#{personnel.email}</td>
+								<c:if test="#{user.user_type eq 'hr_manager'}">
+									<td>#{personnel.password}</td>
+								</c:if>
+								<td>#{personnel.phone}</td>
+								<c:if test="#{user.user_type eq 'hr_manager'}">
+									<td>€ #{personnel.salary}</td>
+								</c:if>
+								<td>#{personnel.job.weeklyWorkingHours}</td>
+								<td> <!-- Die drei Buttons -->
+									<h:form>
+										<h:commandLink class="button primary rounded" action="#{user.viewDept(personnel.department.id)}" value="#{msg['view_dept_btn']}" />
+									</h:form>
+								</td>
+								<td>
+									<h:form>
+										<h:commandLink class="button secondary rounded" action="#{user.viewJob(personnel.job.id)}" value="#{msg['view_jobs_btn']}" />
+									</h:form>
+								</td>
+								<td>
+									<h:form>
+										<h:commandLink class="button alert rounded" action="#{user.deleteEmployee(personnel.id)}" value="#{msg['view_btn_delete']}" />	
+									</h:form>
+								</td>
+						    </tr>
+					    </ui:repeat>
+				    </tbody>
+			    </table>
+			    
+		    </div>
+	    </div>
+	    <h:link id="redirect_btn" value="#{msg['add_employee_btn']}" class="button outline primary rounded" outcome="admin_addemployee" /> <br />
+	    <c:if test="#{user.user_type eq 'hr_manager'}">
+	    	<h:outputScript library="js" name="search.js"></h:outputScript>
+	    </c:if>
+	    <c:if test="#{user.user_type eq 'hr_employee'}">
+	    	<h:outputScript library="js" name="searchbyweeklyhrs.js"></h:outputScript>
+	    </c:if>
+      </h:body>
+      </f:view>
+      
+      <ui:include src="/includes/metrojs.xhtml"></ui:include>
+</html>

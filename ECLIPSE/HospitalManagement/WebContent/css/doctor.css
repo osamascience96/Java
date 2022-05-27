@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+
+.card{
+	width: 18rem;
+	margin: 10px;
+}
+
+#doctor_details_container{
+	padding: 20px;
+}

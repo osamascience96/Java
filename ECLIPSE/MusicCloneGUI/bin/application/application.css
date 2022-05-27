@@ -1,0 +1,7 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+label{
+	-fx-font-family: sans-serif;
+	-fx-font-weight: bold;
+	-fx-font-size: 40px;
+}

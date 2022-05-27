@@ -1,0 +1,20 @@
+{
+	"ordered": {
+	"orderStatuses": [ "ordered", ],
+	"waitStatuses": [ "waiting", ],
+	"approvedStatus": "booked",
+	"costCenter": true,
+	"canCancel": true,
+	"autoMoveUp": true,
+		"autoMoveUpStatuses": {
+			"waiting": "ordered",
+			"approved": "ordered",
+		},
+	},
+	"enrolled": {
+		"orderStatuses": [ "enrolled", ],
+		"waitStatuses": [ "waiting", ],
+		"costCenter": true,
+		"autoMoveUp": true,
+	},
+}
