@@ -5,6 +5,7 @@
  */
 package models;
 
+import db.Confs;
 import db.Connector;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -17,7 +18,7 @@ import java.util.logging.Logger;
  *
  * @author osama
  */
-public class User {
+public class User extends Confs{
     // member variables
     public int id;
     public String firstname;
@@ -36,7 +37,7 @@ public class User {
     
     public boolean InsertUser(){
         boolean IsUserInserted = false;
-        String query = "INSERT INTO APP.users(username, firstname, lastname, email, password) VALUES (?, ?, ?, ?, ?)";
+        String query = "INSERT INTO [user].users(username, firstname, lastname, email, password) VALUES (?, ?, ?, ?, ?)".replace("[user]", User);
         
         try {
             PreparedStatement pstmt = this.connection.prepareStatement(query);
@@ -55,7 +56,7 @@ public class User {
     }
     
     public User SelectByEmailPass(){
-        String query = "SELECT * FROM APP.users WHERE email = ? AND password = ?";
+        String query = "SELECT * FROM [user].users WHERE email = ? AND password = ?".replace("[user]", User);
         
         try {
             PreparedStatement pstmt = this.connection.prepareStatement(query);
@@ -80,4 +81,62 @@ public class User {
         
         return null;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setPassword(String Password) {
+        this.Password = Password;
+    }
+
+    public String getCreatedAt() {
+        return CreatedAt;
+    }
+
+    public void setCreatedAt(String CreatedAt) {
+        this.CreatedAt = CreatedAt;
+    }
+    
+    
 }

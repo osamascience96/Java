@@ -91,7 +91,7 @@
     <script src="plugins/jquery.validate.js"></script>
     <script src="plugins/additional-methods.js"></script>
     <!-- google map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-yG6sTvv8MY_6v1h0iisWEd08ybqm_C4"></script>
     <script src="plugins/google-map/gmap.js"></script>
 
     <script src="js/script.js"></script>

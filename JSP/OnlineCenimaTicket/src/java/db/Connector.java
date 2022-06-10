@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  * @author osama
  * creating singleton class for the database connection
  */
-public class Connector{
+public class Connector extends Confs{
     // members
     private Connection connect;
     private static Connector connectionObj = null;
@@ -24,7 +24,7 @@ public class Connector{
     private Connector(){
         try {
             Class.forName("org.apache.derby.jdbc.ClientDriver");
-            this.connect = DriverManager.getConnection("jdbc:derby://localhost:1527/cenima", "root", "root");
+            this.connect = DriverManager.getConnection("jdbc:derby://localhost:1527/cenima", DbUser, DbPass);
         } catch (Exception ex) {
             Logger.getLogger(Connector.class.getName()).log(Level.SEVERE, null, ex);
         }
