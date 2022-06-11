@@ -26,6 +26,7 @@ public class Film extends Confs{
     public String name;
     public String directorName;
     public Genre genre;
+    public Show show;
     public String description;
     public String releaseDate;
     public String trailer;
@@ -75,6 +76,45 @@ public class Film extends Confs{
         
         return films;
     }
+    
+    public List<Film> SelectAllMovies(){
+        ArrayList<Film> films = new ArrayList<>();
+        
+        String query = "SELECT [schema].FILM.*, [schema].ROOM.NAME as ROOMNAME, [schema].SHOWS.SHOW_DATE as SHOWDATE, [schema].SHOWS.SHOW_TIME as SHOWTIME, [schema].GENRE.NAME AS GENRENAME FROM [schema].FILM JOIN [schema].GENRE ON [schema].GENRE.ID = [schema].FILM.GENRE_ID LEFT JOIN [schema].SHOWS ON [schema].SHOWS.FILM_ID = [schema].FILM.ID LEFT JOIN [schema].ROOM ON [schema].ROOM.ID = [schema].SHOWS.ROOM_ID".replace("[schema]", Schema);
+        
+        try {
+            PreparedStatement pstmt = this.connection.prepareStatement(query);
+            
+            ResultSet rs = pstmt.executeQuery();
+            while(rs.next()){
+                Genre genre = new Genre();
+                genre.setId(rs.getInt("GENRE_ID"));
+                genre.setName(rs.getString("GENRENAME"));
+                
+                Show show = null;
+                
+                if(rs.getString("ROOMNAME") != null){
+                    Room room = new Room();
+                    room.setName(rs.getString("ROOMNAME"));
+                    
+                    show = new Show();
+                    show.setRoom(room);
+                    show.setDate(rs.getString("SHOWDATE"));
+                    show.setTime(rs.getString("SHOWTIME"));
+                }
+                
+                
+                Film film = new Film(rs.getInt("ID"), rs.getString("NAME"), rs.getString("DIRECTOR_NAME"), genre, rs.getString("DESCRIPTION"), rs.getString("RELEASE_DATE"), rs.getString("TRAILER"), rs.getString("IMAGES"), rs.getBoolean("ISRELEASED"), rs.getString("CREATED_AT"));
+                film.setShow(show);
+                
+                films.add(film);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Film.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return films;
+    }
 
     public int getId() {
         return id;
@@ -106,6 +146,14 @@ public class Film extends Confs{
 
     public void setGenre(Genre genre) {
         this.genre = genre;
+    }
+
+    public Show getShow() {
+        return show;
+    }
+
+    public void setShow(Show show) {
+        this.show = show;
     }
 
     public String getDescription() {

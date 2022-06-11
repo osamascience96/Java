@@ -10,10 +10,9 @@
                             ========================== -->
                             <div class="footer-about">
                                 <h3 class="footer-title">About</h3>
-                                <p>Nemo enim ipsam voluptatem quia voluptas <br>
-                                    sit aspernatur aut odit aut fugit, sed quia <br>
-                                    magni dolores eos qui ratione. ed quia <br>
-                                    magni dolores</p>
+                                <p>Code Cenima is  <br>
+                                    where you see your awaited and favorite movies <br> 
+                                    in a most cenimatic ecosystem.
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -21,10 +20,10 @@
                             ========================== -->
                             <div class="footer-address">
                                 <h3 class="footer-title">Address</h3>
-                                <p>DeviserWeb 24/A,Jalalabad amborkhana amagnina, Sylhet.</p>
+                                <p>Old Cenima, Vintage Road, London</p>
                                 <p class="contact-address">
-                                    Contact us : <a href="tel:+610383666274">+61 (0) 3 8366 6274 </a> <br>
-                                    Write us : <a href="mailto:info@info.com">mail@itsnuman.com</a>
+                                    Contact us : <a href="tel:+610383666274">+11 11 11111 </a> <br>
+                                    Write us : <a href="mailto:info@info.com">example@gmail.com</a>
                                 </p>
                             </div>
                         </div>
@@ -52,7 +51,6 @@
                                 <li><a href="index.JSP">Home</a></li>
                                 <li><a href="rooms.jsp">Rooms</a></li>
                                 <li><a href="movies.jsp">Movies</a></li>
-                                <li><a href="blog.jsp">Blog</a></li>
                                 <li><a href="contact.jsp">Contact</a></li>
                             </ul>
                         </div>

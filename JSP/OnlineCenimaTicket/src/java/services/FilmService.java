@@ -44,4 +44,8 @@ public class FilmService {
     public List<Film> GetComingMovies(){
         return this.filmModel.SelectComingMovies();
     }
+    
+    public List<Film> GetAllMovies(){
+        return this.filmModel.SelectAllMovies();
+    }
 }

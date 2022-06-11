@@ -94,7 +94,6 @@
         <li><a href="index.jsp">Home</a></li>
         <li><a href="rooms.jsp">Rooms</a></li>
         <li><a href="movies.jsp">Movies</a></li>
-        <li><a href="blog.jsp">Blog</a></li>
         <li><a href="contact.jsp">Contact</a></li>
         <% if(userHeaderObj != null){%>
             <li><a href="LogoutServlet" class="btn btn-danger">Logout</a></li>

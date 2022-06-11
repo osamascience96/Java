@@ -23,7 +23,11 @@
         </div>
       </div>
       <%
-          ArrayList<Room> rooms = (ArrayList<Room>) new RoomService().GetAllRooms();
+          RoomService roomService = new RoomService();
+      %>
+      
+      <%
+          ArrayList<Room> rooms = (ArrayList<Room>) roomService.GetAllRooms();
           for(Room room : rooms){
       %>
         <div class="col-md-4">
@@ -54,7 +58,7 @@
           </div>
         </div>
         <%
-          ArrayList<Room> roomsBestPrices = (ArrayList<Room>) new RoomService().GetAllRoomsBestPrice();
+          ArrayList<Room> roomsBestPrices = (ArrayList<Room>) roomService.GetAllRoomsBestPrice();
           for(Room room : roomsBestPrices){
         %>
         <div class="col-md-4">

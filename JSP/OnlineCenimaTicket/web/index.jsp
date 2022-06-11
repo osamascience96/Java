@@ -132,7 +132,6 @@
                           <h4><%=film.getName()%></h4>
                           <span>A <strong><%=film.getDirectorName()%></strong> movie.</span>
                           <p><%=film.getDescription()%></p>
-                          <a href="#" class="btn btn-primary btn-small">Book Now</a>
                         </div>
                         <div class="social-media">
                           <li><a href="<%=film.getTrailer()%>" target="_blank"><i class="tf-ion-social-youtube" aria-hidden="true"></i></a></li>
