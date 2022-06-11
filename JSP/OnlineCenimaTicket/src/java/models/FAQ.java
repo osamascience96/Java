@@ -35,7 +35,7 @@ public class FAQ extends Confs{
     
     public boolean InsertFAQ(){
         boolean IsFAQ = false;
-        String query = "INSERT INTO [user].faq(name, email, subject, message) VALUES (?, ?, ?, ?)".replace("[user]", User);
+        String query = "INSERT INTO [schema].faq(name, email, subject, message) VALUES (?, ?, ?, ?)".replace("[schema]", Schema);
         
         try {
             PreparedStatement pstmt = this.connection.prepareStatement(query);

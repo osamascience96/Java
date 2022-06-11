@@ -10,7 +10,7 @@ package db;
  * @author osama
  */
 public abstract class Confs {
-    protected final String User = "APP";
+    protected final String Schema = "APP";
     protected final String DbUser = "root";
     protected final String DbPass = "root";
 }

@@ -1,3 +1,7 @@
+<%@page import="services.FilmService"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
+<%@page import="models.Film"%>
 <%@include file="includes/header.jsp" %>
  <!-- Hero Area -section
   =========================-->
@@ -103,97 +107,44 @@
 </section>
 
 
-  <!-- upcoming movies
-  =========================-->
-  <section class="team">
+<!-- top 4 shows today
+=========================-->
+<section class="team">
     <div class="container-fluid padding-0">
-    <!-- movies -->
-    <div class="title text-center">
-      <h2>Upcoming Movies</h2>
-    </div>
-    <!-- upcoming movies iteration -->
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-              <img src="images/test/topgun.jpg" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>Top Gun Maverik</h4>
-              <span>A <strong>Joseph Kosinski</strong> movie.</span>
-              <p>After more than 30 years of service as one of the Navy's top aviators, Pete "Maverick" Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.</p>
-              <a href="#" class="btn btn-primary btn-small">Book Now</a>
-            </div>
-            <div class="social-media">
-              <li><a href="https://www.youtube.com/watch?v=giXco2jaZ_4" target="_blank"><i class="tf-ion-social-youtube" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
+        <!-- movies -->
+        <div class="title text-center">
+          <h2>Upcoming Movies</h2>
         </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-              <img src="images/test/blackadam.jpg" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>Black Adam</h4>
-              <span>A <strong>Jaume Collet-Serra</strong> movie.</span>
-              <p>Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods -- and imprisoned just as quickly -- Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.</p>
-              <a href="#" class="btn btn-primary btn-small">Book Now</a>
-            </div>
-            <div class="social-media">
-              <li><a href="https://www.youtube.com/watch?v=N73oTiIIJe0" target="_blank"><i class="tf-ion-social-youtube" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
+        <!-- upcoming movies iteration -->
+        <%
+            ArrayList<Film> films = (ArrayList<Film>) new FilmService().GetComingMovies();
+        %>
+        <div class="row g-3">
+            <% for(Film film : films){ %>
+                <div class="col-md-4 col-lg-3 padding-0">
+                  <div class="team-member">
+                    <div class="th-mouse-effect">
+                      <div class="team-img">
+                          <img src="images/movies/<%=film.getImage()%>" style="height: 500px;" alt="Team img">
+                      </div>
+                      <div class="overlay text-center">
+                        <div class="content">
+                          <h4><%=film.getName()%></h4>
+                          <span>A <strong><%=film.getDirectorName()%></strong> movie.</span>
+                          <p><%=film.getDescription()%></p>
+                          <a href="#" class="btn btn-primary btn-small">Book Now</a>
+                        </div>
+                        <div class="social-media">
+                          <li><a href="<%=film.getTrailer()%>" target="_blank"><i class="tf-ion-social-youtube" aria-hidden="true"></i></a></li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            <% } %>
         </div>
-      </div>
     </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-              <img src="images/test/fantasticbeasts.jpg" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>Fantastic Beasts: The Secrets of Dumbledore</h4>
-              <span>A <strong>David Yates</strong> movie.</span>
-              <p>Professor Albus Dumbledore knows the powerful, dark wizard Gellert Grindelwald is moving to seize control of the wizarding world. Unable to stop him alone, he entrusts magizoologist Newt Scamander to lead an intrepid team of wizards and witches. They soon encounter an array of old and new beasts as they clash with Grindelwald's growing legion of followers.</p>
-              <a href="#" class="btn btn-primary btn-small">Book Now</a>
-            </div>
-            <div class="social-media">
-              <li><a href="https://www.youtube.com/watch?v=DaM_wL1ZOM4" target="_blank"><i class="tf-ion-social-youtube" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-lg-3 padding-0">
-      <div class="team-member">
-        <div class="th-mouse-effect">
-          <div class="team-img">
-              <img src="images/test/morbius.jpg" alt="Team img">
-          </div>
-          <div class="overlay text-center">
-            <div class="content">
-              <h4>Morbius</h4>
-              <span>A <strong>Daniel Espinosa</strong> movie.</span>
-              <p>Dangerously ill with a rare blood disorder and determined to save others from the same fate, Dr. Morbius attempts a desperate gamble. While at first it seems to be a radical success, a darkness inside of him is soon unleashed.</p>
-              <a href="#" class="btn btn-primary btn-small">Book Now</a>
-            </div>
-            <div class="social-media">
-              <li><a href="https://www.youtube.com/watch?v=oZ6iiRrz1SY" target="_blank"><i class="tf-ion-social-youtube" aria-hidden="true"></i></a></li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
+</section>
 
 <!-- Footer Section -->
 <%@include file="includes/footer.jsp" %>

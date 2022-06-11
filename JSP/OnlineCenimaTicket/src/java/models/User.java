@@ -37,7 +37,7 @@ public class User extends Confs{
     
     public boolean InsertUser(){
         boolean IsUserInserted = false;
-        String query = "INSERT INTO [user].users(username, firstname, lastname, email, password) VALUES (?, ?, ?, ?, ?)".replace("[user]", User);
+        String query = "INSERT INTO [schema].users(username, firstname, lastname, email, password) VALUES (?, ?, ?, ?, ?)".replace("[schema]", Schema);
         
         try {
             PreparedStatement pstmt = this.connection.prepareStatement(query);
@@ -56,7 +56,7 @@ public class User extends Confs{
     }
     
     public User SelectByEmailPass(){
-        String query = "SELECT * FROM [user].users WHERE email = ? AND password = ?".replace("[user]", User);
+        String query = "SELECT * FROM [schema].users WHERE email = ? AND password = ?".replace("[schema]", Schema);
         
         try {
             PreparedStatement pstmt = this.connection.prepareStatement(query);
