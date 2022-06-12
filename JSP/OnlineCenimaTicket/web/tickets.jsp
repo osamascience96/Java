@@ -30,6 +30,7 @@
                     <td>Date</td>
                     <td>Time</td>
                     <td>Room</td>
+                    <td>Seat</td>
                     <td></td>
                 </tr>
             </thead>
@@ -41,6 +42,7 @@
                         <td><%=ticket.getShow().getDate()%></td>
                         <td><%=ticket.getShow().getTime()%></td>
                         <td><%=ticket.getSeat().getRoom().getName()%></td>
+                        <td><%=ticket.getSeat().getRowNum()%><%=ticket.getSeat().getColumnNum()%></td>
                         <td>
                             <a href="ticket.jsp?id=<%=ticket.getId()%>" class="btn btn-default btn-main">View Ticket</a>
                         </td>

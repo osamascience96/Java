@@ -28,6 +28,7 @@
                   <strong>Date: <%=ticket.getShow().getDate()%></strong> <br>
                   <strong>Time: <%=ticket.getShow().getTime()%></strong>
               </p>
+              <p>Seat No: <%=ticket.getSeat().getRowNum()%><%=ticket.getSeat().getColumnNum()%></p>
               <%
                   String trailer = ticket.getShow().getFilm().getTrailer();
                   if(trailer.contains("youtube")){
