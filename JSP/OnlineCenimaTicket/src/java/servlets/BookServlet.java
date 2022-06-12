@@ -20,6 +20,7 @@ import models.User;
 import services.FilmService;
 import services.SeatService;
 import services.ShowService;
+import services.TicketService;
 
 /**
  *
@@ -78,7 +79,20 @@ public class BookServlet extends HttpServlet {
         String link = "";
         
         if(user != null){
+            TicketService ticketService = new TicketService();
             
+            for(String id : seatsArr){
+                int seatid = Integer.parseInt(id);
+                int userId = user.getId();
+                
+                ticketService.setSeatId(seatid);
+                ticketService.setShowId(showId);
+                ticketService.setUserId(userId);
+                
+                boolean IsInserted = ticketService.DoInsertTicket();
+            }
+            
+            link = "tickets.jsp";
         }else{
             link = "login.jsp";
         }
