@@ -5,6 +5,7 @@
  */
 package services;
 
+import java.util.List;
 import models.Seat;
 import models.Show;
 import models.Ticket;
@@ -51,6 +52,21 @@ public class TicketService {
         this.ticket.show = show;
         
         return this.ticket.InsertTicket();
+    }
+    
+    public List<Ticket> GetTicketsByUserId(){
+        User user = new User();
+        user.setId(this.userId);
+        
+        this.ticket.setUser(user);
+        
+        return this.ticket.SelectByUserId();
+    }
+    
+    public Ticket GetTicketById(){
+        this.ticket.id = this.id;
+        
+        return this.ticket.SelectById();
     }
 
     public int getId() {

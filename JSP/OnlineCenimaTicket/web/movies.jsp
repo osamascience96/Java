@@ -90,6 +90,6 @@
       </div>
     </div>
   </div>
-    <%@include file="includes/MapEmbedded.jsp" %>
+  <%@include file="includes/MapEmbedded.jsp" %>
 </section>
 <%@include file="includes/footer.jsp" %>

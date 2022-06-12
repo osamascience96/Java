@@ -96,6 +96,7 @@
         <li><a href="movies.jsp">Movies</a></li>
         <li><a href="contact.jsp">Contact</a></li>
         <% if(userHeaderObj != null){%>
+            <li><a href="tickets.jsp">My Tickets</a></li>
             <li><a href="LogoutServlet" class="btn btn-danger">Logout</a></li>
         <% }else{%>
             <!-- Option for new user -->
