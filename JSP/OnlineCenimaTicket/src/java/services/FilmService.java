@@ -13,6 +13,7 @@ import models.Film;
  * @author osama
  */
 public class FilmService {
+    private int id;
     private String name;
     private String directorName;
     private int genreId;
@@ -41,11 +42,89 @@ public class FilmService {
         this.filmModel = new Film();
     }
     
+    public Film GetMovieById(){
+        this.filmModel.id = this.id;
+        
+        return this.filmModel.SelectById();
+    }
+    
     public List<Film> GetComingMovies(){
         return this.filmModel.SelectComingMovies();
     }
     
     public List<Film> GetAllMovies(){
         return this.filmModel.SelectAllMovies();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDirectorName() {
+        return directorName;
+    }
+
+    public void setDirectorName(String directorName) {
+        this.directorName = directorName;
+    }
+
+    public int getGenreId() {
+        return genreId;
+    }
+
+    public void setGenreId(int genreId) {
+        this.genreId = genreId;
+    }
+
+    public String getDecription() {
+        return decription;
+    }
+
+    public void setDecription(String decription) {
+        this.decription = decription;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public String getTrailer() {
+        return trailer;
+    }
+
+    public void setTrailer(String trailer) {
+        this.trailer = trailer;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public boolean isIsReleased() {
+        return isReleased;
+    }
+
+    public void setIsReleased(boolean isReleased) {
+        this.isReleased = isReleased;
     }
 }

@@ -54,6 +54,36 @@ public class Film extends Confs{
         this.createdAt = createdAt;
     }
     
+    public Film SelectById(){
+        String query = "SELECT [schema].FILM.*, [schema].GENRE.NAME AS GENRENAME FROM [schema].FILM JOIN [schema].GENRE ON [schema].GENRE.ID = [schema].FILM.GENRE_ID WHERE [schema].FILM.ID = ?".replace("[schema]", Schema);
+        
+        try {
+            PreparedStatement pstmt = this.connection.prepareStatement(query);
+            pstmt.setInt(1, this.id);
+            
+            ResultSet rs = pstmt.executeQuery();
+            while(rs.next()){
+                this.genre = new Genre();
+                genre.setId(rs.getInt("GENRE_ID"));
+                genre.setName(rs.getString("GENRENAME"));
+                
+                this.id = rs.getInt("ID");
+                this.name = rs.getString("NAME");
+                this.directorName = rs.getString("DIRECTOR_NAME");
+                this.description = rs.getString("DESCRIPTION");
+                this.releaseDate = rs.getString("RELEASE_DATE");
+                this.trailer = rs.getString("TRAILER");
+                this.image = rs.getString("IMAGES");
+                this.isReleased  = rs.getBoolean("ISRELEASED");
+                this.createdAt = rs.getString("CREATED_AT");
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Film.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return this;
+    }
+    
     public List<Film> SelectComingMovies(){
         ArrayList<Film> films = new ArrayList<>();
         
@@ -80,7 +110,7 @@ public class Film extends Confs{
     public List<Film> SelectAllMovies(){
         ArrayList<Film> films = new ArrayList<>();
         
-        String query = "SELECT [schema].FILM.*, [schema].ROOM.NAME as ROOMNAME, [schema].SHOWS.SHOW_DATE as SHOWDATE, [schema].SHOWS.SHOW_TIME as SHOWTIME, [schema].GENRE.NAME AS GENRENAME FROM [schema].FILM JOIN [schema].GENRE ON [schema].GENRE.ID = [schema].FILM.GENRE_ID LEFT JOIN [schema].SHOWS ON [schema].SHOWS.FILM_ID = [schema].FILM.ID LEFT JOIN [schema].ROOM ON [schema].ROOM.ID = [schema].SHOWS.ROOM_ID".replace("[schema]", Schema);
+        String query = "SELECT [schema].FILM.*, [schema].ROOM.NAME as ROOMNAME, [schema].SHOWS.ID as SHOWID, [schema].SHOWS.SHOW_DATE as SHOWDATE, [schema].SHOWS.SHOW_TIME as SHOWTIME, [schema].GENRE.NAME AS GENRENAME FROM [schema].FILM JOIN [schema].GENRE ON [schema].GENRE.ID = [schema].FILM.GENRE_ID LEFT JOIN [schema].SHOWS ON [schema].SHOWS.FILM_ID = [schema].FILM.ID LEFT JOIN [schema].ROOM ON [schema].ROOM.ID = [schema].SHOWS.ROOM_ID".replace("[schema]", Schema);
         
         try {
             PreparedStatement pstmt = this.connection.prepareStatement(query);
@@ -98,6 +128,7 @@ public class Film extends Confs{
                     room.setName(rs.getString("ROOMNAME"));
                     
                     show = new Show();
+                    show.setId(rs.getInt("SHOWID"));
                     show.setRoom(room);
                     show.setDate(rs.getString("SHOWDATE"));
                     show.setTime(rs.getString("SHOWTIME"));

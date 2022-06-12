@@ -49,7 +49,16 @@
                   <span>A <strong><%=film.getDirectorName()%></strong> movie.</span>
                   <p><%=film.getDescription()%></p>
                   <% if(film.getShow() != null){ %>
-                    <a href="#" class="btn btn-primary btn-small">Book Now</a>
+                    <%
+                        String link = "";
+                        User userObjLogged = (User) session.getAttribute("user_session_login");
+                        if(userObjLogged != null){
+                            link = "BookServlet?show=".concat(String.valueOf(film.getShow().getId()));
+                        }else{
+                            link = "login.jsp";
+                        }
+                    %>
+                    <a href="<%=link%>" class="btn btn-primary btn-small">Book Now</a>
                   <% } else{ %>
                     <strong>No shows available!</strong>
                   <% }%>
