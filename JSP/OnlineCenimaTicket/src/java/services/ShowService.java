@@ -5,6 +5,7 @@
  */
 package services;
 
+import java.util.List;
 import models.Show;
 
 /**
@@ -38,6 +39,12 @@ public class ShowService {
         this.show.id = this.id;
         
         return this.show.SelectById();
+    }
+    
+    public List<Show> GetByDate(){
+        this.show.date = this.showDate;
+        
+        return this.show.SelectByShowDate();
     }
 
     public int getId() {

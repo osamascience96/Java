@@ -63,6 +63,18 @@ public class TicketService {
         return this.ticket.SelectByUserId();
     }
     
+    public List<Ticket> GetTicketsByDate(String date){
+        Show show = new Show();
+        show.setDate(date);
+        
+        this.ticket.setShow(show);
+        return this.ticket.SelectByDate();
+    }
+    
+    public double GetTotalRevenue(){
+        return this.ticket.SelectTotalRevenue();
+    }
+    
     public Ticket GetTicketById(){
         this.ticket.id = this.id;
         

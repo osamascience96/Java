@@ -113,6 +113,126 @@ public class Ticket extends Confs{
         return tickets;
     }
     
+    public List<Ticket> SelectAll(){
+        String query = "SELECT [schema].TICKET.*, [schema].FILM.ID as FILMID, [schema].FILM.NAME as FILMNAME, [schema].FILM.DIRECTOR_NAME as DirectorName, [schema].FILM.DESCRIPTION as FilmDescription, [schema].FILM.RELEASE_DATE as FilmReleaseDate, [schema].FILM.IMAGES as FilmImage, [schema].SEATS.ROW_NUM as ROW_SEATS, [schema].SEATS.COLUMN_NUM as COL_SEATS, [schema].SEATS.PRICE as SeatPrice, [schema].ROOM.ID as ROOM_ID, [schema].ROOM.NAME as ROOM_NAME, [schema].SHOWS.SHOW_DATE as SHOWDATE, [schema].SHOWS.SHOW_TIME as SHOW_TIME FROM [schema].TICKET JOIN [schema].SEATS ON [schema].SEATS.ID = [schema].TICKET.SEAT_ID LEFT JOIN [schema].ROOM ON [schema].ROOM.ID = [schema].SEATS.ROOM_ID JOIN [schema].SHOWS ON [schema].SHOWS.ID = [schema].TICKET.SHOW_ID LEFT JOIN [schema].FILM ON [schema].FILM.ID = [schema].SHOWS.FILM_ID".replace("[schema]", Schema);
+        
+        ArrayList<Ticket> tickets = new ArrayList<Ticket>();
+        
+        try {
+            PreparedStatement pstmt = this.connection.prepareStatement(query);
+            
+            ResultSet rs = pstmt.executeQuery();
+            while(rs.next()){
+                User user = new User();
+                Seat seat = new Seat();
+                Room room = new Room();
+                Film film = new Film();
+                Show show = new Show();
+                
+                user.setId(rs.getInt("USER_ID"));
+                
+                seat.setId(rs.getInt("SEAT_ID"));
+                seat.setRowNum(rs.getString("ROW_SEATS").charAt(0));
+                seat.setColumnNum(rs.getInt("COL_SEATS"));
+                seat.setPrice(rs.getDouble("SeatPrice"));
+                
+                room.setId(rs.getInt("ROOM_ID"));
+                room.setName(rs.getString("ROOM_NAME"));
+                
+                seat.setRoom(room);
+                
+                show.setId(rs.getInt("SHOW_ID"));
+                show.setDate(rs.getString("SHOWDATE"));
+                show.setTime(rs.getString("SHOW_TIME"));
+                show.setRoom(room);
+                
+                film.setId(rs.getInt("FILMID"));
+                film.setName(rs.getString("FILMNAME"));
+                film.setDirectorName(rs.getString("DIRECTORNAME"));
+                film.setDescription(rs.getString("FILMDESCRIPTION"));
+                film.setReleaseDate(rs.getString("FILMRELEASEDATE"));
+                film.setImage(rs.getString("FILMIMAGE"));
+                
+                show.setFilm(film);
+                
+                tickets.add(new Ticket(rs.getInt("ID"), user, seat, show, rs.getString("CREATED_AT")));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Ticket.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return tickets;
+    }
+    
+    public List<Ticket> SelectByDate(){
+        String query = "SELECT [schema].TICKET.*, [schema].FILM.ID as FILMID, [schema].FILM.NAME as FILMNAME, [schema].FILM.DIRECTOR_NAME as DirectorName, [schema].FILM.DESCRIPTION as FilmDescription, [schema].FILM.RELEASE_DATE as FilmReleaseDate, [schema].FILM.IMAGES as FilmImage, [schema].SEATS.ROW_NUM as ROW_SEATS, [schema].SEATS.COLUMN_NUM as COL_SEATS, [schema].SEATS.PRICE as SeatPrice, [schema].ROOM.ID as ROOM_ID, [schema].ROOM.NAME as ROOM_NAME, [schema].SHOWS.SHOW_DATE as SHOWDATE, [schema].SHOWS.SHOW_TIME as SHOW_TIME FROM [schema].TICKET JOIN [schema].SEATS ON [schema].SEATS.ID = [schema].TICKET.SEAT_ID LEFT JOIN [schema].ROOM ON [schema].ROOM.ID = [schema].SEATS.ROOM_ID JOIN [schema].SHOWS ON [schema].SHOWS.ID = [schema].TICKET.SHOW_ID LEFT JOIN [schema].FILM ON [schema].FILM.ID = [schema].SHOWS.FILM_ID WHERE [schema].SHOWS.SHOW_DATE = ?".replace("[schema]", Schema);
+        
+        ArrayList<Ticket> tickets = new ArrayList<Ticket>();
+        
+        try {
+            PreparedStatement pstmt = this.connection.prepareStatement(query);
+            pstmt.setString(1, this.show.getDate());
+            
+            ResultSet rs = pstmt.executeQuery();
+            while(rs.next()){
+                User user = new User();
+                Seat seat = new Seat();
+                Room room = new Room();
+                Film film = new Film();
+                Show show = new Show();
+                
+                user.setId(rs.getInt("USER_ID"));
+                
+                seat.setId(rs.getInt("SEAT_ID"));
+                seat.setRowNum(rs.getString("ROW_SEATS").charAt(0));
+                seat.setColumnNum(rs.getInt("COL_SEATS"));
+                seat.setPrice(rs.getDouble("SeatPrice"));
+                
+                room.setId(rs.getInt("ROOM_ID"));
+                room.setName(rs.getString("ROOM_NAME"));
+                
+                seat.setRoom(room);
+                
+                show.setId(rs.getInt("SHOW_ID"));
+                show.setDate(rs.getString("SHOWDATE"));
+                show.setTime(rs.getString("SHOW_TIME"));
+                show.setRoom(room);
+                
+                film.setId(rs.getInt("FILMID"));
+                film.setName(rs.getString("FILMNAME"));
+                film.setDirectorName(rs.getString("DIRECTORNAME"));
+                film.setDescription(rs.getString("FILMDESCRIPTION"));
+                film.setReleaseDate(rs.getString("FILMRELEASEDATE"));
+                film.setImage(rs.getString("FILMIMAGE"));
+                
+                show.setFilm(film);
+                
+                tickets.add(new Ticket(rs.getInt("ID"), user, seat, show, rs.getString("CREATED_AT")));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Ticket.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return tickets;
+    }
+    
+    public double SelectTotalRevenue(){
+        String query = "SELECT SUM([schema].SEATS.PRICE) as TotalRevenue FROM [schema].TICKET JOIN [schema].SEATS ON [schema].TICKET.SEAT_ID = [schema].SEATS.ID".replace("[schema]", Schema);
+        
+        try {
+            PreparedStatement pstmt = this.connection.prepareStatement(query);
+            
+            ResultSet rs = pstmt.executeQuery();
+            if(rs.next()){
+                return rs.getDouble("TotalRevenue");
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Ticket.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return 0;
+    }
+    
     public Ticket SelectById(){
         String query = "SELECT [schema].TICKET.*, [schema].FILM.ID as FILMID, [schema].FILM.NAME as FILMNAME, [schema].FILM.DIRECTOR_NAME as DirectorName, [schema].FILM.DESCRIPTION as FilmDescription, [schema].FILM.RELEASE_DATE as FilmReleaseDate, [schema].FILM.IMAGES as FilmImage, [schema].FILM.TRAILER as FilmTrailer, [schema].SEATS.ROW_NUM as ROW_SEATS, [schema].SEATS.COLUMN_NUM as COL_SEATS, [schema].ROOM.ID as ROOM_ID, [schema].ROOM.NAME as ROOM_NAME, [schema].SHOWS.SHOW_DATE as SHOWDATE, [schema].SHOWS.SHOW_TIME as SHOW_TIME FROM [schema].TICKET JOIN [schema].SEATS ON [schema].SEATS.ID = [schema].TICKET.SEAT_ID LEFT JOIN [schema].ROOM ON [schema].ROOM.ID = [schema].SEATS.ROOM_ID JOIN [schema].SHOWS ON [schema].SHOWS.ID = [schema].TICKET.SHOW_ID LEFT JOIN [schema].FILM ON [schema].FILM.ID = [schema].SHOWS.FILM_ID WHERE [schema].TICKET.ID = ?".replace("[schema]", Schema);
         

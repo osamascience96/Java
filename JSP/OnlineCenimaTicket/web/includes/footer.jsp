@@ -48,7 +48,7 @@
                     <div class="footer-nav text-center">
                         <div class="col-md-12">
                             <ul>
-                                <li><a href="index.JSP">Home</a></li>
+                                <li><a href="<%=request.getContextPath()%>">Home</a></li>
                                 <li><a href="rooms.jsp">Rooms</a></li>
                                 <li><a href="movies.jsp">Movies</a></li>
                                 <li><a href="contact.jsp">Contact</a></li>
@@ -88,10 +88,6 @@
     <!-- jquery validation -->
     <script src="plugins/jquery.validate.js"></script>
     <script src="plugins/additional-methods.js"></script>
-    <!-- google map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-yG6sTvv8MY_6v1h0iisWEd08ybqm_C4"></script>
-    <script src="plugins/google-map/gmap.js"></script>
-
     <script src="js/script.js"></script>
     </body>
 
