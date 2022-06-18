@@ -29,6 +29,8 @@ public class Show extends Confs{
     public String time;
     public String createdAt;
     
+    public int ticketsCount = 0;
+    
     // db Connection
     public Connection connection;
     
@@ -114,6 +116,43 @@ public class Show extends Confs{
         
         return shows;
     }
+    
+    public List<Show> SelectShowTicketsCounts(){
+        String query = "SELECT [schema].SHOWS.ID as ShowId, [schema].FILM.NAME as filmname, [schema].SHOWS.SHOW_DATE as ShowDate, [schema].SHOWS.SHOW_TIME as ShowTime, count([schema].TICKET.ID) as amount_of_tickets FROM [schema].SHOWS LEFT JOIN [schema].TICKET ON [schema].TICKET.SHOW_ID = [schema].SHOWS.ID LEFT JOIN [schema].FILM ON [schema].FILM.ID = [schema].SHOWS.FILM_ID GROUP BY [schema].SHOWS.ID, [schema].SHOWS.SHOW_DATE, [schema].SHOWS.SHOW_TIME, [schema].FILM.NAME".replace("[schema]", Schema);
+        
+        ArrayList<Show> shows = new ArrayList<Show>();
+        
+        try {
+            PreparedStatement pstmt = this.connection.prepareStatement(query);
+            
+            ResultSet rs = pstmt.executeQuery();
+            while(rs.next()){
+                
+                this.id = rs.getInt("ShowId");
+                
+                this.film = new Film();
+                this.film.setName(rs.getString("filmname"));
+                
+                this.date = rs.getString("ShowDate");
+                this.time = rs.getString("ShowTime");
+                
+                this.ticketsCount = rs.getInt("amount_of_tickets");
+                
+                Show show = new Show();
+                show.setId(this.id);
+                show.setFilm(this.film);
+                show.setDate(this.date);
+                show.setTime(this.time);
+                show.setTicketsCount(this.ticketsCount);
+                
+                shows.add(show);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(Show.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return shows;
+    }
 
     public int getId() {
         return id;
@@ -161,6 +200,14 @@ public class Show extends Confs{
 
     public void setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
+    }
+
+    public int getTicketsCount() {
+        return ticketsCount;
+    }
+
+    public void setTicketsCount(int ticketsCount) {
+        this.ticketsCount = ticketsCount;
     }
     
     

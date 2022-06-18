@@ -35,6 +35,10 @@ public class ShowService {
         this.show = new Show();
     }
     
+    public List<Show> GetShowsTicketsCount(){
+        return this.show.SelectShowTicketsCounts();
+    }
+    
     public Show GetById(){
         this.show.id = this.id;
         
